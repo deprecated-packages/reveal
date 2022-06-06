@@ -18,8 +18,6 @@ return array(
     'RevealPrefix20220606\\Symplify\\Astral\\' => array($vendorDir . '/symplify/astral/src'),
     'RevealPrefix20220606\\Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'RevealPrefix20220606\\Symfony\\Polyfill\\Intl\\Normalizer\\' => array($vendorDir . '/symfony/polyfill-intl-normalizer'),
-    'RevealPrefix20220606\\Symfony\\Polyfill\\Intl\\Grapheme\\' => array($vendorDir . '/symfony/polyfill-intl-grapheme'),
-    'RevealPrefix20220606\\Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'RevealPrefix20220606\\Symfony\\Contracts\\Service\\' => array($vendorDir . '/symfony/service-contracts'),
     'RevealPrefix20220606\\Symfony\\Component\\String\\' => array($vendorDir . '/symfony/string'),
     'RevealPrefix20220606\\Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
