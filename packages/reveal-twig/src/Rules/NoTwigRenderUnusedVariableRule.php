@@ -6,7 +6,7 @@ namespace RevealPrefix20220606\Reveal\RevealTwig\Rules;
 use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Rules\Rule;
+use PHPStan\Rules\Rule;
 use RevealPrefix20220606\Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
 use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\NodeAnalyzer\UnusedTwigTemplateVariableAnalyzer;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;

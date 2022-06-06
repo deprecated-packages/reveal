@@ -5,7 +5,7 @@ namespace RevealPrefix20220606\Reveal\RevealLatte\Rules;
 
 use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Rules\Rule;
+use PHPStan\Rules\Rule;
 use RevealPrefix20220606\PHPStan\Rules\RuleError;
 use RevealPrefix20220606\PHPStan\Rules\RuleErrorBuilder;
 use RevealPrefix20220606\Reveal\LattePHPStanCompiler\TemplateFileVarTypeDocBlocksDecorator;

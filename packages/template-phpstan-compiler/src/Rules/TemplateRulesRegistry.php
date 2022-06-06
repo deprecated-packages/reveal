@@ -5,7 +5,7 @@ namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Rules;
 
 use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PHPStan\Rules\Registry;
-use RevealPrefix20220606\PHPStan\Rules\Rule;
+use PHPStan\Rules\Rule;
 use RevealPrefix20220606\Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
 use RevealPrefix20220606\Symplify\PHPStanRules\Rules\NoDynamicNameRule;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\Contract\DocumentedRuleInterface;

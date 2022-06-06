@@ -8,7 +8,7 @@ use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
 use RevealPrefix20220606\PHPStan\Analyser\Scope;
 use RevealPrefix20220606\PHPStan\Reflection\ClassReflection;
-use RevealPrefix20220606\PHPStan\Rules\Rule;
+use PHPStan\Rules\Rule;
 use RevealPrefix20220606\Reveal\RevealLatte\LatteUsedControlResolver;
 use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\UsedLocalComponentNamesResolver;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;

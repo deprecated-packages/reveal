@@ -7,7 +7,7 @@ use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PhpParser\Node\Arg;
 use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Rules\Rule;
+use PHPStan\Rules\Rule;
 use RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeAnalyzer\UnusedNetteTemplateRenderVariableResolver;
 use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
 use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
