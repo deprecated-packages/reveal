@@ -7,16 +7,16 @@ use RevealPrefix20220606\PhpParser\Node;
 use RevealPrefix20220606\PhpParser\Node\Arg;
 use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use RevealPrefix20220606\PHPStan\Rules\Rule;
 use RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeAnalyzer\UnusedNetteTemplateRenderVariableResolver;
 use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
 use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
-use RevealPrefix20220606\Symplify\PHPStanRules\Rules\AbstractSymplifyRule;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\NoNetteRenderUnusedVariableRule\NoNetteRenderUnusedVariableRuleTest
  */
-final class NoNetteRenderUnusedVariableRule extends AbstractSymplifyRule
+final class NoNetteRenderUnusedVariableRule implements Rule
 {
     /**
      * @var string
@@ -40,18 +40,15 @@ final class NoNetteRenderUnusedVariableRule extends AbstractSymplifyRule
         $this->templateFilePathResolver = $templateFilePathResolver;
         $this->unusedNetteTemplateRenderVariableResolver = $unusedNetteTemplateRenderVariableResolver;
     }
-    /**
-     * @return array<class-string<Node>>
-     */
-    public function getNodeTypes() : array
+    public function getNodeType() : string
     {
-        return [MethodCall::class];
+        return MethodCall::class;
     }
     /**
      * @param MethodCall $node
      * @return string[]
      */
-    public function process(Node $node, Scope $scope) : array
+    public function processNode(Node $node, Scope $scope) : array
     {
         if (!$this->templateRenderAnalyzer->isNetteTemplateRenderMethodCall($node, $scope)) {
             return [];

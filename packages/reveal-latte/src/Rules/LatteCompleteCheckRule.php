@@ -16,7 +16,6 @@ use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProv
 use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
 use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220606\Symplify\PHPStanRules\Rules\AbstractSymplifyRule;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
@@ -26,7 +25,7 @@ use Throwable;
  *
  * @inspired at https://github.com/efabrica-team/phpstan-latte/blob/main/src/Rule/ControlLatteRule.php#L56
  */
-final class LatteCompleteCheckRule extends AbstractSymplifyRule
+final class LatteCompleteCheckRule implements Rule
 {
     /**
      * @var string
@@ -83,17 +82,14 @@ final class LatteCompleteCheckRule extends AbstractSymplifyRule
         // get missing method + missing property etc. rule
         $this->templateRulesRegistry = new TemplateRulesRegistry($rules);
     }
-    /**
-     * @return array<class-string<Node>>
-     */
-    public function getNodeTypes() : array
+    public function getNodeType() : string
     {
-        return [Node::class];
+        return Node::class;
     }
     /**
      * @return RuleError[]
      */
-    public function process(Node $node, Scope $scope) : array
+    public function processNode(Node $node, Scope $scope) : array
     {
         $errors = [];
         foreach ($this->latteTemplateHolders as $latteTemplateHolder) {
