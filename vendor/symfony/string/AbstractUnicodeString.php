@@ -327,7 +327,7 @@ abstract class AbstractUnicodeString extends AbstractString
     public function snake()
     {
         $str = $this->camel()->title();
-        $str->string = \mb_strtolower(\preg_replace(['/(\\p{Lu}+)(\\p{Lu}\\p{Ll})/u', '/([\\p{Ll}0-9])(\\p{Lu})/u'], 'RevealPrefix20220606\\1_\\2', $str->string), 'UTF-8');
+        $str->string = \mb_strtolower(\preg_replace(['/(\\p{Lu}+)(\\p{Lu}\\p{Ll})/u', '/([\\p{Ll}0-9])(\\p{Lu})/u'], '\1_\2', $str->string), 'UTF-8');
         return $str;
     }
     /**
