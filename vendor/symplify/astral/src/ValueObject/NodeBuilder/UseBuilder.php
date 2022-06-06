@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\ValueObject\NodeBuilder;
 
-use RevealPrefix20220606\PhpParser\Builder\Use_;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Use_ as UseStmt;
+use PhpParser\Builder\Use_;
+use PhpParser\Node\Name;
+use PhpParser\Node\Stmt\Use_ as UseStmt;
 /**
  * @api
  * Fixed duplicated naming in php-parser and prevents confusion

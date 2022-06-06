@@ -4,11 +4,11 @@ declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Echo_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Nop;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Scalar\String_;
+use PhpParser\Node\Stmt\Echo_;
+use PhpParser\Node\Stmt\Nop;
+use PhpParser\NodeVisitorAbstract;
 use PHPStan\Type\ObjectType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\DocBlock\NonVarTypeDocBlockCleaner;

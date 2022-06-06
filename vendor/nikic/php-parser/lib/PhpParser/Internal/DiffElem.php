@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Internal;
+namespace PhpParser\Internal;
 
 /**
  * @internal
@@ -25,7 +25,3 @@ class DiffElem
         $this->new = $new;
     }
 }
-/**
- * @internal
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\Internal\\DiffElem', 'PhpParser\\Internal\\DiffElem', \false);

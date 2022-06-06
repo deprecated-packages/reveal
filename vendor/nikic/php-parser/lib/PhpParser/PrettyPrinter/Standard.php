@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\PrettyPrinter;
+namespace PhpParser\PrettyPrinter;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\AssignOp;
-use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
-use RevealPrefix20220606\PhpParser\Node\Expr\Cast;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Scalar;
-use RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\PrettyPrinterAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\AssignOp;
+use PhpParser\Node\Expr\BinaryOp;
+use PhpParser\Node\Expr\Cast;
+use PhpParser\Node\Name;
+use PhpParser\Node\Scalar;
+use PhpParser\Node\Scalar\MagicConst;
+use PhpParser\Node\Stmt;
+use PhpParser\PrettyPrinterAbstract;
 class Standard extends PrettyPrinterAbstract
 {
     // Special nodes
@@ -947,4 +947,3 @@ class Standard extends PrettyPrinterAbstract
         return $result;
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\PrettyPrinter\\Standard', 'PhpParser\\PrettyPrinter\\Standard', \false);

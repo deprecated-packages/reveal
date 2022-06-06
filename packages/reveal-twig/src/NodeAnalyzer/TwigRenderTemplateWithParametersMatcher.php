@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Reveal\RevealTwig\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;

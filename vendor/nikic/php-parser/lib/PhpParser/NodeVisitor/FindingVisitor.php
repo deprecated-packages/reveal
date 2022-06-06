@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\NodeVisitor;
+namespace PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\NodeVisitorAbstract;
 /**
  * This visitor can be used to find and collect all nodes satisfying some criterion determined by
  * a filter callback.
@@ -44,8 +44,3 @@ class FindingVisitor extends NodeVisitorAbstract
         return null;
     }
 }
-/**
- * This visitor can be used to find and collect all nodes satisfying some criterion determined by
- * a filter callback.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\FindingVisitor', 'PhpParser\\NodeVisitor\\FindingVisitor', \false);

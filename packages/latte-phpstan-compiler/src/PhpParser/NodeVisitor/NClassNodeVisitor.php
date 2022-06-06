@@ -3,15 +3,15 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
-use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp\Concat;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Ternary;
-use RevealPrefix20220606\PhpParser\Node\Name\FullyQualified;
-use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\BinaryOp\Concat;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Expr\Ternary;
+use PhpParser\Node\Name\FullyQualified;
+use PhpParser\Node\Scalar\String_;
+use PhpParser\NodeVisitorAbstract;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 /**
  * from: <code> echo ($ʟ_tmp = \array_filter(['class1', $var ? 'class2' : \null])) ? ' class="' .

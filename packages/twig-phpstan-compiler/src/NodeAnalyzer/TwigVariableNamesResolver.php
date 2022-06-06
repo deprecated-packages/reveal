@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
+use PhpParser\NodeTraverser;
 use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
 use Reveal\TemplatePHPStanCompiler\NodeVisitor\VariableCollectingNodeVisitor;
 use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;

@@ -1,9 +1,8 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-abstract class Scalar extends Expr
+abstract class Scalar extends \PhpParser\Node\Expr
 {
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar', 'PhpParser\\Node\\Scalar', \false);

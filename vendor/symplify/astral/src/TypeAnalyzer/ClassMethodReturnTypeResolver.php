@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\TypeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\FunctionVariant;

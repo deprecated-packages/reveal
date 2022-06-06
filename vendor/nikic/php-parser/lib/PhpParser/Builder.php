@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
 interface Builder
 {
@@ -10,6 +10,5 @@ interface Builder
      *
      * @return Node The built node
      */
-    public function getNode() : Node;
+    public function getNode() : \PhpParser\Node;
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder', 'PhpParser\\Builder', \false);

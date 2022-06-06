@@ -32,6 +32,6 @@ return array(
     'RevealPrefix20220606\\Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'RevealPrefix20220606\\Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'RevealPrefix20220606\\Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
-    'RevealPrefix20220606\\PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
 );

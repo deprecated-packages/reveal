@@ -1,10 +1,10 @@
 <?php
 
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
 use function array_merge;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Scalar;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Scalar;
 /**
  * Evaluates constant expressions.
  *
@@ -38,7 +38,7 @@ class ConstExprEvaluator
     public function __construct(callable $fallbackEvaluator = null)
     {
         $this->fallbackEvaluator = $fallbackEvaluator ?? function (Expr $expr) {
-            throw new ConstExprEvaluationException("Expression of type {$expr->getType()} cannot be evaluated");
+            throw new \PhpParser\ConstExprEvaluationException("Expression of type {$expr->getType()} cannot be evaluated");
         };
     }
     /**
@@ -66,8 +66,8 @@ class ConstExprEvaluator
         try {
             return $this->evaluate($expr);
         } catch (\Throwable $e) {
-            if (!$e instanceof ConstExprEvaluationException) {
-                $e = new ConstExprEvaluationException("An error occurred during constant expression evaluation", 0, $e);
+            if (!$e instanceof \PhpParser\ConstExprEvaluationException) {
+                $e = new \PhpParser\ConstExprEvaluationException("An error occurred during constant expression evaluation", 0, $e);
             }
             throw $e;
         } finally {
@@ -233,23 +233,3 @@ class ConstExprEvaluator
         return ($this->fallbackEvaluator)($expr);
     }
 }
-/**
- * Evaluates constant expressions.
- *
- * This evaluator is able to evaluate all constant expressions (as defined by PHP), which can be
- * evaluated without further context. If a subexpression is not of this type, a user-provided
- * fallback evaluator is invoked. To support all constant expressions that are also supported by
- * PHP (and not already handled by this class), the fallback evaluator must be able to handle the
- * following node types:
- *
- *  * All Scalar\MagicConst\* nodes.
- *  * Expr\ConstFetch nodes. Only null/false/true are already handled by this class.
- *  * Expr\ClassConstFetch nodes.
- *
- * The fallback evaluator should throw ConstExprEvaluationException for nodes it cannot evaluate.
- *
- * The evaluation is dependent on runtime configuration in two respects: Firstly, floating
- * point to string conversions are affected by the precision ini setting. Secondly, they are also
- * affected by the LC_NUMERIC locale.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\ConstExprEvaluator', 'PhpParser\\ConstExprEvaluator', \false);

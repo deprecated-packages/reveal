@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
 interface NodeVisitor
 {
@@ -34,7 +34,7 @@ interface NodeVisitor
      *
      * @return null|int|Node Replacement node (or special return value)
      */
-    public function enterNode(Node $node);
+    public function enterNode(\PhpParser\Node $node);
     /**
      * Called when leaving a node.
      *
@@ -54,7 +54,7 @@ interface NodeVisitor
      *
      * @return null|int|Node|Node[] Replacement node (or special return value)
      */
-    public function leaveNode(Node $node);
+    public function leaveNode(\PhpParser\Node $node);
     /**
      * Called once after traversal.
      *
@@ -68,4 +68,3 @@ interface NodeVisitor
      */
     public function afterTraverse(array $nodes);
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor', 'PhpParser\\NodeVisitor', \false);

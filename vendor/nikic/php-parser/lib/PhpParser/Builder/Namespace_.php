@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-class Namespace_ extends Declaration
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+class Namespace_ extends \PhpParser\Builder\Declaration
 {
     private $name;
     private $stmts = [];
@@ -42,4 +42,3 @@ class Namespace_ extends Declaration
         return new Stmt\Namespace_($this->name, $this->stmts, $this->attributes);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Namespace_', 'PhpParser\\Builder\\Namespace_', \false);

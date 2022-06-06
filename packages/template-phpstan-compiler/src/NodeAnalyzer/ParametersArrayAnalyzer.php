@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
 use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 final class ParametersArrayAnalyzer

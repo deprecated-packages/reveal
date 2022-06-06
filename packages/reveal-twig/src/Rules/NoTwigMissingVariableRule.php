@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\RevealTwig\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node;
+use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
 use Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;

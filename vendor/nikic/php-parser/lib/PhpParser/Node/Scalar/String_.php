@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Scalar;
+namespace PhpParser\Node\Scalar;
 
-use RevealPrefix20220606\PhpParser\Error;
-use RevealPrefix20220606\PhpParser\Node\Scalar;
+use PhpParser\Error;
+use PhpParser\Node\Scalar;
 class String_ extends Scalar
 {
     /* For use in "kind" attribute */
@@ -123,4 +123,3 @@ class String_ extends Scalar
         return 'Scalar_String';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar\\String_', 'PhpParser\\Node\\Scalar\\String_', \false);

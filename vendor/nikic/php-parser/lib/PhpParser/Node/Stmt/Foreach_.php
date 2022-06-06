@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Foreach_ extends Node\Stmt
 {
     /** @var Node\Expr Expression to iterate */
@@ -45,4 +45,3 @@ class Foreach_ extends Node\Stmt
         return 'Stmt_Foreach';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Foreach_', 'PhpParser\\Node\\Stmt\\Foreach_', \false);

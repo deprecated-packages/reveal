@@ -4,10 +4,10 @@ declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
 use RevealPrefix20220606\Latte\Parser;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\ParserFactory;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use PhpParser\ParserFactory;
+use PhpParser\PrettyPrinter\Standard;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use Reveal\LattePHPStanCompiler\Latte\LineCommentCorrector;
 use Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;
@@ -15,7 +15,7 @@ use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\ControlRenderToExplicitCal
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220606\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest

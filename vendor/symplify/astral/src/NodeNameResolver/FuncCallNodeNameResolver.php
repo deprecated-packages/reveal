@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeNameResolver;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\FuncCall;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeNameResolverInterface;
 final class FuncCallNodeNameResolver implements NodeNameResolverInterface
 {

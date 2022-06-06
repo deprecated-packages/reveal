@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 class Clone_ extends Expr
 {
     /** @var Expr Expression */
@@ -28,4 +28,3 @@ class Clone_ extends Expr
         return 'Expr_Clone';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Clone_', 'PhpParser\\Node\\Expr\\Clone_', \false);

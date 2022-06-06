@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpParser;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\Node\Stmt;
 use PHPStan\Parser\Parser;
 /**
  * @see \Symplify\Astral\PhpParser\SmartPhpParserFactory
@@ -33,7 +33,3 @@ final class SmartPhpParser
         return $this->parser->parseString($sourceCode);
     }
 }
-/**
- * @see \Symplify\Astral\PhpParser\SmartPhpParserFactory
- */
-\class_alias('RevealPrefix20220606\\Symplify\\Astral\\PhpParser\\SmartPhpParser', 'Symplify\\Astral\\PhpParser\\SmartPhpParser', \false);

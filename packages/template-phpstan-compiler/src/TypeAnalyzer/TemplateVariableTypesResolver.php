@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\TypeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
 use PHPStan\Analyser\Scope;
 use PHPStan\Type\ArrayType;
 use PHPStan\Type\Generic\GenericObjectType;

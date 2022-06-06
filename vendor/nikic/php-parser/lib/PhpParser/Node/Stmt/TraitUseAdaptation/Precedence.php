@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt\TraitUseAdaptation;
+namespace PhpParser\Node\Stmt\TraitUseAdaptation;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Precedence extends Node\Stmt\TraitUseAdaptation
 {
     /** @var Node\Name[] Overwritten traits */
@@ -32,4 +32,3 @@ class Precedence extends Node\Stmt\TraitUseAdaptation
         return 'Stmt_TraitUseAdaptation_Precedence';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\TraitUseAdaptation\\Precedence', 'PhpParser\\Node\\Stmt\\TraitUseAdaptation\\Precedence', \false);

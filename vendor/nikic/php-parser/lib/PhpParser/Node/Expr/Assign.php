@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 class Assign extends Expr
 {
     /** @var Expr Variable */
@@ -32,4 +32,3 @@ class Assign extends Expr
         return 'Expr_Assign';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Assign', 'PhpParser\\Node\\Expr\\Assign', \false);

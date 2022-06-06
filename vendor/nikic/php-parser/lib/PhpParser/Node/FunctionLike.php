@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 interface FunctionLike extends Node
 {
     /**
@@ -37,4 +37,3 @@ interface FunctionLike extends Node
      */
     public function getAttrGroups() : array;
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\FunctionLike', 'PhpParser\\Node\\FunctionLike', \false);

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\NodeVisitor;
+namespace PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\NodeVisitorAbstract;
 /**
  * Visitor that connects a child node to its parent node
  * as well as its sibling nodes.
@@ -46,13 +46,3 @@ final class NodeConnectingVisitor extends NodeVisitorAbstract
         \array_pop($this->stack);
     }
 }
-/**
- * Visitor that connects a child node to its parent node
- * as well as its sibling nodes.
- *
- * On the child node, the parent node can be accessed through
- * <code>$node->getAttribute('parent')</code>, the previous
- * node can be accessed through <code>$node->getAttribute('previous')</code>,
- * and the next node can be accessed through <code>$node->getAttribute('next')</code>.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\NodeConnectingVisitor', 'PhpParser\\NodeVisitor\\NodeConnectingVisitor', \false);

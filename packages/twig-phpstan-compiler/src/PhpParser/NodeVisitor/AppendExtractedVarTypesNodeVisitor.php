@@ -3,14 +3,14 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Name;
+use PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\Node\Stmt\Expression;
+use PhpParser\NodeVisitorAbstract;
 use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;

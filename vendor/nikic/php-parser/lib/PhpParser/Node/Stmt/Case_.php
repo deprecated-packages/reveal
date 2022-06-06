@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Case_ extends Node\Stmt
 {
     /** @var null|Node\Expr Condition (null for default) */
@@ -32,4 +32,3 @@ class Case_ extends Node\Stmt
         return 'Stmt_Case';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Case_', 'PhpParser\\Node\\Stmt\\Case_', \false);

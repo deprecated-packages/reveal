@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Switch_ extends Node\Stmt
 {
     /** @var Node\Expr Condition */
@@ -32,4 +32,3 @@ class Switch_ extends Node\Stmt
         return 'Stmt_Switch';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Switch_', 'PhpParser\\Node\\Stmt\\Switch_', \false);

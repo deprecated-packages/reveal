@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
 use PHPStan\Rules\RuleError;

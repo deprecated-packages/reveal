@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst;
-use RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst\Dir;
-use RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst\File;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Scalar\MagicConst;
+use PhpParser\Node\Scalar\MagicConst\Dir;
+use PhpParser\Node\Scalar\MagicConst\File;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
 /**
  * @see \Symplify\Astral\Tests\NodeValue\NodeValueResolverTest

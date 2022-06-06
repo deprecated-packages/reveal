@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\FunctionLike;
+use PhpParser\Node;
+use PhpParser\Node\FunctionLike;
 class ClassMethod extends Node\Stmt implements FunctionLike
 {
     /** @var int Flags */
@@ -78,7 +78,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isPublic() : bool
     {
-        return ($this->flags & Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & Class_::VISIBILITY_MODIFIER_MASK) === 0;
+        return ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & \PhpParser\Node\Stmt\Class_::VISIBILITY_MODIFIER_MASK) === 0;
     }
     /**
      * Whether the method is protected.
@@ -87,7 +87,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isProtected() : bool
     {
-        return (bool) ($this->flags & Class_::MODIFIER_PROTECTED);
+        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PROTECTED);
     }
     /**
      * Whether the method is private.
@@ -96,7 +96,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isPrivate() : bool
     {
-        return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
+        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PRIVATE);
     }
     /**
      * Whether the method is abstract.
@@ -105,7 +105,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isAbstract() : bool
     {
-        return (bool) ($this->flags & Class_::MODIFIER_ABSTRACT);
+        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_ABSTRACT);
     }
     /**
      * Whether the method is final.
@@ -114,7 +114,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isFinal() : bool
     {
-        return (bool) ($this->flags & Class_::MODIFIER_FINAL);
+        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_FINAL);
     }
     /**
      * Whether the method is static.
@@ -123,7 +123,7 @@ class ClassMethod extends Node\Stmt implements FunctionLike
      */
     public function isStatic() : bool
     {
-        return (bool) ($this->flags & Class_::MODIFIER_STATIC);
+        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_STATIC);
     }
     /**
      * Whether the method is magic.
@@ -139,4 +139,3 @@ class ClassMethod extends Node\Stmt implements FunctionLike
         return 'Stmt_ClassMethod';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\ClassMethod', 'PhpParser\\Node\\Stmt\\ClassMethod', \false);

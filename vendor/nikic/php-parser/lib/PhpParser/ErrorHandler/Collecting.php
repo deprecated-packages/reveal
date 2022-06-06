@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\ErrorHandler;
+namespace PhpParser\ErrorHandler;
 
-use RevealPrefix20220606\PhpParser\Error;
-use RevealPrefix20220606\PhpParser\ErrorHandler;
+use PhpParser\Error;
+use PhpParser\ErrorHandler;
 /**
  * Error handler that collects all errors into an array.
  *
@@ -44,9 +44,3 @@ class Collecting implements ErrorHandler
         $this->errors = [];
     }
 }
-/**
- * Error handler that collects all errors into an array.
- *
- * This allows graceful handling of errors.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\ErrorHandler\\Collecting', 'PhpParser\\ErrorHandler\\Collecting', \false);

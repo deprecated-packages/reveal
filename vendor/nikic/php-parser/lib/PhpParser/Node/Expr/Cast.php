@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 abstract class Cast extends Expr
 {
     /** @var Expr Expression */
@@ -24,4 +24,3 @@ abstract class Cast extends Expr
         return ['expr'];
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Cast', 'PhpParser\\Node\\Expr\\Cast', \false);

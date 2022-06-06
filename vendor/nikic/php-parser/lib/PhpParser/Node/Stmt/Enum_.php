@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-class Enum_ extends ClassLike
+use PhpParser\Node;
+class Enum_ extends \PhpParser\Node\Stmt\ClassLike
 {
     /** @var null|Node\Identifier Scalar Type */
     public $scalarType;
@@ -37,4 +37,3 @@ class Enum_ extends ClassLike
         return 'Stmt_Enum';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Enum_', 'PhpParser\\Node\\Stmt\\Enum_', \false);

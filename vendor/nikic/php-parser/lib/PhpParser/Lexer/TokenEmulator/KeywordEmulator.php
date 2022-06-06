@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
+namespace PhpParser\Lexer\TokenEmulator;
 
-abstract class KeywordEmulator extends TokenEmulator
+abstract class KeywordEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
 {
     abstract function getKeywordString() : string;
     abstract function getKeywordToken() : int;
@@ -51,4 +51,3 @@ abstract class KeywordEmulator extends TokenEmulator
         return $tokens;
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\KeywordEmulator', 'PhpParser\\Lexer\\TokenEmulator\\KeywordEmulator', \false);

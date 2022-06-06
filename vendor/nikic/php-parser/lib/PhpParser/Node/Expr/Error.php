@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 /**
  * Error node used during parsing with error recovery.
  *
@@ -30,10 +30,3 @@ class Error extends Expr
         return 'Expr_Error';
     }
 }
-/**
- * Error node used during parsing with error recovery.
- *
- * An error node may be placed at a position where an expression is required, but an error occurred.
- * Error nodes will not be present if the parser is run in throwOnError mode (the default).
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Error', 'PhpParser\\Node\\Expr\\Error', \false);

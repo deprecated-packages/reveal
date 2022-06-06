@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-use RevealPrefix20220606\PhpParser\NodeAbstract;
+use PhpParser\NodeAbstract;
 /**
  * This is a base class for complex types, including nullable types and union types.
  *
@@ -12,9 +12,3 @@ use RevealPrefix20220606\PhpParser\NodeAbstract;
 abstract class ComplexType extends NodeAbstract
 {
 }
-/**
- * This is a base class for complex types, including nullable types and union types.
- *
- * It does not provide any shared behavior and exists only for type-checking purposes.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\ComplexType', 'PhpParser\\Node\\ComplexType', \false);

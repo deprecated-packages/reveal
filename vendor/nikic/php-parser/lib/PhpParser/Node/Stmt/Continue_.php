@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Continue_ extends Node\Stmt
 {
     /** @var null|Node\Expr Number of loops to continue */
@@ -28,4 +28,3 @@ class Continue_ extends Node\Stmt
         return 'Stmt_Continue';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Continue_', 'PhpParser\\Node\\Stmt\\Continue_', \false);

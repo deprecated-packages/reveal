@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 class ClosureUse extends Expr
 {
     /** @var Expr\Variable Variable to use */
@@ -32,4 +32,3 @@ class ClosureUse extends Expr
         return 'Expr_ClosureUse';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ClosureUse', 'PhpParser\\Node\\Expr\\ClosureUse', \false);

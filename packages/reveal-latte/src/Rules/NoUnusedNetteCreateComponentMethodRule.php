@@ -4,8 +4,8 @@ declare (strict_types=1);
 namespace Reveal\RevealLatte\Rules;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\Node;
+use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Rules\Rule;

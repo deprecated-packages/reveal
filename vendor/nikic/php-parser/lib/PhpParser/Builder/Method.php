@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-class Method extends FunctionLike
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+class Method extends \PhpParser\Builder\FunctionLike
 {
     protected $name;
     protected $flags = 0;
@@ -126,4 +126,3 @@ class Method extends FunctionLike
         return new Stmt\ClassMethod($this->name, ['flags' => $this->flags, 'byRef' => $this->returnByRef, 'params' => $this->params, 'returnType' => $this->returnType, 'stmts' => $this->stmts, 'attrGroups' => $this->attributeGroups], $this->attributes);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Method', 'PhpParser\\Builder\\Method', \false);

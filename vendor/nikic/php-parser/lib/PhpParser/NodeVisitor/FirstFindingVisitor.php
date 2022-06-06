@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\NodeVisitor;
+namespace PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitorAbstract;
 /**
  * This visitor can be used to find the first node satisfying some criterion determined by
  * a filter callback.
@@ -46,8 +46,3 @@ class FirstFindingVisitor extends NodeVisitorAbstract
         return null;
     }
 }
-/**
- * This visitor can be used to find the first node satisfying some criterion determined by
- * a filter callback.
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\FirstFindingVisitor', 'PhpParser\\NodeVisitor\\FirstFindingVisitor', \false);

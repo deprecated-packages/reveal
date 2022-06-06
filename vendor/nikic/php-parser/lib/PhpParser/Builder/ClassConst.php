@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Const_;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Const_;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Stmt;
 class ClassConst implements PhpParser\Builder
 {
     protected $flags = 0;
@@ -113,4 +113,3 @@ class ClassConst implements PhpParser\Builder
         return new Stmt\ClassConst($this->constants, $this->flags, $this->attributes, $this->attributeGroups);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\ClassConst', 'PhpParser\\Builder\\ClassConst', \false);

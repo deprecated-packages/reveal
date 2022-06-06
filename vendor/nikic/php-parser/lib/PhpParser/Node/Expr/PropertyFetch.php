@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
 class PropertyFetch extends Expr
 {
     /** @var Expr Variable holding object */
@@ -33,4 +33,3 @@ class PropertyFetch extends Expr
         return 'Expr_PropertyFetch';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\PropertyFetch', 'PhpParser\\Node\\Expr\\PropertyFetch', \false);

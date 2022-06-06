@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Name;
+namespace PhpParser\Node\Name;
 
-class FullyQualified extends \RevealPrefix20220606\PhpParser\Node\Name
+class FullyQualified extends \PhpParser\Node\Name
 {
     /**
      * Checks whether the name is unqualified. (E.g. Name)
@@ -50,4 +50,3 @@ class FullyQualified extends \RevealPrefix20220606\PhpParser\Node\Name
         return 'Name_FullyQualified';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Name\\FullyQualified', 'PhpParser\\Node\\Name\\FullyQualified', \false);

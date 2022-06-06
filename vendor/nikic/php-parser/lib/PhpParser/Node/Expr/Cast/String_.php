@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr\Cast;
+namespace PhpParser\Node\Expr\Cast;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Cast;
+use PhpParser\Node\Expr\Cast;
 class String_ extends Cast
 {
     public function getType() : string
@@ -11,4 +11,3 @@ class String_ extends Cast
         return 'Expr_Cast_String';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Cast\\String_', 'PhpParser\\Node\\Expr\\Cast\\String_', \false);

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Stmt;
 class Label extends Stmt
 {
     /** @var Identifier Name */
@@ -29,4 +29,3 @@ class Label extends Stmt
         return 'Stmt_Label';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Label', 'PhpParser\\Node\\Stmt\\Label', \false);

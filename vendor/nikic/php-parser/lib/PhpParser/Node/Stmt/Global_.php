@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Global_ extends Node\Stmt
 {
     /** @var Node\Expr[] Variables */
@@ -28,4 +28,3 @@ class Global_ extends Node\Stmt
         return 'Stmt_Global';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Global_', 'PhpParser\\Node\\Stmt\\Global_', \false);

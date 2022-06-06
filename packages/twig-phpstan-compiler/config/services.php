@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606;
 
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
+use PhpParser\PrettyPrinter\Standard;
 use RevealPrefix20220606\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
 return static function (ContainerConfigurator $containerConfigurator) : void {

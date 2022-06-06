@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
-use RevealPrefix20220606\PhpParser\NodeVisitor\FindingVisitor;
-use RevealPrefix20220606\PhpParser\NodeVisitor\FirstFindingVisitor;
+use PhpParser\NodeVisitor\FindingVisitor;
+use PhpParser\NodeVisitor\FirstFindingVisitor;
 class NodeFinder
 {
     /**
@@ -21,7 +21,7 @@ class NodeFinder
             $nodes = [$nodes];
         }
         $visitor = new FindingVisitor($filter);
-        $traverser = new NodeTraverser();
+        $traverser = new \PhpParser\NodeTraverser();
         $traverser->addVisitor($visitor);
         $traverser->traverse($nodes);
         return $visitor->getFoundNodes();
@@ -54,7 +54,7 @@ class NodeFinder
             $nodes = [$nodes];
         }
         $visitor = new FirstFindingVisitor($filter);
-        $traverser = new NodeTraverser();
+        $traverser = new \PhpParser\NodeTraverser();
         $traverser->addVisitor($visitor);
         $traverser->traverse($nodes);
         return $visitor->getFoundNode();
@@ -74,4 +74,3 @@ class NodeFinder
         });
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\NodeFinder', 'PhpParser\\NodeFinder', \false);

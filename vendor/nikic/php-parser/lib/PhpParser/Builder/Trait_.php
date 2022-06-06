@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-class Trait_ extends Declaration
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+class Trait_ extends \PhpParser\Builder\Declaration
 {
     protected $name;
     protected $uses = [];
@@ -67,4 +67,3 @@ class Trait_ extends Declaration
         return new Stmt\Trait_($this->name, ['stmts' => \array_merge($this->uses, $this->properties, $this->methods), 'attrGroups' => $this->attributeGroups], $this->attributes);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Trait_', 'PhpParser\\Builder\\Trait_', \false);

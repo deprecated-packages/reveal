@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeFinder;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeFinder;
+use PhpParser\NodeTraverser;
 use Reveal\LattePHPStanCompiler\RelatedFileResolver\IncludedSnippetTemplateFileResolver;
 use Reveal\LattePHPStanCompiler\RelatedFileResolver\ParentLayoutTemplateFileResolver;
 use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;

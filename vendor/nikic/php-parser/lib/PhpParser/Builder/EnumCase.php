@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Stmt;
 class EnumCase implements PhpParser\Builder
 {
     protected $name;
@@ -70,4 +70,3 @@ class EnumCase implements PhpParser\Builder
         return new Stmt\EnumCase($this->name, $this->value, $this->attributes, $this->attributeGroups);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\EnumCase', 'PhpParser\\Builder\\EnumCase', \false);

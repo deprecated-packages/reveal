@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class While_ extends Node\Stmt
 {
     /** @var Node\Expr Condition */
@@ -32,4 +32,3 @@ class While_ extends Node\Stmt
         return 'Stmt_While';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\While_', 'PhpParser\\Node\\Stmt\\While_', \false);

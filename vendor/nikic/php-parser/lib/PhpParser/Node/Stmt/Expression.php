@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 /**
  * Represents statements of type "expr;"
  */
@@ -31,7 +31,3 @@ class Expression extends Node\Stmt
         return 'Stmt_Expression';
     }
 }
-/**
- * Represents statements of type "expr;"
- */
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Expression', 'PhpParser\\Node\\Stmt\\Expression', \false);

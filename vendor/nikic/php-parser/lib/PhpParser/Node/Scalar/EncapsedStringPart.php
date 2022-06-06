@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Scalar;
+namespace PhpParser\Node\Scalar;
 
-use RevealPrefix20220606\PhpParser\Node\Scalar;
+use PhpParser\Node\Scalar;
 class EncapsedStringPart extends Scalar
 {
     /** @var string String value */
@@ -28,4 +28,3 @@ class EncapsedStringPart extends Scalar
         return 'Scalar_EncapsedStringPart';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar\\EncapsedStringPart', 'PhpParser\\Node\\Scalar\\EncapsedStringPart', \false);

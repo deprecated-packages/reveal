@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
+use PhpParser\Node;
+use PhpParser\Node\Identifier;
 class UseUse extends Node\Stmt
 {
     /** @var int One of the Stmt\Use_::TYPE_* constants. Will only differ from TYPE_UNKNOWN for mixed group uses */
@@ -21,7 +21,7 @@ class UseUse extends Node\Stmt
      * @param int                    $type       Type of the use element (for mixed group use only)
      * @param array                  $attributes Additional attributes
      */
-    public function __construct(Node\Name $name, $alias = null, int $type = Use_::TYPE_UNKNOWN, array $attributes = [])
+    public function __construct(Node\Name $name, $alias = null, int $type = \PhpParser\Node\Stmt\Use_::TYPE_UNKNOWN, array $attributes = [])
     {
         $this->attributes = $attributes;
         $this->type = $type;
@@ -49,4 +49,3 @@ class UseUse extends Node\Stmt
         return 'Stmt_UseUse';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\UseUse', 'PhpParser\\Node\\Stmt\\UseUse', \false);

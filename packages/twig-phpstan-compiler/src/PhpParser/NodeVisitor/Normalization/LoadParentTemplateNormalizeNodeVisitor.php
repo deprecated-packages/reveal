@@ -3,14 +3,14 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Name;
+use PhpParser\Node\Stmt\Expression;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitorAbstract;
 use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class LoadParentTemplateNormalizeNodeVisitor extends NodeVisitorAbstract implements NormalizingNodeVisitorInterface
@@ -37,7 +37,7 @@ final class LoadParentTemplateNormalizeNodeVisitor extends NodeVisitorAbstract i
         }
         return NodeTraverser::REMOVE_NODE;
     }
-    public function enterNode(\RevealPrefix20220606\PhpParser\Node $node)
+    public function enterNode(\PhpParser\Node $node)
     {
         // assign
         // load template method call

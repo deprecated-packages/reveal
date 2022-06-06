@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitorAbstract;
 final class RemoveUselessClassMethodsNodeVisitor extends NodeVisitorAbstract
 {
     /**

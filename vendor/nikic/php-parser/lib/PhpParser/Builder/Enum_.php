@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Builder;
+namespace PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use RevealPrefix20220606\PhpParser\BuilderHelpers;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-class Enum_ extends Declaration
+use PhpParser\BuilderHelpers;
+use PhpParser\Node;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Name;
+use PhpParser\Node\Stmt;
+class Enum_ extends \PhpParser\Builder\Declaration
 {
     protected $name;
     protected $scalarType = null;
@@ -95,4 +95,3 @@ class Enum_ extends Declaration
         return new Stmt\Enum_($this->name, ['scalarType' => $this->scalarType, 'implements' => $this->implements, 'stmts' => \array_merge($this->uses, $this->enumCases, $this->constants, $this->methods), 'attrGroups' => $this->attributeGroups], $this->attributes);
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Enum_', 'PhpParser\\Builder\\Enum_', \false);

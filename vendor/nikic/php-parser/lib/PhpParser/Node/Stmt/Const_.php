@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Const_ extends Node\Stmt
 {
     /** @var Node\Const_[] Constant declarations */
@@ -28,4 +28,3 @@ class Const_ extends Node\Stmt
         return 'Stmt_Const';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Const_', 'PhpParser\\Node\\Stmt\\Const_', \false);

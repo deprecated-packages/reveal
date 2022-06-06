@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\ErrorReporting;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
+use PhpParser\NodeTraverser;
 use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\PhpToTemplateLinesNodeVisitor;
 use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
 final class TemplateLinesMapResolver

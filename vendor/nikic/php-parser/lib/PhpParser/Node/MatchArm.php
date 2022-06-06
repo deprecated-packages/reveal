@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\NodeAbstract;
+use PhpParser\Node;
+use PhpParser\NodeAbstract;
 class MatchArm extends NodeAbstract
 {
     /** @var null|Node\Expr[] */
@@ -29,4 +29,3 @@ class MatchArm extends NodeAbstract
         return 'MatchArm';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\MatchArm', 'PhpParser\\Node\\MatchArm', \false);

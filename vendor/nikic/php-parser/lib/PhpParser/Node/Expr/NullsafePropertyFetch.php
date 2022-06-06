@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
 class NullsafePropertyFetch extends Expr
 {
     /** @var Expr Variable holding object */
@@ -33,4 +33,3 @@ class NullsafePropertyFetch extends Expr
         return 'Expr_NullsafePropertyFetch';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\NullsafePropertyFetch', 'PhpParser\\Node\\Expr\\NullsafePropertyFetch', \false);

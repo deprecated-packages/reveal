@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 
-use RevealPrefix20220606\PhpParser\ConstExprEvaluator;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Name;
+use PhpParser\ConstExprEvaluator;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Name;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
 use RevealPrefix20220606\Symplify\Astral\Exception\ShouldNotHappenException;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;

@@ -3,14 +3,14 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeValue;
 
-use RevealPrefix20220606\PhpParser\ConstExprEvaluationException;
-use RevealPrefix20220606\PhpParser\ConstExprEvaluator;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\Cast;
-use RevealPrefix20220606\PhpParser\Node\Expr\Instanceof_;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use PhpParser\ConstExprEvaluationException;
+use PhpParser\ConstExprEvaluator;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\Cast;
+use PhpParser\Node\Expr\Instanceof_;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\PropertyFetch;
+use PhpParser\Node\Expr\Variable;
 use PHPStan\Analyser\Scope;
 use PHPStan\Type\ConstantScalarType;
 use PHPStan\Type\UnionType;

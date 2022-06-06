@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\VariadicPlaceholder;
-class NullsafeMethodCall extends CallLike
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\VariadicPlaceholder;
+class NullsafeMethodCall extends \PhpParser\Node\Expr\CallLike
 {
     /** @var Expr Variable holding object */
     public $var;
@@ -43,4 +43,3 @@ class NullsafeMethodCall extends CallLike
         return $this->args;
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\NullsafeMethodCall', 'PhpParser\\Node\\Expr\\NullsafeMethodCall', \false);

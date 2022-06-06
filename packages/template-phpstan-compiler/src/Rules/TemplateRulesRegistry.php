@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 use PHPStan\Rules\Registry;
 use PHPStan\Rules\Rule;
-use Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
-use Symplify\PHPStanRules\Rules\NoDynamicNameRule;
+use RevealPrefix20220606\Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
+use RevealPrefix20220606\Symplify\PHPStanRules\Rules\NoDynamicNameRule;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\Contract\DocumentedRuleInterface;
 /**
  * @api

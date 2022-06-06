@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Comment\Doc;
+use PhpParser\Node;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;

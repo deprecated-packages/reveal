@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Latte\Tokens;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
+use PhpParser\NodeTraverser;
 use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\LatteLineNumberNodeVisitor;
 use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
 final class PhpToLatteLineNumbersResolver

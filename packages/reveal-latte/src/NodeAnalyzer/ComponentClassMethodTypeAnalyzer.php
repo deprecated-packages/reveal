@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\Type;
-use Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220606\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class ComponentClassMethodTypeAnalyzer
 {
     public function resolveReturnType(ClassMethod $classMethod, Scope $scope) : Type

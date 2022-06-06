@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606;
 
-use RevealPrefix20220606\PhpParser\ConstExprEvaluator;
-use RevealPrefix20220606\PhpParser\NodeFinder;
+use PhpParser\ConstExprEvaluator;
+use PhpParser\NodeFinder;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\ConstExprParser;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;

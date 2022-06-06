@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\AttributeGroup;
+use PhpParser\Node;
+use PhpParser\Node\AttributeGroup;
 class EnumCase extends Node\Stmt
 {
     /** @var Node\Identifier Enum case name */
@@ -35,4 +35,3 @@ class EnumCase extends Node\Stmt
         return 'Stmt_EnumCase';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\EnumCase', 'PhpParser\\Node\\Stmt\\EnumCase', \false);

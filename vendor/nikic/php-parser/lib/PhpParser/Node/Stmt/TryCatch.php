@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class TryCatch extends Node\Stmt
 {
     /** @var Node\Stmt[] Statements */
@@ -20,7 +20,7 @@ class TryCatch extends Node\Stmt
      * @param null|Finally_ $finally    Optional finally node
      * @param array         $attributes Additional attributes
      */
-    public function __construct(array $stmts, array $catches, Finally_ $finally = null, array $attributes = [])
+    public function __construct(array $stmts, array $catches, \PhpParser\Node\Stmt\Finally_ $finally = null, array $attributes = [])
     {
         $this->attributes = $attributes;
         $this->stmts = $stmts;
@@ -36,4 +36,3 @@ class TryCatch extends Node\Stmt
         return 'Stmt_TryCatch';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\TryCatch', 'PhpParser\\Node\\Stmt\\TryCatch', \false);

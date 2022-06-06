@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\MatchArm;
+use PhpParser\Node;
+use PhpParser\Node\MatchArm;
 class Match_ extends Node\Expr
 {
     /** @var Node\Expr */
@@ -29,4 +29,3 @@ class Match_ extends Node\Expr
         return 'Expr_Match';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Match_', 'PhpParser\\Node\\Expr\\Match_', \false);

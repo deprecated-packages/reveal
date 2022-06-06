@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\LinkProcessor;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
+use PhpParser\Comment\Doc;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt\Expression;
 use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 use Reveal\LattePHPStanCompiler\Nette\PresenterFactoryFaker;
 /**

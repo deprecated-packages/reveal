@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\VariadicPlaceholder;
-class MethodCall extends CallLike
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\VariadicPlaceholder;
+class MethodCall extends \PhpParser\Node\Expr\CallLike
 {
     /** @var Expr Variable holding object */
     public $var;
@@ -43,4 +43,3 @@ class MethodCall extends CallLike
         return $this->args;
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\MethodCall', 'PhpParser\\Node\\Expr\\MethodCall', \false);

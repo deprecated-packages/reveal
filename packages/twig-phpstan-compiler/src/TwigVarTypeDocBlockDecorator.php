@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
+use PhpParser\NodeTraverser;
+use PhpParser\PrettyPrinter\Standard;
 use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\AppendExtractedVarTypesNodeVisitor;

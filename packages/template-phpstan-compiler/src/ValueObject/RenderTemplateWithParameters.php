@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\Array_;
 /**
  * @api
  */

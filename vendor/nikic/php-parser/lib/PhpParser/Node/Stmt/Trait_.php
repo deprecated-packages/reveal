@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-class Trait_ extends ClassLike
+use PhpParser\Node;
+class Trait_ extends \PhpParser\Node\Stmt\ClassLike
 {
     /**
      * Constructs a trait node.
@@ -31,4 +31,3 @@ class Trait_ extends ClassLike
         return 'Stmt_Trait';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Trait_', 'PhpParser\\Node\\Stmt\\Trait_', \false);

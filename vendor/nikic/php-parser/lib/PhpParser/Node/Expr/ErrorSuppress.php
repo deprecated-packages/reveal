@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 class ErrorSuppress extends Expr
 {
     /** @var Expr Expression */
@@ -28,4 +28,3 @@ class ErrorSuppress extends Expr
         return 'Expr_ErrorSuppress';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ErrorSuppress', 'PhpParser\\Node\\Expr\\ErrorSuppress', \false);

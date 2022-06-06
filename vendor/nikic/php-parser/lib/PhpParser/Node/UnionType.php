@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-class UnionType extends ComplexType
+class UnionType extends \PhpParser\Node\ComplexType
 {
     /** @var (Identifier|Name)[] Types */
     public $types;
@@ -27,4 +27,3 @@ class UnionType extends ComplexType
         return 'UnionType';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\UnionType', 'PhpParser\\Node\\UnionType', \false);

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
+use PhpParser\Node;
 class Unset_ extends Node\Stmt
 {
     /** @var Node\Expr[] Variables to unset */
@@ -28,4 +28,3 @@ class Unset_ extends Node\Stmt
         return 'Stmt_Unset';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Unset_', 'PhpParser\\Node\\Stmt\\Unset_', \false);

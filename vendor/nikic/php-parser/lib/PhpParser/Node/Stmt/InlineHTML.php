@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\Node\Stmt;
 class InlineHTML extends Stmt
 {
     /** @var string String */
@@ -28,4 +28,3 @@ class InlineHTML extends Stmt
         return 'Stmt_InlineHTML';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\InlineHTML', 'PhpParser\\Node\\Stmt\\InlineHTML', \false);

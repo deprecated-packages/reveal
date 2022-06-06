@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node\Expr;
 class Variable extends Expr
 {
     /** @var string|Expr Name */
@@ -28,4 +28,3 @@ class Variable extends Expr
         return 'Expr_Variable';
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Variable', 'PhpParser\\Node\\Expr\\Variable', \false);

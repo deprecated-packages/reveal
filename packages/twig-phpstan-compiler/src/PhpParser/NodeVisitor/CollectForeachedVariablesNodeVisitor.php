@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Foreach_;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt\Foreach_;
+use PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class CollectForeachedVariablesNodeVisitor extends NodeVisitorAbstract
 {

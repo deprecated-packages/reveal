@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\NodeFactory;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Nop;
+use PhpParser\Comment\Doc;
+use PhpParser\Node\Stmt\Nop;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 /**
  * @api

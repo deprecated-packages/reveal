@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
+namespace PhpParser\Lexer\TokenEmulator;
 
-use RevealPrefix20220606\PhpParser\Lexer\Emulative;
-final class AttributeEmulator extends TokenEmulator
+use PhpParser\Lexer\Emulative;
+final class AttributeEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
 {
     public function getPhpVersion() : string
     {
@@ -48,4 +48,3 @@ final class AttributeEmulator extends TokenEmulator
         return $code;
     }
 }
-\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\AttributeEmulator', 'PhpParser\\Lexer\\TokenEmulator\\AttributeEmulator', \false);
