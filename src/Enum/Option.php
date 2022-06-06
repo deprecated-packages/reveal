@@ -18,3 +18,4 @@ final class Option
      */
     public const TWIG_PROVIDER = 'twig-provider';
 }
+\class_alias('RevealPrefix20220606\\Reveal\\Enum\\Option', 'Reveal\\Enum\\Option', \false);

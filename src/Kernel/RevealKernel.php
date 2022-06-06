@@ -15,3 +15,4 @@ final class RevealKernel extends AbstractSymplifyKernel
         return $this->create($configFiles, $compilerPasses, []);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\Kernel\\RevealKernel', 'Reveal\\Kernel\\RevealKernel', \false);

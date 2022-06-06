@@ -28,3 +28,4 @@ final class DynamicCallReference implements CallReferenceInterface
         return $this->method;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\DynamicCallReference', 'Reveal\\LattePHPStanCompiler\\ValueObject\\DynamicCallReference', \false);

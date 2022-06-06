@@ -90,3 +90,4 @@ final class LatteTemplateWithParametersMatcher
         return $templatePathFinderVisitor->getTemplatePaths();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\LatteTemplateWithParametersMatcher', 'Reveal\\RevealLatte\\NodeAnalyzer\\LatteTemplateWithParametersMatcher', \false);

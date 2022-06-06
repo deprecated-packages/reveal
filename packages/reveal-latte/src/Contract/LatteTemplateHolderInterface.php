@@ -22,3 +22,4 @@ interface LatteTemplateHolderInterface
      */
     public function findComponentNamesAndTypes(Node $node, Scope $scope) : array;
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Contract\\LatteTemplateHolderInterface', 'Reveal\\RevealLatte\\Contract\\LatteTemplateHolderInterface', \false);

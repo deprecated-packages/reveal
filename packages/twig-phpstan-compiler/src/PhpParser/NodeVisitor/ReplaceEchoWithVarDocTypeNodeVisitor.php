@@ -54,3 +54,4 @@ final class ReplaceEchoWithVarDocTypeNodeVisitor extends NodeVisitorAbstract
         return $this->collectedVariablesAndTypes;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ReplaceEchoWithVarDocTypeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ReplaceEchoWithVarDocTypeNodeVisitor', \false);

@@ -44,3 +44,4 @@ final class TwigVariableNamesResolver implements UsedVariableNamesResolverInterf
         return $variableCollectingNodeVisitor->getUsedVariableNames();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\TwigVariableNamesResolver', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\TwigVariableNamesResolver', \false);

@@ -67,3 +67,9 @@ final class InstanceofRenderableNodeVisitor extends NodeVisitorAbstract implemen
         return $stmtExpr;
     }
 }
+/**
+ * Fixes render() invalid contract
+ *
+ * @see https://github.com/symplify/symplify/issues/3682
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\InstanceofRenderableNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\InstanceofRenderableNodeVisitor', \false);

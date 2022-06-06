@@ -70,3 +70,10 @@ final class PresenterActionLinkProcessor implements LinkProcessorInterface
         return $methodNames;
     }
 }
+/**
+ * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("Foo:doSomething", ['a']));
+ * </code>
+ *
+ * to: <code> $fooPresenter->actionDoSomething('a'); $fooPresenter->renderDoSomething('a'); </code>
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\PresenterActionLinkProcessor', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\PresenterActionLinkProcessor', \false);

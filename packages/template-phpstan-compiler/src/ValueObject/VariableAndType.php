@@ -33,3 +33,4 @@ final class VariableAndType
         return $this->type->describe(VerbosityLevel::typeOnly());
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ValueObject\\VariableAndType', 'Reveal\\TemplatePHPStanCompiler\\ValueObject\\VariableAndType', \false);

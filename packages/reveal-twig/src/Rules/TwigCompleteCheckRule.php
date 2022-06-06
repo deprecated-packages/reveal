@@ -168,3 +168,8 @@ CODE_SAMPLE
         return $this->templateErrorsFactory->createErrors($ruleErrors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);
     }
 }
+/**
+ * @implements Rule<MethodCall>
+ * @see \Reveal\RevealTwig\Tests\Rules\TwigCompleteCheckRule\TwigCompleteCheckRuleTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\Rules\\TwigCompleteCheckRule', 'Reveal\\RevealTwig\\Rules\\TwigCompleteCheckRule', \false);

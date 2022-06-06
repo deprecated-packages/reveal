@@ -54,3 +54,4 @@ final class LatteVarTypeDocBlockDecorator
         return \rtrim($printedPhpContent) . \PHP_EOL;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVarTypeDocBlockDecorator', 'Reveal\\LattePHPStanCompiler\\LatteVarTypeDocBlockDecorator', \false);

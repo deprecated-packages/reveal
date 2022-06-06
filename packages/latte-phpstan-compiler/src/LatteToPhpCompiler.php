@@ -124,3 +124,7 @@ final class LatteToPhpCompiler
         throw new ShouldNotHappenException($errorMessage);
     }
 }
+/**
+ * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteToPhpCompiler', 'Reveal\\LattePHPStanCompiler\\LatteToPhpCompiler', \false);

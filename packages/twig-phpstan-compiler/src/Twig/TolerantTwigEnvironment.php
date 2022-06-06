@@ -34,3 +34,7 @@ final class TolerantTwigEnvironment extends Environment
         });
     }
 }
+/**
+ * Allows any function and filter
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\Twig\\TolerantTwigEnvironment', 'Reveal\\TwigPHPStanCompiler\\Twig\\TolerantTwigEnvironment', \false);

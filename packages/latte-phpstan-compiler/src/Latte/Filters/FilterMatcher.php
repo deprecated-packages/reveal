@@ -91,3 +91,7 @@ final class FilterMatcher
         return new DynamicCallReference($filterClass, $filterMethod);
     }
 }
+/**
+ * @see \Reveal\LattePHPStanCompiler\Tests\Filters\FilterMatcherTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Filters\\FilterMatcher', 'Reveal\\LattePHPStanCompiler\\Latte\\Filters\\FilterMatcher', \false);

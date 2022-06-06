@@ -33,3 +33,4 @@ final class PublicPropertyAnalyzer
         return $resolvedVisibility;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\Reflection\\PublicPropertyAnalyzer', 'Reveal\\TwigPHPStanCompiler\\Reflection\\PublicPropertyAnalyzer', \false);

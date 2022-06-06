@@ -39,3 +39,7 @@ final class MethodCallArrayResolver
         return $this->parametersArrayAnalyzer->resolveStringKeys($secondArgValue, $scope);
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\MethodCallArrayResolver', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\MethodCallArrayResolver', \false);

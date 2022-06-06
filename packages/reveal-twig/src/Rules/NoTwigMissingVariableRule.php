@@ -93,3 +93,9 @@ CODE_SAMPLE
 )]);
     }
 }
+/**
+ * @implements Rule<MethodCall>
+ * @api
+ * @see \Reveal\RevealTwig\Tests\Rules\NoTwigMissingVariableRule\NoTwigMissingVariableRuleTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\Rules\\NoTwigMissingVariableRule', 'Reveal\\RevealTwig\\Rules\\NoTwigMissingVariableRule', \false);

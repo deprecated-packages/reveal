@@ -28,3 +28,4 @@ final class StaticCallReference implements CallReferenceInterface
         return $this->method;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\StaticCallReference', 'Reveal\\LattePHPStanCompiler\\ValueObject\\StaticCallReference', \false);

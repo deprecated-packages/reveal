@@ -7,3 +7,4 @@ use Exception;
 final class InvalidLatteFilterFormatException extends Exception
 {
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Exception\\InvalidLatteFilterFormatException', 'Reveal\\LattePHPStanCompiler\\Exception\\InvalidLatteFilterFormatException', \false);

@@ -65,3 +65,4 @@ final class AppendExtractedVarTypesNodeVisitor extends NodeVisitorAbstract
         return null;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', \false);

@@ -80,3 +80,4 @@ final class SymfonyRenderWithParametersMatcher
         return \false;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\NodeAnalyzer\\SymfonyRenderWithParametersMatcher', 'Reveal\\RevealTwig\\NodeAnalyzer\\SymfonyRenderWithParametersMatcher', \false);

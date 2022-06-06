@@ -45,3 +45,7 @@ final class UnwrapContextVariableNodeVisitor extends NodeVisitorAbstract
         return new Variable($stringValue);
     }
 }
+/**
+ * Turns: $context['value'] ↓ $value
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapContextVariableNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapContextVariableNodeVisitor', \false);

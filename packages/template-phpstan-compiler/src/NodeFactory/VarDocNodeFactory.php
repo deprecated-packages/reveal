@@ -32,3 +32,7 @@ final class VarDocNodeFactory
         return $docNop;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeFactory\\VarDocNodeFactory', 'Reveal\\TemplatePHPStanCompiler\\NodeFactory\\VarDocNodeFactory', \false);

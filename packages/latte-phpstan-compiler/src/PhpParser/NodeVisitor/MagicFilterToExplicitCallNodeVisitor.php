@@ -94,3 +94,9 @@ final class MagicFilterToExplicitCallNodeVisitor extends NodeVisitorAbstract imp
         return $this->simpleNameResolver->isName($expr->name, $propertyName);
     }
 }
+/**
+ * Make \Latte\Runtime\Defaults::getFilters() explicit, from: $this->filters->{magic}(...)
+ *
+ * to: \Latte\Runtime\Filters::date(...)
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\MagicFilterToExplicitCallNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\MagicFilterToExplicitCallNodeVisitor', \false);

@@ -83,3 +83,8 @@ CODE_SAMPLE
 )]);
     }
 }
+/**
+ * @implements Rule<MethodCall>
+ * @see \Reveal\RevealTwig\Tests\Rules\NoTwigRenderUnusedVariableRule\NoTwigRenderUnusedVariableRuleTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\Rules\\NoTwigRenderUnusedVariableRule', 'Reveal\\RevealTwig\\Rules\\NoTwigRenderUnusedVariableRule', \false);

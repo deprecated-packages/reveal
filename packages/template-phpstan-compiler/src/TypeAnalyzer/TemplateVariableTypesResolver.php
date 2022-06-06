@@ -50,3 +50,7 @@ final class TemplateVariableTypesResolver
         return $variableNamesToTypes;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\TypeAnalyzer\\TemplateVariableTypesResolver', 'Reveal\\TemplatePHPStanCompiler\\TypeAnalyzer\\TemplateVariableTypesResolver', \false);

@@ -27,3 +27,4 @@ final class LinkProcessorFactory
         return null;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\LinkProcessorFactory', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\LinkProcessorFactory', \false);

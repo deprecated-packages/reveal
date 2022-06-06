@@ -42,3 +42,7 @@ final class UnusedTwigTemplateVariableAnalyzer
         return \array_diff($passedVariableNames, $templatesUsedVariableNames);
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\UnusedTwigTemplateVariableAnalyzer', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\UnusedTwigTemplateVariableAnalyzer', \false);

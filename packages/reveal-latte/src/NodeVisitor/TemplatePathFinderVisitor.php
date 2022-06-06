@@ -75,3 +75,4 @@ final class TemplatePathFinderVisitor extends NodeVisitorAbstract
         return $this->templatePaths;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeVisitor\\TemplatePathFinderVisitor', 'Reveal\\RevealLatte\\NodeVisitor\\TemplatePathFinderVisitor', \false);

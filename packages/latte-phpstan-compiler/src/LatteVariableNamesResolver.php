@@ -93,3 +93,4 @@ final class LatteVariableNamesResolver implements UsedVariableNamesResolverInter
         return $this->parentNodeAwarePhpParser->parsePhpContent($parentLayoutCompiledPhp);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVariableNamesResolver', 'Reveal\\LattePHPStanCompiler\\LatteVariableNamesResolver', \false);

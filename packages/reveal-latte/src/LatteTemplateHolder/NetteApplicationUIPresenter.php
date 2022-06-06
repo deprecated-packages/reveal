@@ -127,3 +127,4 @@ final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
         return null;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteTemplateHolder\\NetteApplicationUIPresenter', 'Reveal\\RevealLatte\\LatteTemplateHolder\\NetteApplicationUIPresenter', \false);

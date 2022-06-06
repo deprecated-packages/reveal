@@ -49,3 +49,4 @@ final class NonVarTypeDocBlockCleaner
         return new TokenStream($tokens, $tokenStream->getSourceContext());
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\DocBlock\\NonVarTypeDocBlockCleaner', 'Reveal\\TwigPHPStanCompiler\\DocBlock\\NonVarTypeDocBlockCleaner', \false);

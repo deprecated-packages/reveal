@@ -29,3 +29,4 @@ final class UnwrapEscapeFilterNormalizeNodeVisitor extends NodeVisitorAbstract i
         return $node->getArgs()[1]->value;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\UnwrapEscapeFilterNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\UnwrapEscapeFilterNormalizeNodeVisitor', \false);

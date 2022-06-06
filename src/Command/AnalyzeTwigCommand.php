@@ -68,3 +68,4 @@ final class AnalyzeTwigCommand extends Command
         return self::FAILURE;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\Command\\AnalyzeTwigCommand', 'Reveal\\Command\\AnalyzeTwigCommand', \false);

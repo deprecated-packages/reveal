@@ -30,3 +30,8 @@ final class ErrorSkipper
         return $filteredErrors;
     }
 }
+/**
+ * @api
+ * @see \Reveal\TemplatePHPStanCompiler\Tests\ErrorSkipperTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ErrorSkipper', 'Reveal\\TemplatePHPStanCompiler\\ErrorSkipper', \false);

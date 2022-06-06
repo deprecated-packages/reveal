@@ -30,3 +30,4 @@ final class ObjectTypeMethodAnalyzer
         return [$methodName, 'get' . \ucfirst($methodName), 'is' . \ucfirst($methodName)];
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ObjectTypeMethodAnalyzer', 'Reveal\\TwigPHPStanCompiler\\ObjectTypeMethodAnalyzer', \false);

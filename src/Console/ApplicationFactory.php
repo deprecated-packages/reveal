@@ -25,3 +25,4 @@ final class ApplicationFactory
         return $application;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\Console\\ApplicationFactory', 'Reveal\\Console\\ApplicationFactory', \false);

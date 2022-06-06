@@ -89,3 +89,7 @@ final class TemplateFilePathResolver
         return [];
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\TemplateFilePathResolver', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\TemplateFilePathResolver', \false);

@@ -28,3 +28,4 @@ final class ParentLayoutTemplateFileResolver
         return $this->parentLayoutNameNodeVisitor->getParentLayoutFileName();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\ParentLayoutTemplateFileResolver', 'Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\ParentLayoutTemplateFileResolver', \false);

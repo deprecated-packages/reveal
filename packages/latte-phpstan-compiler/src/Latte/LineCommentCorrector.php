@@ -32,3 +32,4 @@ final class LineCommentCorrector
         return $correctedPhpContent;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\LineCommentCorrector', 'Reveal\\LattePHPStanCompiler\\Latte\\LineCommentCorrector', \false);

@@ -115,3 +115,7 @@ CODE_SAMPLE
 )]);
     }
 }
+/**
+ * @see \Reveal\RevealLatte\Tests\Rules\NoNetteRenderMissingVariableRule\NoNetteRenderMissingVariableRuleTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\NoNetteRenderMissingVariableRule', 'Reveal\\RevealLatte\\Rules\\NoNetteRenderMissingVariableRule', \false);

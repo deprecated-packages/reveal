@@ -97,3 +97,4 @@ final class ExtractDoDisplayStmtsNodeVisitor extends NodeVisitorAbstract
         return $this->simpleNameResolver->isName($expr->var, 'macros');
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ExtractDoDisplayStmtsNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ExtractDoDisplayStmtsNodeVisitor', \false);

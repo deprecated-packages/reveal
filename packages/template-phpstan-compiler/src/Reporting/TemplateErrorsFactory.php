@@ -48,3 +48,7 @@ final class TemplateErrorsFactory
         return $lastTemplateLine;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Reporting\\TemplateErrorsFactory', 'Reveal\\TemplatePHPStanCompiler\\Reporting\\TemplateErrorsFactory', \false);

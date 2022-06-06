@@ -170,3 +170,4 @@ final class TwigGetAttributeExpanderNodeVisitor extends NodeVisitorAbstract
         return $node;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\TwigGetAttributeExpanderNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\TwigGetAttributeExpanderNodeVisitor', \false);

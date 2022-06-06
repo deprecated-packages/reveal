@@ -19,3 +19,4 @@ final class FunctionCallReference implements CallReferenceInterface
         return $this->function;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\FunctionCallReference', 'Reveal\\LattePHPStanCompiler\\ValueObject\\FunctionCallReference', \false);

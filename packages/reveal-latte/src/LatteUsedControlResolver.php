@@ -118,3 +118,4 @@ final class LatteUsedControlResolver
         return $latteUsedComponentNames;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteUsedControlResolver', 'Reveal\\RevealLatte\\LatteUsedControlResolver', \false);

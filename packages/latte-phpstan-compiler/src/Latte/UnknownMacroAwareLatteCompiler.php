@@ -112,3 +112,4 @@ final class UnknownMacroAwareLatteCompiler extends Compiler
         }
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\UnknownMacroAwareLatteCompiler', 'Reveal\\LattePHPStanCompiler\\Latte\\UnknownMacroAwareLatteCompiler', \false);

@@ -42,3 +42,7 @@ final class MissingLatteTemplateRenderVariableResolver
         return \array_unique($missingVariableNames);
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\MissingLatteTemplateRenderVariableResolver', 'Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\MissingLatteTemplateRenderVariableResolver', \false);

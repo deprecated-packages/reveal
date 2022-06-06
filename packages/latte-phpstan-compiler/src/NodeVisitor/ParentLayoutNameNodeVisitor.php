@@ -97,3 +97,4 @@ final class ParentLayoutNameNodeVisitor extends NodeVisitorAbstract
         return $this->nodeValueResolver->resolve($assign->expr, $this->templateFilePath);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeVisitor\\ParentLayoutNameNodeVisitor', 'Reveal\\LattePHPStanCompiler\\NodeVisitor\\ParentLayoutNameNodeVisitor', \false);

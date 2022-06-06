@@ -64,3 +64,4 @@ final class CollectForeachedVariablesNodeVisitor extends NodeVisitorAbstract
         return $this->foreachedVariablesToSingles;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\CollectForeachedVariablesNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\CollectForeachedVariablesNodeVisitor', \false);

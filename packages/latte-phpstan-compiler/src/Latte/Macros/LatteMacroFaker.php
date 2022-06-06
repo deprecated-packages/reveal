@@ -97,3 +97,4 @@ final class LatteMacroFaker
         return \implode(' . ', $variableNames);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Macros\\LatteMacroFaker', 'Reveal\\LattePHPStanCompiler\\Latte\\Macros\\LatteMacroFaker', \false);

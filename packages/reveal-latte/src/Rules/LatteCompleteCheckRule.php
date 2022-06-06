@@ -175,3 +175,9 @@ CODE_SAMPLE
         return $this->templateErrorsFactory->createErrors($errors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);
     }
 }
+/**
+ * @see \Reveal\RevealLatte\Tests\Rules\LatteCompleteCheckRule\LatteCompleteCheckRuleTest
+ *
+ * @inspired at https://github.com/efabrica-team/phpstan-latte/blob/main/src/Rule/ControlLatteRule.php#L56
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\LatteCompleteCheckRule', 'Reveal\\RevealLatte\\Rules\\LatteCompleteCheckRule', \false);

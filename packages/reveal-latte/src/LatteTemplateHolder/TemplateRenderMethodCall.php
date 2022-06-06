@@ -56,3 +56,4 @@ final class TemplateRenderMethodCall implements LatteTemplateHolderInterface
         return $this->componentMapResolver->resolveFromMethodCall($node, $scope);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteTemplateHolder\\TemplateRenderMethodCall', 'Reveal\\RevealLatte\\LatteTemplateHolder\\TemplateRenderMethodCall', \false);

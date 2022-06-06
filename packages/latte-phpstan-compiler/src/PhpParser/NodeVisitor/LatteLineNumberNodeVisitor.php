@@ -54,3 +54,4 @@ final class LatteLineNumberNodeVisitor extends NodeVisitorAbstract
         return $this->phpLinesToLatteLines;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LatteLineNumberNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LatteLineNumberNodeVisitor', \false);

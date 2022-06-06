@@ -32,3 +32,7 @@ final class PHPStanServicesFactory
         return $this->container->getService('currentPhpVersionRichParser');
     }
 }
+/**
+ * @see https://github.com/rectorphp/rector-src/blob/main/packages/NodeTypeResolver/DependencyInjection/PHPStanServicesFactory.php
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\PHPStan\\PHPStanServicesFactory', 'Reveal\\TemplatePHPStanCompiler\\PHPStan\\PHPStanServicesFactory', \false);

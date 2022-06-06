@@ -101,3 +101,4 @@ final class TemplateIncludesNameNodeVisitor extends NodeVisitorAbstract
         return $this->nodeValueResolver->resolve($firstArgValue, $this->templateFilePath);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeVisitor\\TemplateIncludesNameNodeVisitor', 'Reveal\\LattePHPStanCompiler\\NodeVisitor\\TemplateIncludesNameNodeVisitor', \false);

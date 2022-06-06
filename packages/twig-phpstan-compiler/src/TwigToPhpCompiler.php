@@ -213,3 +213,7 @@ final class TwigToPhpCompiler
         return $this->extractDoDisplayStmtsNodeVisitor->getDoDisplayStmts();
     }
 }
+/**
+ * @see \Reveal\TwigPHPStanCompiler\Tests\TwigToPhpCompiler\TwigToPhpCompilerTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\TwigToPhpCompiler', 'Reveal\\TwigPHPStanCompiler\\TwigToPhpCompiler', \false);

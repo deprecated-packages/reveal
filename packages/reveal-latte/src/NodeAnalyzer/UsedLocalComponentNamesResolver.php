@@ -94,3 +94,4 @@ final class UsedLocalComponentNamesResolver
         return $componentNames;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\UsedLocalComponentNamesResolver', 'Reveal\\RevealLatte\\NodeAnalyzer\\UsedLocalComponentNamesResolver', \false);

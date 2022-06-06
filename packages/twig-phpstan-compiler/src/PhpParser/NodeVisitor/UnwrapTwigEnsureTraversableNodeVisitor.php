@@ -32,3 +32,4 @@ final class UnwrapTwigEnsureTraversableNodeVisitor extends NodeVisitorAbstract
         return $firstArg->value;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapTwigEnsureTraversableNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapTwigEnsureTraversableNodeVisitor', \false);

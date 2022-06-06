@@ -74,3 +74,4 @@ final class AssignedParametersVisitor extends NodeVisitorAbstract
         return $this->parameters;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeVisitor\\AssignedParametersVisitor', 'Reveal\\RevealLatte\\NodeVisitor\\AssignedParametersVisitor', \false);

@@ -28,3 +28,8 @@ final class PresenterFactoryFaker
         return $presenterFactory;
     }
 }
+/**
+ * @todo provide presenter factory from the project itself, so we have the full mapping available.
+ * @see --twig-provider in AnalyzeTwigCommand
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Nette\\PresenterFactoryFaker', 'Reveal\\LattePHPStanCompiler\\Nette\\PresenterFactoryFaker', \false);

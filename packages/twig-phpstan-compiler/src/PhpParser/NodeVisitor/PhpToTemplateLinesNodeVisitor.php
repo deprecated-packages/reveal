@@ -54,3 +54,4 @@ final class PhpToTemplateLinesNodeVisitor extends NodeVisitorAbstract
         return $this->phpLinesToTemplateLines;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\PhpToTemplateLinesNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\PhpToTemplateLinesNodeVisitor', \false);

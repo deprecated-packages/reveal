@@ -28,3 +28,4 @@ final class ComponentNameAndType
         return $this->returnType;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\ComponentNameAndType', 'Reveal\\LattePHPStanCompiler\\ValueObject\\ComponentNameAndType', \false);

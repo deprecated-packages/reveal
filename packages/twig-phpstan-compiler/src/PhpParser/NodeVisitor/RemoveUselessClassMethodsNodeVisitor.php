@@ -28,3 +28,4 @@ final class RemoveUselessClassMethodsNodeVisitor extends NodeVisitorAbstract
         return NodeTraverser::REMOVE_NODE;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\RemoveUselessClassMethodsNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\RemoveUselessClassMethodsNodeVisitor', \false);

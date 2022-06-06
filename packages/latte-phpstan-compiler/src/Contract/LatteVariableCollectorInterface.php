@@ -11,3 +11,4 @@ interface LatteVariableCollectorInterface
      */
     public function getVariablesAndTypes() : array;
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Contract\\LatteVariableCollectorInterface', 'Reveal\\LattePHPStanCompiler\\Contract\\LatteVariableCollectorInterface', \false);

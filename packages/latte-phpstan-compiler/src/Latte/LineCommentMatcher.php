@@ -41,3 +41,7 @@ final class LineCommentMatcher
         return null;
     }
 }
+/**
+ * @see \Reveal\LattePHPStanCompiler\Tests\Latte\LineCommentMatcherTest
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\LineCommentMatcher', 'Reveal\\LattePHPStanCompiler\\Latte\\LineCommentMatcher', \false);

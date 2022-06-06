@@ -50,3 +50,4 @@ final class DynamicFilterVariables implements LatteVariableCollectorInterface
         return $variablesAndTypes;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DynamicFilterVariables', 'Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DynamicFilterVariables', \false);

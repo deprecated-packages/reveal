@@ -54,3 +54,4 @@ final class TwigRenderTemplateWithParametersMatcher
         return $secondArgValue;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\NodeAnalyzer\\TwigRenderTemplateWithParametersMatcher', 'Reveal\\RevealTwig\\NodeAnalyzer\\TwigRenderTemplateWithParametersMatcher', \false);

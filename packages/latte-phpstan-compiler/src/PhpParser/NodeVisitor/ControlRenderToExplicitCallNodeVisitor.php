@@ -136,3 +136,9 @@ final class ControlRenderToExplicitCallNodeVisitor extends NodeVisitorAbstract
         return new Variable($this->currentComponentName);
     }
 }
+/**
+ * Make $_tmp = $this->global->uiControl->getComponent("someName");
+ *
+ * to: /** @var SomeTypeControl $someNameControl $someNameControl = ...
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\ControlRenderToExplicitCallNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\ControlRenderToExplicitCallNodeVisitor', \false);

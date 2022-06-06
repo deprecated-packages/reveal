@@ -39,3 +39,4 @@ final class ParametersArrayAnalyzer
         return $stringKeyNames;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\ParametersArrayAnalyzer', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\ParametersArrayAnalyzer', \false);

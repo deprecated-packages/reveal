@@ -55,3 +55,4 @@ final class LoadParentTemplateNormalizeNodeVisitor extends NodeVisitorAbstract i
         return null;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\LoadParentTemplateNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\LoadParentTemplateNormalizeNodeVisitor', \false);

@@ -35,3 +35,7 @@ final class ParentNodeAwarePhpParser
         return $phpStmts;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\PhpParser\\ParentNodeAwarePhpParser', 'Reveal\\TemplatePHPStanCompiler\\PhpParser\\ParentNodeAwarePhpParser', \false);

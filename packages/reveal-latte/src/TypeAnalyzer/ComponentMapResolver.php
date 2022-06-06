@@ -78,3 +78,4 @@ final class ComponentMapResolver
         return $componentNamesAndTypes;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\TypeAnalyzer\\ComponentMapResolver', 'Reveal\\RevealLatte\\TypeAnalyzer\\ComponentMapResolver', \false);

@@ -110,3 +110,8 @@ final class NoUnusedNetteCreateComponentMethodRule implements Rule
         return $classMethod->isPrivate();
     }
 }
+/**
+ * @see \Reveal\RevealLatte\Tests\Rules\NoUnusedNetteCreateComponentMethodRule\NoUnusedNetteCreateComponentMethodRuleTest
+ * @implements Rule<ClassMethod>
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\NoUnusedNetteCreateComponentMethodRule', 'Reveal\\RevealLatte\\Rules\\NoUnusedNetteCreateComponentMethodRule', \false);

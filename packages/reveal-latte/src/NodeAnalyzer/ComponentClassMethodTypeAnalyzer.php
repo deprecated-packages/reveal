@@ -22,3 +22,4 @@ final class ComponentClassMethodTypeAnalyzer
         return $parametersAcceptor->getReturnType();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\ComponentClassMethodTypeAnalyzer', 'Reveal\\RevealLatte\\NodeAnalyzer\\ComponentClassMethodTypeAnalyzer', \false);

@@ -34,3 +34,4 @@ final class TemplateRenderAnalyzer
         return $this->netteTypeAnalyzer->isTemplateType($methodCall->var, $scope);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\TemplateRenderAnalyzer', 'Reveal\\RevealLatte\\NodeAnalyzer\\TemplateRenderAnalyzer', \false);

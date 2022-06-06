@@ -45,3 +45,4 @@ final class LoadTemplateNormalizeNodeVisitor extends NodeVisitorAbstract impleme
         return new FuncCall(new Name('load_template'), $args);
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\LoadTemplateNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\LoadTemplateNormalizeNodeVisitor', \false);

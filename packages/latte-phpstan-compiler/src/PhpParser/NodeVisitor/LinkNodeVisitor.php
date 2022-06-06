@@ -116,3 +116,4 @@ final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCom
         return $linkParams;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LinkNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LinkNodeVisitor', \false);

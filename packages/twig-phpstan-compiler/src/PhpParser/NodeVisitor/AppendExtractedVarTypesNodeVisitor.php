@@ -58,3 +58,4 @@ final class AppendExtractedVarTypesNodeVisitor extends NodeVisitorAbstract
         return $node;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', \false);

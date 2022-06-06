@@ -32,3 +32,10 @@ final class SignalLinkProcessor implements LinkProcessorInterface
         return [new Expression(new MethodCall($variable, $methodName, $linkParams), $attributes)];
     }
 }
+/**
+ * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("doSomething!", ['a']));
+ * </code>
+ *
+ * to: <code> $actualClass->handleDoSomething('a'); </code>
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\SignalLinkProcessor', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\SignalLinkProcessor', \false);

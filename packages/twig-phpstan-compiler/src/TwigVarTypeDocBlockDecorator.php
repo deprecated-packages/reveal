@@ -50,3 +50,4 @@ final class TwigVarTypeDocBlockDecorator
         return \rtrim($printedPhpContent) . \PHP_EOL;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\TwigVarTypeDocBlockDecorator', 'Reveal\\TwigPHPStanCompiler\\TwigVarTypeDocBlockDecorator', \false);

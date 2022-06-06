@@ -39,3 +39,4 @@ final class PhpToLatteLineNumbersResolver
         return $this->latteLineNumberNodeVisitor->getPhpLinesToLatteLines();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Tokens\\PhpToLatteLineNumbersResolver', 'Reveal\\LattePHPStanCompiler\\Latte\\Tokens\\PhpToLatteLineNumbersResolver', \false);

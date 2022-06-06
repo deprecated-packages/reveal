@@ -69,3 +69,4 @@ final class RenderParametersVisitor extends NodeVisitorAbstract
         return $this->parameters;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeVisitor\\RenderParametersVisitor', 'Reveal\\RevealLatte\\NodeVisitor\\RenderParametersVisitor', \false);

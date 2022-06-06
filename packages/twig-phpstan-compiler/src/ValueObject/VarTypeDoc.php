@@ -27,3 +27,4 @@ final class VarTypeDoc
         return $this->type;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ValueObject\\VarTypeDoc', 'Reveal\\TwigPHPStanCompiler\\ValueObject\\VarTypeDoc', \false);

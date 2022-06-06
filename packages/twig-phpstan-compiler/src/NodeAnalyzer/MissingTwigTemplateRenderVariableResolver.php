@@ -38,3 +38,7 @@ final class MissingTwigTemplateRenderVariableResolver
         return \array_unique($missingVariableNames);
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\MissingTwigTemplateRenderVariableResolver', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\MissingTwigTemplateRenderVariableResolver', \false);

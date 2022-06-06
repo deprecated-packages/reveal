@@ -29,3 +29,4 @@ final class TemplateLinesMapResolver
         return $phpToTemplateLinesNodeVisitor->getPhpLinesToTemplateLines();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ErrorReporting\\TemplateLinesMapResolver', 'Reveal\\TwigPHPStanCompiler\\ErrorReporting\\TemplateLinesMapResolver', \false);

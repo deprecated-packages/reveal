@@ -60,3 +60,10 @@ final class NClassNodeVisitor extends NodeVisitorAbstract implements LatteToPhpC
         return new Concat(new Concat($left, $implode), $node->if->right);
     }
 }
+/**
+ * from: <code> echo ($ʟ_tmp = \array_filter(['class1', $var ? 'class2' : \null])) ? ' class="' .
+ * \Latte\Runtime\Filters::escapeHtmlAttr(\implode(" ", \array_unique($ʟ_tmp))) . '"' : ""; </code>
+ *
+ * to: <code> echo ' class="' . \implode(" ", ['class1', $var ? 'class2' : \null]) . '"'; </code>
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\NClassNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\NClassNodeVisitor', \false);

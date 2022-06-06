@@ -30,3 +30,4 @@ final class IncludedSnippetTemplateFileResolver
         return $this->templateIncludesNameNodeVisitor->getIncludedTemplateFilePaths();
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\IncludedSnippetTemplateFileResolver', 'Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\IncludedSnippetTemplateFileResolver', \false);

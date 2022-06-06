@@ -119,3 +119,7 @@ final class TemplateVariableCollectingNodeVisitor extends NodeVisitorAbstract
         return $parent->valueVar === $variable;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\TemplateVariableCollectingNodeVisitor', 'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\TemplateVariableCollectingNodeVisitor', \false);

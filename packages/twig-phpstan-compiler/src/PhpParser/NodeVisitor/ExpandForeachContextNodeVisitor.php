@@ -101,3 +101,7 @@ final class ExpandForeachContextNodeVisitor extends NodeVisitorAbstract
         return $foreach;
     }
 }
+/**
+ * Inlined magic assign, to explicit variable $context['_seq'] = $items ?? \null; ↓ $items
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ExpandForeachContextNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ExpandForeachContextNodeVisitor', \false);

@@ -53,3 +53,7 @@ final class TemplateRulesRegistry extends Registry
         return $activeRules;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Rules\\TemplateRulesRegistry', 'Reveal\\TemplatePHPStanCompiler\\Rules\\TemplateRulesRegistry', \false);

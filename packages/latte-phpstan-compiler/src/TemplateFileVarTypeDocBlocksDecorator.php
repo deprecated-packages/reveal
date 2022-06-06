@@ -80,3 +80,7 @@ final class TemplateFileVarTypeDocBlocksDecorator
         return $variablesAndTypes;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\TemplateFileVarTypeDocBlocksDecorator', 'Reveal\\LattePHPStanCompiler\\TemplateFileVarTypeDocBlocksDecorator', \false);

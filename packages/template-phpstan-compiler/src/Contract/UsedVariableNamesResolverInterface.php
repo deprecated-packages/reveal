@@ -13,3 +13,7 @@ interface UsedVariableNamesResolverInterface
      */
     public function resolveFromFilePath(string $filePath) : array;
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Contract\\UsedVariableNamesResolverInterface', 'Reveal\\TemplatePHPStanCompiler\\Contract\\UsedVariableNamesResolverInterface', \false);

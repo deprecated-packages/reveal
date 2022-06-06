@@ -31,3 +31,7 @@ final class RenderTemplateWithParameters
         return $this->parametersArray;
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ValueObject\\RenderTemplateWithParameters', 'Reveal\\TemplatePHPStanCompiler\\ValueObject\\RenderTemplateWithParameters', \false);

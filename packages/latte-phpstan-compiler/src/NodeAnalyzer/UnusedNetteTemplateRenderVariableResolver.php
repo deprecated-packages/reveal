@@ -35,3 +35,7 @@ final class UnusedNetteTemplateRenderVariableResolver
         return \array_diff($passedVariableNames, $templateUsedVariableNames);
     }
 }
+/**
+ * @api
+ */
+\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\UnusedNetteTemplateRenderVariableResolver', 'Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\UnusedNetteTemplateRenderVariableResolver', \false);

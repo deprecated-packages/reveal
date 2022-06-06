@@ -41,3 +41,4 @@ final class UnwrapCoalesceContextNodeVisitor extends NodeVisitorAbstract
         return $node->left;
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapCoalesceContextNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\UnwrapCoalesceContextNodeVisitor', \false);

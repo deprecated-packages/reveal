@@ -80,3 +80,4 @@ final class DoDisplayCleanupNormalizeNodeVisitor extends NodeVisitorAbstract imp
         return $this->simpleNameResolver->isName($expr, 'context');
     }
 }
+\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\DoDisplayCleanupNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\DoDisplayCleanupNormalizeNodeVisitor', \false);
