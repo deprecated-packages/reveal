@@ -10,7 +10,7 @@
  */
 namespace RevealPrefix20220606\Symfony\Component\DependencyInjection\Argument;
 
-\trigger_deprecation('symfony/dependency-injection', '6.1', '"%s" is deprecated.', ReferenceSetArgumentTrait::class);
+\RevealPrefix20220606\trigger_deprecation('symfony/dependency-injection', '6.1', '"%s" is deprecated.', ReferenceSetArgumentTrait::class);
 use RevealPrefix20220606\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use RevealPrefix20220606\Symfony\Component\DependencyInjection\Reference;
 /**
