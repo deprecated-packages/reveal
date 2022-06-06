@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\Type;

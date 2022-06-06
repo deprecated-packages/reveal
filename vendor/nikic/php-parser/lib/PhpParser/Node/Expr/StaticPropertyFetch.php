@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\VarLikeIdentifier;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\VarLikeIdentifier;
 class StaticPropertyFetch extends Expr
 {
     /** @var Name|Expr Class name */
@@ -34,3 +34,4 @@ class StaticPropertyFetch extends Expr
         return 'Expr_StaticPropertyFetch';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\StaticPropertyFetch', 'PhpParser\\Node\\Expr\\StaticPropertyFetch', \false);

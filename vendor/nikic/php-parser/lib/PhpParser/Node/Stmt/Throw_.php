@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Throw_ extends Node\Stmt
 {
     /** @var Node\Expr Expression */
@@ -28,3 +28,4 @@ class Throw_ extends Node\Stmt
         return 'Stmt_Throw';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Throw_', 'PhpParser\\Node\\Stmt\\Throw_', \false);

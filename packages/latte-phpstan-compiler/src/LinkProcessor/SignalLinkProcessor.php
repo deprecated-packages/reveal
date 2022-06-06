@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\LinkProcessor;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Stmt\Expression;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
 use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 /**
  * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("doSomething!", ['a']));

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class UnaryMinus extends Expr
 {
     /** @var Expr Expression */
@@ -28,3 +28,4 @@ class UnaryMinus extends Expr
         return 'Expr_UnaryMinus';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\UnaryMinus', 'PhpParser\\Node\\Expr\\UnaryMinus', \false);

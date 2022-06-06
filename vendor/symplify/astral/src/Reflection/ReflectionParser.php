@@ -3,16 +3,16 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\Reflection;
 
-use PhpParser\Node;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Property;
-use PhpParser\NodeFinder;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Property;
+use RevealPrefix20220606\PhpParser\NodeFinder;
 use PHPStan\Reflection\MethodReflection;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionProperty;
-use Symplify\Astral\PhpParser\SmartPhpParser;
+use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
 use Throwable;
 /**
  * @api

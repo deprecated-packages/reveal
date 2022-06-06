@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\TypeAnalyzer;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 use PHPStan\Analyser\Scope;
 use PHPStan\Type\ArrayType;
 use PHPStan\Type\IntersectionType;

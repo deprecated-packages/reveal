@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Comment\Doc;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Comment\Doc;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use Reveal\LattePHPStanCompiler\Latte\LineCommentMatcher;
 final class LatteLineNumberNodeVisitor extends NodeVisitorAbstract
 {

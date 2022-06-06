@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\NodeAbstract;
+use RevealPrefix20220606\PhpParser\NodeAbstract;
 /**
  * Represents a non-namespaced name. Namespaced names are represented using Name nodes.
  */
@@ -68,3 +68,7 @@ class Identifier extends NodeAbstract
         return 'Identifier';
     }
 }
+/**
+ * Represents a non-namespaced name. Namespaced names are represented using Name nodes.
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Identifier', 'PhpParser\\Node\\Identifier', \false);

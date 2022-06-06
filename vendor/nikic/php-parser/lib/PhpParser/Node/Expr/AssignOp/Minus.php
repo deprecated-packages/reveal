@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr\AssignOp;
+namespace RevealPrefix20220606\PhpParser\Node\Expr\AssignOp;
 
-use PhpParser\Node\Expr\AssignOp;
+use RevealPrefix20220606\PhpParser\Node\Expr\AssignOp;
 class Minus extends AssignOp
 {
     public function getType() : string
@@ -11,3 +11,4 @@ class Minus extends AssignOp
         return 'Expr_AssignOp_Minus';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\AssignOp\\Minus', 'PhpParser\\Node\\Expr\\AssignOp\\Minus', \false);

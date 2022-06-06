@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node\Name;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class GroupUse extends Stmt
 {
     /** @var int Type of group use */
@@ -21,7 +21,7 @@ class GroupUse extends Stmt
      * @param int      $type       Type of group use
      * @param array    $attributes Additional attributes
      */
-    public function __construct(Name $prefix, array $uses, int $type = \PhpParser\Node\Stmt\Use_::TYPE_NORMAL, array $attributes = [])
+    public function __construct(Name $prefix, array $uses, int $type = Use_::TYPE_NORMAL, array $attributes = [])
     {
         $this->attributes = $attributes;
         $this->type = $type;
@@ -37,3 +37,4 @@ class GroupUse extends Stmt
         return 'Stmt_GroupUse';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\GroupUse', 'PhpParser\\Node\\Stmt\\GroupUse', \false);

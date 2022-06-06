@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class TraitUse extends Node\Stmt
 {
     /** @var Node\Name[] Traits */
@@ -32,3 +32,4 @@ class TraitUse extends Node\Stmt
         return 'Stmt_TraitUse';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\TraitUse', 'PhpParser\\Node\\Stmt\\TraitUse', \false);

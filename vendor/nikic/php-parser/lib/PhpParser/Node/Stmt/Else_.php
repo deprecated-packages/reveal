@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Else_ extends Node\Stmt
 {
     /** @var Node\Stmt[] Statements */
@@ -28,3 +28,4 @@ class Else_ extends Node\Stmt
         return 'Stmt_Else';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Else_', 'PhpParser\\Node\\Stmt\\Else_', \false);

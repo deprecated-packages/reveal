@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-class ExplicitOctalEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+class ExplicitOctalEmulator extends TokenEmulator
 {
     public function getPhpVersion() : string
     {
@@ -38,3 +38,4 @@ class ExplicitOctalEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
         return $tokens;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\ExplicitOctalEmulator', 'PhpParser\\Lexer\\TokenEmulator\\ExplicitOctalEmulator', \false);

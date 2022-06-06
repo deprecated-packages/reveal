@@ -4,8 +4,8 @@ declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeAnalyzer;
 
 use RevealPrefix20220606\Nette\Application\UI\Template;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\PropertyFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
 use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\TypeAnalyzer\ContainsTypeAnalyser;

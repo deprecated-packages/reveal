@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\NodeAnalyzer;
 
-use PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use Reveal\LattePHPStanCompiler\LatteVariableNamesResolver;
 use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver;

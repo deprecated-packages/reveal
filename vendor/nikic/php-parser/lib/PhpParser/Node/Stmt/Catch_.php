@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class Catch_ extends Node\Stmt
 {
     /** @var Node\Name[] Types of exceptions to catch */
@@ -37,3 +37,4 @@ class Catch_ extends Node\Stmt
         return 'Stmt_Catch';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Catch_', 'PhpParser\\Node\\Stmt\\Catch_', \false);

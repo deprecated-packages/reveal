@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-class NullableType extends \PhpParser\Node\ComplexType
+class NullableType extends ComplexType
 {
     /** @var Identifier|Name Type */
     public $type;
@@ -16,7 +16,7 @@ class NullableType extends \PhpParser\Node\ComplexType
     public function __construct($type, array $attributes = [])
     {
         $this->attributes = $attributes;
-        $this->type = \is_string($type) ? new \PhpParser\Node\Identifier($type) : $type;
+        $this->type = \is_string($type) ? new Identifier($type) : $type;
     }
     public function getSubNodeNames() : array
     {
@@ -27,3 +27,4 @@ class NullableType extends \PhpParser\Node\ComplexType
         return 'NullableType';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\NullableType', 'PhpParser\\Node\\NullableType', \false);

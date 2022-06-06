@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
-use PhpParser\Node\ComplexType;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\ComplexType;
+use RevealPrefix20220606\PhpParser\Node\Identifier;
+use RevealPrefix20220606\PhpParser\Node\Name;
 class Property extends Node\Stmt
 {
     /** @var int Modifiers */
@@ -45,7 +45,7 @@ class Property extends Node\Stmt
      */
     public function isPublic() : bool
     {
-        return ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & \PhpParser\Node\Stmt\Class_::VISIBILITY_MODIFIER_MASK) === 0;
+        return ($this->flags & Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & Class_::VISIBILITY_MODIFIER_MASK) === 0;
     }
     /**
      * Whether the property is protected.
@@ -54,7 +54,7 @@ class Property extends Node\Stmt
      */
     public function isProtected() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PROTECTED);
+        return (bool) ($this->flags & Class_::MODIFIER_PROTECTED);
     }
     /**
      * Whether the property is private.
@@ -63,7 +63,7 @@ class Property extends Node\Stmt
      */
     public function isPrivate() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PRIVATE);
+        return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
     }
     /**
      * Whether the property is static.
@@ -72,7 +72,7 @@ class Property extends Node\Stmt
      */
     public function isStatic() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_STATIC);
+        return (bool) ($this->flags & Class_::MODIFIER_STATIC);
     }
     /**
      * Whether the property is readonly.
@@ -81,10 +81,11 @@ class Property extends Node\Stmt
      */
     public function isReadonly() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_READONLY);
+        return (bool) ($this->flags & Class_::MODIFIER_READONLY);
     }
     public function getType() : string
     {
         return 'Stmt_Property';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Property', 'PhpParser\\Node\\Stmt\\Property', \false);

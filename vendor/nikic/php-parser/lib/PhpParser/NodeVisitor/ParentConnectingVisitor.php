@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\NodeVisitor;
+namespace RevealPrefix20220606\PhpParser\NodeVisitor;
 
 use function array_pop;
 use function count;
-use PhpParser\Node;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 /**
  * Visitor that connects a child node to its parent node.
  *
@@ -35,3 +35,10 @@ final class ParentConnectingVisitor extends NodeVisitorAbstract
         array_pop($this->stack);
     }
 }
+/**
+ * Visitor that connects a child node to its parent node.
+ *
+ * On the child node, the parent node can be accessed through
+ * <code>$node->getAttribute('parent')</code>.
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\ParentConnectingVisitor', 'PhpParser\\NodeVisitor\\ParentConnectingVisitor', \false);

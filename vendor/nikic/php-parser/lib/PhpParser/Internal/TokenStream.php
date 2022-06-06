@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Internal;
+namespace RevealPrefix20220606\PhpParser\Internal;
 
 /**
  * Provides operations on token streams, for use by pretty printer.
@@ -264,3 +264,9 @@ class TokenStream
         return $indentMap;
     }
 }
+/**
+ * Provides operations on token streams, for use by pretty printer.
+ *
+ * @internal
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\Internal\\TokenStream', 'PhpParser\\Internal\\TokenStream', \false);

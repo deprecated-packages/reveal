@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Throw_ extends Node\Expr
 {
     /** @var Node\Expr Expression */
@@ -28,3 +28,4 @@ class Throw_ extends Node\Expr
         return 'Expr_Throw';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Throw_', 'PhpParser\\Node\\Expr\\Throw_', \false);

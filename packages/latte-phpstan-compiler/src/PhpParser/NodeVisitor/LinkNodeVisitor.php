@@ -3,15 +3,15 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr\Array_;
-use PhpParser\Node\Expr\ArrayItem;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Expr\PropertyFetch;
-use PhpParser\Node\Expr\StaticCall;
-use PhpParser\Node\Stmt\Echo_;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\StaticCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Echo_;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 use Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;

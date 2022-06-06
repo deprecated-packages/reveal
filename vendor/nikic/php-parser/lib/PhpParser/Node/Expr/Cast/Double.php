@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr\Cast;
+namespace RevealPrefix20220606\PhpParser\Node\Expr\Cast;
 
-use PhpParser\Node\Expr\Cast;
+use RevealPrefix20220606\PhpParser\Node\Expr\Cast;
 class Double extends Cast
 {
     // For use in "kind" attribute
@@ -18,3 +18,4 @@ class Double extends Cast
         return 'Expr_Cast_Double';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Cast\\Double', 'PhpParser\\Node\\Expr\\Cast\\Double', \false);

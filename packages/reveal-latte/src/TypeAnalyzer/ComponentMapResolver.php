@@ -4,9 +4,9 @@ declare (strict_types=1);
 namespace Reveal\RevealLatte\TypeAnalyzer;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\RevealLatte\NodeAnalyzer\ComponentClassMethodTypeAnalyzer;

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\NodeAbstract;
+use RevealPrefix20220606\PhpParser\NodeAbstract;
 class Name extends NodeAbstract
 {
     /** @var string[] Parts of the name */
@@ -223,3 +223,4 @@ class Name extends NodeAbstract
         return 'Name';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Name', 'PhpParser\\Node\\Name', \false);

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\VariadicPlaceholder;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\VariadicPlaceholder;
 abstract class CallLike extends Expr
 {
     /**
@@ -38,3 +38,4 @@ abstract class CallLike extends Expr
         return $this->getRawArgs();
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\CallLike', 'PhpParser\\Node\\Expr\\CallLike', \false);

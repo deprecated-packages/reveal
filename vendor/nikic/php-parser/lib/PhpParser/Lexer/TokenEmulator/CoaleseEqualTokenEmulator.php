@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class CoaleseEqualTokenEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class CoaleseEqualTokenEmulator extends TokenEmulator
 {
     public function getPhpVersion() : string
     {
@@ -39,3 +39,4 @@ final class CoaleseEqualTokenEmulator extends \PhpParser\Lexer\TokenEmulator\Tok
         return $tokens;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\CoaleseEqualTokenEmulator', 'PhpParser\\Lexer\\TokenEmulator\\CoaleseEqualTokenEmulator', \false);

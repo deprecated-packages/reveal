@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class ArrayItem extends Expr
 {
     /** @var null|Expr Key */
@@ -39,3 +39,4 @@ class ArrayItem extends Expr
         return 'Expr_ArrayItem';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ArrayItem', 'PhpParser\\Node\\Expr\\ArrayItem', \false);

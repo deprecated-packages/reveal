@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\Reflection;
 
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\ObjectType;

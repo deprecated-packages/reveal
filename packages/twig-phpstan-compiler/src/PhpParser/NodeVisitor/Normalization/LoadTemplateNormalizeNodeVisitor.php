@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
 
-use PhpParser\Node;
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr\FuncCall;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Name;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class LoadTemplateNormalizeNodeVisitor extends NodeVisitorAbstract implements NormalizingNodeVisitorInterface

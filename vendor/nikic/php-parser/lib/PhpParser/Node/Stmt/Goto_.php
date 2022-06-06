@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Node\Identifier;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class Goto_ extends Stmt
 {
     /** @var Identifier Name of label to jump to */
@@ -29,3 +29,4 @@ class Goto_ extends Stmt
         return 'Stmt_Goto';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Goto_', 'PhpParser\\Node\\Stmt\\Goto_', \false);

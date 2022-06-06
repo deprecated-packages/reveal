@@ -4,10 +4,10 @@ declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
 use RevealPrefix20220606\Latte\Parser;
-use PhpParser\Node\Stmt;
-use PhpParser\NodeTraverser;
-use PhpParser\ParserFactory;
-use PhpParser\PrettyPrinter\Standard;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\ParserFactory;
+use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use Reveal\LattePHPStanCompiler\Latte\LineCommentCorrector;
 use Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;

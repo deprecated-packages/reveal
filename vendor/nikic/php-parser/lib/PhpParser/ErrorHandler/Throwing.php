@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\ErrorHandler;
+namespace RevealPrefix20220606\PhpParser\ErrorHandler;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
+use RevealPrefix20220606\PhpParser\Error;
+use RevealPrefix20220606\PhpParser\ErrorHandler;
 /**
  * Error handler that handles all errors by throwing them.
  *
@@ -17,3 +17,9 @@ class Throwing implements ErrorHandler
         throw $error;
     }
 }
+/**
+ * Error handler that handles all errors by throwing them.
+ *
+ * This is the default strategy used by all components.
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\ErrorHandler\\Throwing', 'PhpParser\\ErrorHandler\\Throwing', \false);

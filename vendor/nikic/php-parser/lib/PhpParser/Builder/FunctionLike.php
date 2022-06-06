@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-abstract class FunctionLike extends \PhpParser\Builder\Declaration
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+abstract class FunctionLike extends Declaration
 {
     protected $returnByRef = \false;
     protected $params = [];
@@ -64,3 +64,4 @@ abstract class FunctionLike extends \PhpParser\Builder\Declaration
         return $this;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\FunctionLike', 'PhpParser\\Builder\\FunctionLike', \false);

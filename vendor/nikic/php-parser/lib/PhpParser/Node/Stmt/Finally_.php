@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Finally_ extends Node\Stmt
 {
     /** @var Node\Stmt[] Statements */
@@ -28,3 +28,4 @@ class Finally_ extends Node\Stmt
         return 'Stmt_Finally';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Finally_', 'PhpParser\\Node\\Stmt\\Finally_', \false);

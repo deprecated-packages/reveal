@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class NumericLiteralSeparatorEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class NumericLiteralSeparatorEmulator extends TokenEmulator
 {
     const BIN = '(?:0b[01]+(?:_[01]+)*)';
     const HEX = '(?:0x[0-9a-f]+(?:_[0-9a-f]+)*)';
@@ -86,3 +86,4 @@ final class NumericLiteralSeparatorEmulator extends \PhpParser\Lexer\TokenEmulat
         return $tokens;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\NumericLiteralSeparatorEmulator', 'PhpParser\\Lexer\\TokenEmulator\\NumericLiteralSeparatorEmulator', \false);

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Name;
 class ConstFetch extends Expr
 {
     /** @var Name Constant name */
@@ -29,3 +29,4 @@ class ConstFetch extends Expr
         return 'Expr_ConstFetch';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ConstFetch', 'PhpParser\\Node\\Expr\\ConstFetch', \false);

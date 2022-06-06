@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\RelatedFileResolver;
 
-use PhpParser\Node\Stmt;
-use PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
 use Reveal\LattePHPStanCompiler\NodeVisitor\ParentLayoutNameNodeVisitor;
 final class ParentLayoutTemplateFileResolver
 {

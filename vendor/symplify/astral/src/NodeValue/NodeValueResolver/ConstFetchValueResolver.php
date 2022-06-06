@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\ConstFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr\ConstFetch;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**

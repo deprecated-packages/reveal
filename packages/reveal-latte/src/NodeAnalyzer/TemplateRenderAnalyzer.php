@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;

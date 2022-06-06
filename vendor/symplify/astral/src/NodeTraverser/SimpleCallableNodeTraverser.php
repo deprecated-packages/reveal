@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeTraverser;
 
-use PhpParser\Node;
-use PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
 use RevealPrefix20220606\Symplify\Astral\NodeVisitor\CallableNodeVisitor;
 /**
  * @api

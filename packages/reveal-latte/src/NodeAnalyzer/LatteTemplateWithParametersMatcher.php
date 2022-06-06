@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\Array_;
-use PhpParser\Node\Expr\ArrayItem;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
 use PHPStan\Analyser\Scope;
 use Reveal\RevealLatte\NodeVisitor\AssignedParametersVisitor;
 use Reveal\RevealLatte\NodeVisitor\RenderParametersVisitor;

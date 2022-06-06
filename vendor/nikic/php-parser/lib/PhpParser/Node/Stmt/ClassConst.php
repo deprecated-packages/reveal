@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class ClassConst extends Node\Stmt
 {
     /** @var int Modifiers */
@@ -38,7 +38,7 @@ class ClassConst extends Node\Stmt
      */
     public function isPublic() : bool
     {
-        return ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & \PhpParser\Node\Stmt\Class_::VISIBILITY_MODIFIER_MASK) === 0;
+        return ($this->flags & Class_::MODIFIER_PUBLIC) !== 0 || ($this->flags & Class_::VISIBILITY_MODIFIER_MASK) === 0;
     }
     /**
      * Whether constant is protected.
@@ -47,7 +47,7 @@ class ClassConst extends Node\Stmt
      */
     public function isProtected() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PROTECTED);
+        return (bool) ($this->flags & Class_::MODIFIER_PROTECTED);
     }
     /**
      * Whether constant is private.
@@ -56,7 +56,7 @@ class ClassConst extends Node\Stmt
      */
     public function isPrivate() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_PRIVATE);
+        return (bool) ($this->flags & Class_::MODIFIER_PRIVATE);
     }
     /**
      * Whether constant is final.
@@ -65,10 +65,11 @@ class ClassConst extends Node\Stmt
      */
     public function isFinal() : bool
     {
-        return (bool) ($this->flags & \PhpParser\Node\Stmt\Class_::MODIFIER_FINAL);
+        return (bool) ($this->flags & Class_::MODIFIER_FINAL);
     }
     public function getType() : string
     {
         return 'Stmt_ClassConst';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\ClassConst', 'PhpParser\\Node\\Stmt\\ClassConst', \false);

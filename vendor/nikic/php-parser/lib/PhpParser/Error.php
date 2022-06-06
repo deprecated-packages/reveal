@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
 class Error extends \RuntimeException
 {
@@ -170,3 +170,4 @@ class Error extends \RuntimeException
         }
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Error', 'PhpParser\\Error', \false);

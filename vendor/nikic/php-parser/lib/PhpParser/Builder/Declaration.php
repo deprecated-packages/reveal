@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
 abstract class Declaration implements PhpParser\Builder
 {
     protected $attributes = [];
@@ -36,3 +36,4 @@ abstract class Declaration implements PhpParser\Builder
         return $this;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Declaration', 'PhpParser\\Builder\\Declaration', \false);

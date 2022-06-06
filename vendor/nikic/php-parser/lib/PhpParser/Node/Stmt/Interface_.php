@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
-class Interface_ extends \PhpParser\Node\Stmt\ClassLike
+use RevealPrefix20220606\PhpParser\Node;
+class Interface_ extends ClassLike
 {
     /** @var Node\Name[] Extended interfaces */
     public $extends;
@@ -35,3 +35,4 @@ class Interface_ extends \PhpParser\Node\Stmt\ClassLike
         return 'Stmt_Interface';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Interface_', 'PhpParser\\Node\\Stmt\\Interface_', \false);

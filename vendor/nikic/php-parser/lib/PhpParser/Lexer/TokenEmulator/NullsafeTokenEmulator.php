@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class NullsafeTokenEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class NullsafeTokenEmulator extends TokenEmulator
 {
     public function getPhpVersion() : string
     {
@@ -47,3 +47,4 @@ final class NullsafeTokenEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEm
         return $tokens;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\NullsafeTokenEmulator', 'PhpParser\\Lexer\\TokenEmulator\\NullsafeTokenEmulator', \false);

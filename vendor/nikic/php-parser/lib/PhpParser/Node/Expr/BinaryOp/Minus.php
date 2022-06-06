@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr\BinaryOp;
+namespace RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
 
-use PhpParser\Node\Expr\BinaryOp;
+use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
 class Minus extends BinaryOp
 {
     public function getOperatorSigil() : string
@@ -15,3 +15,4 @@ class Minus extends BinaryOp
         return 'Expr_BinaryOp_Minus';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\BinaryOp\\Minus', 'PhpParser\\Node\\Expr\\BinaryOp\\Minus', \false);

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\Node;
-use PhpParser\NodeAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeAbstract;
 class AttributeGroup extends NodeAbstract
 {
     /** @var Attribute[] Attributes */
@@ -27,3 +27,4 @@ class AttributeGroup extends NodeAbstract
         return 'AttributeGroup';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\AttributeGroup', 'PhpParser\\Node\\AttributeGroup', \false);

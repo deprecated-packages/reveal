@@ -3,13 +3,13 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\Instanceof_;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Stmt\Expression;
-use PhpParser\Node\Stmt\If_;
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\Instanceof_;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
+use RevealPrefix20220606\PhpParser\Node\Stmt\If_;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**

@@ -3,15 +3,15 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Comment\Doc;
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\Assign;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt\Expression;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Comment\Doc;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use PHPStan\Type\TypeWithClassName;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;

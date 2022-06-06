@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 /** Nop/empty statement (;). */
 class Nop extends Node\Stmt
 {
@@ -16,3 +16,5 @@ class Nop extends Node\Stmt
         return 'Stmt_Nop';
     }
 }
+/** Nop/empty statement (;). */
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Nop', 'PhpParser\\Node\\Stmt\\Nop', \false);

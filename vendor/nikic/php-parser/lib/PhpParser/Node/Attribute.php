@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\Node;
-use PhpParser\NodeAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeAbstract;
 class Attribute extends NodeAbstract
 {
     /** @var Name Attribute name */
@@ -16,7 +16,7 @@ class Attribute extends NodeAbstract
      * @param Arg[]     $args       Attribute arguments
      * @param array     $attributes Additional node attributes
      */
-    public function __construct(\PhpParser\Node\Name $name, array $args = [], array $attributes = [])
+    public function __construct(Name $name, array $args = [], array $attributes = [])
     {
         $this->attributes = $attributes;
         $this->name = $name;
@@ -31,3 +31,4 @@ class Attribute extends NodeAbstract
         return 'Attribute';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Attribute', 'PhpParser\\Node\\Attribute', \false);

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
-use PhpParser\Parser\Tokens;
+use RevealPrefix20220606\PhpParser\Parser\Tokens;
 class Lexer
 {
     protected $code;
@@ -61,10 +61,10 @@ class Lexer
      * @param ErrorHandler|null $errorHandler Error handler to use for lexing errors. Defaults to
      *                                        ErrorHandler\Throwing
      */
-    public function startLexing(string $code, \PhpParser\ErrorHandler $errorHandler = null)
+    public function startLexing(string $code, ErrorHandler $errorHandler = null)
     {
         if (null === $errorHandler) {
-            $errorHandler = new \PhpParser\ErrorHandler\Throwing();
+            $errorHandler = new ErrorHandler\Throwing();
         }
         $this->code = $code;
         // keep the code around for __halt_compiler() handling
@@ -81,7 +81,7 @@ class Lexer
             \ini_set('xdebug.scream', $scream);
         }
     }
-    private function handleInvalidCharacterRange($start, $end, $line, \PhpParser\ErrorHandler $errorHandler)
+    private function handleInvalidCharacterRange($start, $end, $line, ErrorHandler $errorHandler)
     {
         $tokens = [];
         for ($i = $start; $i < $end; $i++) {
@@ -93,7 +93,7 @@ class Lexer
                 $errorMsg = \sprintf('Unexpected character "%s" (ASCII %d)', $chr, \ord($chr));
             }
             $tokens[] = [\T_BAD_CHARACTER, $chr, $line];
-            $errorHandler->handleError(new \PhpParser\Error($errorMsg, ['startLine' => $line, 'endLine' => $line, 'startFilePos' => $i, 'endFilePos' => $i]));
+            $errorHandler->handleError(new Error($errorMsg, ['startLine' => $line, 'endLine' => $line, 'startFilePos' => $i, 'endFilePos' => $i]));
         }
         return $tokens;
     }
@@ -106,7 +106,7 @@ class Lexer
     {
         return ($token[0] === \T_COMMENT || $token[0] === \T_DOC_COMMENT) && \substr($token[1], 0, 2) === '/*' && \substr($token[1], -2) !== '*/';
     }
-    protected function postprocessTokens(\PhpParser\ErrorHandler $errorHandler)
+    protected function postprocessTokens(ErrorHandler $errorHandler)
     {
         // PHP's error handling for token_get_all() is rather bad, so if we want detailed
         // error information we need to compute it ourselves. Invalid character errors are
@@ -207,7 +207,7 @@ class Lexer
             if (\substr($this->code, $filePos, 2) === '/*') {
                 // Unlike PHP, HHVM will drop unterminated comments entirely
                 $comment = \substr($this->code, $filePos);
-                $errorHandler->handleError(new \PhpParser\Error('Unterminated comment', ['startLine' => $line, 'endLine' => $line + \substr_count($comment, "\n"), 'startFilePos' => $filePos, 'endFilePos' => $filePos + \strlen($comment)]));
+                $errorHandler->handleError(new Error('Unterminated comment', ['startLine' => $line, 'endLine' => $line + \substr_count($comment, "\n"), 'startFilePos' => $filePos, 'endFilePos' => $filePos + \strlen($comment)]));
                 // Emulate the PHP behavior
                 $isDocComment = isset($comment[3]) && $comment[3] === '*';
                 $this->tokens[] = [$isDocComment ? \T_DOC_COMMENT : \T_COMMENT, $comment, $line];
@@ -222,7 +222,7 @@ class Lexer
             // Check for unterminated comment
             $lastToken = $this->tokens[\count($this->tokens) - 1];
             if ($this->isUnterminatedComment($lastToken)) {
-                $errorHandler->handleError(new \PhpParser\Error('Unterminated comment', ['startLine' => $line - \substr_count($lastToken[1], "\n"), 'endLine' => $line, 'startFilePos' => $filePos - \strlen($lastToken[1]), 'endFilePos' => $filePos]));
+                $errorHandler->handleError(new Error('Unterminated comment', ['startLine' => $line - \substr_count($lastToken[1], "\n"), 'endLine' => $line, 'startFilePos' => $filePos - \strlen($lastToken[1]), 'endFilePos' => $filePos]));
             }
         }
     }
@@ -295,7 +295,7 @@ class Lexer
                 $this->filePos += \strlen($token[1]);
                 if (\T_COMMENT === $token[0] || \T_DOC_COMMENT === $token[0]) {
                     if ($this->attributeCommentsUsed) {
-                        $comment = \T_DOC_COMMENT === $token[0] ? new \PhpParser\Comment\Doc($token[1], $origLine, $origFilePos, $this->pos, $this->line, $this->filePos - 1, $this->pos) : new \PhpParser\Comment($token[1], $origLine, $origFilePos, $this->pos, $this->line, $this->filePos - 1, $this->pos);
+                        $comment = \T_DOC_COMMENT === $token[0] ? new Comment\Doc($token[1], $origLine, $origFilePos, $this->pos, $this->line, $this->filePos - 1, $this->pos) : new Comment($token[1], $origLine, $origFilePos, $this->pos, $this->line, $this->filePos - 1, $this->pos);
                         $startAttributes['comments'][] = $comment;
                     }
                 }
@@ -341,7 +341,7 @@ class Lexer
         // this simplifies the situation, by not allowing any comments
         // in between of the tokens.
         if (!\preg_match('~^\\s*\\(\\s*\\)\\s*(?:;|\\?>\\r?\\n?)~', $textAfter, $matches)) {
-            throw new \PhpParser\Error('__HALT_COMPILER must be followed by "();"');
+            throw new Error('__HALT_COMPILER must be followed by "();"');
         }
         // prevent the lexer from returning any further tokens
         $this->pos = \count($this->tokens);
@@ -463,3 +463,4 @@ class Lexer
         return \array_fill_keys([\T_STRING, \T_STATIC, \T_ABSTRACT, \T_FINAL, \T_PRIVATE, \T_PROTECTED, \T_PUBLIC, \T_READONLY, \T_INCLUDE, \T_INCLUDE_ONCE, \T_EVAL, \T_REQUIRE, \T_REQUIRE_ONCE, \T_LOGICAL_OR, \T_LOGICAL_XOR, \T_LOGICAL_AND, \T_INSTANCEOF, \T_NEW, \T_CLONE, \T_EXIT, \T_IF, \T_ELSEIF, \T_ELSE, \T_ENDIF, \T_ECHO, \T_DO, \T_WHILE, \T_ENDWHILE, \T_FOR, \T_ENDFOR, \T_FOREACH, \T_ENDFOREACH, \T_DECLARE, \T_ENDDECLARE, \T_AS, \T_TRY, \T_CATCH, \T_FINALLY, \T_THROW, \T_USE, \T_INSTEADOF, \T_GLOBAL, \T_VAR, \T_UNSET, \T_ISSET, \T_EMPTY, \T_CONTINUE, \T_GOTO, \T_FUNCTION, \T_CONST, \T_RETURN, \T_PRINT, \T_YIELD, \T_LIST, \T_SWITCH, \T_ENDSWITCH, \T_CASE, \T_DEFAULT, \T_BREAK, \T_ARRAY, \T_CALLABLE, \T_EXTENDS, \T_IMPLEMENTS, \T_NAMESPACE, \T_TRAIT, \T_INTERFACE, \T_CLASS, \T_CLASS_C, \T_TRAIT_C, \T_FUNC_C, \T_METHOD_C, \T_LINE, \T_FILE, \T_DIR, \T_NS_C, \T_HALT_COMPILER, \T_FN, \T_MATCH], \true);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer', 'PhpParser\\Lexer', \false);

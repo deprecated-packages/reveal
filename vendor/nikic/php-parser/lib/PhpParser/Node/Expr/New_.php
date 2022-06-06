@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\VariadicPlaceholder;
-class New_ extends \PhpParser\Node\Expr\CallLike
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\VariadicPlaceholder;
+class New_ extends CallLike
 {
     /** @var Node\Name|Expr|Node\Stmt\Class_ Class name */
     public $class;
@@ -39,3 +39,4 @@ class New_ extends \PhpParser\Node\Expr\CallLike
         return $this->args;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\New_', 'PhpParser\\Node\\Expr\\New_', \false);

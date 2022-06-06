@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\Contract;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 use PHPStan\Analyser\Scope;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;

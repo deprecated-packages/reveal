@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Error;
-use PhpParser\Node;
-class Class_ extends \PhpParser\Node\Stmt\ClassLike
+use RevealPrefix20220606\PhpParser\Error;
+use RevealPrefix20220606\PhpParser\Node;
+class Class_ extends ClassLike
 {
     const MODIFIER_PUBLIC = 1;
     const MODIFIER_PROTECTED = 2;
@@ -126,3 +126,4 @@ class Class_ extends \PhpParser\Node\Stmt\ClassLike
         return 'Stmt_Class';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Class_', 'PhpParser\\Node\\Stmt\\Class_', \false);

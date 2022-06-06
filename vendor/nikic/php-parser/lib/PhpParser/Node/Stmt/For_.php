@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class For_ extends Node\Stmt
 {
     /** @var Node\Expr[] Init expressions */
@@ -41,3 +41,4 @@ class For_ extends Node\Stmt
         return 'Stmt_For';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\For_', 'PhpParser\\Node\\Stmt\\For_', \false);

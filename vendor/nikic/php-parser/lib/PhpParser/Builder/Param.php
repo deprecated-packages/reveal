@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
 class Param implements PhpParser\Builder
 {
     protected $name;
@@ -107,3 +107,4 @@ class Param implements PhpParser\Builder
         return new Node\Param(new Node\Expr\Variable($this->name), $this->default, $this->type, $this->byRef, $this->variadic, [], 0, $this->attributeGroups);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Param', 'PhpParser\\Builder\\Param', \false);

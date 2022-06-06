@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
-use PhpParser\Node\Name;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Name\FullyQualified;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class NameContext
 {
     /** @var null|Name Current namespace */
@@ -21,7 +21,7 @@ class NameContext
      *
      * @param ErrorHandler $errorHandler Error handling used to report errors
      */
-    public function __construct(\PhpParser\ErrorHandler $errorHandler)
+    public function __construct(ErrorHandler $errorHandler)
     {
         $this->errorHandler = $errorHandler;
     }
@@ -55,7 +55,7 @@ class NameContext
         }
         if (isset($this->aliases[$type][$aliasLookupName])) {
             $typeStringMap = [Stmt\Use_::TYPE_NORMAL => '', Stmt\Use_::TYPE_FUNCTION => 'function ', Stmt\Use_::TYPE_CONSTANT => 'const '];
-            $this->errorHandler->handleError(new \PhpParser\Error(\sprintf('Cannot use %s%s as %s because the name is already in use', $typeStringMap[$type], $name, $aliasName), $errorAttrs));
+            $this->errorHandler->handleError(new Error(\sprintf('Cannot use %s%s as %s because the name is already in use', $typeStringMap[$type], $name, $aliasName), $errorAttrs));
             return;
         }
         $this->aliases[$type][$aliasLookupName] = $name;
@@ -83,7 +83,7 @@ class NameContext
         // don't resolve special class names
         if ($type === Stmt\Use_::TYPE_NORMAL && $name->isSpecialClassName()) {
             if (!$name->isUnqualified()) {
-                $this->errorHandler->handleError(new \PhpParser\Error(\sprintf("'\\%s' is an invalid class name", $name->toString()), $name->getAttributes()));
+                $this->errorHandler->handleError(new Error(\sprintf("'\\%s' is an invalid class name", $name->toString()), $name->getAttributes()));
             }
             return $name;
         }
@@ -241,3 +241,4 @@ class NameContext
         return \strtolower($ns) . '\\' . $shortName;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\NameContext', 'PhpParser\\NameContext', \false);

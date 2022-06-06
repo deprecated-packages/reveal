@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\LatteTemplateHolder;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\Array_;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Node\InClassNode;
 use PHPStan\Type\ObjectType;

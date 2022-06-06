@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\NodeAbstract;
-class IntersectionType extends \PhpParser\Node\ComplexType
+use RevealPrefix20220606\PhpParser\NodeAbstract;
+class IntersectionType extends ComplexType
 {
     /** @var (Identifier|Name)[] Types */
     public $types;
@@ -28,3 +28,4 @@ class IntersectionType extends \PhpParser\Node\ComplexType
         return 'IntersectionType';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\IntersectionType', 'PhpParser\\Node\\IntersectionType', \false);

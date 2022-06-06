@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeFinder;
 
-use PhpParser\Node;
-use PhpParser\NodeFinder;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeFinder;
 use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
 final class SimpleNodeFinder
 {

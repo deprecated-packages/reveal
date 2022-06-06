@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Scalar\MagicConst;
+namespace RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst;
 
-use PhpParser\Node\Scalar\MagicConst;
+use RevealPrefix20220606\PhpParser\Node\Scalar\MagicConst;
 class Function_ extends MagicConst
 {
     public function getName() : string
@@ -15,3 +15,4 @@ class Function_ extends MagicConst
         return 'Scalar_MagicConst_Function';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar\\MagicConst\\Function_', 'PhpParser\\Node\\Scalar\\MagicConst\\Function_', \false);

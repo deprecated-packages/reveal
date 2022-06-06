@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
-use PhpParser\Builder;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Builder;
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class Use_ implements Builder
 {
     protected $name;
@@ -45,3 +45,4 @@ class Use_ implements Builder
         return new Stmt\Use_([new Stmt\UseUse($this->name, $this->alias)], $this->type);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Use_', 'PhpParser\\Builder\\Use_', \false);

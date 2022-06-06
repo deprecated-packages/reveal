@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symfony\Component\Finder\Finder;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;

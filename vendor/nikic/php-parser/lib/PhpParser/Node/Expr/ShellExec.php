@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class ShellExec extends Expr
 {
     /** @var array Encapsed string array */
@@ -28,3 +28,4 @@ class ShellExec extends Expr
         return 'Expr_ShellExec';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ShellExec', 'PhpParser\\Node\\Expr\\ShellExec', \false);

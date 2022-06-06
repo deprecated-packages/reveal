@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\NodeVisitor;
+namespace RevealPrefix20220606\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 /**
  * Visitor cloning all nodes and linking to the original nodes using an attribute.
  *
@@ -19,3 +19,9 @@ class CloningVisitor extends NodeVisitorAbstract
         return $node;
     }
 }
+/**
+ * Visitor cloning all nodes and linking to the original nodes using an attribute.
+ *
+ * This visitor is required to perform format-preserving pretty prints.
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\CloningVisitor', 'PhpParser\\NodeVisitor\\CloningVisitor', \false);

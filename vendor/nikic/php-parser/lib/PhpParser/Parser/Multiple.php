@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Parser;
+namespace RevealPrefix20220606\PhpParser\Parser;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
-use PhpParser\Parser;
+use RevealPrefix20220606\PhpParser\Error;
+use RevealPrefix20220606\PhpParser\ErrorHandler;
+use RevealPrefix20220606\PhpParser\Parser;
 class Multiple implements Parser
 {
     /** @var Parser[] List of parsers to try, in order of preference */
@@ -51,3 +51,4 @@ class Multiple implements Parser
         return [$stmts, $error];
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Parser\\Multiple', 'PhpParser\\Parser\\Multiple', \false);

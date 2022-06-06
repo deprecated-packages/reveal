@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\Rules;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 use PHPStan\Rules\Registry;
 use PHPStan\Rules\Rule;
 use Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;

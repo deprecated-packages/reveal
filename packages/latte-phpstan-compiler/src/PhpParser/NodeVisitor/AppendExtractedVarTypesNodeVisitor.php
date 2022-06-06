@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\FuncCall;
-use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Expression;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;

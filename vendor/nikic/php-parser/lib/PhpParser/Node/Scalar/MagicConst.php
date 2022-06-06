@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Scalar;
+namespace RevealPrefix20220606\PhpParser\Node\Scalar;
 
-use PhpParser\Node\Scalar;
+use RevealPrefix20220606\PhpParser\Node\Scalar;
 abstract class MagicConst extends Scalar
 {
     /**
@@ -26,3 +26,4 @@ abstract class MagicConst extends Scalar
      */
     public abstract function getName() : string;
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar\\MagicConst', 'PhpParser\\Node\\Scalar\\MagicConst', \false);

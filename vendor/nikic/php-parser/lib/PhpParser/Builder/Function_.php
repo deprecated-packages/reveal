@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
-class Function_ extends \PhpParser\Builder\FunctionLike
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+class Function_ extends FunctionLike
 {
     protected $name;
     protected $stmts = [];
@@ -56,3 +56,4 @@ class Function_ extends \PhpParser\Builder\FunctionLike
         return new Stmt\Function_($this->name, ['byRef' => $this->returnByRef, 'params' => $this->params, 'returnType' => $this->returnType, 'stmts' => $this->stmts, 'attrGroups' => $this->attributeGroups], $this->attributes);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Function_', 'PhpParser\\Builder\\Function_', \false);

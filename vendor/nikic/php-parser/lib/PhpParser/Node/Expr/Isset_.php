@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class Isset_ extends Expr
 {
     /** @var Expr[] Variables */
@@ -28,3 +28,4 @@ class Isset_ extends Expr
         return 'Expr_Isset';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Isset_', 'PhpParser\\Node\\Expr\\Isset_', \false);

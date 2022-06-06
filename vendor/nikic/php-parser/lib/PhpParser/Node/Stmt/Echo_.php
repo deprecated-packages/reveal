@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Echo_ extends Node\Stmt
 {
     /** @var Node\Expr[] Expressions */
@@ -28,3 +28,4 @@ class Echo_ extends Node\Stmt
         return 'Stmt_Echo';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Echo_', 'PhpParser\\Node\\Stmt\\Echo_', \false);

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 class ArrayDimFetch extends Expr
 {
     /** @var Expr Variable */
@@ -32,3 +32,4 @@ class ArrayDimFetch extends Expr
         return 'Expr_ArrayDimFetch';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ArrayDimFetch', 'PhpParser\\Node\\Expr\\ArrayDimFetch', \false);

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr\BinaryOp;
+namespace RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
 
-use PhpParser\Node\Expr\BinaryOp;
+use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
 class BitwiseXor extends BinaryOp
 {
     public function getOperatorSigil() : string
@@ -15,3 +15,4 @@ class BitwiseXor extends BinaryOp
         return 'Expr_BinaryOp_BitwiseXor';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\BinaryOp\\BitwiseXor', 'PhpParser\\Node\\Expr\\BinaryOp\\BitwiseXor', \false);

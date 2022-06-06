@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 abstract class BinaryOp extends Expr
 {
     /** @var Expr The left hand side expression */
@@ -37,3 +37,4 @@ abstract class BinaryOp extends Expr
      */
     public abstract function getOperatorSigil() : string;
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\BinaryOp', 'PhpParser\\Node\\Expr\\BinaryOp', \false);

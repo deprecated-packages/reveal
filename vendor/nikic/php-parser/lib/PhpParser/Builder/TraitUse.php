@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
-use PhpParser\Builder;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Builder;
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class TraitUse implements Builder
 {
     protected $traits = [];
@@ -60,3 +60,4 @@ class TraitUse implements Builder
         return new Stmt\TraitUse($this->traits, $this->adaptations);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\TraitUse', 'PhpParser\\Builder\\TraitUse', \false);

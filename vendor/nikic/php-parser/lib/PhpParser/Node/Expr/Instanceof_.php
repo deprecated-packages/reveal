@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Name;
 class Instanceof_ extends Expr
 {
     /** @var Expr Expression */
@@ -33,3 +33,4 @@ class Instanceof_ extends Expr
         return 'Expr_Instanceof';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\Instanceof_', 'PhpParser\\Node\\Expr\\Instanceof_', \false);

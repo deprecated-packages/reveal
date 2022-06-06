@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class If_ extends Node\Stmt
 {
     /** @var Node\Expr Condition expression */
@@ -41,3 +41,4 @@ class If_ extends Node\Stmt
         return 'Stmt_If';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\If_', 'PhpParser\\Node\\Stmt\\If_', \false);

@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
 use RevealPrefix20220606\PhpParser;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Name;
-use PhpParser\Node\Stmt;
-class Interface_ extends \PhpParser\Builder\Declaration
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+class Interface_ extends Declaration
 {
     protected $name;
     protected $extends = [];
@@ -82,3 +82,4 @@ class Interface_ extends \PhpParser\Builder\Declaration
         return new Stmt\Interface_($this->name, ['extends' => $this->extends, 'stmts' => \array_merge($this->constants, $this->methods), 'attrGroups' => $this->attributeGroups], $this->attributes);
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\Interface_', 'PhpParser\\Builder\\Interface_', \false);

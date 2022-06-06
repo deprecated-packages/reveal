@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class PropertyProperty extends Node\Stmt
 {
     /** @var Node\VarLikeIdentifier Name */
@@ -32,3 +32,4 @@ class PropertyProperty extends Node\Stmt
         return 'Stmt_PropertyProperty';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\PropertyProperty', 'PhpParser\\Node\\Stmt\\PropertyProperty', \false);

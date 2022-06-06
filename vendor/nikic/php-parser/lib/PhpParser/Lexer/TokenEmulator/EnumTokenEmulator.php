@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class EnumTokenEmulator extends \PhpParser\Lexer\TokenEmulator\KeywordEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class EnumTokenEmulator extends KeywordEmulator
 {
     public function getPhpVersion() : string
     {
@@ -23,3 +23,4 @@ final class EnumTokenEmulator extends \PhpParser\Lexer\TokenEmulator\KeywordEmul
         return parent::isKeywordContext($tokens, $pos) && isset($tokens[$pos + 2]) && $tokens[$pos + 1][0] === \T_WHITESPACE && $tokens[$pos + 2][0] === \T_STRING;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\EnumTokenEmulator', 'PhpParser\\Lexer\\TokenEmulator\\EnumTokenEmulator', \false);

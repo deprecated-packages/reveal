@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr\Array_;
-use PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 /**
  * @api

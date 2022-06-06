@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealTwig\NodeAnalyzer;
 
-use PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Type\ObjectType;
 use PHPStan\Type\ThisType;

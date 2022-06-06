@@ -1,23 +1,23 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer;
+namespace RevealPrefix20220606\PhpParser\Lexer;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
-use PhpParser\Lexer;
-use PhpParser\Lexer\TokenEmulator\AttributeEmulator;
-use PhpParser\Lexer\TokenEmulator\EnumTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\ExplicitOctalEmulator;
-use PhpParser\Lexer\TokenEmulator\FlexibleDocStringEmulator;
-use PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
-use PhpParser\Lexer\TokenEmulator\ReadonlyTokenEmulator;
-use PhpParser\Lexer\TokenEmulator\ReverseEmulator;
-use PhpParser\Lexer\TokenEmulator\TokenEmulator;
+use RevealPrefix20220606\PhpParser\Error;
+use RevealPrefix20220606\PhpParser\ErrorHandler;
+use RevealPrefix20220606\PhpParser\Lexer;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\AttributeEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\EnumTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\ExplicitOctalEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\FlexibleDocStringEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\ReadonlyTokenEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\ReverseEmulator;
+use RevealPrefix20220606\PhpParser\Lexer\TokenEmulator\TokenEmulator;
 class Emulative extends Lexer
 {
     const PHP_7_3 = '7.3dev';
@@ -37,7 +37,7 @@ class Emulative extends Lexer
      */
     public function __construct(array $options = [])
     {
-        $this->targetPhpVersion = $options['phpVersion'] ?? \PhpParser\Lexer\Emulative::PHP_8_1;
+        $this->targetPhpVersion = $options['phpVersion'] ?? Emulative::PHP_8_1;
         unset($options['phpVersion']);
         parent::__construct($options);
         $emulators = [new FlexibleDocStringEmulator(), new FnTokenEmulator(), new MatchTokenEmulator(), new CoaleseEqualTokenEmulator(), new NumericLiteralSeparatorEmulator(), new NullsafeTokenEmulator(), new AttributeEmulator(), new EnumTokenEmulator(), new ReadonlyTokenEmulator(), new ExplicitOctalEmulator()];
@@ -205,3 +205,4 @@ class Emulative extends Lexer
         }
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\Emulative', 'PhpParser\\Lexer\\Emulative', \false);

@@ -4,11 +4,11 @@ declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\Naming;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use PhpParser\Node;
-use PhpParser\Node\Expr\ClassConstFetch;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Stmt\ClassLike;
-use PhpParser\Node\Stmt\Property;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\ClassConstFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassLike;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Property;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeNameResolverInterface;

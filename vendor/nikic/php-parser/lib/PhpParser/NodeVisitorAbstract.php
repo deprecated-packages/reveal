@@ -1,22 +1,22 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
 /**
  * @codeCoverageIgnore
  */
-class NodeVisitorAbstract implements \PhpParser\NodeVisitor
+class NodeVisitorAbstract implements NodeVisitor
 {
     public function beforeTraverse(array $nodes)
     {
         return null;
     }
-    public function enterNode(\PhpParser\Node $node)
+    public function enterNode(Node $node)
     {
         return null;
     }
-    public function leaveNode(\PhpParser\Node $node)
+    public function leaveNode(Node $node)
     {
         return null;
     }
@@ -25,3 +25,7 @@ class NodeVisitorAbstract implements \PhpParser\NodeVisitor
         return null;
     }
 }
+/**
+ * @codeCoverageIgnore
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitorAbstract', 'PhpParser\\NodeVisitorAbstract', \false);

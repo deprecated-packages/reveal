@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\NodeVisitor;
+namespace RevealPrefix20220606\PhpParser\NodeVisitor;
 
-use PhpParser\ErrorHandler;
-use PhpParser\NameContext;
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\Stmt;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\ErrorHandler;
+use RevealPrefix20220606\PhpParser\NameContext;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\Name\FullyQualified;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 class NameResolver extends NodeVisitorAbstract
 {
     /** @var NameContext Naming context */
@@ -232,3 +232,4 @@ class NameResolver extends NodeVisitorAbstract
         }
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\NodeVisitor\\NameResolver', 'PhpParser\\NodeVisitor\\NameResolver', \false);

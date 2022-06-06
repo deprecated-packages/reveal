@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
-use PhpParser\Node\ComplexType;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\NullableType;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Node\ComplexType;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Identifier;
+use RevealPrefix20220606\PhpParser\Node\Name;
+use RevealPrefix20220606\PhpParser\Node\NullableType;
+use RevealPrefix20220606\PhpParser\Node\Scalar;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 /**
  * This class defines helpers used in the implementation of builders. Don't use it directly.
  *
@@ -24,12 +24,12 @@ final class BuilderHelpers
      *
      * @return Node The normalized node
      */
-    public static function normalizeNode($node) : \PhpParser\Node
+    public static function normalizeNode($node) : Node
     {
-        if ($node instanceof \PhpParser\Builder) {
+        if ($node instanceof Builder) {
             return $node->getNode();
         }
-        if ($node instanceof \PhpParser\Node) {
+        if ($node instanceof Node) {
             return $node;
         }
         throw new \LogicException('Expected node or builder object');
@@ -177,7 +177,7 @@ final class BuilderHelpers
      */
     public static function normalizeValue($value) : Expr
     {
-        if ($value instanceof \PhpParser\Node\Expr) {
+        if ($value instanceof Node\Expr) {
             return $value;
         }
         if (\is_null($value)) {
@@ -218,15 +218,15 @@ final class BuilderHelpers
      *
      * @return Comment\Doc The normalized doc comment
      */
-    public static function normalizeDocComment($docComment) : \PhpParser\Comment\Doc
+    public static function normalizeDocComment($docComment) : Comment\Doc
     {
-        if ($docComment instanceof \PhpParser\Comment\Doc) {
+        if ($docComment instanceof Comment\Doc) {
             return $docComment;
         }
         if (\is_string($docComment)) {
-            return new \PhpParser\Comment\Doc($docComment);
+            return new Comment\Doc($docComment);
         }
-        throw new \LogicException('Doc comment must be a string or an instance of PhpParser\\Comment\\Doc');
+        throw new \LogicException('RevealPrefix20220606\\Doc comment must be a string or an instance of PhpParser\\Comment\\Doc');
     }
     /**
      * Normalizes a attribute: Converts attribute to the Attribute Group if needed.
@@ -235,15 +235,15 @@ final class BuilderHelpers
      *
      * @return Node\AttributeGroup The Attribute Group
      */
-    public static function normalizeAttribute($attribute) : \PhpParser\Node\AttributeGroup
+    public static function normalizeAttribute($attribute) : Node\AttributeGroup
     {
-        if ($attribute instanceof \PhpParser\Node\AttributeGroup) {
+        if ($attribute instanceof Node\AttributeGroup) {
             return $attribute;
         }
-        if (!$attribute instanceof \PhpParser\Node\Attribute) {
-            throw new \LogicException('Attribute must be an instance of PhpParser\\Node\\Attribute or PhpParser\\Node\\AttributeGroup');
+        if (!$attribute instanceof Node\Attribute) {
+            throw new \LogicException('RevealPrefix20220606\\Attribute must be an instance of PhpParser\\Node\\Attribute or PhpParser\\Node\\AttributeGroup');
         }
-        return new \PhpParser\Node\AttributeGroup([$attribute]);
+        return new Node\AttributeGroup([$attribute]);
     }
     /**
      * Adds a modifier and returns new modifier bitmask.
@@ -268,3 +268,9 @@ final class BuilderHelpers
         return $existingModifiers | $modifierToSet;
     }
 }
+/**
+ * This class defines helpers used in the implementation of builders. Don't use it directly.
+ *
+ * @internal
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\BuilderHelpers', 'PhpParser\\BuilderHelpers', \false);

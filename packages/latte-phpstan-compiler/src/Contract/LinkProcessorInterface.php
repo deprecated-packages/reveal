@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Contract;
 
-use PhpParser\Node\Arg;
-use PhpParser\Node\Stmt\Expression;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
 interface LinkProcessorInterface
 {
     /**

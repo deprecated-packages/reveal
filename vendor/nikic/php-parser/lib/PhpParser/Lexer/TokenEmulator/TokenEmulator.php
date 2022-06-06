@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
 /** @internal */
 abstract class TokenEmulator
@@ -21,3 +21,5 @@ abstract class TokenEmulator
         return $code;
     }
 }
+/** @internal */
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\TokenEmulator', 'PhpParser\\Lexer\\TokenEmulator\\TokenEmulator', \false);

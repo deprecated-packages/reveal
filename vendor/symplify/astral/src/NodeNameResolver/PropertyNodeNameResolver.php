@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeNameResolver;
 
-use PhpParser\Node;
-use PhpParser\Node\Stmt\Property;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Property;
 use RevealPrefix20220606\Symplify\Astral\Contract\NodeNameResolverInterface;
 final class PropertyNodeNameResolver implements NodeNameResolverInterface
 {

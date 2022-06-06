@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class Break_ extends Node\Stmt
 {
     /** @var null|Node\Expr Number of loops to break */
@@ -28,3 +28,4 @@ class Break_ extends Node\Stmt
         return 'Stmt_Break';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\Break_', 'PhpParser\\Node\\Stmt\\Break_', \false);

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Scalar;
+namespace RevealPrefix20220606\PhpParser\Node\Scalar;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Scalar;
 class Encapsed extends Scalar
 {
     /** @var Expr[] list of string parts */
@@ -29,3 +29,4 @@ class Encapsed extends Scalar
         return 'Scalar_Encapsed';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Scalar\\Encapsed', 'PhpParser\\Node\\Scalar\\Encapsed', \false);

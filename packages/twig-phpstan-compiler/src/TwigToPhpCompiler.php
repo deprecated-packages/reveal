@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler;
 
-use PhpParser\Node\Stmt;
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitor;
-use PhpParser\Parser;
-use PhpParser\ParserFactory;
-use PhpParser\PrettyPrinter\Standard;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\NodeTraverser;
+use RevealPrefix20220606\PhpParser\NodeVisitor;
+use RevealPrefix20220606\PhpParser\Parser;
+use RevealPrefix20220606\PhpParser\ParserFactory;
+use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
 use Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;

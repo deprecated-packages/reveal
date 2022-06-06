@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Internal;
+namespace RevealPrefix20220606\PhpParser\Internal;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
 /**
  * This node is used internally by the format-preserving pretty printer to print anonymous classes.
  *
@@ -53,3 +53,14 @@ class PrintableNewAnonClassNode extends Expr
         return ['attrGroups', 'args', 'extends', 'implements', 'stmts'];
     }
 }
+/**
+ * This node is used internally by the format-preserving pretty printer to print anonymous classes.
+ *
+ * The normal anonymous class structure violates assumptions about the order of token offsets.
+ * Namely, the constructor arguments are part of the Expr\New_ node and follow the class node, even
+ * though they are actually interleaved with them. This special node type is used temporarily to
+ * restore a sane token offset order.
+ *
+ * @internal
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\Internal\\PrintableNewAnonClassNode', 'PhpParser\\Internal\\PrintableNewAnonClassNode', \false);

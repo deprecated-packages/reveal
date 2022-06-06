@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\Contract;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 interface NodeNameResolverInterface
 {
     public function match(Node $node) : bool;

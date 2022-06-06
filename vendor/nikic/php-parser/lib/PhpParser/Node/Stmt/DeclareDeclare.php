@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class DeclareDeclare extends Node\Stmt
 {
     /** @var Node\Identifier Key */
@@ -32,3 +32,4 @@ class DeclareDeclare extends Node\Stmt
         return 'Stmt_DeclareDeclare';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\DeclareDeclare', 'PhpParser\\Node\\Stmt\\DeclareDeclare', \false);

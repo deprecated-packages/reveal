@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpParser\Parser;
+namespace RevealPrefix20220606\PhpParser\Parser;
 
 /* GENERATED file based on grammar/tokens.y */
 final class Tokens
@@ -146,3 +146,5 @@ final class Tokens
     const T_NAME_RELATIVE = 394;
     const T_ATTRIBUTE = 395;
 }
+/* GENERATED file based on grammar/tokens.y */
+\class_alias('RevealPrefix20220606\\PhpParser\\Parser\\Tokens', 'PhpParser\\Parser\\Tokens', \false);

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node;
+namespace RevealPrefix20220606\PhpParser\Node;
 
-use PhpParser\NodeAbstract;
+use RevealPrefix20220606\PhpParser\NodeAbstract;
 /**
  * Represents the "..." in "foo(...)" of the first-class callable syntax.
  */
@@ -27,3 +27,7 @@ class VariadicPlaceholder extends NodeAbstract
         return [];
     }
 }
+/**
+ * Represents the "..." in "foo(...)" of the first-class callable syntax.
+ */
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\VariadicPlaceholder', 'PhpParser\\Node\\VariadicPlaceholder', \false);

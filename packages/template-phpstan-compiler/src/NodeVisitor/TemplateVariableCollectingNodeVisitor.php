@@ -3,14 +3,14 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\Assign;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Stmt;
-use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Foreach_;
-use PhpParser\NodeFinder;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
+use RevealPrefix20220606\PhpParser\Node\Stmt\Foreach_;
+use RevealPrefix20220606\PhpParser\NodeFinder;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
 /**

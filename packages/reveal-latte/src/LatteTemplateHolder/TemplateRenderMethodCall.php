@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\LatteTemplateHolder;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;

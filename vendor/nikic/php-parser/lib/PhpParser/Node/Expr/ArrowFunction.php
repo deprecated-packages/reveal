@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\FunctionLike;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\FunctionLike;
 class ArrowFunction extends Expr implements FunctionLike
 {
     /** @var bool */
@@ -73,3 +73,4 @@ class ArrowFunction extends Expr implements FunctionLike
         return 'Expr_ArrowFunction';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\ArrowFunction', 'PhpParser\\Node\\Expr\\ArrowFunction', \false);

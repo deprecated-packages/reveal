@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr\ArrayDimFetch;
-use PhpParser\Node\Expr\BinaryOp\Coalesce;
-use PhpParser\Node\Expr\ConstFetch;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr\ArrayDimFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp\Coalesce;
+use RevealPrefix20220606\PhpParser\Node\Expr\ConstFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class UnwrapCoalesceContextNodeVisitor extends NodeVisitorAbstract
 {

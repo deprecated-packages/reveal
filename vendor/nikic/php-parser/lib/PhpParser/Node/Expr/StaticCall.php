@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\VariadicPlaceholder;
-class StaticCall extends \PhpParser\Node\Expr\CallLike
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Arg;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Identifier;
+use RevealPrefix20220606\PhpParser\Node\VariadicPlaceholder;
+class StaticCall extends CallLike
 {
     /** @var Node\Name|Expr Class name */
     public $class;
@@ -44,3 +44,4 @@ class StaticCall extends \PhpParser\Node\Expr\CallLike
         return $this->args;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\StaticCall', 'PhpParser\\Node\\Expr\\StaticCall', \false);

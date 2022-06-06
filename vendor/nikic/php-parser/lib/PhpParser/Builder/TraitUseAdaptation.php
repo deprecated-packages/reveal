@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Builder;
+namespace RevealPrefix20220606\PhpParser\Builder;
 
-use PhpParser\Builder;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
+use RevealPrefix20220606\PhpParser\Builder;
+use RevealPrefix20220606\PhpParser\BuilderHelpers;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Stmt;
 class TraitUseAdaptation implements Builder
 {
     const TYPE_UNDEFINED = 0;
@@ -133,3 +133,4 @@ class TraitUseAdaptation implements Builder
         }
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Builder\\TraitUseAdaptation', 'PhpParser\\Builder\\TraitUseAdaptation', \false);

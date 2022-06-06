@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Expr;
+namespace RevealPrefix20220606\PhpParser\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-class FuncCall extends \PhpParser\Node\Expr\CallLike
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+class FuncCall extends CallLike
 {
     /** @var Node\Name|Expr Function name */
     public $name;
@@ -37,3 +37,4 @@ class FuncCall extends \PhpParser\Node\Expr\CallLike
         return $this->args;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Expr\\FuncCall', 'PhpParser\\Node\\Expr\\FuncCall', \false);

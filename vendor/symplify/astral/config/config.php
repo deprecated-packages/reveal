@@ -3,15 +3,15 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606;
 
-use PhpParser\ConstExprEvaluator;
-use PhpParser\NodeFinder;
+use RevealPrefix20220606\PhpParser\ConstExprEvaluator;
+use RevealPrefix20220606\PhpParser\NodeFinder;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\ConstExprParser;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TypeParser;
 use RevealPrefix20220606\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\Astral\PhpParser\SmartPhpParser;
-use Symplify\Astral\PhpParser\SmartPhpParserFactory;
+use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParserFactory;
 use RevealPrefix20220606\Symplify\PackageBuilder\Php\TypeChecker;
 use function RevealPrefix20220606\Symfony\Component\DependencyInjection\Loader\Configurator\service;
 return static function (ContainerConfigurator $containerConfigurator) : void {

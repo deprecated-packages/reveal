@@ -3,16 +3,16 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\ArrayDimFetch;
-use PhpParser\Node\Expr\FuncCall;
-use PhpParser\Node\Expr\MethodCall;
-use PhpParser\Node\Expr\PropertyFetch;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\NodeVisitorAbstract;
+use RevealPrefix20220606\PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node\Expr;
+use RevealPrefix20220606\PhpParser\Node\Expr\ArrayDimFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
+use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
+use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
+use RevealPrefix20220606\PhpParser\Node\Identifier;
+use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
+use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
 use PHPStan\Type\ArrayType;
 use PHPStan\Type\Type;
 use PHPStan\Type\TypeCombinator;

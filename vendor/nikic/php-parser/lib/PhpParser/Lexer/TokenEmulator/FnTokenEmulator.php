@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class FnTokenEmulator extends \PhpParser\Lexer\TokenEmulator\KeywordEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class FnTokenEmulator extends KeywordEmulator
 {
     public function getPhpVersion() : string
     {
@@ -19,3 +19,4 @@ final class FnTokenEmulator extends \PhpParser\Lexer\TokenEmulator\KeywordEmulat
         return \T_FN;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\FnTokenEmulator', 'PhpParser\\Lexer\\TokenEmulator\\FnTokenEmulator', \false);

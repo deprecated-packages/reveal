@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Lexer\TokenEmulator;
+namespace RevealPrefix20220606\PhpParser\Lexer\TokenEmulator;
 
-use PhpParser\Lexer\Emulative;
-final class FlexibleDocStringEmulator extends \PhpParser\Lexer\TokenEmulator\TokenEmulator
+use RevealPrefix20220606\PhpParser\Lexer\Emulative;
+final class FlexibleDocStringEmulator extends TokenEmulator
 {
     const FLEXIBLE_DOC_STRING_REGEX = <<<'REGEX'
 /<<<[ \t]*(['"]?)([a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*)\1\r?\n
@@ -64,3 +64,4 @@ REGEX;
         return $code;
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Lexer\\TokenEmulator\\FlexibleDocStringEmulator', 'PhpParser\\Lexer\\TokenEmulator\\FlexibleDocStringEmulator', \false);

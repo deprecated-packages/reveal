@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser;
+namespace RevealPrefix20220606\PhpParser;
 
 interface Node
 {
@@ -96,7 +96,7 @@ interface Node
      *
      * @param Comment\Doc $docComment Doc comment to set
      */
-    public function setDocComment(\PhpParser\Comment\Doc $docComment);
+    public function setDocComment(Comment\Doc $docComment);
     /**
      * Sets an attribute on a node.
      *
@@ -134,3 +134,4 @@ interface Node
      */
     public function setAttributes(array $attributes);
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node', 'PhpParser\\Node', \false);

@@ -4,7 +4,7 @@ declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
 use RevealPrefix20220606\Nette\Application\UI\Control;
-use PhpParser\Node\Expr\Array_;
+use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\ObjectType;

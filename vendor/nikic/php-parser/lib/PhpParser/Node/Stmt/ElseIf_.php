@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace PhpParser\Node\Stmt;
+namespace RevealPrefix20220606\PhpParser\Node\Stmt;
 
-use PhpParser\Node;
+use RevealPrefix20220606\PhpParser\Node;
 class ElseIf_ extends Node\Stmt
 {
     /** @var Node\Expr Condition */
@@ -32,3 +32,4 @@ class ElseIf_ extends Node\Stmt
         return 'Stmt_ElseIf';
     }
 }
+\class_alias('RevealPrefix20220606\\PhpParser\\Node\\Stmt\\ElseIf_', 'PhpParser\\Node\\Stmt\\ElseIf_', \false);
