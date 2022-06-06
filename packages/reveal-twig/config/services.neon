@@ -1,0 +1,3 @@
+services:
+    - Reveal\RevealTwig\NodeAnalyzer\TwigRenderTemplateWithParametersMatcher
+    - Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher
