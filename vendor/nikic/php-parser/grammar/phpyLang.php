@@ -117,7 +117,7 @@ function regex($regex)
 }
 function magicSplit($regex, $string)
 {
-    $pieces = \preg_split(\RevealPrefix20220606\regex('(?:(?&string)|(?&comment)|(?&code))(*SKIP)(*FAIL)|' . $regex), $string);
+    $pieces = \preg_split(regex('(?:(?&string)|(?&comment)|(?&code))(*SKIP)(*FAIL)|' . $regex), $string);
     foreach ($pieces as &$piece) {
         $piece = \trim($piece);
     }

@@ -44,10 +44,6 @@ class RegexpException extends \Exception
     }
 }
 /**
- * The exception that indicates error of the last Regexp execution.
- */
-\class_alias('RevealPrefix20220606\\Latte\\RegexpException', 'Latte\\RegexpException', \false);
-/**
  * Exception thrown when a not allowed construction is used in a template.
  */
 class SecurityViolationException extends \Exception
