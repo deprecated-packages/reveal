@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject;
+namespace Reveal\TemplatePHPStanCompiler\ValueObject;
 
 use RevealPrefix20220606\Webmozart\Assert\Assert;
 final class PhpFileContentsWithLineMap
@@ -36,4 +36,3 @@ final class PhpFileContentsWithLineMap
         return $this->phpToTemplateLines;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ValueObject\\PhpFileContentsWithLineMap', 'Reveal\\TemplatePHPStanCompiler\\ValueObject\\PhpFileContentsWithLineMap', \false);

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte;
+namespace Reveal\LattePHPStanCompiler\Latte;
 
 use RevealPrefix20220606\Latte\CompileException;
 use RevealPrefix20220606\Latte\Compiler;
@@ -14,7 +14,7 @@ use RevealPrefix20220606\Latte\Token;
 use RevealPrefix20220606\Nette\Bridges\ApplicationLatte\UIMacros;
 use RevealPrefix20220606\Nette\Bridges\FormsLatte\FormMacros;
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Macros\LatteMacroFaker;
+use Reveal\LattePHPStanCompiler\Latte\Macros\LatteMacroFaker;
 use RevealPrefix20220606\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
 final class UnknownMacroAwareLatteCompiler extends Compiler
 {
@@ -112,4 +112,3 @@ final class UnknownMacroAwareLatteCompiler extends Compiler
         }
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\UnknownMacroAwareLatteCompiler', 'Reveal\\LattePHPStanCompiler\\Latte\\UnknownMacroAwareLatteCompiler', \false);

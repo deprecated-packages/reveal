@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract;
+namespace Reveal\LattePHPStanCompiler\Contract;
 
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 interface LatteVariableCollectorInterface
 {
     /**
@@ -11,4 +11,3 @@ interface LatteVariableCollectorInterface
      */
     public function getVariablesAndTypes() : array;
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Contract\\LatteVariableCollectorInterface', 'Reveal\\LattePHPStanCompiler\\Contract\\LatteVariableCollectorInterface', \false);

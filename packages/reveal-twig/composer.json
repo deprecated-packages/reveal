@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\RevealTwig\\": "src"
+            "Reveal\\RevealTwig\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\RevealTwig\\Tests\\": "tests"
+            "Reveal\\RevealTwig\\Tests\\": "tests"
         }
     },
     "extra": {

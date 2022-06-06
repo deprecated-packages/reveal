@@ -1,21 +1,21 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealTwig\Rules;
+namespace Reveal\RevealTwig\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Rules\Registry;
+use PhpParser\Node;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use PHPStan\Rules\Registry;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\PHPStan\Rules\RuleError;
-use RevealPrefix20220606\Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ErrorSkipper;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
+use PHPStan\Rules\RuleError;
+use Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
+use Reveal\TemplatePHPStanCompiler\ErrorSkipper;
+use Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
+use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
+use Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
@@ -168,8 +168,3 @@ CODE_SAMPLE
         return $this->templateErrorsFactory->createErrors($ruleErrors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);
     }
 }
-/**
- * @implements Rule<MethodCall>
- * @see \Reveal\RevealTwig\Tests\Rules\TwigCompleteCheckRule\TwigCompleteCheckRuleTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\Rules\\TwigCompleteCheckRule', 'Reveal\\RevealTwig\\Rules\\TwigCompleteCheckRule', \false);

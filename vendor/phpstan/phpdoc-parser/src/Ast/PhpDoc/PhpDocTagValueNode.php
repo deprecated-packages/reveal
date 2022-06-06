@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Node;
+use PHPStan\PhpDocParser\Ast\Node;
 interface PhpDocTagValueNode extends Node
 {
 }

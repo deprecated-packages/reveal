@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\LatteVariableCollector;
+namespace Reveal\LattePHPStanCompiler\LatteVariableCollector;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
+use PHPStan\Type\ObjectType;
 use ReflectionClass;
 use ReflectionException;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 final class DynamicFilterVariables implements LatteVariableCollectorInterface
 {
     /**
@@ -50,4 +50,3 @@ final class DynamicFilterVariables implements LatteVariableCollectorInterface
         return $variablesAndTypes;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DynamicFilterVariables', 'Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DynamicFilterVariables', \false);

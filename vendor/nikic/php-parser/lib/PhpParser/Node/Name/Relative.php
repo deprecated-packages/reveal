@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Name;
+namespace PhpParser\Node\Name;
 
-class Relative extends \RevealPrefix20220606\PhpParser\Node\Name
+class Relative extends \PhpParser\Node\Name
 {
     /**
      * Checks whether the name is unqualified. (E.g. Name)

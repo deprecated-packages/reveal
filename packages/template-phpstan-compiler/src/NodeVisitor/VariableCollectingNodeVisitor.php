@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeVisitor;
+namespace Reveal\TemplatePHPStanCompiler\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Foreach_;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt;
+use PhpParser\Node\Stmt\Foreach_;
+use PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
 /**
@@ -95,7 +95,3 @@ final class VariableCollectingNodeVisitor extends NodeVisitorAbstract
         return $parent->valueVar === $variable;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\VariableCollectingNodeVisitor', 'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\VariableCollectingNodeVisitor', \false);

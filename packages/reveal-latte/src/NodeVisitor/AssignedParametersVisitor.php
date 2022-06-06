@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\NodeVisitor;
+namespace Reveal\RevealLatte\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
-use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
-use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node;
+use PhpParser\Node\Expr\ArrayItem;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\PropertyFetch;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Scalar\String_;
+use PhpParser\NodeVisitorAbstract;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 final class AssignedParametersVisitor extends NodeVisitorAbstract
@@ -74,4 +74,3 @@ final class AssignedParametersVisitor extends NodeVisitorAbstract
         return $this->parameters;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeVisitor\\AssignedParametersVisitor', 'Reveal\\RevealLatte\\NodeVisitor\\AssignedParametersVisitor', \false);

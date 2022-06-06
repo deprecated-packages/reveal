@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Macros;
+namespace Reveal\LattePHPStanCompiler\Latte\Macros;
 
 use RevealPrefix20220606\Latte\Compiler;
 use RevealPrefix20220606\Latte\MacroNode;
@@ -97,4 +97,3 @@ final class LatteMacroFaker
         return \implode(' . ', $variableNames);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Macros\\LatteMacroFaker', 'Reveal\\LattePHPStanCompiler\\Latte\\Macros\\LatteMacroFaker', \false);

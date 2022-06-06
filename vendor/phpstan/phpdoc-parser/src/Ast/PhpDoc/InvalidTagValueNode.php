@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\NodeAttributes;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Parser\ParserException;
+use PHPStan\PhpDocParser\Ast\NodeAttributes;
+use PHPStan\PhpDocParser\Parser\ParserException;
 use function sprintf;
 use function trigger_error;
 use const E_USER_WARNING;
 /**
  * @property ParserException $exception
  */
-class InvalidTagValueNode implements PhpDocTagValueNode
+class InvalidTagValueNode implements \PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagValueNode
 {
     use NodeAttributes;
     /** @var string (may be empty) */

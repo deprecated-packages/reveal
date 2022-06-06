@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Parser;
+namespace PHPStan\PhpDocParser\Parser;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Lexer\Lexer;
+use PHPStan\PhpDocParser\Lexer\Lexer;
 use function array_pop;
 use function assert;
 use function count;
@@ -155,6 +155,6 @@ class TokenIterator
      */
     private function throwError(int $expectedTokenType, ?string $expectedTokenValue = null) : void
     {
-        throw new ParserException($this->currentTokenValue(), $this->currentTokenType(), $this->currentTokenOffset(), $expectedTokenType, $expectedTokenValue);
+        throw new \PHPStan\PhpDocParser\Parser\ParserException($this->currentTokenValue(), $this->currentTokenType(), $this->currentTokenOffset(), $expectedTokenType, $expectedTokenValue);
     }
 }

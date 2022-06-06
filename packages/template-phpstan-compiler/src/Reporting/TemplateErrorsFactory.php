@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Reporting;
+namespace Reveal\TemplatePHPStanCompiler\Reporting;
 
-use RevealPrefix20220606\PHPStan\Analyser\Error;
-use RevealPrefix20220606\PHPStan\Rules\RuleError;
-use RevealPrefix20220606\PHPStan\Rules\RuleErrorBuilder;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
+use PHPStan\Analyser\Error;
+use PHPStan\Rules\RuleError;
+use PHPStan\Rules\RuleErrorBuilder;
+use Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
@@ -48,7 +48,3 @@ final class TemplateErrorsFactory
         return $lastTemplateLine;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Reporting\\TemplateErrorsFactory', 'Reveal\\TemplatePHPStanCompiler\\Reporting\\TemplateErrorsFactory', \false);

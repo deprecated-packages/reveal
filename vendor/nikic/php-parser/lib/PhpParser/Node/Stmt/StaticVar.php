@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr;
+use PhpParser\Node;
+use PhpParser\Node\Expr;
 class StaticVar extends Node\Stmt
 {
     /** @var Expr\Variable Variable */

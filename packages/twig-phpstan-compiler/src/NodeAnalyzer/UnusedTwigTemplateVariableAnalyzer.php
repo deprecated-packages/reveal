@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TwigPHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver;
 /**
  * @api
  */
@@ -19,7 +19,7 @@ final class UnusedTwigTemplateVariableAnalyzer
      * @var \Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver
      */
     private $methodCallArrayResolver;
-    public function __construct(TwigVariableNamesResolver $twigVariableNamesResolver, MethodCallArrayResolver $methodCallArrayResolver)
+    public function __construct(\Reveal\TwigPHPStanCompiler\NodeAnalyzer\TwigVariableNamesResolver $twigVariableNamesResolver, MethodCallArrayResolver $methodCallArrayResolver)
     {
         $this->twigVariableNamesResolver = $twigVariableNamesResolver;
         $this->methodCallArrayResolver = $methodCallArrayResolver;
@@ -42,7 +42,3 @@ final class UnusedTwigTemplateVariableAnalyzer
         return \array_diff($passedVariableNames, $templatesUsedVariableNames);
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\UnusedTwigTemplateVariableAnalyzer', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\UnusedTwigTemplateVariableAnalyzer', \false);

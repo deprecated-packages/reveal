@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\ValueObject;
+namespace Reveal\TwigPHPStanCompiler\ValueObject;
 
 final class VarTypeDoc
 {
@@ -27,4 +27,3 @@ final class VarTypeDoc
         return $this->type;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ValueObject\\VarTypeDoc', 'Reveal\\TwigPHPStanCompiler\\ValueObject\\VarTypeDoc', \false);

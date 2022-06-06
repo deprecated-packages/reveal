@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Echo_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Nop;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\DocBlock\NonVarTypeDocBlockCleaner;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\ValueObject\VarTypeDoc;
+use PhpParser\Node;
+use PhpParser\Node\Scalar\String_;
+use PhpParser\Node\Stmt\Echo_;
+use PhpParser\Node\Stmt\Nop;
+use PhpParser\NodeVisitorAbstract;
+use PHPStan\Type\ObjectType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\TwigPHPStanCompiler\DocBlock\NonVarTypeDocBlockCleaner;
+use Reveal\TwigPHPStanCompiler\ValueObject\VarTypeDoc;
 final class ReplaceEchoWithVarDocTypeNodeVisitor extends NodeVisitorAbstract
 {
     /**
@@ -54,4 +54,3 @@ final class ReplaceEchoWithVarDocTypeNodeVisitor extends NodeVisitorAbstract
         return $this->collectedVariablesAndTypes;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ReplaceEchoWithVarDocTypeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\ReplaceEchoWithVarDocTypeNodeVisitor', \false);

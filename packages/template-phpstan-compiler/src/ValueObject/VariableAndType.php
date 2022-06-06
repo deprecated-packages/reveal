@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject;
+namespace Reveal\TemplatePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220606\PHPStan\Type\Type;
-use RevealPrefix20220606\PHPStan\Type\VerbosityLevel;
+use PHPStan\Type\Type;
+use PHPStan\Type\VerbosityLevel;
 final class VariableAndType
 {
     /**
@@ -33,4 +33,3 @@ final class VariableAndType
         return $this->type->describe(VerbosityLevel::typeOnly());
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ValueObject\\VariableAndType', 'Reveal\\TemplatePHPStanCompiler\\ValueObject\\VariableAndType', \false);

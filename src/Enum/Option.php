@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\Enum;
+namespace Reveal\Enum;
 
 final class Option
 {
@@ -18,4 +18,3 @@ final class Option
      */
     public const TWIG_PROVIDER = 'twig-provider';
 }
-\class_alias('RevealPrefix20220606\\Reveal\\Enum\\Option', 'Reveal\\Enum\\Option', \false);

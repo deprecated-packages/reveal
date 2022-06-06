@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser\ValueObject\Ast\PhpDoc;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Type\TypeNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;
+use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 /**
  * @noRector final on purpose, so it can be extended by 3rd party
  */

@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeVisitor;
+namespace Reveal\LattePHPStanCompiler\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
-use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\PropertyFetch;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
@@ -97,4 +97,3 @@ final class ParentLayoutNameNodeVisitor extends NodeVisitorAbstract
         return $this->nodeValueResolver->resolve($assign->expr, $this->templateFilePath);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeVisitor\\ParentLayoutNameNodeVisitor', 'Reveal\\LattePHPStanCompiler\\NodeVisitor\\ParentLayoutNameNodeVisitor', \false);

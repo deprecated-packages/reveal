@@ -1,21 +1,21 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler;
+namespace Reveal\LattePHPStanCompiler;
 
 use RevealPrefix20220606\Latte\Parser;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\ParserFactory;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\LineCommentCorrector;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\ControlRenderToExplicitCallNodeVisitor;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use PhpParser\ParserFactory;
+use PhpParser\PrettyPrinter\Standard;
+use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
+use Reveal\LattePHPStanCompiler\Latte\LineCommentCorrector;
+use Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;
+use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\ControlRenderToExplicitCallNodeVisitor;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest
@@ -57,7 +57,7 @@ final class LatteToPhpCompiler
     /**
      * @param LatteToPhpCompilerNodeVisitorInterface[] $nodeVisitors
      */
-    public function __construct(SmartFileSystem $smartFileSystem, Parser $latteParser, UnknownMacroAwareLatteCompiler $unknownMacroAwareLatteCompiler, SimpleNameResolver $simpleNameResolver, Standard $printerStandard, LineCommentCorrector $lineCommentCorrector, LatteVarTypeDocBlockDecorator $latteVarTypeDocBlockDecorator, array $nodeVisitors)
+    public function __construct(SmartFileSystem $smartFileSystem, Parser $latteParser, UnknownMacroAwareLatteCompiler $unknownMacroAwareLatteCompiler, SimpleNameResolver $simpleNameResolver, Standard $printerStandard, LineCommentCorrector $lineCommentCorrector, \Reveal\LattePHPStanCompiler\LatteVarTypeDocBlockDecorator $latteVarTypeDocBlockDecorator, array $nodeVisitors)
     {
         $this->smartFileSystem = $smartFileSystem;
         $this->latteParser = $latteParser;
@@ -124,7 +124,3 @@ final class LatteToPhpCompiler
         throw new ShouldNotHappenException($errorMessage);
     }
 }
-/**
- * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteToPhpCompiler', 'Reveal\\LattePHPStanCompiler\\LatteToPhpCompiler', \false);

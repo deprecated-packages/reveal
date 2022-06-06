@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealTwig\NodeAnalyzer;
+namespace Reveal\RevealTwig\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 final class TwigRenderTemplateWithParametersMatcher
 {
     /**
@@ -54,4 +54,3 @@ final class TwigRenderTemplateWithParametersMatcher
         return $secondArgValue;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\NodeAnalyzer\\TwigRenderTemplateWithParametersMatcher', 'Reveal\\RevealTwig\\NodeAnalyzer\\TwigRenderTemplateWithParametersMatcher', \false);

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Error;
-use RevealPrefix20220606\PhpParser\Node;
-class Class_ extends ClassLike
+use PhpParser\Error;
+use PhpParser\Node;
+class Class_ extends \PhpParser\Node\Stmt\ClassLike
 {
     const MODIFIER_PUBLIC = 1;
     const MODIFIER_PROTECTED = 2;

@@ -1,10 +1,10 @@
 <?php
 
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
 use function array_merge;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Scalar;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Scalar;
 /**
  * Evaluates constant expressions.
  *
@@ -38,7 +38,7 @@ class ConstExprEvaluator
     public function __construct(callable $fallbackEvaluator = null)
     {
         $this->fallbackEvaluator = $fallbackEvaluator ?? function (Expr $expr) {
-            throw new ConstExprEvaluationException("Expression of type {$expr->getType()} cannot be evaluated");
+            throw new \PhpParser\ConstExprEvaluationException("Expression of type {$expr->getType()} cannot be evaluated");
         };
     }
     /**
@@ -66,8 +66,8 @@ class ConstExprEvaluator
         try {
             return $this->evaluate($expr);
         } catch (\Throwable $e) {
-            if (!$e instanceof ConstExprEvaluationException) {
-                $e = new ConstExprEvaluationException("An error occurred during constant expression evaluation", 0, $e);
+            if (!$e instanceof \PhpParser\ConstExprEvaluationException) {
+                $e = new \PhpParser\ConstExprEvaluationException("An error occurred during constant expression evaluation", 0, $e);
             }
             throw $e;
         } finally {

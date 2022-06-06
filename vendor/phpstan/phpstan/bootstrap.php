@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan;
+namespace PHPStan;
 
 use RevealPrefix20220606\Composer\Autoload\ClassLoader;
 final class PharAutoloader
@@ -49,4 +49,4 @@ final class PharAutoloader
         require $filepath;
     }
 }
-\spl_autoload_register([PharAutoloader::class, 'loadClass']);
+\spl_autoload_register([\PHPStan\PharAutoloader::class, 'loadClass']);

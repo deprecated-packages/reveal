@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\RelatedFileResolver;
+namespace Reveal\LattePHPStanCompiler\RelatedFileResolver;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeVisitor\ParentLayoutNameNodeVisitor;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use Reveal\LattePHPStanCompiler\NodeVisitor\ParentLayoutNameNodeVisitor;
 final class ParentLayoutTemplateFileResolver
 {
     /**
@@ -28,4 +28,3 @@ final class ParentLayoutTemplateFileResolver
         return $this->parentLayoutNameNodeVisitor->getParentLayoutFileName();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\ParentLayoutTemplateFileResolver', 'Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\ParentLayoutTemplateFileResolver', \false);

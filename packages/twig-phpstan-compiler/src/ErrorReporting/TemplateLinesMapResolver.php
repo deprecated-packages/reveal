@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\ErrorReporting;
+namespace Reveal\TwigPHPStanCompiler\ErrorReporting;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\PhpToTemplateLinesNodeVisitor;
-use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use PhpParser\NodeTraverser;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\PhpToTemplateLinesNodeVisitor;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 final class TemplateLinesMapResolver
 {
     /**
@@ -29,4 +29,3 @@ final class TemplateLinesMapResolver
         return $phpToTemplateLinesNodeVisitor->getPhpLinesToTemplateLines();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ErrorReporting\\TemplateLinesMapResolver', 'Reveal\\TwigPHPStanCompiler\\ErrorReporting\\TemplateLinesMapResolver', \false);

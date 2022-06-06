@@ -1,25 +1,25 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\StaticCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Identifier;
-use RevealPrefix20220606\PhpParser\Node\Name\FullyQualified;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Filters\FilterMatcher;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\PropertyFetch;
+use PhpParser\Node\Expr\StaticCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Identifier;
+use PhpParser\Node\Name\FullyQualified;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
+use Reveal\LattePHPStanCompiler\Latte\Filters\FilterMatcher;
+use Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
+use Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
+use Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Make \Latte\Runtime\Defaults::getFilters() explicit, from: $this->filters->{magic}(...)
@@ -94,9 +94,3 @@ final class MagicFilterToExplicitCallNodeVisitor extends NodeVisitorAbstract imp
         return $this->simpleNameResolver->isName($expr->name, $propertyName);
     }
 }
-/**
- * Make \Latte\Runtime\Defaults::getFilters() explicit, from: $this->filters->{magic}(...)
- *
- * to: \Latte\Runtime\Filters::date(...)
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\MagicFilterToExplicitCallNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\MagicFilterToExplicitCallNodeVisitor', \false);

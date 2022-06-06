@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\NodeValue;
 
-use RevealPrefix20220606\PHPStan\Type\ConstantScalarType;
-use RevealPrefix20220606\PHPStan\Type\UnionType;
+use PHPStan\Type\ConstantScalarType;
+use PHPStan\Type\UnionType;
 final class UnionTypeValueResolver
 {
     /**

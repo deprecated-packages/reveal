@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Type;
+namespace PHPStan\PhpDocParser\Ast\Type;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use PHPStan\PhpDocParser\Ast\NodeAttributes;
 use function implode;
-class UnionTypeNode implements TypeNode
+class UnionTypeNode implements \PHPStan\PhpDocParser\Ast\Type\TypeNode
 {
     use NodeAttributes;
     /** @var TypeNode[] */

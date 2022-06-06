@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PhpParser;
+namespace Reveal\TemplatePHPStanCompiler\PhpParser;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitor\ParentConnectingVisitor;
-use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitor\ParentConnectingVisitor;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 /**
  * @api
  */
@@ -35,7 +35,3 @@ final class ParentNodeAwarePhpParser
         return $phpStmts;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\PhpParser\\ParentNodeAwarePhpParser', 'Reveal\\TemplatePHPStanCompiler\\PhpParser\\ParentNodeAwarePhpParser', \false);

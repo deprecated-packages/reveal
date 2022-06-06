@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Expr;
+namespace PhpParser\Node\Expr;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Name;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Name;
 class ConstFetch extends Expr
 {
     /** @var Name Constant name */

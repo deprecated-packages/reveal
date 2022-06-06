@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\ErrorHandler;
+namespace PhpParser\ErrorHandler;
 
-use RevealPrefix20220606\PhpParser\Error;
-use RevealPrefix20220606\PhpParser\ErrorHandler;
+use PhpParser\Error;
+use PhpParser\ErrorHandler;
 /**
  * Error handler that collects all errors into an array.
  *

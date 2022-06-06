@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Lexer;
+namespace PHPStan\PhpDocParser\Lexer;
 
 use function array_keys;
 use function assert;

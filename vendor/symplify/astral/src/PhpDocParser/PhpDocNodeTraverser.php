@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Node;
+use PHPStan\PhpDocParser\Ast\Node;
 use RevealPrefix20220606\Symplify\Astral\PhpDocParser\Contract\PhpDocNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\PhpDocParser\Exception\InvalidTraverseException;
 use RevealPrefix20220606\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor\CallablePhpDocNodeVisitor;

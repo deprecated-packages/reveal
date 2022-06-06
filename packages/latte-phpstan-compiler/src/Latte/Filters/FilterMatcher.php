@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Filters;
+namespace Reveal\LattePHPStanCompiler\Latte\Filters;
 
 use RevealPrefix20220606\Latte\Runtime\Defaults;
 use ReflectionClass;
 use ReflectionException;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\ValueObject\CallReferenceInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Exception\InvalidLatteFilterFormatException;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
+use Reveal\LattePHPStanCompiler\Contract\ValueObject\CallReferenceInterface;
+use Reveal\LattePHPStanCompiler\Exception\InvalidLatteFilterFormatException;
+use Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
+use Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
+use Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\Filters\FilterMatcherTest
  */
@@ -91,7 +91,3 @@ final class FilterMatcher
         return new DynamicCallReference($filterClass, $filterMethod);
     }
 }
-/**
- * @see \Reveal\LattePHPStanCompiler\Tests\Filters\FilterMatcherTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Filters\\FilterMatcher', 'Reveal\\LattePHPStanCompiler\\Latte\\Filters\\FilterMatcher', \false);

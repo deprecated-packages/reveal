@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TwigPHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\ParametersArrayAnalyzer;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PHPStan\Analyser\Scope;
+use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\ParametersArrayAnalyzer;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 /**
  * @api
  */
@@ -19,7 +19,7 @@ final class MissingTwigTemplateRenderVariableResolver
      * @var \Reveal\TemplatePHPStanCompiler\NodeAnalyzer\ParametersArrayAnalyzer
      */
     private $parametersArrayAnalyzer;
-    public function __construct(TwigVariableNamesResolver $twigVariableNamesResolver, ParametersArrayAnalyzer $parametersArrayAnalyzer)
+    public function __construct(\Reveal\TwigPHPStanCompiler\NodeAnalyzer\TwigVariableNamesResolver $twigVariableNamesResolver, ParametersArrayAnalyzer $parametersArrayAnalyzer)
     {
         $this->twigVariableNamesResolver = $twigVariableNamesResolver;
         $this->parametersArrayAnalyzer = $parametersArrayAnalyzer;
@@ -38,7 +38,3 @@ final class MissingTwigTemplateRenderVariableResolver
         return \array_unique($missingVariableNames);
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\MissingTwigTemplateRenderVariableResolver', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\MissingTwigTemplateRenderVariableResolver', \false);

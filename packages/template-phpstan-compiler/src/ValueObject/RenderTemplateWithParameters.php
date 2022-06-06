@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject;
+namespace Reveal\TemplatePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\Array_;
 /**
  * @api
  */
@@ -31,7 +31,3 @@ final class RenderTemplateWithParameters
         return $this->parametersArray;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ValueObject\\RenderTemplateWithParameters', 'Reveal\\TemplatePHPStanCompiler\\ValueObject\\RenderTemplateWithParameters', \false);

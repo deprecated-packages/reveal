@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
+namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
+use PhpParser\Node;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class UnwrapEscapeFilterNormalizeNodeVisitor extends NodeVisitorAbstract implements NormalizingNodeVisitorInterface
 {
@@ -29,4 +29,3 @@ final class UnwrapEscapeFilterNormalizeNodeVisitor extends NodeVisitorAbstract i
         return $node->getArgs()[1]->value;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\UnwrapEscapeFilterNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\UnwrapEscapeFilterNormalizeNodeVisitor', \false);

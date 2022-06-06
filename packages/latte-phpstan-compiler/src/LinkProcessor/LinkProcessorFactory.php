@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\LinkProcessor;
+namespace Reveal\LattePHPStanCompiler\LinkProcessor;
 
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
+use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 final class LinkProcessorFactory
 {
     /**
@@ -27,4 +27,3 @@ final class LinkProcessorFactory
         return null;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\LinkProcessorFactory', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\LinkProcessorFactory', \false);

@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeVisitorAbstract;
 final class PhpToTemplateLinesNodeVisitor extends NodeVisitorAbstract
 {
     /**
@@ -54,4 +54,3 @@ final class PhpToTemplateLinesNodeVisitor extends NodeVisitorAbstract
         return $this->phpLinesToTemplateLines;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\PhpToTemplateLinesNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\PhpToTemplateLinesNodeVisitor', \false);

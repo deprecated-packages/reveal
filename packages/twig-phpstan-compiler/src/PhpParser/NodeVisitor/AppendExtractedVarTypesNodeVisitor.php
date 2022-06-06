@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\FuncCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Name;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\FuncCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Name;
+use PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\Node\Stmt\Expression;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class AppendExtractedVarTypesNodeVisitor extends NodeVisitorAbstract
 {
@@ -58,4 +58,3 @@ final class AppendExtractedVarTypesNodeVisitor extends NodeVisitorAbstract
         return $node;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\AppendExtractedVarTypesNodeVisitor', \false);

@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Parser;
+namespace PHPStan\PhpDocParser\Parser;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Lexer\Lexer;
+use PHPStan\PhpDocParser\Ast;
+use PHPStan\PhpDocParser\Lexer\Lexer;
 use function strtolower;
 use function trim;
 class ConstExprParser
 {
-    public function parse(TokenIterator $tokens, bool $trimStrings = \false) : Ast\ConstExpr\ConstExprNode
+    public function parse(\PHPStan\PhpDocParser\Parser\TokenIterator $tokens, bool $trimStrings = \false) : Ast\ConstExpr\ConstExprNode
     {
         if ($tokens->isCurrentTokenType(Lexer::TOKEN_FLOAT)) {
             $value = $tokens->currentTokenValue();
@@ -79,9 +79,9 @@ class ConstExprParser
         } elseif ($tokens->tryConsumeTokenType(Lexer::TOKEN_OPEN_SQUARE_BRACKET)) {
             return $this->parseArray($tokens, Lexer::TOKEN_CLOSE_SQUARE_BRACKET);
         }
-        throw new ParserException($tokens->currentTokenValue(), $tokens->currentTokenType(), $tokens->currentTokenOffset(), Lexer::TOKEN_IDENTIFIER);
+        throw new \PHPStan\PhpDocParser\Parser\ParserException($tokens->currentTokenValue(), $tokens->currentTokenType(), $tokens->currentTokenOffset(), Lexer::TOKEN_IDENTIFIER);
     }
-    private function parseArray(TokenIterator $tokens, int $endToken) : Ast\ConstExpr\ConstExprArrayNode
+    private function parseArray(\PHPStan\PhpDocParser\Parser\TokenIterator $tokens, int $endToken) : Ast\ConstExpr\ConstExprArrayNode
     {
         $items = [];
         if (!$tokens->tryConsumeTokenType($endToken)) {
@@ -92,7 +92,7 @@ class ConstExprParser
         }
         return new Ast\ConstExpr\ConstExprArrayNode($items);
     }
-    private function parseArrayItem(TokenIterator $tokens) : Ast\ConstExpr\ConstExprArrayItemNode
+    private function parseArrayItem(\PHPStan\PhpDocParser\Parser\TokenIterator $tokens) : Ast\ConstExpr\ConstExprArrayItemNode
     {
         $expr = $this->parse($tokens);
         if ($tokens->tryConsumeTokenType(Lexer::TOKEN_DOUBLE_ARROW)) {

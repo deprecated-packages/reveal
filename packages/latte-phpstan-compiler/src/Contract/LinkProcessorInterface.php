@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract;
+namespace Reveal\LattePHPStanCompiler\Contract;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Stmt\Expression;
 interface LinkProcessorInterface
 {
     /**
@@ -18,4 +18,3 @@ interface LinkProcessorInterface
      */
     public function createLinkExpressions(string $targetName, array $linkParams, array $attributes) : array;
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Contract\\LinkProcessorInterface', 'Reveal\\LattePHPStanCompiler\\Contract\\LinkProcessorInterface', \false);

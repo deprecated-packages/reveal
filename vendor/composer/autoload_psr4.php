@@ -6,6 +6,12 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Reveal\\TwigPHPStanCompiler\\' => array($baseDir . '/packages/twig-phpstan-compiler/src'),
+    'Reveal\\TemplatePHPStanCompiler\\' => array($baseDir . '/packages/template-phpstan-compiler/src'),
+    'Reveal\\RevealTwig\\' => array($baseDir . '/packages/reveal-twig/src'),
+    'Reveal\\RevealLatte\\' => array($baseDir . '/packages/reveal-latte/src'),
+    'Reveal\\LattePHPStanCompiler\\' => array($baseDir . '/packages/latte-phpstan-compiler/src'),
+    'Reveal\\' => array($baseDir . '/src'),
     'RevealPrefix20220606\\Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'RevealPrefix20220606\\Twig\\' => array($vendorDir . '/twig/twig/src'),
     'RevealPrefix20220606\\Symplify\\SymplifyKernel\\' => array($vendorDir . '/symplify/symplify-kernel/src'),
@@ -25,13 +31,7 @@ return array(
     'RevealPrefix20220606\\Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
     'RevealPrefix20220606\\Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'RevealPrefix20220606\\Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
-    'RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\' => array($baseDir . '/packages/twig-phpstan-compiler/src'),
-    'RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\' => array($baseDir . '/packages/template-phpstan-compiler/src'),
-    'RevealPrefix20220606\\Reveal\\RevealTwig\\' => array($baseDir . '/packages/reveal-twig/src'),
-    'RevealPrefix20220606\\Reveal\\RevealLatte\\' => array($baseDir . '/packages/reveal-latte/src'),
-    'RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\' => array($baseDir . '/packages/latte-phpstan-compiler/src'),
-    'RevealPrefix20220606\\Reveal\\' => array($baseDir . '/src'),
     'RevealPrefix20220606\\Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
-    'RevealPrefix20220606\\PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
-    'RevealPrefix20220606\\PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
+    'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
 );

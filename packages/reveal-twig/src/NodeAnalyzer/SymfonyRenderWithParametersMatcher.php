@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealTwig\NodeAnalyzer;
+namespace Reveal\RevealTwig\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\PHPStan\Type\ThisType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use PHPStan\Type\ObjectType;
+use PHPStan\Type\ThisType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220606\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use RevealPrefix20220606\Symfony\Component\HttpFoundation\Response;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
@@ -30,7 +30,7 @@ final class SymfonyRenderWithParametersMatcher
      * @var \Reveal\RevealTwig\NodeAnalyzer\TwigRenderTemplateWithParametersMatcher
      */
     private $twigRenderTemplateWithParametersMatcher;
-    public function __construct(SimpleNameResolver $simpleNameResolver, TwigRenderTemplateWithParametersMatcher $twigRenderTemplateWithParametersMatcher)
+    public function __construct(SimpleNameResolver $simpleNameResolver, \Reveal\RevealTwig\NodeAnalyzer\TwigRenderTemplateWithParametersMatcher $twigRenderTemplateWithParametersMatcher)
     {
         $this->simpleNameResolver = $simpleNameResolver;
         $this->twigRenderTemplateWithParametersMatcher = $twigRenderTemplateWithParametersMatcher;
@@ -80,4 +80,3 @@ final class SymfonyRenderWithParametersMatcher
         return \false;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\NodeAnalyzer\\SymfonyRenderWithParametersMatcher', 'Reveal\\RevealTwig\\NodeAnalyzer\\SymfonyRenderWithParametersMatcher', \false);

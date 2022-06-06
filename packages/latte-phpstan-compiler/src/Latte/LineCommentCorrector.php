@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte;
+namespace Reveal\LattePHPStanCompiler\Latte;
 
 final class LineCommentCorrector
 {
@@ -9,7 +9,7 @@ final class LineCommentCorrector
      * @var \Reveal\LattePHPStanCompiler\Latte\LineCommentMatcher
      */
     private $lineCommentMatcher;
-    public function __construct(LineCommentMatcher $lineCommentMatcher)
+    public function __construct(\Reveal\LattePHPStanCompiler\Latte\LineCommentMatcher $lineCommentMatcher)
     {
         $this->lineCommentMatcher = $lineCommentMatcher;
     }
@@ -32,4 +32,3 @@ final class LineCommentCorrector
         return $correctedPhpContent;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\LineCommentCorrector', 'Reveal\\LattePHPStanCompiler\\Latte\\LineCommentCorrector', \false);

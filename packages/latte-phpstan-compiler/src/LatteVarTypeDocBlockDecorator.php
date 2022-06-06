@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler;
+namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\AppendExtractedVarTypesNodeVisitor;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PhpParser\NodeTraverser;
+use PhpParser\PrettyPrinter\Standard;
+use Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
+use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\AppendExtractedVarTypesNodeVisitor;
+use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 final class LatteVarTypeDocBlockDecorator
 {
     /**
@@ -54,4 +54,3 @@ final class LatteVarTypeDocBlockDecorator
         return \rtrim($printedPhpContent) . \PHP_EOL;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVarTypeDocBlockDecorator', 'Reveal\\LattePHPStanCompiler\\LatteVarTypeDocBlockDecorator', \false);

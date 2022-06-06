@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte;
+namespace Reveal\LattePHPStanCompiler\Latte;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
 /**
@@ -41,7 +41,3 @@ final class LineCommentMatcher
         return null;
     }
 }
-/**
- * @see \Reveal\LattePHPStanCompiler\Tests\Latte\LineCommentMatcherTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\LineCommentMatcher', 'Reveal\\LattePHPStanCompiler\\Latte\\LineCommentMatcher', \false);

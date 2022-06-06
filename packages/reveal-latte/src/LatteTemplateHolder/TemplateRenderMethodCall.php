@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\LatteTemplateHolder;
+namespace Reveal\RevealLatte\LatteTemplateHolder;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
-use RevealPrefix20220606\Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
+use Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
+use Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
+use Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 final class TemplateRenderMethodCall implements LatteTemplateHolderInterface
 {
     /**
@@ -56,4 +56,3 @@ final class TemplateRenderMethodCall implements LatteTemplateHolderInterface
         return $this->componentMapResolver->resolveFromMethodCall($node, $scope);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteTemplateHolder\\TemplateRenderMethodCall', 'Reveal\\RevealLatte\\LatteTemplateHolder\\TemplateRenderMethodCall', \false);

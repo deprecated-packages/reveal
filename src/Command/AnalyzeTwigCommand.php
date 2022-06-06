@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\Command;
+namespace Reveal\Command;
 
-use RevealPrefix20220606\Reveal\Enum\Option;
+use Reveal\Enum\Option;
 use RevealPrefix20220606\Symfony\Component\Console\Command\Command;
 use RevealPrefix20220606\Symfony\Component\Console\Input\InputArgument;
 use RevealPrefix20220606\Symfony\Component\Console\Input\InputInterface;
@@ -68,4 +68,3 @@ final class AnalyzeTwigCommand extends Command
         return self::FAILURE;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\Command\\AnalyzeTwigCommand', 'Reveal\\Command\\AnalyzeTwigCommand', \false);

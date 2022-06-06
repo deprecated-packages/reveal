@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\Contract;
+namespace Reveal\RevealLatte\Contract;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node;
+use PHPStan\Analyser\Scope;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 interface LatteTemplateHolderInterface
 {
     /**
@@ -22,4 +22,3 @@ interface LatteTemplateHolderInterface
      */
     public function findComponentNamesAndTypes(Node $node, Scope $scope) : array;
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Contract\\LatteTemplateHolderInterface', 'Reveal\\RevealLatte\\Contract\\LatteTemplateHolderInterface', \false);

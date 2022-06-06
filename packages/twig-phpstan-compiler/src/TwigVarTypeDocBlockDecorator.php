@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler;
+namespace Reveal\TwigPHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\AppendExtractedVarTypesNodeVisitor;
+use PhpParser\NodeTraverser;
+use PhpParser\PrettyPrinter\Standard;
+use Reveal\TemplatePHPStanCompiler\NodeFactory\VarDocNodeFactory;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\AppendExtractedVarTypesNodeVisitor;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 final class TwigVarTypeDocBlockDecorator
 {
     /**
@@ -50,4 +50,3 @@ final class TwigVarTypeDocBlockDecorator
         return \rtrim($printedPhpContent) . \PHP_EOL;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\TwigVarTypeDocBlockDecorator', 'Reveal\\TwigPHPStanCompiler\\TwigVarTypeDocBlockDecorator', \false);

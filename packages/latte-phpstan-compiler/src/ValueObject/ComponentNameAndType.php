@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject;
+namespace Reveal\LattePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220606\PHPStan\Type\Type;
+use PHPStan\Type\Type;
 final class ComponentNameAndType
 {
     /**
@@ -28,4 +28,3 @@ final class ComponentNameAndType
         return $this->returnType;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\ComponentNameAndType', 'Reveal\\LattePHPStanCompiler\\ValueObject\\ComponentNameAndType', \false);

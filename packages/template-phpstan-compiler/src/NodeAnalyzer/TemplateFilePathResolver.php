@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node\Expr;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symfony\Component\Finder\Finder;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 /**
@@ -89,7 +89,3 @@ final class TemplateFilePathResolver
         return [];
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\TemplateFilePathResolver', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\TemplateFilePathResolver', \false);

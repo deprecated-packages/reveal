@@ -1,20 +1,20 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\LatteTemplateHolder;
+namespace Reveal\RevealLatte\LatteTemplateHolder;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Node\InClassNode;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
-use RevealPrefix20220606\Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\Node\Stmt\ClassMethod;
+use PHPStan\Analyser\Scope;
+use PHPStan\Node\InClassNode;
+use PHPStan\Type\ObjectType;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
+use Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
+use Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeFinder\SimpleNodeFinder;
 final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
@@ -127,4 +127,3 @@ final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
         return null;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteTemplateHolder\\NetteApplicationUIPresenter', 'Reveal\\RevealLatte\\LatteTemplateHolder\\NetteApplicationUIPresenter', \false);

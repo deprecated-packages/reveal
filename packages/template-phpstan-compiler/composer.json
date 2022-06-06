@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\": "src"
+            "Reveal\\TemplatePHPStanCompiler\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Tests\\": "tests"
+            "Reveal\\TemplatePHPStanCompiler\\Tests\\": "tests"
         }
     },
     "extra": {

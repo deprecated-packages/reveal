@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606;
 
-use RevealPrefix20220606\Reveal\Console\ApplicationFactory;
+use Reveal\Console\ApplicationFactory;
 use RevealPrefix20220606\Symfony\Component\Console\Application;
 use RevealPrefix20220606\Symfony\Component\Console\Style\SymfonyStyle;
 use RevealPrefix20220606\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;

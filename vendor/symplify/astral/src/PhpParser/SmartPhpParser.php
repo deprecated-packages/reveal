@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\PhpParser;
+namespace Symplify\Astral\PhpParser;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PHPStan\Parser\Parser;
+use PhpParser\Node\Stmt;
+use PHPStan\Parser\Parser;
 /**
  * @see \Symplify\Astral\PhpParser\SmartPhpParserFactory
  */

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\DocBlock;
+namespace Reveal\TwigPHPStanCompiler\DocBlock;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
 use RevealPrefix20220606\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
@@ -49,4 +49,3 @@ final class NonVarTypeDocBlockCleaner
         return new TokenStream($tokens, $tokenStream->getSourceContext());
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\DocBlock\\NonVarTypeDocBlockCleaner', 'Reveal\\TwigPHPStanCompiler\\DocBlock\\NonVarTypeDocBlockCleaner', \false);

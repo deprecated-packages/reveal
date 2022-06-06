@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Type;
+namespace PHPStan\PhpDocParser\Ast\Type;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\NodeAttributes;
-class ConstTypeNode implements TypeNode
+use PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
+use PHPStan\PhpDocParser\Ast\NodeAttributes;
+class ConstTypeNode implements \PHPStan\PhpDocParser\Ast\Type\TypeNode
 {
     use NodeAttributes;
     /** @var ConstExprNode */

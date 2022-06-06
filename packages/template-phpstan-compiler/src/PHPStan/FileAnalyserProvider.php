@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PHPStan;
+namespace Reveal\TemplatePHPStanCompiler\PHPStan;
 
-use RevealPrefix20220606\PHPStan\Analyser\FileAnalyser;
-use RevealPrefix20220606\PHPStan\DependencyInjection\ContainerFactory;
+use PHPStan\Analyser\FileAnalyser;
+use PHPStan\DependencyInjection\ContainerFactory;
 use function getcwd;
 /**
  * @api
@@ -33,11 +33,3 @@ final class FileAnalyserProvider
         return $fileAnalyser;
     }
 }
-/**
- * @api
- *
- * This file analyser creates custom PHPStan DI container, based on rich php-parser with parent connection etc.
- *
- * It allows full analysis of just-in-time PHP files since PHPStan 1.0
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\PHPStan\\FileAnalyserProvider', 'Reveal\\TemplatePHPStanCompiler\\PHPStan\\FileAnalyserProvider', \false);

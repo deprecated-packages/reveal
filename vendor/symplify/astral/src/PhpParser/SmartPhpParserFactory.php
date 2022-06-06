@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\PhpParser;
+namespace Symplify\Astral\PhpParser;
 
-use RevealPrefix20220606\PhpParser\Lexer\Emulative;
-use RevealPrefix20220606\PhpParser\NodeVisitor\NameResolver;
-use RevealPrefix20220606\PhpParser\Parser;
-use RevealPrefix20220606\PhpParser\ParserFactory;
-use RevealPrefix20220606\PHPStan\Parser\CachedParser;
-use RevealPrefix20220606\PHPStan\Parser\SimpleParser;
+use PhpParser\Lexer\Emulative;
+use PhpParser\NodeVisitor\NameResolver;
+use PhpParser\Parser;
+use PhpParser\ParserFactory;
+use PHPStan\Parser\CachedParser;
+use PHPStan\Parser\SimpleParser;
 /**
  * Based on PHPStan-based PHP-Parser best practices:
  *
@@ -17,11 +17,11 @@ use RevealPrefix20220606\PHPStan\Parser\SimpleParser;
  */
 final class SmartPhpParserFactory
 {
-    public function create() : SmartPhpParser
+    public function create() : \Symplify\Astral\PhpParser\SmartPhpParser
     {
         $nativePhpParser = $this->createNativePhpParser();
         $cachedParser = $this->createPHPStanParser($nativePhpParser);
-        return new SmartPhpParser($cachedParser);
+        return new \Symplify\Astral\PhpParser\SmartPhpParser($cachedParser);
     }
     private function createNativePhpParser() : Parser
     {

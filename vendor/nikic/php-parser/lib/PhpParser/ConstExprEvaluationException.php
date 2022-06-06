@@ -1,6 +1,6 @@
 <?php
 
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
 class ConstExprEvaluationException extends \Exception
 {

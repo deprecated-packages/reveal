@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject;
+namespace Reveal\LattePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\ValueObject\CallReferenceInterface;
+use Reveal\LattePHPStanCompiler\Contract\ValueObject\CallReferenceInterface;
 final class StaticCallReference implements CallReferenceInterface
 {
     /**
@@ -28,4 +28,3 @@ final class StaticCallReference implements CallReferenceInterface
         return $this->method;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\ValueObject\\StaticCallReference', 'Reveal\\LattePHPStanCompiler\\ValueObject\\StaticCallReference', \false);

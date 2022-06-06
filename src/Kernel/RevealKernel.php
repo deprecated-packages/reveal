@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\Kernel;
+namespace Reveal\Kernel;
 
 use RevealPrefix20220606\Psr\Container\ContainerInterface;
 use RevealPrefix20220606\Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass\AutowireArrayParameterCompilerPass;
@@ -15,4 +15,3 @@ final class RevealKernel extends AbstractSymplifyKernel
         return $this->create($configFiles, $compilerPasses, []);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\Kernel\\RevealKernel', 'Reveal\\Kernel\\RevealKernel', \false);

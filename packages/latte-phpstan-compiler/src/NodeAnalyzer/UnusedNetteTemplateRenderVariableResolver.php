@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeAnalyzer;
+namespace Reveal\LattePHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\LatteVariableNamesResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
+use Reveal\LattePHPStanCompiler\LatteVariableNamesResolver;
+use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\MethodCallArrayResolver;
 /**
  * @api
  */
@@ -35,7 +35,3 @@ final class UnusedNetteTemplateRenderVariableResolver
         return \array_diff($passedVariableNames, $templateUsedVariableNames);
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\UnusedNetteTemplateRenderVariableResolver', 'Reveal\\LattePHPStanCompiler\\NodeAnalyzer\\UnusedNetteTemplateRenderVariableResolver', \false);

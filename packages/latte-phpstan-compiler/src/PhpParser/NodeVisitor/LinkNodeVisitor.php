@@ -1,21 +1,21 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\PropertyFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\StaticCall;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Echo_;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\LinkProcessor\LinkProcessorFactory;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\PropertyFetch;
+use PhpParser\Node\Expr\StaticCall;
+use PhpParser\Node\Stmt\Echo_;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
+use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
+use Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
+use Reveal\LattePHPStanCompiler\LinkProcessor\LinkProcessorFactory;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCompilerNodeVisitorInterface
@@ -116,4 +116,3 @@ final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCom
         return $linkParams;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LinkNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LinkNodeVisitor', \false);

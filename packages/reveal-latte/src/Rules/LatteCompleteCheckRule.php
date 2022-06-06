@@ -1,21 +1,21 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\Rules;
+namespace Reveal\RevealLatte\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node;
+use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\PHPStan\Rules\RuleError;
-use RevealPrefix20220606\PHPStan\Rules\RuleErrorBuilder;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\TemplateFileVarTypeDocBlocksDecorator;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ErrorSkipper;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PHPStan\Rules\RuleError;
+use PHPStan\Rules\RuleErrorBuilder;
+use Reveal\LattePHPStanCompiler\TemplateFileVarTypeDocBlocksDecorator;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
+use Reveal\TemplatePHPStanCompiler\ErrorSkipper;
+use Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
+use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
+use Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
@@ -171,9 +171,3 @@ CODE_SAMPLE
         return $this->templateErrorsFactory->createErrors($errors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);
     }
 }
-/**
- * @see \Reveal\RevealLatte\Tests\Rules\LatteCompleteCheckRule\LatteCompleteCheckRuleTest
- *
- * @inspired at https://github.com/efabrica-team/phpstan-latte/blob/main/src/Rule/ControlLatteRule.php#L56
- */
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\LatteCompleteCheckRule', 'Reveal\\RevealLatte\\Rules\\LatteCompleteCheckRule', \false);

@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\": "src"
+            "Reveal\\LattePHPStanCompiler\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Tests\\": "tests"
+            "Reveal\\LattePHPStanCompiler\\Tests\\": "tests"
         }
     },
     "extra": {

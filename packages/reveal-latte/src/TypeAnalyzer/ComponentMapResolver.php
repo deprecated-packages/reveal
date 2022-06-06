@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\TypeAnalyzer;
+namespace Reveal\RevealLatte\TypeAnalyzer;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\ComponentClassMethodTypeAnalyzer;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\Node\Stmt\ClassMethod;
+use PHPStan\Analyser\Scope;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\RevealLatte\NodeAnalyzer\ComponentClassMethodTypeAnalyzer;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeFinder\SimpleNodeFinder;
-use RevealPrefix20220606\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class ComponentMapResolver
 {
     /**
@@ -78,4 +78,3 @@ final class ComponentMapResolver
         return $componentNamesAndTypes;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\TypeAnalyzer\\ComponentMapResolver', 'Reveal\\RevealLatte\\TypeAnalyzer\\ComponentMapResolver', \false);

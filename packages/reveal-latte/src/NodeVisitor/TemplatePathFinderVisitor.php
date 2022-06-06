@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\NodeVisitor;
+namespace Reveal\RevealLatte\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\NodeVisitorAbstract;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
@@ -75,4 +75,3 @@ final class TemplatePathFinderVisitor extends NodeVisitorAbstract
         return $this->templatePaths;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeVisitor\\TemplatePathFinderVisitor', 'Reveal\\RevealLatte\\NodeVisitor\\TemplatePathFinderVisitor', \false);

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 final class ParametersArrayAnalyzer
 {
@@ -39,4 +39,3 @@ final class ParametersArrayAnalyzer
         return $stringKeyNames;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\ParametersArrayAnalyzer', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\ParametersArrayAnalyzer', \false);

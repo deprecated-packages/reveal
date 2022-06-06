@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\Reflection;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Reflection\ClassReflection;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\PHPStan\Type\ThisType;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Stmt\ClassMethod;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
+use PHPStan\Type\ObjectType;
+use PHPStan\Type\ThisType;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * @api

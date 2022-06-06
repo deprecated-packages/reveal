@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\Rules;
+namespace Reveal\RevealLatte\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeAnalyzer\UnusedNetteTemplateRenderVariableResolver;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
+use Reveal\LattePHPStanCompiler\NodeAnalyzer\UnusedNetteTemplateRenderVariableResolver;
+use Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
+use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
@@ -106,7 +106,3 @@ CODE_SAMPLE
 )]);
     }
 }
-/**
- * @see \Reveal\RevealLatte\Tests\Rules\NoNetteRenderUnusedVariableRule\NoNetteRenderUnusedVariableRuleTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\NoNetteRenderUnusedVariableRule', 'Reveal\\RevealLatte\\Rules\\NoNetteRenderUnusedVariableRule', \false);

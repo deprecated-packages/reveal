@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler;
+namespace Reveal\TemplatePHPStanCompiler;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PHPStan\Analyser\Error;
+use PHPStan\Analyser\Error;
 /**
  * @api
  * @see \Reveal\TemplatePHPStanCompiler\Tests\ErrorSkipperTest
@@ -30,8 +30,3 @@ final class ErrorSkipper
         return $filteredErrors;
     }
 }
-/**
- * @api
- * @see \Reveal\TemplatePHPStanCompiler\Tests\ErrorSkipperTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\ErrorSkipper', 'Reveal\\TemplatePHPStanCompiler\\ErrorSkipper', \false);

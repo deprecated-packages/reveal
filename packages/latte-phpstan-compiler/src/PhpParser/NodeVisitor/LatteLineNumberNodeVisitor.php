@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
+namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\LineCommentMatcher;
+use PhpParser\Comment\Doc;
+use PhpParser\Node;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\LattePHPStanCompiler\Latte\LineCommentMatcher;
 final class LatteLineNumberNodeVisitor extends NodeVisitorAbstract
 {
     /**
@@ -54,4 +54,3 @@ final class LatteLineNumberNodeVisitor extends NodeVisitorAbstract
         return $this->phpLinesToLatteLines;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LatteLineNumberNodeVisitor', 'Reveal\\LattePHPStanCompiler\\PhpParser\\NodeVisitor\\LatteLineNumberNodeVisitor', \false);

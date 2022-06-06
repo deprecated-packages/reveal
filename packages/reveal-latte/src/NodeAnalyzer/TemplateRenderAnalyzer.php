@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer;
+namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 final class TemplateRenderAnalyzer
@@ -34,4 +34,3 @@ final class TemplateRenderAnalyzer
         return $this->netteTypeAnalyzer->isTemplateType($methodCall->var, $scope);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\TemplateRenderAnalyzer', 'Reveal\\RevealLatte\\NodeAnalyzer\\TemplateRenderAnalyzer', \false);

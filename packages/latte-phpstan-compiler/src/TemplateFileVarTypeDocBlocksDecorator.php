@@ -1,19 +1,19 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler;
+namespace Reveal\LattePHPStanCompiler;
 
 use RevealPrefix20220606\Nette\Application\UI\Control;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Reflection\ClassReflection;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Tokens\PhpToLatteLineNumbersResolver;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PhpParser\Node\Expr\Array_;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
+use PHPStan\Type\ObjectType;
+use Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
+use Reveal\LattePHPStanCompiler\Latte\Tokens\PhpToLatteLineNumbersResolver;
+use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
+use Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
+use Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 /**
  * @api
  */
@@ -38,7 +38,7 @@ final class TemplateFileVarTypeDocBlocksDecorator
     /**
      * @param LatteVariableCollectorInterface[] $latteVariableCollectors
      */
-    public function __construct(LatteToPhpCompiler $latteToPhpCompiler, PhpToLatteLineNumbersResolver $phpToLatteLineNumbersResolver, TemplateVariableTypesResolver $templateVariableTypesResolver, array $latteVariableCollectors)
+    public function __construct(\Reveal\LattePHPStanCompiler\LatteToPhpCompiler $latteToPhpCompiler, PhpToLatteLineNumbersResolver $phpToLatteLineNumbersResolver, TemplateVariableTypesResolver $templateVariableTypesResolver, array $latteVariableCollectors)
     {
         $this->latteToPhpCompiler = $latteToPhpCompiler;
         $this->phpToLatteLineNumbersResolver = $phpToLatteLineNumbersResolver;
@@ -80,7 +80,3 @@ final class TemplateFileVarTypeDocBlocksDecorator
         return $variablesAndTypes;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\TemplateFileVarTypeDocBlocksDecorator', 'Reveal\\LattePHPStanCompiler\\TemplateFileVarTypeDocBlocksDecorator', \false);

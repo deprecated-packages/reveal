@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Rules;
+namespace Reveal\TemplatePHPStanCompiler\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PHPStan\Rules\Registry;
+use PhpParser\Node;
+use PHPStan\Rules\Registry;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
-use RevealPrefix20220606\Symplify\PHPStanRules\Rules\NoDynamicNameRule;
+use Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule;
+use Symplify\PHPStanRules\Rules\NoDynamicNameRule;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\Contract\DocumentedRuleInterface;
 /**
  * @api
@@ -53,7 +53,3 @@ final class TemplateRulesRegistry extends Registry
         return $activeRules;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\Rules\\TemplateRulesRegistry', 'Reveal\\TemplatePHPStanCompiler\\Rules\\TemplateRulesRegistry', \false);

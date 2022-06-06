@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\LinkProcessor;
+namespace Reveal\LattePHPStanCompiler\LinkProcessor;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Nette\PresenterFactoryFaker;
+use PhpParser\Comment\Doc;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt\Expression;
+use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
+use Reveal\LattePHPStanCompiler\Nette\PresenterFactoryFaker;
 /**
  * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("Foo:doSomething", ['a']));
  * </code>
@@ -70,10 +70,3 @@ final class PresenterActionLinkProcessor implements LinkProcessorInterface
         return $methodNames;
     }
 }
-/**
- * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("Foo:doSomething", ['a']));
- * </code>
- *
- * to: <code> $fooPresenter->actionDoSomething('a'); $fooPresenter->renderDoSomething('a'); </code>
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\PresenterActionLinkProcessor', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\PresenterActionLinkProcessor', \false);

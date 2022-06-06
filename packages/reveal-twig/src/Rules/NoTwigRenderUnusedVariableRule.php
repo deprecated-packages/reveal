@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealTwig\Rules;
+namespace Reveal\RevealTwig\Rules;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\NodeAnalyzer\UnusedTwigTemplateVariableAnalyzer;
+use Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
+use Reveal\TwigPHPStanCompiler\NodeAnalyzer\UnusedTwigTemplateVariableAnalyzer;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
@@ -83,8 +83,3 @@ CODE_SAMPLE
 )]);
     }
 }
-/**
- * @implements Rule<MethodCall>
- * @see \Reveal\RevealTwig\Tests\Rules\NoTwigRenderUnusedVariableRule\NoTwigRenderUnusedVariableRuleTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\RevealTwig\\Rules\\NoTwigRenderUnusedVariableRule', 'Reveal\\RevealTwig\\Rules\\NoTwigRenderUnusedVariableRule', \false);

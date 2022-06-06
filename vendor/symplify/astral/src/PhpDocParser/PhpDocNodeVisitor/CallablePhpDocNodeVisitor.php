@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Node;
+use PHPStan\PhpDocParser\Ast\Node;
 final class CallablePhpDocNodeVisitor extends AbstractPhpDocNodeVisitor
 {
     /**

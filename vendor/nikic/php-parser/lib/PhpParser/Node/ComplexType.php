@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node;
+namespace PhpParser\Node;
 
-use RevealPrefix20220606\PhpParser\NodeAbstract;
+use PhpParser\NodeAbstract;
 /**
  * This is a base class for complex types, including nullable types and union types.
  *

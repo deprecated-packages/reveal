@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PHPStan;
+namespace Reveal\TemplatePHPStanCompiler\PHPStan;
 
-use RevealPrefix20220606\PHPStan\Analyser\FileAnalyser;
-use RevealPrefix20220606\PHPStan\DependencyInjection\Container;
-use RevealPrefix20220606\PHPStan\DependencyInjection\ContainerFactory;
-use RevealPrefix20220606\PHPStan\Parser\Parser;
+use PHPStan\Analyser\FileAnalyser;
+use PHPStan\DependencyInjection\Container;
+use PHPStan\DependencyInjection\ContainerFactory;
+use PHPStan\Parser\Parser;
 /**
  * @see https://github.com/rectorphp/rector-src/blob/main/packages/NodeTypeResolver/DependencyInjection/PHPStanServicesFactory.php
  */
@@ -32,7 +32,3 @@ final class PHPStanServicesFactory
         return $this->container->getService('currentPhpVersionRichParser');
     }
 }
-/**
- * @see https://github.com/rectorphp/rector-src/blob/main/packages/NodeTypeResolver/DependencyInjection/PHPStanServicesFactory.php
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\PHPStan\\PHPStanServicesFactory', 'Reveal\\TemplatePHPStanCompiler\\PHPStan\\PHPStanServicesFactory', \false);

@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer;
+namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayDimFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Scalar\String_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PhpParser\NodeFinder;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\ArrayDimFetch;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Scalar\String_;
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\Node\Stmt\ClassMethod;
+use PhpParser\NodeFinder;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
 final class UsedLocalComponentNamesResolver
@@ -94,4 +94,3 @@ final class UsedLocalComponentNamesResolver
         return $componentNames;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\UsedLocalComponentNamesResolver', 'Reveal\\RevealLatte\\NodeAnalyzer\\UsedLocalComponentNamesResolver', \false);

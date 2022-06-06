@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\TypeAnalyzer;
+namespace Reveal\TemplatePHPStanCompiler\TypeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Type\ArrayType;
-use RevealPrefix20220606\PHPStan\Type\Generic\GenericObjectType;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
+use PHPStan\Analyser\Scope;
+use PHPStan\Type\ArrayType;
+use PHPStan\Type\Generic\GenericObjectType;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 /**
  * @api
@@ -50,7 +50,3 @@ final class TemplateVariableTypesResolver
         return $variableNamesToTypes;
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\TypeAnalyzer\\TemplateVariableTypesResolver', 'Reveal\\TemplatePHPStanCompiler\\TypeAnalyzer\\TemplateVariableTypesResolver', \false);

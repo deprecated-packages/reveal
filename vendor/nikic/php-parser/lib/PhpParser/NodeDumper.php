@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
-use RevealPrefix20220606\PhpParser\Node\Expr\Include_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\GroupUse;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Use_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\UseUse;
+use PhpParser\Node\Expr\Include_;
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\Node\Stmt\GroupUse;
+use PhpParser\Node\Stmt\Use_;
+use PhpParser\Node\Stmt\UseUse;
 class NodeDumper
 {
     private $dumpComments;
@@ -45,7 +45,7 @@ class NodeDumper
     }
     protected function dumpRecursive($node)
     {
-        if ($node instanceof Node) {
+        if ($node instanceof \PhpParser\Node) {
             $r = $node->getType();
             if ($this->dumpPositions && null !== ($p = $this->dumpPosition($node))) {
                 $r .= $p;
@@ -93,7 +93,7 @@ class NodeDumper
                     $r .= \str_replace("\n", "\n    ", $this->dumpRecursive($value));
                 }
             }
-        } elseif ($node instanceof Comment) {
+        } elseif ($node instanceof \PhpParser\Comment) {
             return $node->getReformattedText();
         } else {
             throw new \InvalidArgumentException('Can only dump nodes and arrays.');
@@ -153,7 +153,7 @@ class NodeDumper
      *
      * @return string|null Dump of position, or null if position information not available
      */
-    protected function dumpPosition(Node $node)
+    protected function dumpPosition(\PhpParser\Node $node)
     {
         if (!$node->hasAttribute('startLine') || !$node->hasAttribute('endLine')) {
             return null;

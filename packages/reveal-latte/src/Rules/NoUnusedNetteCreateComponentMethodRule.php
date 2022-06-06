@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\Rules;
+namespace Reveal\RevealLatte\Rules;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Reflection\ClassReflection;
+use PhpParser\Node;
+use PhpParser\Node\Stmt\ClassMethod;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
 use PHPStan\Rules\Rule;
-use RevealPrefix20220606\Reveal\RevealLatte\LatteUsedControlResolver;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer\UsedLocalComponentNamesResolver;
+use Reveal\RevealLatte\LatteUsedControlResolver;
+use Reveal\RevealLatte\NodeAnalyzer\UsedLocalComponentNamesResolver;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\NoUnusedNetteCreateComponentMethodRule\NoUnusedNetteCreateComponentMethodRuleTest
@@ -110,8 +110,3 @@ final class NoUnusedNetteCreateComponentMethodRule implements Rule
         return $classMethod->isPrivate();
     }
 }
-/**
- * @see \Reveal\RevealLatte\Tests\Rules\NoUnusedNetteCreateComponentMethodRule\NoUnusedNetteCreateComponentMethodRuleTest
- * @implements Rule<ClassMethod>
- */
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\Rules\\NoUnusedNetteCreateComponentMethodRule', 'Reveal\\RevealLatte\\Rules\\NoUnusedNetteCreateComponentMethodRule', \false);

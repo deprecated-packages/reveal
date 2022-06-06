@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Reflection;
+namespace Reveal\TwigPHPStanCompiler\Reflection;
 
-use RevealPrefix20220606\PHPStan\Type\Type;
-use RevealPrefix20220606\PHPStan\Type\TypeWithClassName;
+use PHPStan\Type\Type;
+use PHPStan\Type\TypeWithClassName;
 use ReflectionProperty;
 final class PublicPropertyAnalyzer
 {
@@ -33,4 +33,3 @@ final class PublicPropertyAnalyzer
         return $resolvedVisibility;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\Reflection\\PublicPropertyAnalyzer', 'Reveal\\TwigPHPStanCompiler\\Reflection\\PublicPropertyAnalyzer', \false);

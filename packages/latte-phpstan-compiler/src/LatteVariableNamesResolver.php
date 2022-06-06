@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler;
+namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeFinder;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\RelatedFileResolver\IncludedSnippetTemplateFileResolver;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\RelatedFileResolver\ParentLayoutTemplateFileResolver;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeVisitor\TemplateVariableCollectingNodeVisitor;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeFinder;
+use PhpParser\NodeTraverser;
+use Reveal\LattePHPStanCompiler\RelatedFileResolver\IncludedSnippetTemplateFileResolver;
+use Reveal\LattePHPStanCompiler\RelatedFileResolver\ParentLayoutTemplateFileResolver;
+use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
+use Reveal\TemplatePHPStanCompiler\NodeVisitor\TemplateVariableCollectingNodeVisitor;
+use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class LatteVariableNamesResolver implements UsedVariableNamesResolverInterface
 {
@@ -38,7 +38,7 @@ final class LatteVariableNamesResolver implements UsedVariableNamesResolverInter
      * @var \PhpParser\NodeFinder
      */
     private $nodeFinder;
-    public function __construct(ParentNodeAwarePhpParser $parentNodeAwarePhpParser, LatteToPhpCompiler $latteToPhpCompiler, ParentLayoutTemplateFileResolver $parentLayoutTemplateFileResolver, IncludedSnippetTemplateFileResolver $includedSnippetTemplateFileResolver, SimpleNameResolver $simpleNameResolver, NodeFinder $nodeFinder)
+    public function __construct(ParentNodeAwarePhpParser $parentNodeAwarePhpParser, \Reveal\LattePHPStanCompiler\LatteToPhpCompiler $latteToPhpCompiler, ParentLayoutTemplateFileResolver $parentLayoutTemplateFileResolver, IncludedSnippetTemplateFileResolver $includedSnippetTemplateFileResolver, SimpleNameResolver $simpleNameResolver, NodeFinder $nodeFinder)
     {
         $this->parentNodeAwarePhpParser = $parentNodeAwarePhpParser;
         $this->latteToPhpCompiler = $latteToPhpCompiler;
@@ -93,4 +93,3 @@ final class LatteVariableNamesResolver implements UsedVariableNamesResolverInter
         return $this->parentNodeAwarePhpParser->parsePhpContent($parentLayoutCompiledPhp);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVariableNamesResolver', 'Reveal\\LattePHPStanCompiler\\LatteVariableNamesResolver', \false);

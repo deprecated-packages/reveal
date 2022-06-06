@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\Node\Stmt;
 class HaltCompiler extends Stmt
 {
     /** @var string Remaining text after halt compiler statement. */

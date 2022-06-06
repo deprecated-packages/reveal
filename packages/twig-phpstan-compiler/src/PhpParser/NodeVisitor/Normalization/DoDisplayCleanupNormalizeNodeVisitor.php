@@ -1,20 +1,20 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
+namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\Normalization;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayDimFetch;
-use RevealPrefix20220606\PhpParser\Node\Expr\Assign;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Foreach_;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Unset_;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
+use PhpParser\Node;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\ArrayDimFetch;
+use PhpParser\Node\Expr\Assign;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt\Expression;
+use PhpParser\Node\Stmt\Foreach_;
+use PhpParser\Node\Stmt\Unset_;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitorAbstract;
+use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class DoDisplayCleanupNormalizeNodeVisitor extends NodeVisitorAbstract implements NormalizingNodeVisitorInterface
 {
@@ -80,4 +80,3 @@ final class DoDisplayCleanupNormalizeNodeVisitor extends NodeVisitorAbstract imp
         return $this->simpleNameResolver->isName($expr, 'context');
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\DoDisplayCleanupNormalizeNodeVisitor', 'Reveal\\TwigPHPStanCompiler\\PhpParser\\NodeVisitor\\Normalization\\DoDisplayCleanupNormalizeNodeVisitor', \false);

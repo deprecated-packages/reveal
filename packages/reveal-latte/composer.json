@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\RevealLatte\\": "src"
+            "Reveal\\RevealLatte\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220606\\Reveal\\RevealLatte\\Tests\\": "tests"
+            "Reveal\\RevealLatte\\Tests\\": "tests"
         }
     },
     "extra": {

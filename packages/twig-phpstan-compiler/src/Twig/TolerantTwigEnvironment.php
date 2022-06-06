@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Twig;
+namespace Reveal\TwigPHPStanCompiler\Twig;
 
 use RevealPrefix20220606\Twig\Environment;
 use RevealPrefix20220606\Twig\TwigFilter;
@@ -34,7 +34,3 @@ final class TolerantTwigEnvironment extends Environment
         });
     }
 }
-/**
- * Allows any function and filter
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\Twig\\TolerantTwigEnvironment', 'Reveal\\TwigPHPStanCompiler\\Twig\\TolerantTwigEnvironment', \false);

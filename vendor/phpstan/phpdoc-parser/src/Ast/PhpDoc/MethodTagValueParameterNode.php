@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Node;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\NodeAttributes;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Ast\Type\TypeNode;
+use PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
+use PHPStan\PhpDocParser\Ast\Node;
+use PHPStan\PhpDocParser\Ast\NodeAttributes;
+use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 class MethodTagValueParameterNode implements Node
 {
     use NodeAttributes;

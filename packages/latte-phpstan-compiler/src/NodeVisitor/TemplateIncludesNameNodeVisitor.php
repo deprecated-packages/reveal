@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeVisitor;
+namespace Reveal\LattePHPStanCompiler\NodeVisitor;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeVisitorAbstract;
+use PhpParser\Node;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeVisitorAbstract;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
@@ -101,4 +101,3 @@ final class TemplateIncludesNameNodeVisitor extends NodeVisitorAbstract
         return $this->nodeValueResolver->resolve($firstArgValue, $this->templateFilePath);
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\NodeVisitor\\TemplateIncludesNameNodeVisitor', 'Reveal\\LattePHPStanCompiler\\NodeVisitor\\TemplateIncludesNameNodeVisitor', \false);

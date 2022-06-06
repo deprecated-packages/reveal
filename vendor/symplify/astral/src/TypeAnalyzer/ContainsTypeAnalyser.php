@@ -3,13 +3,13 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\TypeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Type\ArrayType;
-use RevealPrefix20220606\PHPStan\Type\IntersectionType;
-use RevealPrefix20220606\PHPStan\Type\Type;
-use RevealPrefix20220606\PHPStan\Type\TypeWithClassName;
-use RevealPrefix20220606\PHPStan\Type\UnionType;
+use PhpParser\Node\Expr;
+use PHPStan\Analyser\Scope;
+use PHPStan\Type\ArrayType;
+use PHPStan\Type\IntersectionType;
+use PHPStan\Type\Type;
+use PHPStan\Type\TypeWithClassName;
+use PHPStan\Type\UnionType;
 final class ContainsTypeAnalyser
 {
     /**

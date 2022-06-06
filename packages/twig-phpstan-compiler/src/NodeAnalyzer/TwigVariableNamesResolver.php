@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TwigPHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeVisitor\VariableCollectingNodeVisitor;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
+use PhpParser\NodeTraverser;
+use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
+use Reveal\TemplatePHPStanCompiler\NodeVisitor\VariableCollectingNodeVisitor;
+use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
+use Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 final class TwigVariableNamesResolver implements UsedVariableNamesResolverInterface
 {
@@ -44,4 +44,3 @@ final class TwigVariableNamesResolver implements UsedVariableNamesResolverInterf
         return $variableCollectingNodeVisitor->getUsedVariableNames();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\TwigVariableNamesResolver', 'Reveal\\TwigPHPStanCompiler\\NodeAnalyzer\\TwigVariableNamesResolver', \false);

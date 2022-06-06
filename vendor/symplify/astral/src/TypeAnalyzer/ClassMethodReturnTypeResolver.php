@@ -3,13 +3,13 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\TypeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt\ClassMethod;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\PHPStan\Reflection\ClassReflection;
-use RevealPrefix20220606\PHPStan\Reflection\FunctionVariant;
-use RevealPrefix20220606\PHPStan\Reflection\ParametersAcceptorSelector;
-use RevealPrefix20220606\PHPStan\Type\MixedType;
-use RevealPrefix20220606\PHPStan\Type\Type;
+use PhpParser\Node\Stmt\ClassMethod;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
+use PHPStan\Reflection\FunctionVariant;
+use PHPStan\Reflection\ParametersAcceptorSelector;
+use PHPStan\Type\MixedType;
+use PHPStan\Type\Type;
 use RevealPrefix20220606\Symplify\Astral\Exception\ShouldNotHappenException;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 /**

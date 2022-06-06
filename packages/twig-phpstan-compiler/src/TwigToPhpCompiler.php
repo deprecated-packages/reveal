@@ -1,31 +1,31 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler;
+namespace Reveal\TwigPHPStanCompiler;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PhpParser\NodeVisitor;
-use RevealPrefix20220606\PhpParser\Parser;
-use RevealPrefix20220606\PhpParser\ParserFactory;
-use RevealPrefix20220606\PhpParser\PrettyPrinter\Standard;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\DocBlock\NonVarTypeDocBlockCleaner;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\ErrorReporting\TemplateLinesMapResolver;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Exception\TwigPHPStanCompilerException;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\CollectForeachedVariablesNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ExpandForeachContextNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ExtractDoDisplayStmtsNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\RemoveUselessClassMethodsNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ReplaceEchoWithVarDocTypeNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\TwigGetAttributeExpanderNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapCoalesceContextNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapContextVariableNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapTwigEnsureTraversableNodeVisitor;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Reflection\PublicPropertyAnalyzer;
-use RevealPrefix20220606\Reveal\TwigPHPStanCompiler\Twig\TolerantTwigEnvironment;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitor;
+use PhpParser\Parser;
+use PhpParser\ParserFactory;
+use PhpParser\PrettyPrinter\Standard;
+use Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
+use Reveal\TwigPHPStanCompiler\DocBlock\NonVarTypeDocBlockCleaner;
+use Reveal\TwigPHPStanCompiler\ErrorReporting\TemplateLinesMapResolver;
+use Reveal\TwigPHPStanCompiler\Exception\TwigPHPStanCompilerException;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\CollectForeachedVariablesNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ExpandForeachContextNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ExtractDoDisplayStmtsNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\RemoveUselessClassMethodsNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\ReplaceEchoWithVarDocTypeNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\TwigGetAttributeExpanderNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapCoalesceContextNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapContextVariableNodeVisitor;
+use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapTwigEnsureTraversableNodeVisitor;
+use Reveal\TwigPHPStanCompiler\Reflection\PublicPropertyAnalyzer;
+use Reveal\TwigPHPStanCompiler\Twig\TolerantTwigEnvironment;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
 use RevealPrefix20220606\Twig\Lexer;
@@ -85,7 +85,7 @@ final class TwigToPhpCompiler
     /**
      * @param NormalizingNodeVisitorInterface[] $normalizingNodeVisitors
      */
-    public function __construct(SmartFileSystem $smartFileSystem, Standard $printerStandard, TwigVarTypeDocBlockDecorator $twigVarTypeDocBlockDecorator, SimpleNameResolver $simpleNameResolver, ObjectTypeMethodAnalyzer $objectTypeMethodAnalyzer, PublicPropertyAnalyzer $publicPropertyAnalyzer, TemplateLinesMapResolver $templateLinesMapResolver, NonVarTypeDocBlockCleaner $nonVarTypeDocBlockCleaner, ExtractDoDisplayStmtsNodeVisitor $extractDoDisplayStmtsNodeVisitor, array $normalizingNodeVisitors)
+    public function __construct(SmartFileSystem $smartFileSystem, Standard $printerStandard, \Reveal\TwigPHPStanCompiler\TwigVarTypeDocBlockDecorator $twigVarTypeDocBlockDecorator, SimpleNameResolver $simpleNameResolver, \Reveal\TwigPHPStanCompiler\ObjectTypeMethodAnalyzer $objectTypeMethodAnalyzer, PublicPropertyAnalyzer $publicPropertyAnalyzer, TemplateLinesMapResolver $templateLinesMapResolver, NonVarTypeDocBlockCleaner $nonVarTypeDocBlockCleaner, ExtractDoDisplayStmtsNodeVisitor $extractDoDisplayStmtsNodeVisitor, array $normalizingNodeVisitors)
     {
         $this->smartFileSystem = $smartFileSystem;
         $this->printerStandard = $printerStandard;
@@ -213,7 +213,3 @@ final class TwigToPhpCompiler
         return $this->extractDoDisplayStmtsNodeVisitor->getDoDisplayStmts();
     }
 }
-/**
- * @see \Reveal\TwigPHPStanCompiler\Tests\TwigToPhpCompiler\TwigToPhpCompilerTest
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\TwigToPhpCompiler', 'Reveal\\TwigPHPStanCompiler\\TwigToPhpCompiler', \false);

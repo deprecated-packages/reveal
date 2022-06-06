@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TwigPHPStanCompiler;
+namespace Reveal\TwigPHPStanCompiler;
 
-use RevealPrefix20220606\PHPStan\Type\TypeWithClassName;
+use PHPStan\Type\TypeWithClassName;
 final class ObjectTypeMethodAnalyzer
 {
     /**
@@ -30,4 +30,3 @@ final class ObjectTypeMethodAnalyzer
         return [$methodName, 'get' . \ucfirst($methodName), 'is' . \ucfirst($methodName)];
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\TwigPHPStanCompiler\\ObjectTypeMethodAnalyzer', 'Reveal\\TwigPHPStanCompiler\\ObjectTypeMethodAnalyzer', \false);

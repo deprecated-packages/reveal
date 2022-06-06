@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
+namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\MethodCall;
+use PHPStan\Analyser\Scope;
 /**
  * @api
  */
@@ -16,7 +16,7 @@ final class MethodCallArrayResolver
      * @var \Reveal\TemplatePHPStanCompiler\NodeAnalyzer\ParametersArrayAnalyzer
      */
     private $parametersArrayAnalyzer;
-    public function __construct(ParametersArrayAnalyzer $parametersArrayAnalyzer)
+    public function __construct(\Reveal\TemplatePHPStanCompiler\NodeAnalyzer\ParametersArrayAnalyzer $parametersArrayAnalyzer)
     {
         $this->parametersArrayAnalyzer = $parametersArrayAnalyzer;
     }
@@ -39,7 +39,3 @@ final class MethodCallArrayResolver
         return $this->parametersArrayAnalyzer->resolveStringKeys($secondArgValue, $scope);
     }
 }
-/**
- * @api
- */
-\class_alias('RevealPrefix20220606\\Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\MethodCallArrayResolver', 'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\MethodCallArrayResolver', \false);

@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser;
+namespace PhpParser;
 
-use RevealPrefix20220606\PhpParser\Internal\DiffElem;
-use RevealPrefix20220606\PhpParser\Internal\PrintableNewAnonClassNode;
-use RevealPrefix20220606\PhpParser\Internal\TokenStream;
-use RevealPrefix20220606\PhpParser\Node\Expr;
-use RevealPrefix20220606\PhpParser\Node\Expr\AssignOp;
-use RevealPrefix20220606\PhpParser\Node\Expr\BinaryOp;
-use RevealPrefix20220606\PhpParser\Node\Expr\Cast;
-use RevealPrefix20220606\PhpParser\Node\Scalar;
-use RevealPrefix20220606\PhpParser\Node\Stmt;
+use PhpParser\Internal\DiffElem;
+use PhpParser\Internal\PrintableNewAnonClassNode;
+use PhpParser\Internal\TokenStream;
+use PhpParser\Node\Expr;
+use PhpParser\Node\Expr\AssignOp;
+use PhpParser\Node\Expr\BinaryOp;
+use PhpParser\Node\Expr\Cast;
+use PhpParser\Node\Scalar;
+use PhpParser\Node\Stmt;
 abstract class PrettyPrinterAbstract
 {
     const FIXUP_PREC_LEFT = 0;
@@ -303,7 +303,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string Pretty printed infix operation
      */
-    protected function pInfixOp(string $class, Node $leftNode, string $operatorString, Node $rightNode) : string
+    protected function pInfixOp(string $class, \PhpParser\Node $leftNode, string $operatorString, \PhpParser\Node $rightNode) : string
     {
         list($precedence, $associativity) = $this->precedenceMap[$class];
         return $this->pPrec($leftNode, $precedence, $associativity, -1) . $operatorString . $this->pPrec($rightNode, $precedence, $associativity, 1);
@@ -317,7 +317,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string Pretty printed prefix operation
      */
-    protected function pPrefixOp(string $class, string $operatorString, Node $node) : string
+    protected function pPrefixOp(string $class, string $operatorString, \PhpParser\Node $node) : string
     {
         list($precedence, $associativity) = $this->precedenceMap[$class];
         return $operatorString . $this->pPrec($node, $precedence, $associativity, 1);
@@ -331,7 +331,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string Pretty printed postfix operation
      */
-    protected function pPostfixOp(string $class, Node $node, string $operatorString) : string
+    protected function pPostfixOp(string $class, \PhpParser\Node $node, string $operatorString) : string
     {
         list($precedence, $associativity) = $this->precedenceMap[$class];
         return $this->pPrec($node, $precedence, $associativity, -1) . $operatorString;
@@ -348,7 +348,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string The pretty printed node
      */
-    protected function pPrec(Node $node, int $parentPrecedence, int $parentAssociativity, int $childPosition) : string
+    protected function pPrec(\PhpParser\Node $node, int $parentPrecedence, int $parentAssociativity, int $childPosition) : string
     {
         $class = \get_class($node);
         if (isset($this->precedenceMap[$class])) {
@@ -478,7 +478,7 @@ abstract class PrettyPrinterAbstract
         }
         return \ltrim($this->handleMagicTokens($result));
     }
-    protected function pFallback(Node $node)
+    protected function pFallback(\PhpParser\Node $node)
     {
         return $this->{'p' . $node->getType()}($node);
     }
@@ -492,7 +492,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string Pretty printed node
      */
-    protected function p(Node $node, $parentFormatPreserved = \false) : string
+    protected function p(\PhpParser\Node $node, $parentFormatPreserved = \false) : string
     {
         // No orig tokens means this is a normal pretty print without preservation of formatting
         if (!$this->origTokens) {
@@ -528,7 +528,7 @@ abstract class PrettyPrinterAbstract
         foreach ($node->getSubNodeNames() as $subNodeName) {
             $subNode = $node->{$subNodeName};
             $origSubNode = $origNode->{$subNodeName};
-            if (!$subNode instanceof Node && $subNode !== null || !$origSubNode instanceof Node && $origSubNode !== null) {
+            if (!$subNode instanceof \PhpParser\Node && $subNode !== null || !$origSubNode instanceof \PhpParser\Node && $origSubNode !== null) {
                 if ($subNode === $origSubNode) {
                     // Unchanged, can reuse old code
                     continue;
@@ -680,7 +680,7 @@ abstract class PrettyPrinterAbstract
                     }
                     return null;
                 }
-                if (!$arrItem instanceof Node || !$origArrItem instanceof Node) {
+                if (!$arrItem instanceof \PhpParser\Node || !$origArrItem instanceof \PhpParser\Node) {
                     // We can only deal with nodes. This can occur for Names, which use string arrays.
                     return null;
                 }
@@ -766,7 +766,7 @@ abstract class PrettyPrinterAbstract
                     $result .= $insertStr;
                 }
             } elseif ($diffType === DiffElem::TYPE_REMOVE) {
-                if (!$origArrItem instanceof Node) {
+                if (!$origArrItem instanceof \PhpParser\Node) {
                     // We only support removal for nodes
                     return null;
                 }
@@ -846,7 +846,7 @@ abstract class PrettyPrinterAbstract
      *
      * @return string Result of fixed-up print of subnode
      */
-    protected function pFixup(int $fixup, Node $subNode, $parentClass, int $subStartPos, int $subEndPos) : string
+    protected function pFixup(int $fixup, \PhpParser\Node $subNode, $parentClass, int $subStartPos, int $subEndPos) : string
     {
         switch ($fixup) {
             case self::FIXUP_PREC_LEFT:
@@ -914,9 +914,9 @@ abstract class PrettyPrinterAbstract
      *
      * @return bool Whether parentheses are required
      */
-    protected function callLhsRequiresParens(Node $node) : bool
+    protected function callLhsRequiresParens(\PhpParser\Node $node) : bool
     {
-        return !($node instanceof Node\Name || $node instanceof Expr\Variable || $node instanceof Expr\ArrayDimFetch || $node instanceof Expr\FuncCall || $node instanceof Expr\MethodCall || $node instanceof Expr\NullsafeMethodCall || $node instanceof Expr\StaticCall || $node instanceof Expr\Array_);
+        return !($node instanceof \PhpParser\Node\Name || $node instanceof Expr\Variable || $node instanceof Expr\ArrayDimFetch || $node instanceof Expr\FuncCall || $node instanceof Expr\MethodCall || $node instanceof Expr\NullsafeMethodCall || $node instanceof Expr\StaticCall || $node instanceof Expr\Array_);
     }
     /**
      * Determines whether the LHS of a dereferencing operation must be wrapped in parenthesis.
@@ -925,9 +925,9 @@ abstract class PrettyPrinterAbstract
      *
      * @return bool Whether parentheses are required
      */
-    protected function dereferenceLhsRequiresParens(Node $node) : bool
+    protected function dereferenceLhsRequiresParens(\PhpParser\Node $node) : bool
     {
-        return !($node instanceof Expr\Variable || $node instanceof Node\Name || $node instanceof Expr\ArrayDimFetch || $node instanceof Expr\PropertyFetch || $node instanceof Expr\NullsafePropertyFetch || $node instanceof Expr\StaticPropertyFetch || $node instanceof Expr\FuncCall || $node instanceof Expr\MethodCall || $node instanceof Expr\NullsafeMethodCall || $node instanceof Expr\StaticCall || $node instanceof Expr\Array_ || $node instanceof Scalar\String_ || $node instanceof Expr\ConstFetch || $node instanceof Expr\ClassConstFetch);
+        return !($node instanceof Expr\Variable || $node instanceof \PhpParser\Node\Name || $node instanceof Expr\ArrayDimFetch || $node instanceof Expr\PropertyFetch || $node instanceof Expr\NullsafePropertyFetch || $node instanceof Expr\StaticPropertyFetch || $node instanceof Expr\FuncCall || $node instanceof Expr\MethodCall || $node instanceof Expr\NullsafeMethodCall || $node instanceof Expr\StaticCall || $node instanceof Expr\Array_ || $node instanceof Scalar\String_ || $node instanceof Expr\ConstFetch || $node instanceof Expr\ClassConstFetch);
     }
     /**
      * Print modifiers, including trailing whitespace.
@@ -999,8 +999,8 @@ abstract class PrettyPrinterAbstract
         if ($this->nodeListDiffer) {
             return;
         }
-        $this->nodeListDiffer = new Internal\Differ(function ($a, $b) {
-            if ($a instanceof Node && $b instanceof Node) {
+        $this->nodeListDiffer = new \PhpParser\Internal\Differ(function ($a, $b) {
+            if ($a instanceof \PhpParser\Node && $b instanceof \PhpParser\Node) {
                 return $a === $b->getAttribute('origNode');
             }
             // Can happen for array destructuring

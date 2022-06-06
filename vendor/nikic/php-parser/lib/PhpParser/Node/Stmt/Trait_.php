@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\PhpParser\Node\Stmt;
+namespace PhpParser\Node\Stmt;
 
-use RevealPrefix20220606\PhpParser\Node;
-class Trait_ extends ClassLike
+use PhpParser\Node;
+class Trait_ extends \PhpParser\Node\Stmt\ClassLike
 {
     /**
      * Constructs a trait node.

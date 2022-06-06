@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser;
 
-use RevealPrefix20220606\PhpParser\Comment\Doc;
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Lexer\Lexer;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Parser\PhpDocParser;
-use RevealPrefix20220606\PHPStan\PhpDocParser\Parser\TokenIterator;
+use PhpParser\Comment\Doc;
+use PhpParser\Node;
+use PHPStan\PhpDocParser\Lexer\Lexer;
+use PHPStan\PhpDocParser\Parser\PhpDocParser;
+use PHPStan\PhpDocParser\Parser\TokenIterator;
 use RevealPrefix20220606\Symplify\Astral\PhpDocParser\ValueObject\Ast\PhpDoc\SimplePhpDocNode;
 /**
  * @see \Symplify\Astral\Tests\PhpDocParser\SimplePhpDocParser\SimplePhpDocParserTest

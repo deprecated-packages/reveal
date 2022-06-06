@@ -1,19 +1,19 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte\NodeAnalyzer;
+namespace Reveal\RevealLatte\NodeAnalyzer;
 
-use RevealPrefix20220606\PhpParser\Node;
-use RevealPrefix20220606\PhpParser\Node\Expr\Array_;
-use RevealPrefix20220606\PhpParser\Node\Expr\ArrayItem;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Class_;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeVisitor\AssignedParametersVisitor;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeVisitor\RenderParametersVisitor;
-use RevealPrefix20220606\Reveal\RevealLatte\NodeVisitor\TemplatePathFinderVisitor;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
+use PhpParser\Node;
+use PhpParser\Node\Expr\Array_;
+use PhpParser\Node\Expr\ArrayItem;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\NodeTraverser;
+use PHPStan\Analyser\Scope;
+use Reveal\RevealLatte\NodeVisitor\AssignedParametersVisitor;
+use Reveal\RevealLatte\NodeVisitor\RenderParametersVisitor;
+use Reveal\RevealLatte\NodeVisitor\TemplatePathFinderVisitor;
+use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 use RevealPrefix20220606\Symplify\Astral\NodeFinder\SimpleNodeFinder;
@@ -90,4 +90,3 @@ final class LatteTemplateWithParametersMatcher
         return $templatePathFinderVisitor->getTemplatePaths();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\NodeAnalyzer\\LatteTemplateWithParametersMatcher', 'Reveal\\RevealLatte\\NodeAnalyzer\\LatteTemplateWithParametersMatcher', \false);

@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\LinkProcessor;
+namespace Reveal\LattePHPStanCompiler\LinkProcessor;
 
-use RevealPrefix20220606\PhpParser\Node\Arg;
-use RevealPrefix20220606\PhpParser\Node\Expr\MethodCall;
-use RevealPrefix20220606\PhpParser\Node\Expr\Variable;
-use RevealPrefix20220606\PhpParser\Node\Stmt\Expression;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
+use PhpParser\Node\Arg;
+use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Expr\Variable;
+use PhpParser\Node\Stmt\Expression;
+use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 /**
  * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("doSomething!", ['a']));
  * </code>
@@ -32,10 +32,3 @@ final class SignalLinkProcessor implements LinkProcessorInterface
         return [new Expression(new MethodCall($variable, $methodName, $linkParams), $attributes)];
     }
 }
-/**
- * from: <code> echo \Latte\Runtime\Filters::escapeHtmlAttr($this->global->uiControl->link("doSomething!", ['a']));
- * </code>
- *
- * to: <code> $actualClass->handleDoSomething('a'); </code>
- */
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LinkProcessor\\SignalLinkProcessor', 'Reveal\\LattePHPStanCompiler\\LinkProcessor\\SignalLinkProcessor', \false);

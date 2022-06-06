@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\LatteVariableCollector;
+namespace Reveal\LattePHPStanCompiler\LatteVariableCollector;
 
-use RevealPrefix20220606\PHPStan\Type\ArrayType;
-use RevealPrefix20220606\PHPStan\Type\MixedType;
-use RevealPrefix20220606\PHPStan\Type\ObjectType;
-use RevealPrefix20220606\PHPStan\Type\StringType;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
-use RevealPrefix20220606\Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use PHPStan\Type\ArrayType;
+use PHPStan\Type\MixedType;
+use PHPStan\Type\ObjectType;
+use PHPStan\Type\StringType;
+use Reveal\LattePHPStanCompiler\Contract\LatteVariableCollectorInterface;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use stdClass;
 final class DefaultTemplateVariables implements LatteVariableCollectorInterface
 {
@@ -31,4 +31,3 @@ final class DefaultTemplateVariables implements LatteVariableCollectorInterface
         return $variablesAndTypes;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DefaultTemplateVariables', 'Reveal\\LattePHPStanCompiler\\LatteVariableCollector\\DefaultTemplateVariables', \false);

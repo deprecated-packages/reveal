@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\RelatedFileResolver;
+namespace Reveal\LattePHPStanCompiler\RelatedFileResolver;
 
-use RevealPrefix20220606\PhpParser\Node\Stmt;
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\NodeVisitor\TemplateIncludesNameNodeVisitor;
+use PhpParser\Node\Stmt;
+use PhpParser\NodeTraverser;
+use Reveal\LattePHPStanCompiler\NodeVisitor\TemplateIncludesNameNodeVisitor;
 final class IncludedSnippetTemplateFileResolver
 {
     /**
@@ -30,4 +30,3 @@ final class IncludedSnippetTemplateFileResolver
         return $this->templateIncludesNameNodeVisitor->getIncludedTemplateFilePaths();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\IncludedSnippetTemplateFileResolver', 'Reveal\\LattePHPStanCompiler\\RelatedFileResolver\\IncludedSnippetTemplateFileResolver', \false);

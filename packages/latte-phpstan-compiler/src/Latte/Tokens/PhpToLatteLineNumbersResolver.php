@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\LattePHPStanCompiler\Latte\Tokens;
+namespace Reveal\LattePHPStanCompiler\Latte\Tokens;
 
-use RevealPrefix20220606\PhpParser\NodeTraverser;
-use RevealPrefix20220606\Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\LatteLineNumberNodeVisitor;
-use RevealPrefix20220606\Symplify\Astral\PhpParser\SmartPhpParser;
+use PhpParser\NodeTraverser;
+use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\LatteLineNumberNodeVisitor;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 final class PhpToLatteLineNumbersResolver
 {
     /**
@@ -39,4 +39,3 @@ final class PhpToLatteLineNumbersResolver
         return $this->latteLineNumberNodeVisitor->getPhpLinesToLatteLines();
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\LattePHPStanCompiler\\Latte\\Tokens\\PhpToLatteLineNumbersResolver', 'Reveal\\LattePHPStanCompiler\\Latte\\Tokens\\PhpToLatteLineNumbersResolver', \false);

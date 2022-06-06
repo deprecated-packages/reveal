@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Reveal\RevealLatte;
+namespace Reveal\RevealLatte;
 
 use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\PHPStan\Analyser\Scope;
+use PHPStan\Analyser\Scope;
 use RevealPrefix20220606\Symfony\Component\Finder\Finder;
 use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220606\Symplify\SmartFileSystem\Finder\FinderSanitizer;
@@ -118,4 +118,3 @@ final class LatteUsedControlResolver
         return $latteUsedComponentNames;
     }
 }
-\class_alias('RevealPrefix20220606\\Reveal\\RevealLatte\\LatteUsedControlResolver', 'Reveal\\RevealLatte\\LatteUsedControlResolver', \false);
