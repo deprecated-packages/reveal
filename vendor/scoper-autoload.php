@@ -4,4 +4,13 @@
 
 $loader = require_once __DIR__.'/autoload.php';
 
+// Exposed classes. For more information see:
+// https://github.com/humbug/php-scoper/blob/master/docs/configuration.md#exposing-classes
+if (!class_exists('Latte\RegexpException', false) && !interface_exists('Latte\RegexpException', false) && !trait_exists('Latte\RegexpException', false)) {
+    spl_autoload_call('RevealPrefix20220606\Latte\RegexpException');
+}
+if (!class_exists('Nette\Utils\RegexpException', false) && !interface_exists('Nette\Utils\RegexpException', false) && !trait_exists('Nette\Utils\RegexpException', false)) {
+    spl_autoload_call('RevealPrefix20220606\Nette\Utils\RegexpException');
+}
+
 return $loader;
