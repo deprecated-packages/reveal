@@ -11,8 +11,8 @@ use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\Node\Stmt\Foreach_;
 use PhpParser\NodeFinder;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
+use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220705\Symplify\Astral\ValueObject\AttributeKey;
 /**
  * @api
  */

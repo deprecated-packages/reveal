@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Reference;
 /**
  * Checks that all references are pointing to a valid service.
  *

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Psr\Container;
+namespace RevealPrefix20220705\Psr\Container;
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.

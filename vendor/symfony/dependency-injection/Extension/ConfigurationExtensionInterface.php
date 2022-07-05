@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\DependencyInjection\Extension;
+namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\Extension;
 
-use RevealPrefix20220606\Symfony\Component\Config\Definition\ConfigurationInterface;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\ConfigurationInterface;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerBuilder;
 /**
  * ConfigurationExtensionInterface is the interface implemented by container extension classes.
  *

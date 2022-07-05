@@ -5,7 +5,7 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte\Attributes;
+namespace RevealPrefix20220705\Latte\Attributes;
 
 use Attribute;
 #[\Attribute(Attribute::TARGET_METHOD)]

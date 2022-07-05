@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Contracts\Service;
+namespace RevealPrefix20220705\Symfony\Contracts\Service;
 
-use RevealPrefix20220606\Psr\Container\ContainerInterface;
+use RevealPrefix20220705\Psr\Container\ContainerInterface;
 /**
  * A ServiceProviderInterface exposes the identifiers and the types of services provided by a container.
  *
@@ -24,7 +24,7 @@ interface ServiceProviderInterface extends ContainerInterface
     /**
      * {@inheritdoc}
      *
-     * @return mixed
+     * @return T
      */
     public function get(string $id);
     /**

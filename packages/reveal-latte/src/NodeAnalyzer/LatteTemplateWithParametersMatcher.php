@@ -14,10 +14,10 @@ use Reveal\RevealLatte\NodeVisitor\AssignedParametersVisitor;
 use Reveal\RevealLatte\NodeVisitor\RenderParametersVisitor;
 use Reveal\RevealLatte\NodeVisitor\TemplatePathFinderVisitor;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
-use RevealPrefix20220606\Symplify\Astral\NodeFinder\SimpleNodeFinder;
-use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220705\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
+use RevealPrefix20220705\Symplify\Astral\NodeFinder\SimpleNodeFinder;
+use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
 final class LatteTemplateWithParametersMatcher
 {
     /**

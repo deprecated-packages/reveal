@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\SymplifyKernel\Contract;
+namespace RevealPrefix20220705\Symplify\SymplifyKernel\Contract;
 
-use RevealPrefix20220606\Psr\Container\ContainerInterface;
+use RevealPrefix20220705\Psr\Container\ContainerInterface;
 /**
  * @api
  */

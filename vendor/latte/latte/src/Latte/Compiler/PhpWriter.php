@@ -5,7 +5,7 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte;
+namespace RevealPrefix20220705\Latte;
 
 /**
  * PHP code generator helpers.
@@ -667,7 +667,7 @@ class PhpWriter
                             \trigger_error("Case mismatch on filter name |{$name}, correct name is |{$orig}.", \E_USER_WARNING);
                         }
                     }
-                    $res->prepend($isContent ? '$this->filters->filterContent(' . PhpHelpers::dump($lower) . ', $ʟ_fi, ' : '($this->filters->' . $lower . ')(');
+                    $res->prepend($isContent ? '$this->filters->filterContent(' . PhpHelpers::dump($name) . ', $ʟ_fi, ' : '($this->filters->' . $name . ')(');
                     $inside = \true;
                 }
             } else {

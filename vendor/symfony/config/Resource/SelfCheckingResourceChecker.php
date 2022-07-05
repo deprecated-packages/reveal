@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Config\Resource;
+namespace RevealPrefix20220705\Symfony\Component\Config\Resource;
 
-use RevealPrefix20220606\Symfony\Component\Config\ResourceCheckerInterface;
+use RevealPrefix20220705\Symfony\Component\Config\ResourceCheckerInterface;
 /**
  * Resource checker for instances of SelfCheckingResourceInterface.
  *

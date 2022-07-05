@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220705\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220606\Symfony\Component\Config\Definition\Exception\Exception;
-use RevealPrefix20220606\Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException;
-use RevealPrefix20220606\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use RevealPrefix20220606\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
-use RevealPrefix20220606\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\Exception;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
+use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
 /**
  * The base node class.
  *

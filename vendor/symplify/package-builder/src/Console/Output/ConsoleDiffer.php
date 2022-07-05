@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\PackageBuilder\Console\Output;
+namespace RevealPrefix20220705\Symplify\PackageBuilder\Console\Output;
 
-use RevealPrefix20220606\SebastianBergmann\Diff\Differ;
-use RevealPrefix20220606\Symplify\PackageBuilder\Console\Formatter\ColorConsoleDiffFormatter;
+use RevealPrefix20220705\SebastianBergmann\Diff\Differ;
+use RevealPrefix20220705\Symplify\PackageBuilder\Console\Formatter\ColorConsoleDiffFormatter;
 /**
  * @api
  */

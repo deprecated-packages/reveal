@@ -5,11 +5,11 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte\Runtime;
+namespace RevealPrefix20220705\Latte\Runtime;
 
-use RevealPrefix20220606\Latte;
-use RevealPrefix20220606\Latte\Engine;
-use RevealPrefix20220606\Latte\Helpers;
+use RevealPrefix20220705\Latte;
+use RevealPrefix20220705\Latte\Engine;
+use RevealPrefix20220705\Latte\Helpers;
 /**
  * Filter executor.
  * @internal
@@ -75,7 +75,7 @@ class FilterExecutor
         }
         return $this->{$lname} = function (...$args) use($lname, $name) {
             // dynamic filter
-            \array_unshift($args, $lname);
+            \array_unshift($args, $name);
             foreach ($this->_dynamic as $filter) {
                 $res = $filter(...$args);
                 if ($res !== null) {

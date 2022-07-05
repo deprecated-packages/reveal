@@ -5,9 +5,9 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Nette\Iterators;
+namespace RevealPrefix20220705\Nette\Iterators;
 
-use RevealPrefix20220606\Nette;
+use RevealPrefix20220705\Nette;
 /**
  * Smarter caching iterator.
  *

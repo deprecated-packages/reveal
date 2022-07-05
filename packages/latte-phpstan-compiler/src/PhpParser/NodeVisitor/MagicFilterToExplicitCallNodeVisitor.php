@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220606\Nette\Utils\Strings;
+use RevealPrefix20220705\Nette\Utils\Strings;
 use PhpParser\Node;
 use PhpParser\Node\Arg;
 use PhpParser\Node\Expr;
@@ -20,7 +20,7 @@ use Reveal\LattePHPStanCompiler\Latte\Filters\FilterMatcher;
 use Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
 use Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
 use Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
-use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Make \Latte\Runtime\Defaults::getFilters() explicit, from: $this->filters->{magic}(...)
  *
@@ -67,7 +67,7 @@ final class MagicFilterToExplicitCallNodeVisitor extends NodeVisitorAbstract imp
         $callReference = $this->filterMatcher->match($filterName);
         $args = $node->args;
         // Add FilterInfo for special filters
-        if (\in_array($filterName, ['striphtml', 'striptags', 'strip', 'indent', 'repeat', 'replace', 'trim'], \true)) {
+        if (\in_array($filterName, ['striphtml', 'stripHtml', 'striptags', 'stripTags', 'strip', 'indent', 'repeat', 'replace', 'trim'], \true)) {
             $args = \array_merge([new Arg(new Variable('ʟ_fi'))], $args);
         }
         if ($callReference instanceof StaticCallReference) {

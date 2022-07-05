@@ -8,22 +8,22 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Console\Helper;
+namespace RevealPrefix20220705\Symfony\Component\Console\Helper;
 
-use RevealPrefix20220606\Symfony\Component\Console\Cursor;
-use RevealPrefix20220606\Symfony\Component\Console\Exception\MissingInputException;
-use RevealPrefix20220606\Symfony\Component\Console\Exception\RuntimeException;
-use RevealPrefix20220606\Symfony\Component\Console\Formatter\OutputFormatter;
-use RevealPrefix20220606\Symfony\Component\Console\Formatter\OutputFormatterStyle;
-use RevealPrefix20220606\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220606\Symfony\Component\Console\Input\StreamableInputInterface;
-use RevealPrefix20220606\Symfony\Component\Console\Output\ConsoleOutputInterface;
-use RevealPrefix20220606\Symfony\Component\Console\Output\ConsoleSectionOutput;
-use RevealPrefix20220606\Symfony\Component\Console\Output\OutputInterface;
-use RevealPrefix20220606\Symfony\Component\Console\Question\ChoiceQuestion;
-use RevealPrefix20220606\Symfony\Component\Console\Question\Question;
-use RevealPrefix20220606\Symfony\Component\Console\Terminal;
-use function RevealPrefix20220606\Symfony\Component\String\s;
+use RevealPrefix20220705\Symfony\Component\Console\Cursor;
+use RevealPrefix20220705\Symfony\Component\Console\Exception\MissingInputException;
+use RevealPrefix20220705\Symfony\Component\Console\Exception\RuntimeException;
+use RevealPrefix20220705\Symfony\Component\Console\Formatter\OutputFormatter;
+use RevealPrefix20220705\Symfony\Component\Console\Formatter\OutputFormatterStyle;
+use RevealPrefix20220705\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Input\StreamableInputInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Output\ConsoleOutputInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Output\ConsoleSectionOutput;
+use RevealPrefix20220705\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Question\ChoiceQuestion;
+use RevealPrefix20220705\Symfony\Component\Console\Question\Question;
+use RevealPrefix20220705\Symfony\Component\Console\Terminal;
+use function RevealPrefix20220705\Symfony\Component\String\s;
 /**
  * The QuestionHelper class provides helpers to interact with the user.
  *

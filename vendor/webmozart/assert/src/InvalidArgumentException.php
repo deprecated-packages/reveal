@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Webmozart\Assert;
+namespace RevealPrefix20220705\Webmozart\Assert;
 
 class InvalidArgumentException extends \InvalidArgumentException
 {

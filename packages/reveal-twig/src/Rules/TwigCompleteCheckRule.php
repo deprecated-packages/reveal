@@ -6,6 +6,7 @@ namespace Reveal\RevealTwig\Rules;
 use PhpParser\Node;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
+use PHPStan\Collectors\Registry as CollectorsRegistry;
 use PHPStan\Rules\Registry;
 use PHPStan\Rules\Rule;
 use PHPStan\Rules\RuleError;
@@ -16,9 +17,9 @@ use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
-use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
-use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @implements Rule<MethodCall>
  * @see \Reveal\RevealTwig\Tests\Rules\TwigCompleteCheckRule\TwigCompleteCheckRuleTest
@@ -75,9 +76,13 @@ final class TwigCompleteCheckRule implements Rule
      */
     private $templateErrorsFactory;
     /**
+     * @var CollectorsRegistry
+     */
+    private $collectorRegistry;
+    /**
      * @param Rule[] $rules
      */
-    public function __construct(array $rules, SymfonyRenderWithParametersMatcher $symfonyRenderWithParametersMatcher, TwigToPhpCompiler $twigToPhpCompiler, SmartFileSystem $smartFileSystem, FileAnalyserProvider $fileAnalyserProvider, ErrorSkipper $errorSkipper, TemplateVariableTypesResolver $templateVariableTypesResolver, TemplateErrorsFactory $templateErrorsFactory)
+    public function __construct(array $rules, SymfonyRenderWithParametersMatcher $symfonyRenderWithParametersMatcher, TwigToPhpCompiler $twigToPhpCompiler, SmartFileSystem $smartFileSystem, FileAnalyserProvider $fileAnalyserProvider, ErrorSkipper $errorSkipper, TemplateVariableTypesResolver $templateVariableTypesResolver, TemplateErrorsFactory $templateErrorsFactory, CollectorsRegistry $collectorRegistry)
     {
         $this->symfonyRenderWithParametersMatcher = $symfonyRenderWithParametersMatcher;
         $this->twigToPhpCompiler = $twigToPhpCompiler;
@@ -86,6 +91,7 @@ final class TwigCompleteCheckRule implements Rule
         $this->errorSkipper = $errorSkipper;
         $this->templateVariableTypesResolver = $templateVariableTypesResolver;
         $this->templateErrorsFactory = $templateErrorsFactory;
+        $this->collectorRegistry = $collectorRegistry;
         $this->registry = new Registry($rules);
     }
     /**
@@ -163,7 +169,7 @@ CODE_SAMPLE
         // 5. get file analyser
         $fileAnalyser = $this->fileAnalyserProvider->provide();
         // 6. analyse temporary PHP file with full PHPStan rules
-        $fileAnalyserResult = $fileAnalyser->analyseFile($tmpFilePath, [], $this->registry, null);
+        $fileAnalyserResult = $fileAnalyser->analyseFile($tmpFilePath, [], $this->registry, $this->collectorRegistry, null);
         $ruleErrors = $this->errorSkipper->skipErrors($fileAnalyserResult->getErrors(), self::ERROR_IGNORES);
         return $this->templateErrorsFactory->createErrors($ruleErrors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);
     }

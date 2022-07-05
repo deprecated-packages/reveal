@@ -5,6 +5,7 @@ namespace Reveal\RevealLatte\Rules;
 
 use PhpParser\Node;
 use PHPStan\Analyser\Scope;
+use PHPStan\Collectors\Registry as CollectorsRegistry;
 use PHPStan\Rules\Rule;
 use PHPStan\Rules\RuleError;
 use PHPStan\Rules\RuleErrorBuilder;
@@ -16,9 +17,9 @@ use Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
 use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220606\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
-use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileSystem;
 use Throwable;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\LatteCompleteCheckRule\LatteCompleteCheckRuleTest
@@ -67,10 +68,14 @@ final class LatteCompleteCheckRule implements Rule
      */
     private $fileAnalyserProvider;
     /**
+     * @var CollectorsRegistry
+     */
+    private $collectorsRegistry;
+    /**
      * @param Rule[] $rules
      * @param LatteTemplateHolderInterface[] $latteTemplateHolders
      */
-    public function __construct(array $rules, array $latteTemplateHolders, SmartFileSystem $smartFileSystem, TemplateFileVarTypeDocBlocksDecorator $templateFileVarTypeDocBlocksDecorator, ErrorSkipper $errorSkipper, TemplateErrorsFactory $templateErrorsFactory, FileAnalyserProvider $fileAnalyserProvider)
+    public function __construct(array $rules, array $latteTemplateHolders, SmartFileSystem $smartFileSystem, TemplateFileVarTypeDocBlocksDecorator $templateFileVarTypeDocBlocksDecorator, ErrorSkipper $errorSkipper, TemplateErrorsFactory $templateErrorsFactory, FileAnalyserProvider $fileAnalyserProvider, CollectorsRegistry $collectorsRegistry)
     {
         $this->latteTemplateHolders = $latteTemplateHolders;
         $this->smartFileSystem = $smartFileSystem;
@@ -78,6 +83,7 @@ final class LatteCompleteCheckRule implements Rule
         $this->errorSkipper = $errorSkipper;
         $this->templateErrorsFactory = $templateErrorsFactory;
         $this->fileAnalyserProvider = $fileAnalyserProvider;
+        $this->collectorsRegistry = $collectorsRegistry;
         // limit rule here, as template class can contain a lot of allowed Latte magic
         // get missing method + missing property etc. rule
         $this->templateRulesRegistry = new TemplateRulesRegistry($rules);
@@ -165,7 +171,7 @@ CODE_SAMPLE
         // 5. fix missing parent nodes by using RichParser
         $fileAnalyser = $this->fileAnalyserProvider->provide();
         // to include generated class
-        $fileAnalyserResult = $fileAnalyser->analyseFile($tmpFilePath, [], $this->templateRulesRegistry, null);
+        $fileAnalyserResult = $fileAnalyser->analyseFile($tmpFilePath, [], $this->templateRulesRegistry, $this->collectorsRegistry, null);
         // remove errors related to just created class, that cannot be autoloaded
         $errors = $this->errorSkipper->skipErrors($fileAnalyserResult->getErrors(), self::USELESS_ERRORS_IGNORES);
         return $this->templateErrorsFactory->createErrors($errors, $scope->getFile(), $templateFilePath, $phpFileContentsWithLineMap, $phpLine);

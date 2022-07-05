@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Symfony\\Polyfill\\Mbstring\\": ""
+            "RevealPrefix20220705\\Symfony\\Polyfill\\Mbstring\\": ""
         },
         "files": [
             "bootstrap.php"

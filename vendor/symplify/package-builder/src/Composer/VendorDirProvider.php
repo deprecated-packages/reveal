@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\PackageBuilder\Composer;
+namespace RevealPrefix20220705\Symplify\PackageBuilder\Composer;
 
-use RevealPrefix20220606\Composer\Autoload\ClassLoader;
+use RevealPrefix20220705\Composer\Autoload\ClassLoader;
 use ReflectionClass;
 /**
  * @api

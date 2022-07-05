@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Console\Output;
+namespace RevealPrefix20220705\Symfony\Component\Console\Output;
 
-use RevealPrefix20220606\Symfony\Component\Console\Exception\InvalidArgumentException;
-use RevealPrefix20220606\Symfony\Component\Console\Formatter\OutputFormatterInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Exception\InvalidArgumentException;
+use RevealPrefix20220705\Symfony\Component\Console\Formatter\OutputFormatterInterface;
 /**
  * StreamOutput writes the output to a given stream.
  *

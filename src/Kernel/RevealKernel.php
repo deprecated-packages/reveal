@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Reveal\Kernel;
 
-use RevealPrefix20220606\Psr\Container\ContainerInterface;
-use RevealPrefix20220606\Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass\AutowireArrayParameterCompilerPass;
-use RevealPrefix20220606\Symplify\SymplifyKernel\HttpKernel\AbstractSymplifyKernel;
+use RevealPrefix20220705\Psr\Container\ContainerInterface;
+use RevealPrefix20220705\Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass\AutowireArrayParameterCompilerPass;
+use RevealPrefix20220705\Symplify\SymplifyKernel\HttpKernel\AbstractSymplifyKernel;
 final class RevealKernel extends AbstractSymplifyKernel
 {
     public function createFromConfigs(array $configFiles) : ContainerInterface

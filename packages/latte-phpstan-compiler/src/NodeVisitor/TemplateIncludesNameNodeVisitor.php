@@ -8,9 +8,9 @@ use PhpParser\Node\Arg;
 use PhpParser\Node\Expr\MethodCall;
 use PhpParser\Node\Stmt;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220606\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
-use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileSystem;
 final class TemplateIncludesNameNodeVisitor extends NodeVisitorAbstract
 {
     /**

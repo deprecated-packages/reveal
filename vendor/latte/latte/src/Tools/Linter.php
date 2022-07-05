@@ -5,10 +5,10 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte\Tools;
+namespace RevealPrefix20220705\Latte\Tools;
 
-use RevealPrefix20220606\Latte;
-use RevealPrefix20220606\Nette;
+use RevealPrefix20220705\Latte;
+use RevealPrefix20220705\Nette;
 final class Linter
 {
     use Latte\Strict;

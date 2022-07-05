@@ -9,9 +9,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Twig\Node\Expression\Binary;
+namespace RevealPrefix20220705\Twig\Node\Expression\Binary;
 
-use RevealPrefix20220606\Twig\Compiler;
+use RevealPrefix20220705\Twig\Compiler;
 class BitwiseOrBinary extends AbstractBinary
 {
     public function operator(Compiler $compiler) : Compiler

@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220606\\Twig\\": "src\/"
+            "RevealPrefix20220705\\Twig\\": "src\/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220606\\Twig\\Tests\\": "tests\/"
+            "RevealPrefix20220705\\Twig\\Tests\\": "tests\/"
         }
     },
     "extra": {

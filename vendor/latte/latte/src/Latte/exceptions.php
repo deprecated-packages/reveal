@@ -5,7 +5,7 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte;
+namespace RevealPrefix20220705\Latte;
 
 /**
  * The exception occured during Latte compilation.

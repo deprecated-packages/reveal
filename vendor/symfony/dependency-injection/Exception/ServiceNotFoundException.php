@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\DependencyInjection\Exception;
+namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception;
 
-use RevealPrefix20220606\Psr\Container\NotFoundExceptionInterface;
+use RevealPrefix20220705\Psr\Container\NotFoundExceptionInterface;
 /**
  * This exception is thrown when a non-existent service is requested.
  *

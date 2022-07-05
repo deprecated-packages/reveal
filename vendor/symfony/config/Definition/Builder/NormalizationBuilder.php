@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Config\Definition\Builder;
+namespace RevealPrefix20220705\Symfony\Component\Config\Definition\Builder;
 
 /**
  * This class builds normalization conditions.
@@ -40,7 +40,7 @@ class NormalizationBuilder
     /**
      * Registers a closure to run before the normalization or an expression builder to build it if null is provided.
      *
-     * @return \Symfony\Component\Config\Definition\Builder\ExprBuilder|$this
+     * @return ExprBuilder|$this
      */
     public function before(\Closure $closure = null)
     {

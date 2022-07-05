@@ -5,8 +5,8 @@ namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 
 use PhpParser\Node\Expr;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220606\Symfony\Component\Finder\Finder;
-use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220705\Symfony\Component\Finder\Finder;
+use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
 /**
  * @api
  */

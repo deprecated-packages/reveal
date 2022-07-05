@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\PhpDocParser\Contract;
+namespace RevealPrefix20220705\Symplify\Astral\PhpDocParser\Contract;
 
 use PHPStan\PhpDocParser\Ast\Node;
 /**
@@ -15,7 +15,7 @@ interface PhpDocNodeVisitorInterface
      */
     public function enterNode(Node $node);
     /**
-     * @return int|\PhpParser\Node|mixed[]|null Replacement node (or special return)
+     * @return null|int|\PhpParser\Node|Node[] Replacement node (or special return)
      */
     public function leaveNode(Node $node);
     public function afterTraverse(Node $node) : void;

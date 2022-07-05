@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220606\Nette\Application\UI\Control;
+use RevealPrefix20220705\Nette\Application\UI\Control;
 use PhpParser\Node\Expr\Array_;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
@@ -70,7 +70,7 @@ final class TemplateFileVarTypeDocBlocksDecorator
         if ($classReflection instanceof ClassReflection) {
             $objectType = new ObjectType($classReflection->getName());
             $variablesAndTypes[] = new VariableAndType('actualClass', $objectType);
-            if ($objectType->isInstanceOf('RevealPrefix20220606\\Nette\\Application\\UI\\Presenter')->yes()) {
+            if ($objectType->isInstanceOf('RevealPrefix20220705\\Nette\\Application\\UI\\Presenter')->yes()) {
                 $variablesAndTypes[] = new VariableAndType('presenter', $objectType);
             }
             if ($objectType->isInstanceOf(Control::class)->yes()) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RevealPrefix20220606;
+namespace RevealPrefix20220705;
 
 class Normalizer extends Symfony\Polyfill\Intl\Normalizer\Normalizer
 {

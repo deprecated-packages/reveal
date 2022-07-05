@@ -3,19 +3,19 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Latte;
 
-use RevealPrefix20220606\Latte\CompileException;
-use RevealPrefix20220606\Latte\Compiler;
-use RevealPrefix20220606\Latte\HtmlNode;
-use RevealPrefix20220606\Latte\MacroNode;
-use RevealPrefix20220606\Latte\Macros\BlockMacros;
-use RevealPrefix20220606\Latte\Macros\CoreMacros;
-use RevealPrefix20220606\Latte\Runtime\Defaults;
-use RevealPrefix20220606\Latte\Token;
-use RevealPrefix20220606\Nette\Bridges\ApplicationLatte\UIMacros;
-use RevealPrefix20220606\Nette\Bridges\FormsLatte\FormMacros;
-use RevealPrefix20220606\Nette\Utils\Strings;
+use RevealPrefix20220705\Latte\CompileException;
+use RevealPrefix20220705\Latte\Compiler;
+use RevealPrefix20220705\Latte\HtmlNode;
+use RevealPrefix20220705\Latte\MacroNode;
+use RevealPrefix20220705\Latte\Macros\BlockMacros;
+use RevealPrefix20220705\Latte\Macros\CoreMacros;
+use RevealPrefix20220705\Latte\Runtime\Defaults;
+use RevealPrefix20220705\Latte\Token;
+use RevealPrefix20220705\Nette\Bridges\ApplicationLatte\UIMacros;
+use RevealPrefix20220705\Nette\Bridges\FormsLatte\FormMacros;
+use RevealPrefix20220705\Nette\Utils\Strings;
 use Reveal\LattePHPStanCompiler\Latte\Macros\LatteMacroFaker;
-use RevealPrefix20220606\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use RevealPrefix20220705\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
 final class UnknownMacroAwareLatteCompiler extends Compiler
 {
     /**
@@ -104,10 +104,10 @@ final class UnknownMacroAwareLatteCompiler extends Compiler
         // make sure basic macros are installed
         CoreMacros::install($compiler);
         BlockMacros::install($compiler);
-        if (\class_exists('RevealPrefix20220606\\Nette\\Bridges\\ApplicationLatte\\UIMacros')) {
+        if (\class_exists('RevealPrefix20220705\\Nette\\Bridges\\ApplicationLatte\\UIMacros')) {
             UIMacros::install($compiler);
         }
-        if (\class_exists('RevealPrefix20220606\\Nette\\Bridges\\FormsLatte\\FormMacros')) {
+        if (\class_exists('RevealPrefix20220705\\Nette\\Bridges\\FormsLatte\\FormMacros')) {
             FormMacros::install($compiler);
         }
     }

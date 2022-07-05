@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\String\Inflector;
+namespace RevealPrefix20220705\Symfony\Component\String\Inflector;
 
 /**
  * French inflector.
@@ -50,8 +50,8 @@ final class FrenchInflector implements InflectorInterface
         // Invariable words
         ['/^(cinquante|soixante|mille)$/i', '\\1'],
         // French titles
-        ['/^(mon|ma)(sieur|dame|demoiselle|seigneur)$/', 'RevealPrefix20220606\\mes\\2s'],
-        ['/^(Mon|Ma)(sieur|dame|demoiselle|seigneur)$/', 'RevealPrefix20220606\\Mes\\2s'],
+        ['/^(mon|ma)(sieur|dame|demoiselle|seigneur)$/', 'RevealPrefix20220705\\mes\\2s'],
+        ['/^(Mon|Ma)(sieur|dame|demoiselle|seigneur)$/', 'RevealPrefix20220705\\Mes\\2s'],
     ];
     /**
      * A list of all rules for singularize.
@@ -77,10 +77,10 @@ final class FrenchInflector implements InflectorInterface
         // Les mots finissant par "ou" prennent un "s" sauf bijou, caillou, chou, genou, hibou, joujou, pou
         ['/(bij|caill|ch|gen|hib|jouj|p)oux$/i', '\\1ou'],
         // French titles
-        ['/^mes(dame|demoiselle)s$/', 'RevealPrefix20220606\\ma\\1'],
-        ['/^Mes(dame|demoiselle)s$/', 'RevealPrefix20220606\\Ma\\1'],
-        ['/^mes(sieur|seigneur)s$/', 'RevealPrefix20220606\\mon\\1'],
-        ['/^Mes(sieur|seigneur)s$/', 'RevealPrefix20220606\\Mon\\1'],
+        ['/^mes(dame|demoiselle)s$/', 'RevealPrefix20220705\\ma\\1'],
+        ['/^Mes(dame|demoiselle)s$/', 'RevealPrefix20220705\\Ma\\1'],
+        ['/^mes(sieur|seigneur)s$/', 'RevealPrefix20220705\\mon\\1'],
+        ['/^Mes(sieur|seigneur)s$/', 'RevealPrefix20220705\\Mon\\1'],
         //Default rule
         ['/s$/i', ''],
     ];
@@ -88,7 +88,7 @@ final class FrenchInflector implements InflectorInterface
      * A list of words which should not be inflected.
      * This list is only used by singularize.
      */
-    private const UNINFLECTED = '/^(abcès|accès|abus|albatros|anchois|anglais|autobus|bois|brebis|carquois|cas|chas|colis|concours|corps|cours|cyprès|décès|devis|discours|dos|embarras|engrais|entrelacs|excès|fils|fois|gâchis|gars|glas|héros|intrus|jars|jus|kermès|lacis|legs|lilas|marais|mars|matelas|mépris|mets|mois|mors|obus|os|palais|paradis|parcours|pardessus|pays|plusieurs|poids|pois|pouls|printemps|processus|progrès|puits|pus|rabais|radis|recors|recours|refus|relais|remords|remous|rictus|rhinocéros|repas|rubis|sas|secours|sens|souris|succès|talus|tapis|tas|taudis|temps|tiers|univers|velours|verglas|vernis|virus)$/i';
+    private const UNINFLECTED = '/^(abcès|accès|abus|albatros|anchois|anglais|autobus|bois|brebis|carquois|cas|chas|colis|concours|corps|cours|cyprès|décès|devis|discours|dos|embarras|engrais|entrelacs|excès|fils|fois|gâchis|gars|glas|héros|intrus|jars|jus|kermès|lacis|legs|lilas|marais|mars|matelas|mépris|mets|mois|mors|obus|os|palais|paradis|parcours|pardessus|pays|plusieurs|poids|pois|pouls|printemps|processus|progrès|puits|pus|rabais|radis|recors|recours|refus|relais|remords|remous|rictus|rhinocéros|repas|rubis|sans|sas|secours|sens|souris|succès|talus|tapis|tas|taudis|temps|tiers|univers|velours|verglas|vernis|virus)$/i';
     /**
      * {@inheritdoc}
      */

@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\DocBlock;
 
-use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
-use RevealPrefix20220606\Twig\Token;
-use RevealPrefix20220606\Twig\TokenStream;
+use RevealPrefix20220705\Nette\Utils\Strings;
+use RevealPrefix20220705\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use RevealPrefix20220705\Twig\Token;
+use RevealPrefix20220705\Twig\TokenStream;
 final class NonVarTypeDocBlockCleaner
 {
     /**

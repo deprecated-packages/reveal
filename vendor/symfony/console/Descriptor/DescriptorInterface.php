@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\Console\Descriptor;
+namespace RevealPrefix20220705\Symfony\Component\Console\Descriptor;
 
-use RevealPrefix20220606\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220705\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Descriptor interface.
  *

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\ComposerJsonManipulator\Printer;
+namespace RevealPrefix20220705\Symplify\ComposerJsonManipulator\Printer;
 
-use RevealPrefix20220606\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use RevealPrefix20220606\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220705\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
+use RevealPrefix20220705\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
+use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  */

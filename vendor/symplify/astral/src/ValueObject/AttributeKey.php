@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\ValueObject;
+namespace RevealPrefix20220705\Symplify\Astral\ValueObject;
 
 final class AttributeKey
 {

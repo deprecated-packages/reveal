@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Twig\Extension;
+namespace RevealPrefix20220705\Twig\Extension;
 
-use RevealPrefix20220606\Twig\NodeVisitor\OptimizerNodeVisitor;
+use RevealPrefix20220705\Twig\NodeVisitor\OptimizerNodeVisitor;
 final class OptimizerExtension extends AbstractExtension
 {
     private $optimizers;

@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\ComposerJsonManipulator\ValueObject;
+namespace RevealPrefix20220705\Symplify\ComposerJsonManipulator\ValueObject;
 
-use RevealPrefix20220606\Nette\Utils\Arrays;
-use RevealPrefix20220606\Nette\Utils\Strings;
-use RevealPrefix20220606\Symplify\ComposerJsonManipulator\Sorter\ComposerPackageSorter;
-use RevealPrefix20220606\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220606\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use RevealPrefix20220705\Nette\Utils\Arrays;
+use RevealPrefix20220705\Nette\Utils\Strings;
+use RevealPrefix20220705\Symplify\ComposerJsonManipulator\Sorter\ComposerPackageSorter;
+use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220705\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 /**
  * @api
  * @see \Symplify\ComposerJsonManipulator\Tests\ValueObject\ComposerJsonTest
@@ -416,7 +416,7 @@ final class ComposerJson
         $this->license = $license;
     }
     /**
-     * @return string|mixed[]|null
+     * @return string|string[]|null
      */
     public function getLicense()
     {

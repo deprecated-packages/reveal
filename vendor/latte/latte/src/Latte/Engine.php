@@ -5,7 +5,7 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte;
+namespace RevealPrefix20220705\Latte;
 
 /**
  * Templating engine Latte.
@@ -13,8 +13,8 @@ namespace RevealPrefix20220606\Latte;
 class Engine
 {
     use Strict;
-    public const VERSION = '2.11.4';
-    public const VERSION_ID = 21104;
+    public const VERSION = '2.11.5';
+    public const VERSION_ID = 21105;
     /** Content types */
     public const CONTENT_HTML = 'html', CONTENT_XHTML = 'xhtml', CONTENT_XML = 'xml', CONTENT_JS = 'js', CONTENT_CSS = 'css', CONTENT_ICAL = 'ical', CONTENT_TEXT = 'text';
     /** @var callable[] */

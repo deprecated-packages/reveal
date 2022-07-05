@@ -9,7 +9,7 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Type\ArrayType;
 use PHPStan\Type\Generic\GenericObjectType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220606\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
 /**
  * @api
  */

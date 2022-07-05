@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Contracts\Service;
+namespace RevealPrefix20220705\Symfony\Contracts\Service;
 
-use RevealPrefix20220606\Psr\Container\ContainerInterface;
-use RevealPrefix20220606\Symfony\Contracts\Service\Attribute\Required;
-use RevealPrefix20220606\Symfony\Contracts\Service\Attribute\SubscribedService;
+use RevealPrefix20220705\Psr\Container\ContainerInterface;
+use RevealPrefix20220705\Symfony\Contracts\Service\Attribute\Required;
+use RevealPrefix20220705\Symfony\Contracts\Service\Attribute\SubscribedService;
 /**
  * Implementation of ServiceSubscriberInterface that determines subscribed services from
  * method return types. Service ids are available as "ClassName::methodName".
@@ -28,10 +28,6 @@ trait ServiceSubscriberTrait
      */
     public static function getSubscribedServices() : array
     {
-        static $services;
-        if (null !== $services) {
-            return $services;
-        }
         $services = \method_exists(\get_parent_class(self::class) ?: '', __FUNCTION__) ? parent::getSubscribedServices() : [];
         foreach ((new \ReflectionClass(self::class))->getMethods() as $method) {
             if (self::class !== $method->getDeclaringClass()->name) {

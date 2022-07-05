@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220606\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220606\Symfony\Component\DependencyInjection\TypedReference;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220705\Symfony\Component\DependencyInjection\TypedReference;
 /**
  * Emulates the invalid behavior if the reference is not found within the
  * container.

@@ -5,15 +5,15 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220606\Latte\Macros;
+namespace RevealPrefix20220705\Latte\Macros;
 
-use RevealPrefix20220606\Latte;
-use RevealPrefix20220606\Latte\CompileException;
-use RevealPrefix20220606\Latte\Engine;
-use RevealPrefix20220606\Latte\Helpers;
-use RevealPrefix20220606\Latte\MacroNode;
-use RevealPrefix20220606\Latte\PhpHelpers;
-use RevealPrefix20220606\Latte\PhpWriter;
+use RevealPrefix20220705\Latte;
+use RevealPrefix20220705\Latte\CompileException;
+use RevealPrefix20220705\Latte\Engine;
+use RevealPrefix20220705\Latte\Helpers;
+use RevealPrefix20220705\Latte\MacroNode;
+use RevealPrefix20220705\Latte\PhpHelpers;
+use RevealPrefix20220705\Latte\PhpWriter;
 /**
  * Basic macros for Latte.
  */

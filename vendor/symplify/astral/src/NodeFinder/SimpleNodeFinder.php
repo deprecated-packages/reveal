@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\NodeFinder;
+namespace RevealPrefix20220705\Symplify\Astral\NodeFinder;
 
 use PhpParser\Node;
 use PhpParser\NodeFinder;
-use RevealPrefix20220606\Symplify\Astral\ValueObject\AttributeKey;
+use RevealPrefix20220705\Symplify\Astral\ValueObject\AttributeKey;
 final class SimpleNodeFinder
 {
     /**
@@ -19,7 +19,7 @@ final class SimpleNodeFinder
     /**
      * @template T of Node
      * @param class-string<T> $nodeClass
-     * @return \PhpParser\Node|null
+     * @return T|null
      */
     public function findFirstByType(Node $node, string $nodeClass)
     {

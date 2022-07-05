@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\AutowireArrayParameter\DocBlock;
+namespace RevealPrefix20220705\Symplify\AutowireArrayParameter\DocBlock;
 
-use RevealPrefix20220606\Nette\Utils\Strings;
+use RevealPrefix20220705\Nette\Utils\Strings;
 /**
  * @see \Symplify\AutowireArrayParameter\Tests\DocBlock\ParamTypeDocBlockResolverTest
  */

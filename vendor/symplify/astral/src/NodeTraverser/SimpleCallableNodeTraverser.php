@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220606\Symplify\Astral\NodeTraverser;
+namespace RevealPrefix20220705\Symplify\Astral\NodeTraverser;
 
 use PhpParser\Node;
 use PhpParser\NodeTraverser;
-use RevealPrefix20220606\Symplify\Astral\NodeVisitor\CallableNodeVisitor;
+use RevealPrefix20220705\Symplify\Astral\NodeVisitor\CallableNodeVisitor;
 /**
  * @api
  */
