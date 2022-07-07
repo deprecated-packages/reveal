@@ -11,8 +11,8 @@ use PhpParser\Node\Expr\Variable;
 use PhpParser\Node\Scalar\String_;
 use PhpParser\NodeVisitorAbstract;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220705\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 final class AssignedParametersVisitor extends NodeVisitorAbstract
 {
     /**

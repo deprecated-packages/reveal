@@ -9,8 +9,8 @@ use PhpParser\Node\Expr\Variable;
 use PhpParser\Node\Stmt;
 use PhpParser\Node\Stmt\Foreach_;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220705\Symplify\Astral\ValueObject\AttributeKey;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\Astral\ValueObject\AttributeKey;
 /**
  * @api
  */

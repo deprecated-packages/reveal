@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\Astral\PhpDocParser\StaticFactory;
+namespace RevealPrefix20220707\Symplify\Astral\PhpDocParser\StaticFactory;
 
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\ConstExprParser;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TypeParser;
-use RevealPrefix20220705\Symplify\Astral\PhpDocParser\SimplePhpDocParser;
+use RevealPrefix20220707\Symplify\Astral\PhpDocParser\SimplePhpDocParser;
 /**
  * @api
  */

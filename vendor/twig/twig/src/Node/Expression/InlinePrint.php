@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Twig\Node\Expression;
+namespace RevealPrefix20220707\Twig\Node\Expression;
 
-use RevealPrefix20220705\Twig\Compiler;
-use RevealPrefix20220705\Twig\Node\Node;
+use RevealPrefix20220707\Twig\Compiler;
+use RevealPrefix20220707\Twig\Node\Node;
 /**
  * @internal
  */

@@ -3,12 +3,12 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte;
 
-use RevealPrefix20220705\Nette\Utils\Strings;
+use RevealPrefix20220707\Nette\Utils\Strings;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220705\Symfony\Component\Finder\Finder;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220705\Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220707\Symfony\Component\Finder\Finder;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\SmartFileSystem\Finder\FinderSanitizer;
+use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileInfo;
 final class LatteUsedControlResolver
 {
     /**

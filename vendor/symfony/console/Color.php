@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Console;
+namespace RevealPrefix20220707\Symfony\Component\Console;
 
-use RevealPrefix20220705\Symfony\Component\Console\Exception\InvalidArgumentException;
+use RevealPrefix20220707\Symfony\Component\Console\Exception\InvalidArgumentException;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

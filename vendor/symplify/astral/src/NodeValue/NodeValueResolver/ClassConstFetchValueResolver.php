@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
+namespace RevealPrefix20220707\Symplify\Astral\NodeValue\NodeValueResolver;
 
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\ClassConstFetch;
 use PhpParser\Node\Stmt\ClassLike;
 use ReflectionClassConstant;
-use RevealPrefix20220705\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220705\Symplify\Astral\NodeFinder\SimpleNodeFinder;
+use RevealPrefix20220707\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\Astral\NodeFinder\SimpleNodeFinder;
 /**
  * @see \Symplify\Astral\Tests\NodeValue\NodeValueResolverTest
  *

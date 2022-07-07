@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\Astral\Reflection;
+namespace RevealPrefix20220707\Symplify\Astral\Reflection;
 
 use PhpParser\Node\Expr\MethodCall;
 use PhpParser\Node\Stmt\ClassMethod;
@@ -9,7 +9,7 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\ObjectType;
 use PHPStan\Type\ThisType;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * @api
  */

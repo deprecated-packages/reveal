@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Twig\Sandbox;
+namespace RevealPrefix20220707\Twig\Sandbox;
 
 /**
  * Exception thrown when a not allowed class method is used in a template.

@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220705\\Symfony\\Component\\Filesystem\\": ""
+            "RevealPrefix20220707\\Symfony\\Component\\Filesystem\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

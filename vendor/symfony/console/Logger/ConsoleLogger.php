@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Console\Logger;
+namespace RevealPrefix20220707\Symfony\Component\Console\Logger;
 
-use RevealPrefix20220705\Psr\Log\AbstractLogger;
-use RevealPrefix20220705\Psr\Log\InvalidArgumentException;
-use RevealPrefix20220705\Psr\Log\LogLevel;
-use RevealPrefix20220705\Symfony\Component\Console\Output\ConsoleOutputInterface;
-use RevealPrefix20220705\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220707\Psr\Log\AbstractLogger;
+use RevealPrefix20220707\Psr\Log\InvalidArgumentException;
+use RevealPrefix20220707\Psr\Log\LogLevel;
+use RevealPrefix20220707\Symfony\Component\Console\Output\ConsoleOutputInterface;
+use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
 /**
  * PSR-3 compliant console logger.
  *

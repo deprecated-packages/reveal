@@ -8,28 +8,28 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\Loader;
+namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader;
 
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Alias;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\ChildDefinition;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220705\Symfony\Component\ExpressionLanguage\Expression;
-use RevealPrefix20220705\Symfony\Component\Yaml\Exception\ParseException;
-use RevealPrefix20220705\Symfony\Component\Yaml\Parser as YamlParser;
-use RevealPrefix20220705\Symfony\Component\Yaml\Tag\TaggedValue;
-use RevealPrefix20220705\Symfony\Component\Yaml\Yaml;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Alias;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\ChildDefinition;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220707\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220707\Symfony\Component\Yaml\Exception\ParseException;
+use RevealPrefix20220707\Symfony\Component\Yaml\Parser as YamlParser;
+use RevealPrefix20220707\Symfony\Component\Yaml\Tag\TaggedValue;
+use RevealPrefix20220707\Symfony\Component\Yaml\Yaml;
 /**
  * YamlFileLoader loads YAML files service definitions.
  *
@@ -565,7 +565,7 @@ class YamlFileLoader extends FileLoader
      */
     protected function loadFile(string $file) : ?array
     {
-        if (!\class_exists(\RevealPrefix20220705\Symfony\Component\Yaml\Parser::class)) {
+        if (!\class_exists(\RevealPrefix20220707\Symfony\Component\Yaml\Parser::class)) {
             throw new RuntimeException('Unable to load YAML config files as the Symfony Yaml Component is not installed.');
         }
         if (!\stream_is_local($file)) {

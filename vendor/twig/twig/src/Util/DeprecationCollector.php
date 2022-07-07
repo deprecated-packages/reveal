@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Twig\Util;
+namespace RevealPrefix20220707\Twig\Util;
 
-use RevealPrefix20220705\Twig\Environment;
-use RevealPrefix20220705\Twig\Error\SyntaxError;
-use RevealPrefix20220705\Twig\Source;
+use RevealPrefix20220707\Twig\Environment;
+use RevealPrefix20220707\Twig\Error\SyntaxError;
+use RevealPrefix20220707\Twig\Source;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

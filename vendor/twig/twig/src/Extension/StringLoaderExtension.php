@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Twig\Extension;
+namespace RevealPrefix20220707\Twig\Extension;
 
-use RevealPrefix20220705\Twig\TwigFunction;
+use RevealPrefix20220707\Twig\TwigFunction;
 final class StringLoaderExtension extends AbstractExtension
 {
     public function getFunctions() : array
@@ -18,10 +18,10 @@ final class StringLoaderExtension extends AbstractExtension
         return [new TwigFunction('template_from_string', 'twig_template_from_string', ['needs_environment' => \true])];
     }
 }
-namespace RevealPrefix20220705;
+namespace RevealPrefix20220707;
 
-use RevealPrefix20220705\Twig\Environment;
-use RevealPrefix20220705\Twig\TemplateWrapper;
+use RevealPrefix20220707\Twig\Environment;
+use RevealPrefix20220707\Twig\TemplateWrapper;
 /**
  * Loads a template from a string.
  *

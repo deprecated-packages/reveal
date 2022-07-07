@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220707\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220705\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 /**
  * Node which only allows a finite set of values.
  *

@@ -9,10 +9,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Composer;
+namespace RevealPrefix20220707\Composer;
 
-use RevealPrefix20220705\Composer\Autoload\ClassLoader;
-use RevealPrefix20220705\Composer\Semver\VersionParser;
+use RevealPrefix20220707\Composer\Autoload\ClassLoader;
+use RevealPrefix20220707\Composer\Semver\VersionParser;
 /**
  * This class is copied in every Composer installed project and available to all
  *
@@ -277,7 +277,7 @@ class InstalledVersions
     private static function getInstalled()
     {
         if (null === self::$canGetVendors) {
-            self::$canGetVendors = \method_exists('RevealPrefix20220705\\Composer\\Autoload\\ClassLoader', 'getRegisteredLoaders');
+            self::$canGetVendors = \method_exists('RevealPrefix20220707\\Composer\\Autoload\\ClassLoader', 'getRegisteredLoaders');
         }
         $installed = array();
         if (self::$canGetVendors) {

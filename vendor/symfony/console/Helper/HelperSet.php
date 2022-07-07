@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Console\Helper;
+namespace RevealPrefix20220707\Symfony\Component\Console\Helper;
 
-use RevealPrefix20220705\Symfony\Component\Console\Exception\InvalidArgumentException;
+use RevealPrefix20220707\Symfony\Component\Console\Exception\InvalidArgumentException;
 /**
  * HelperSet represents a set of helpers to be used with a command.
  *

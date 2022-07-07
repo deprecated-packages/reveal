@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705;
+namespace RevealPrefix20220707;
 
 use Reveal\Console\ApplicationFactory;
-use RevealPrefix20220705\Symfony\Component\Console\Application;
-use RevealPrefix20220705\Symfony\Component\Console\Style\SymfonyStyle;
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use RevealPrefix20220705\Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
-use function RevealPrefix20220705\Symfony\Component\DependencyInjection\Loader\Configurator\service;
+use RevealPrefix20220707\Symfony\Component\Console\Application;
+use RevealPrefix20220707\Symfony\Component\Console\Style\SymfonyStyle;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use RevealPrefix20220707\Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
+use function RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader\Configurator\service;
 return static function (ContainerConfigurator $containerConfigurator) : void {
     $containerConfigurator->import(__DIR__ . '/../packages/twig-phpstan-compiler/config/services.php');
     $services = $containerConfigurator->services();

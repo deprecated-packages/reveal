@@ -5,12 +5,12 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220705\Latte\Runtime;
+namespace RevealPrefix20220707\Latte\Runtime;
 
-use RevealPrefix20220705\Latte;
-use RevealPrefix20220705\Latte\Engine;
-use RevealPrefix20220705\Latte\RuntimeException;
-use RevealPrefix20220705\Nette;
+use RevealPrefix20220707\Latte;
+use RevealPrefix20220707\Latte\Engine;
+use RevealPrefix20220707\Latte\RuntimeException;
+use RevealPrefix20220707\Nette;
 use function is_array, is_string, count, strlen;
 /**
  * Template filters. Uses UTF-8 only.

@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper;
+namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper;
 
-use RevealPrefix20220705\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
 /**
  * Null dumper, negates any proxy code generation for any given service definition.
  *

@@ -9,8 +9,8 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
 use Reveal\RevealTwig\NodeAnalyzer\SymfonyRenderWithParametersMatcher;
 use Reveal\TwigPHPStanCompiler\NodeAnalyzer\MissingTwigTemplateRenderVariableResolver;
-use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220705\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220707\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220707\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
  * @implements Rule<MethodCall>
  * @api

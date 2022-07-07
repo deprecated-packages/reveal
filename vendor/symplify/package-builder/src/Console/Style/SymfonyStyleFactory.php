@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\PackageBuilder\Console\Style;
+namespace RevealPrefix20220707\Symplify\PackageBuilder\Console\Style;
 
-use RevealPrefix20220705\Symfony\Component\Console\Application;
-use RevealPrefix20220705\Symfony\Component\Console\Input\ArgvInput;
-use RevealPrefix20220705\Symfony\Component\Console\Output\ConsoleOutput;
-use RevealPrefix20220705\Symfony\Component\Console\Output\OutputInterface;
-use RevealPrefix20220705\Symfony\Component\Console\Style\SymfonyStyle;
-use RevealPrefix20220705\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
-use RevealPrefix20220705\Symplify\PackageBuilder\Reflection\PrivatesCaller;
+use RevealPrefix20220707\Symfony\Component\Console\Application;
+use RevealPrefix20220707\Symfony\Component\Console\Input\ArgvInput;
+use RevealPrefix20220707\Symfony\Component\Console\Output\ConsoleOutput;
+use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220707\Symfony\Component\Console\Style\SymfonyStyle;
+use RevealPrefix20220707\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
+use RevealPrefix20220707\Symplify\PackageBuilder\Reflection\PrivatesCaller;
 /**
  * @api
  */

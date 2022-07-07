@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Config\Loader;
+namespace RevealPrefix20220707\Symfony\Component\Config\Loader;
 
-use RevealPrefix20220705\Symfony\Component\Config\Exception\LoaderLoadException;
+use RevealPrefix20220707\Symfony\Component\Config\Exception\LoaderLoadException;
 /**
  * DelegatingLoader delegates loading to other loaders using a loader resolver.
  *

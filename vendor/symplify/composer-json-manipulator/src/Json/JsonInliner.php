@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\ComposerJsonManipulator\Json;
+namespace RevealPrefix20220707\Symplify\ComposerJsonManipulator\Json;
 
-use RevealPrefix20220705\Nette\Utils\Strings;
-use RevealPrefix20220705\Symplify\ComposerJsonManipulator\ValueObject\Option;
-use RevealPrefix20220705\Symplify\PackageBuilder\Parameter\ParameterProvider;
+use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220707\Symplify\ComposerJsonManipulator\ValueObject\Option;
+use RevealPrefix20220707\Symplify\PackageBuilder\Parameter\ParameterProvider;
 final class JsonInliner
 {
     /**

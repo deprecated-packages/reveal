@@ -5,7 +5,7 @@
  * https://github.com/nette/coding-standard
  */
 declare (strict_types=1);
-namespace RevealPrefix20220705;
+namespace RevealPrefix20220707;
 
 return [
     // use function in Arrays.php, Callback.php, Html.php, Strings.php

@@ -9,11 +9,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Twig;
+namespace RevealPrefix20220707\Twig;
 
-use RevealPrefix20220705\Twig\Error\Error;
-use RevealPrefix20220705\Twig\Error\LoaderError;
-use RevealPrefix20220705\Twig\Error\RuntimeError;
+use RevealPrefix20220707\Twig\Error\Error;
+use RevealPrefix20220707\Twig\Error\LoaderError;
+use RevealPrefix20220707\Twig\Error\RuntimeError;
 /**
  * Default base class for compiled templates.
  *

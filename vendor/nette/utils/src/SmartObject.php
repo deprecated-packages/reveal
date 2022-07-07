@@ -5,9 +5,9 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220705\Nette;
+namespace RevealPrefix20220707\Nette;
 
-use RevealPrefix20220705\Nette\Utils\ObjectHelpers;
+use RevealPrefix20220707\Nette\Utils\ObjectHelpers;
 /**
  * Strict class for better experience.
  * - 'did you mean' hints

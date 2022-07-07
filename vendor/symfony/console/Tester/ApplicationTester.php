@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Console\Tester;
+namespace RevealPrefix20220707\Symfony\Component\Console\Tester;
 
-use RevealPrefix20220705\Symfony\Component\Console\Application;
-use RevealPrefix20220705\Symfony\Component\Console\Input\ArrayInput;
+use RevealPrefix20220707\Symfony\Component\Console\Application;
+use RevealPrefix20220707\Symfony\Component\Console\Input\ArrayInput;
 /**
  * Eases the testing of console applications.
  *

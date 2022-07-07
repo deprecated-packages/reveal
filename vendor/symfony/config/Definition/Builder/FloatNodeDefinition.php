@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Config\Definition\Builder;
+namespace RevealPrefix20220707\Symfony\Component\Config\Definition\Builder;
 
-use RevealPrefix20220705\Symfony\Component\Config\Definition\FloatNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\FloatNode;
 /**
  * This class provides a fluent interface for defining a float node.
  *
@@ -21,7 +21,7 @@ class FloatNodeDefinition extends NumericNodeDefinition
     /**
      * Instantiates a Node.
      */
-    protected function instantiateNode() : \RevealPrefix20220705\Symfony\Component\Config\Definition\ScalarNode
+    protected function instantiateNode() : \RevealPrefix20220707\Symfony\Component\Config\Definition\ScalarNode
     {
         return new FloatNode($this->name, $this->parent, $this->min, $this->max, $this->pathSeparator);
     }

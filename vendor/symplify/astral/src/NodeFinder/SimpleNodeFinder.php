@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\Astral\NodeFinder;
+namespace RevealPrefix20220707\Symplify\Astral\NodeFinder;
 
 use PhpParser\Node;
 use PhpParser\NodeFinder;
-use RevealPrefix20220705\Symplify\Astral\ValueObject\AttributeKey;
+use RevealPrefix20220707\Symplify\Astral\ValueObject\AttributeKey;
 final class SimpleNodeFinder
 {
     /**

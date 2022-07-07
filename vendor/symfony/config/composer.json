@@ -36,7 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220705\\Symfony\\Component\\Config\\": ""
+            "RevealPrefix20220707\\Symfony\\Component\\Config\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

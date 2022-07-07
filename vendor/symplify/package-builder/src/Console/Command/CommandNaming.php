@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\PackageBuilder\Console\Command;
+namespace RevealPrefix20220707\Symplify\PackageBuilder\Console\Command;
 
-use RevealPrefix20220705\Nette\Utils\Strings;
-use RevealPrefix20220705\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220707\Symfony\Component\Console\Command\Command;
 /**
  * @api
  * @see \Symplify\PackageBuilder\Tests\Console\Command\CommandNamingTest

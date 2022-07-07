@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705;
+namespace RevealPrefix20220707;
 
 use Reveal\Kernel\RevealKernel;
-use RevealPrefix20220705\Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
+use RevealPrefix20220707\Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 require __DIR__ . '/../vendor/autoload.php';
 // scoper autoload
 $scoperAutoloadFile = __DIR__ . '/../vendor/scoper-autoload.php';

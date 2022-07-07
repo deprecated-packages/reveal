@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\EasyTesting;
+namespace RevealPrefix20220707\Symplify\EasyTesting;
 
-use RevealPrefix20220705\Nette\Utils\Strings;
-use RevealPrefix20220705\Symplify\EasyTesting\ValueObject\InputAndExpected;
-use RevealPrefix20220705\Symplify\EasyTesting\ValueObject\InputFileInfoAndExpected;
-use RevealPrefix20220705\Symplify\EasyTesting\ValueObject\InputFileInfoAndExpectedFileInfo;
-use RevealPrefix20220705\Symplify\EasyTesting\ValueObject\SplitLine;
-use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220707\Symplify\EasyTesting\ValueObject\InputAndExpected;
+use RevealPrefix20220707\Symplify\EasyTesting\ValueObject\InputFileInfoAndExpected;
+use RevealPrefix20220707\Symplify\EasyTesting\ValueObject\InputFileInfoAndExpectedFileInfo;
+use RevealPrefix20220707\Symplify\EasyTesting\ValueObject\SplitLine;
+use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @api
  */

@@ -6,7 +6,7 @@ namespace Reveal\TemplatePHPStanCompiler\NodeAnalyzer;
 use PhpParser\Node\Expr\Array_;
 use PhpParser\Node\Expr\ArrayItem;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220707\Symplify\Astral\NodeValue\NodeValueResolver;
 final class ParametersArrayAnalyzer
 {
     /**

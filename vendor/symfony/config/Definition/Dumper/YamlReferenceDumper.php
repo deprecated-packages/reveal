@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220705\Symfony\Component\Config\Definition\Dumper;
+namespace RevealPrefix20220707\Symfony\Component\Config\Definition\Dumper;
 
-use RevealPrefix20220705\Symfony\Component\Config\Definition\ArrayNode;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\BaseNode;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\ConfigurationInterface;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\EnumNode;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\NodeInterface;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\PrototypedArrayNode;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\ScalarNode;
-use RevealPrefix20220705\Symfony\Component\Config\Definition\VariableNode;
-use RevealPrefix20220705\Symfony\Component\Yaml\Inline;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\ArrayNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\BaseNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\ConfigurationInterface;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\EnumNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\NodeInterface;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\PrototypedArrayNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\ScalarNode;
+use RevealPrefix20220707\Symfony\Component\Config\Definition\VariableNode;
+use RevealPrefix20220707\Symfony\Component\Yaml\Inline;
 /**
  * Dumps a Yaml reference configuration for the given configuration/node instance.
  *

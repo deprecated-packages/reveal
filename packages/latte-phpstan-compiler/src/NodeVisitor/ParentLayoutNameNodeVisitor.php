@@ -9,9 +9,9 @@ use PhpParser\Node\Expr\PropertyFetch;
 use PhpParser\Node\Stmt;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220705\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220705\Symplify\Astral\NodeValue\NodeValueResolver;
-use RevealPrefix20220705\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220707\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileSystem;
 final class ParentLayoutNameNodeVisitor extends NodeVisitorAbstract
 {
     /**

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220705\Symplify\EasyTesting\PHPUnit;
+namespace RevealPrefix20220707\Symplify\EasyTesting\PHPUnit;
 
 /**
  * @api
@@ -13,6 +13,6 @@ final class StaticPHPUnitEnvironment
      */
     public static function isPHPUnitRun() : bool
     {
-        return \defined('RevealPrefix20220705\\PHPUNIT_COMPOSER_INSTALL') || \defined('RevealPrefix20220705\\__PHPUNIT_PHAR__');
+        return \defined('RevealPrefix20220707\\PHPUNIT_COMPOSER_INSTALL') || \defined('RevealPrefix20220707\\__PHPUNIT_PHAR__');
     }
 }
