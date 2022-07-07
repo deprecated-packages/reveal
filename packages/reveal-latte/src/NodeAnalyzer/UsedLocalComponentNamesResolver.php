@@ -11,8 +11,10 @@ use PhpParser\Node\Scalar\String_;
 use PhpParser\Node\Stmt\Class_;
 use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\NodeFinder;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
 use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\Astral\ValueObject\AttributeKey;
+use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
 final class UsedLocalComponentNamesResolver
 {
     /**
@@ -23,22 +25,31 @@ final class UsedLocalComponentNamesResolver
      * @var \PhpParser\NodeFinder
      */
     private $nodeFinder;
-    public function __construct(SimpleNameResolver $simpleNameResolver, NodeFinder $nodeFinder)
+    /**
+     * @var \Symplify\Astral\Reflection\ReflectionParser
+     */
+    private $reflectionParser;
+    public function __construct(SimpleNameResolver $simpleNameResolver, NodeFinder $nodeFinder, ReflectionParser $reflectionParser)
     {
         $this->simpleNameResolver = $simpleNameResolver;
         $this->nodeFinder = $nodeFinder;
+        $this->reflectionParser = $reflectionParser;
     }
     /**
      * @return string[]
      */
-    public function resolveFromClassMethod(ClassMethod $classMethod) : array
+    public function resolveFromClassMethod(ClassMethod $classMethod, Scope $scope) : array
     {
-        $parent = $classMethod->getAttribute(AttributeKey::PARENT);
-        if (!$parent instanceof Class_) {
+        $classReflection = $scope->getClassReflection();
+        if (!$classReflection instanceof ClassReflection) {
             return [];
         }
-        $getComponentNames = $this->resolveThisGetComponentArguments($parent);
-        $dimFetchNames = $this->resolveDimFetchArguments($parent);
+        $class = $this->reflectionParser->parseClassReflection($classReflection);
+        if (!$class instanceof Class_) {
+            return [];
+        }
+        $getComponentNames = $this->resolveThisGetComponentArguments($class);
+        $dimFetchNames = $this->resolveDimFetchArguments($class);
         return \array_merge($getComponentNames, $dimFetchNames);
     }
     /**

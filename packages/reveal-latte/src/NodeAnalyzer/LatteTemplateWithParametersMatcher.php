@@ -10,20 +10,17 @@ use PhpParser\Node\Expr\MethodCall;
 use PhpParser\Node\Stmt\Class_;
 use PhpParser\NodeTraverser;
 use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\ClassReflection;
 use Reveal\RevealLatte\NodeVisitor\AssignedParametersVisitor;
 use Reveal\RevealLatte\NodeVisitor\RenderParametersVisitor;
 use Reveal\RevealLatte\NodeVisitor\TemplatePathFinderVisitor;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
 use RevealPrefix20220707\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
-use RevealPrefix20220707\Symplify\Astral\NodeFinder\SimpleNodeFinder;
 use RevealPrefix20220707\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
 final class LatteTemplateWithParametersMatcher
 {
-    /**
-     * @var \Symplify\Astral\NodeFinder\SimpleNodeFinder
-     */
-    private $simpleNodeFinder;
     /**
      * @var \Symplify\Astral\Naming\SimpleNameResolver
      */
@@ -36,19 +33,27 @@ final class LatteTemplateWithParametersMatcher
      * @var \Symplify\Astral\NodeValue\NodeValueResolver
      */
     private $nodeValueResolver;
-    public function __construct(SimpleNodeFinder $simpleNodeFinder, SimpleNameResolver $simpleNameResolver, NetteTypeAnalyzer $netteTypeAnalyzer, NodeValueResolver $nodeValueResolver)
+    /**
+     * @var \Symplify\Astral\Reflection\ReflectionParser
+     */
+    private $reflectionParser;
+    public function __construct(SimpleNameResolver $simpleNameResolver, NetteTypeAnalyzer $netteTypeAnalyzer, NodeValueResolver $nodeValueResolver, ReflectionParser $reflectionParser)
     {
-        $this->simpleNodeFinder = $simpleNodeFinder;
         $this->simpleNameResolver = $simpleNameResolver;
         $this->netteTypeAnalyzer = $netteTypeAnalyzer;
         $this->nodeValueResolver = $nodeValueResolver;
+        $this->reflectionParser = $reflectionParser;
     }
     /**
      * @return RenderTemplateWithParameters[]
      */
     public function match(MethodCall $methodCall, Scope $scope) : array
     {
-        $class = $this->simpleNodeFinder->findFirstParentByType($methodCall, Class_::class);
+        $classReflection = $scope->getClassReflection();
+        if (!$classReflection instanceof ClassReflection) {
+            return [];
+        }
+        $class = $this->reflectionParser->parseClassReflection($classReflection);
         if (!$class instanceof Class_) {
             return [];
         }

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit939d180b351890ea727e7242da76b154
+class ComposerStaticInit34cfc1f41d27bd164cde6b31582b087c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -1011,7 +1011,6 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'RevealPrefix20220707\\Symplify\\Astral\\Exception\\ShouldNotHappenException' => __DIR__ . '/..' . '/symplify/astral/src/Exception/ShouldNotHappenException.php',
         'RevealPrefix20220707\\Symplify\\Astral\\Naming\\SimpleNameResolver' => __DIR__ . '/..' . '/symplify/astral/src/Naming/SimpleNameResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeAnalyzer\\NetteTypeAnalyzer' => __DIR__ . '/..' . '/symplify/astral/src/NodeAnalyzer/NetteTypeAnalyzer.php',
-        'RevealPrefix20220707\\Symplify\\Astral\\NodeFinder\\SimpleNodeFinder' => __DIR__ . '/..' . '/symplify/astral/src/NodeFinder/SimpleNodeFinder.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeNameResolver\\ArgNodeNameResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeNameResolver/ArgNodeNameResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeNameResolver\\AttributeNodeNameResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeNameResolver/AttributeNodeNameResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeNameResolver\\ClassLikeNodeNameResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeNameResolver/ClassLikeNodeNameResolver.php',
@@ -1028,7 +1027,6 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'RevealPrefix20220707\\Symplify\\Astral\\NodeValue\\NodeValueResolver\\ConstFetchValueResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeValue/NodeValueResolver/ConstFetchValueResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeValue\\NodeValueResolver\\FuncCallValueResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeValue/NodeValueResolver/FuncCallValueResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeValue\\NodeValueResolver\\MagicConstValueResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeValue/NodeValueResolver/MagicConstValueResolver.php',
-        'RevealPrefix20220707\\Symplify\\Astral\\NodeValue\\UnionTypeValueResolver' => __DIR__ . '/..' . '/symplify/astral/src/NodeValue/UnionTypeValueResolver.php',
         'RevealPrefix20220707\\Symplify\\Astral\\NodeVisitor\\CallableNodeVisitor' => __DIR__ . '/..' . '/symplify/astral/src/NodeVisitor/CallableNodeVisitor.php',
         'RevealPrefix20220707\\Symplify\\Astral\\PhpDocParser\\Contract\\PhpDocNodeVisitorInterface' => __DIR__ . '/..' . '/symplify/astral/src/PhpDocParser/Contract/PhpDocNodeVisitorInterface.php',
         'RevealPrefix20220707\\Symplify\\Astral\\PhpDocParser\\Exception\\InvalidTraverseException' => __DIR__ . '/..' . '/symplify/astral/src/PhpDocParser/Exception/InvalidTraverseException.php',
@@ -1043,7 +1041,6 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'RevealPrefix20220707\\Symplify\\Astral\\PhpDocParser\\ValueObject\\PhpDocAttributeKey' => __DIR__ . '/..' . '/symplify/astral/src/PhpDocParser/ValueObject/PhpDocAttributeKey.php',
         'RevealPrefix20220707\\Symplify\\Astral\\PhpParser\\SmartPhpParser' => __DIR__ . '/..' . '/symplify/astral/src/PhpParser/SmartPhpParser.php',
         'RevealPrefix20220707\\Symplify\\Astral\\PhpParser\\SmartPhpParserFactory' => __DIR__ . '/..' . '/symplify/astral/src/PhpParser/SmartPhpParserFactory.php',
-        'RevealPrefix20220707\\Symplify\\Astral\\Reflection\\MethodCallParser' => __DIR__ . '/..' . '/symplify/astral/src/Reflection/MethodCallParser.php',
         'RevealPrefix20220707\\Symplify\\Astral\\Reflection\\ReflectionParser' => __DIR__ . '/..' . '/symplify/astral/src/Reflection/ReflectionParser.php',
         'RevealPrefix20220707\\Symplify\\Astral\\StaticFactory\\NodeValueResolverStaticFactory' => __DIR__ . '/..' . '/symplify/astral/src/StaticFactory/NodeValueResolverStaticFactory.php',
         'RevealPrefix20220707\\Symplify\\Astral\\StaticFactory\\SimpleNameResolverStaticFactory' => __DIR__ . '/..' . '/symplify/astral/src/StaticFactory/SimpleNameResolverStaticFactory.php',
@@ -1097,7 +1094,6 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Composer\\VendorDirProvider' => __DIR__ . '/..' . '/symplify/package-builder/src/Composer/VendorDirProvider.php',
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Configuration\\StaticEolConfiguration' => __DIR__ . '/..' . '/symplify/package-builder/src/Configuration/StaticEolConfiguration.php',
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Console\\Command\\AbstractSymplifyCommand' => __DIR__ . '/..' . '/symplify/package-builder/src/Console/Command/AbstractSymplifyCommand.php',
-        'RevealPrefix20220707\\Symplify\\PackageBuilder\\Console\\Command\\CommandNaming' => __DIR__ . '/..' . '/symplify/package-builder/src/Console/Command/CommandNaming.php',
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Console\\Formatter\\ColorConsoleDiffFormatter' => __DIR__ . '/..' . '/symplify/package-builder/src/Console/Formatter/ColorConsoleDiffFormatter.php',
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Console\\Input\\StaticInputDetector' => __DIR__ . '/..' . '/symplify/package-builder/src/Console/Input/StaticInputDetector.php',
         'RevealPrefix20220707\\Symplify\\PackageBuilder\\Console\\Output\\ConsoleDiffer' => __DIR__ . '/..' . '/symplify/package-builder/src/Console/Output/ConsoleDiffer.php',
@@ -1399,8 +1395,8 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\ParametersArrayAnalyzer' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeAnalyzer/ParametersArrayAnalyzer.php',
         'Reveal\\TemplatePHPStanCompiler\\NodeAnalyzer\\TemplateFilePathResolver' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeAnalyzer/TemplateFilePathResolver.php',
         'Reveal\\TemplatePHPStanCompiler\\NodeFactory\\VarDocNodeFactory' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeFactory/VarDocNodeFactory.php',
-        'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\TemplateVariableCollectingNodeVisitor' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeVisitor/TemplateVariableCollectingNodeVisitor.php',
-        'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\VariableCollectingNodeVisitor' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeVisitor/VariableCollectingNodeVisitor.php',
+        'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\LatteVariableCollectingNodeVisitor' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeVisitor/LatteVariableCollectingNodeVisitor.php',
+        'Reveal\\TemplatePHPStanCompiler\\NodeVisitor\\TwigVariableCollectingNodeVisitor' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/NodeVisitor/TwigVariableCollectingNodeVisitor.php',
         'Reveal\\TemplatePHPStanCompiler\\PHPStan\\FileAnalyserProvider' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/PHPStan/FileAnalyserProvider.php',
         'Reveal\\TemplatePHPStanCompiler\\PHPStan\\PHPStanServicesFactory' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/PHPStan/PHPStanServicesFactory.php',
         'Reveal\\TemplatePHPStanCompiler\\PhpParser\\ParentNodeAwarePhpParser' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/PhpParser/ParentNodeAwarePhpParser.php',
@@ -1410,6 +1406,7 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
         'Reveal\\TemplatePHPStanCompiler\\ValueObject\\PhpFileContentsWithLineMap' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/ValueObject/PhpFileContentsWithLineMap.php',
         'Reveal\\TemplatePHPStanCompiler\\ValueObject\\RenderTemplateWithParameters' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/ValueObject/RenderTemplateWithParameters.php',
         'Reveal\\TemplatePHPStanCompiler\\ValueObject\\VariableAndType' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/ValueObject/VariableAndType.php',
+        'Reveal\\TemplatePHPStanCompiler\\VariableUsage\\CreatedVariableNamesResolver' => __DIR__ . '/../..' . '/packages/template-phpstan-compiler/src/VariableUsage/CreatedVariableNamesResolver.php',
         'Reveal\\TwigPHPStanCompiler\\Contract\\NodeVisitor\\NormalizingNodeVisitorInterface' => __DIR__ . '/../..' . '/packages/twig-phpstan-compiler/src/Contract/NodeVisitor/NormalizingNodeVisitorInterface.php',
         'Reveal\\TwigPHPStanCompiler\\DocBlock\\NonVarTypeDocBlockCleaner' => __DIR__ . '/../..' . '/packages/twig-phpstan-compiler/src/DocBlock/NonVarTypeDocBlockCleaner.php',
         'Reveal\\TwigPHPStanCompiler\\ErrorReporting\\TemplateLinesMapResolver' => __DIR__ . '/../..' . '/packages/twig-phpstan-compiler/src/ErrorReporting/TemplateLinesMapResolver.php',
@@ -1443,9 +1440,9 @@ class ComposerStaticInit939d180b351890ea727e7242da76b154
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit939d180b351890ea727e7242da76b154::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit939d180b351890ea727e7242da76b154::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit939d180b351890ea727e7242da76b154::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit34cfc1f41d27bd164cde6b31582b087c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit34cfc1f41d27bd164cde6b31582b087c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit34cfc1f41d27bd164cde6b31582b087c::$classMap;
 
         }, null, ClassLoader::class);
     }

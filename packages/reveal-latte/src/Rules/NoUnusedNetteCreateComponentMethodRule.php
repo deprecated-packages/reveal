@@ -65,7 +65,7 @@ final class NoUnusedNetteCreateComponentMethodRule implements Rule
         if (!$classReflection instanceof ClassReflection) {
             return [];
         }
-        $localUsedControlMethodNames = $this->usedLocalComponentNamesResolver->resolveFromClassMethod($node);
+        $localUsedControlMethodNames = $this->usedLocalComponentNamesResolver->resolveFromClassMethod($node, $scope);
         if (\in_array($controlName, $localUsedControlMethodNames, \true)) {
             return [];
         }

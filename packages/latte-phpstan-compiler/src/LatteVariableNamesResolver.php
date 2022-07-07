@@ -9,7 +9,7 @@ use PhpParser\NodeTraverser;
 use Reveal\LattePHPStanCompiler\RelatedFileResolver\IncludedSnippetTemplateFileResolver;
 use Reveal\LattePHPStanCompiler\RelatedFileResolver\ParentLayoutTemplateFileResolver;
 use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
-use Reveal\TemplatePHPStanCompiler\NodeVisitor\TemplateVariableCollectingNodeVisitor;
+use Reveal\TemplatePHPStanCompiler\NodeVisitor\LatteVariableCollectingNodeVisitor;
 use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
 use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
 final class LatteVariableNamesResolver implements UsedVariableNamesResolverInterface
@@ -78,7 +78,7 @@ final class LatteVariableNamesResolver implements UsedVariableNamesResolverInter
      */
     private function resolveUsedVariableNamesFromPhpNodes(array $stmts) : array
     {
-        $templateVariableCollectingNodeVisitor = new TemplateVariableCollectingNodeVisitor(['this', 'iterations', 'ʟ_l', 'ʟ_v'], ['main'], $this->simpleNameResolver, $this->nodeFinder);
+        $templateVariableCollectingNodeVisitor = new LatteVariableCollectingNodeVisitor(['this', 'iterations', 'ʟ_l', 'ʟ_v'], ['main'], $this->simpleNameResolver, $this->nodeFinder);
         $phpNodeTraverser = new NodeTraverser();
         $phpNodeTraverser->addVisitor($templateVariableCollectingNodeVisitor);
         $phpNodeTraverser->traverse($stmts);

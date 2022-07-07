@@ -4,6 +4,9 @@ declare (strict_types=1);
 namespace RevealPrefix20220707\Symplify\EasyTesting\ValueObject;
 
 use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileInfo;
+/**
+ * @api
+ */
 final class InputFileInfoAndExpected
 {
     /**

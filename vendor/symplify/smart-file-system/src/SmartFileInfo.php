@@ -10,6 +10,7 @@ use RevealPrefix20220707\Symplify\EasyTesting\StaticFixtureSplitter;
 use RevealPrefix20220707\Symplify\SmartFileSystem\Exception\DirectoryNotFoundException;
 use RevealPrefix20220707\Symplify\SmartFileSystem\Exception\FileNotFoundException;
 /**
+ * @api
  * @see \Symplify\SmartFileSystem\Tests\SmartFileInfo\SmartFileInfoTest
  */
 final class SmartFileInfo extends SplFileInfo

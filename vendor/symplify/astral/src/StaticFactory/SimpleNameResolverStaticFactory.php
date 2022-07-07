@@ -20,6 +20,9 @@ use RevealPrefix20220707\Symplify\Astral\NodeNameResolver\PropertyNodeNameResolv
  */
 final class SimpleNameResolverStaticFactory
 {
+    /**
+     * @api
+     */
     public static function create() : SimpleNameResolver
     {
         $nameResolvers = [new ArgNodeNameResolver(), new AttributeNodeNameResolver(), new ClassLikeNodeNameResolver(), new ClassMethodNodeNameResolver(), new ConstFetchNodeNameResolver(), new FuncCallNodeNameResolver(), new IdentifierNodeNameResolver(), new NamespaceNodeNameResolver(), new ParamNodeNameResolver(), new PropertyNodeNameResolver()];

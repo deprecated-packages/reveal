@@ -9,6 +9,7 @@ use PhpParser\Node\Stmt\Class_;
 use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Node\InClassNode;
+use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\ObjectType;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
@@ -16,13 +17,9 @@ use Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
 use Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
 use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\Astral\NodeFinder\SimpleNodeFinder;
+use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
 final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
 {
-    /**
-     * @var \Symplify\Astral\NodeFinder\SimpleNodeFinder
-     */
-    private $simpleNodeFinder;
     /**
      * @var \Symplify\Astral\Naming\SimpleNameResolver
      */
@@ -35,12 +32,16 @@ final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
      * @var \Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver
      */
     private $componentMapResolver;
-    public function __construct(SimpleNodeFinder $simpleNodeFinder, SimpleNameResolver $simpleNameResolver, LatteTemplateWithParametersMatcher $latteTemplateWithParametersMatcher, ComponentMapResolver $componentMapResolver)
+    /**
+     * @var \Symplify\Astral\Reflection\ReflectionParser
+     */
+    private $reflectionParser;
+    public function __construct(SimpleNameResolver $simpleNameResolver, LatteTemplateWithParametersMatcher $latteTemplateWithParametersMatcher, ComponentMapResolver $componentMapResolver, ReflectionParser $reflectionParser)
     {
-        $this->simpleNodeFinder = $simpleNodeFinder;
         $this->simpleNameResolver = $simpleNameResolver;
         $this->latteTemplateWithParametersMatcher = $latteTemplateWithParametersMatcher;
         $this->componentMapResolver = $componentMapResolver;
+        $this->reflectionParser = $reflectionParser;
     }
     public function check(Node $node, Scope $scope) : bool
     {
@@ -100,7 +101,11 @@ final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
     }
     private function findTemplateFilePath(ClassMethod $classMethod, Scope $scope) : ?string
     {
-        $class = $this->simpleNodeFinder->findFirstParentByType($classMethod, Class_::class);
+        $classReflection = $scope->getClassReflection();
+        if (!$classReflection instanceof ClassReflection) {
+            return null;
+        }
+        $class = $this->reflectionParser->parseClassReflection($classReflection);
         if (!$class instanceof Class_) {
             return null;
         }
