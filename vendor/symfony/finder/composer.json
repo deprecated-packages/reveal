@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220707\\Symfony\\Component\\Finder\\": ""
+            "RevealPrefix20220708\\Symfony\\Component\\Finder\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

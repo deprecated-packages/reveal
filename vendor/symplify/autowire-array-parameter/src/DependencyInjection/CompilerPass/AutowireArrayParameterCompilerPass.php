@@ -1,20 +1,20 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass;
+namespace RevealPrefix20220708\Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 use ReflectionClass;
 use ReflectionMethod;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\DependencyInjection\DefinitionFinder;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\DocBlock\ParamTypeDocBlockResolver;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\Skipper\ParameterSkipper;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\TypeResolver\ParameterTypeResolver;
-use RevealPrefix20220707\Symplify\PackageBuilder\ValueObject\MethodName;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\DependencyInjection\DefinitionFinder;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\DocBlock\ParamTypeDocBlockResolver;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\Skipper\ParameterSkipper;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\TypeResolver\ParameterTypeResolver;
+use RevealPrefix20220708\Symplify\PackageBuilder\ValueObject\MethodName;
 /**
  * @inspiration https://github.com/nette/di/pull/178
  * @see \Symplify\AutowireArrayParameter\Tests\DependencyInjection\CompilerPass\AutowireArrayParameterCompilerPassTest
@@ -33,7 +33,7 @@ final class AutowireArrayParameterCompilerPass implements CompilerPassInterface
      * @var string[]
      * @noRector
      */
-    private $excludedFatalClasses = ['RevealPrefix20220707\\Symfony\\Component\\Form\\FormExtensionInterface', 'RevealPrefix20220707\\Symfony\\Component\\Asset\\PackageInterface', 'RevealPrefix20220707\\Symfony\\Component\\Config\\Loader\\LoaderInterface', 'RevealPrefix20220707\\Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\ContextProviderInterface', 'RevealPrefix20220707\\EasyCorp\\Bundle\\EasyAdminBundle\\Form\\Type\\Configurator\\TypeConfiguratorInterface', 'RevealPrefix20220707\\Sonata\\CoreBundle\\Model\\Adapter\\AdapterInterface', 'RevealPrefix20220707\\Sonata\\Doctrine\\Adapter\\AdapterChain', 'RevealPrefix20220707\\Sonata\\Twig\\Extension\\TemplateExtension', 'RevealPrefix20220707\\Symfony\\Component\\HttpKernel\\KernelInterface'];
+    private $excludedFatalClasses = ['RevealPrefix20220708\\Symfony\\Component\\Form\\FormExtensionInterface', 'RevealPrefix20220708\\Symfony\\Component\\Asset\\PackageInterface', 'RevealPrefix20220708\\Symfony\\Component\\Config\\Loader\\LoaderInterface', 'RevealPrefix20220708\\Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\ContextProviderInterface', 'RevealPrefix20220708\\EasyCorp\\Bundle\\EasyAdminBundle\\Form\\Type\\Configurator\\TypeConfiguratorInterface', 'RevealPrefix20220708\\Sonata\\CoreBundle\\Model\\Adapter\\AdapterInterface', 'RevealPrefix20220708\\Sonata\\Doctrine\\Adapter\\AdapterChain', 'RevealPrefix20220708\\Sonata\\Twig\\Extension\\TemplateExtension', 'RevealPrefix20220708\\Symfony\\Component\\HttpKernel\\KernelInterface'];
     /**
      * @var \Symplify\AutowireArrayParameter\DependencyInjection\DefinitionFinder
      */

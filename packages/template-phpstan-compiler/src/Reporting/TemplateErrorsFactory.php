@@ -7,7 +7,7 @@ use PHPStan\Analyser\Error;
 use PHPStan\Rules\RuleError;
 use PHPStan\Rules\RuleErrorBuilder;
 use Reveal\TemplatePHPStanCompiler\ValueObject\PhpFileContentsWithLineMap;
-use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220708\Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  */

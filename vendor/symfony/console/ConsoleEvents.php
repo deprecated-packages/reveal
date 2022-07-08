@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Console;
+namespace RevealPrefix20220708\Symfony\Component\Console;
 
-use RevealPrefix20220707\Symfony\Component\Console\Event\ConsoleCommandEvent;
-use RevealPrefix20220707\Symfony\Component\Console\Event\ConsoleErrorEvent;
-use RevealPrefix20220707\Symfony\Component\Console\Event\ConsoleSignalEvent;
-use RevealPrefix20220707\Symfony\Component\Console\Event\ConsoleTerminateEvent;
+use RevealPrefix20220708\Symfony\Component\Console\Event\ConsoleCommandEvent;
+use RevealPrefix20220708\Symfony\Component\Console\Event\ConsoleErrorEvent;
+use RevealPrefix20220708\Symfony\Component\Console\Event\ConsoleSignalEvent;
+use RevealPrefix20220708\Symfony\Component\Console\Event\ConsoleTerminateEvent;
 /**
  * Contains all events dispatched by an Application.
  *

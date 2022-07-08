@@ -3,15 +3,15 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\TypeAnalyzer;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 use PhpParser\Node\Stmt\Class_;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\RevealLatte\NodeAnalyzer\ComponentClassMethodTypeAnalyzer;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
-use RevealPrefix20220707\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Reflection\ReflectionParser;
+use RevealPrefix20220708\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class ComponentMapResolver
 {
     /**

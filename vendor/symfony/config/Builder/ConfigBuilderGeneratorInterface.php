@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Config\Builder;
+namespace RevealPrefix20220708\Symfony\Component\Config\Builder;
 
-use RevealPrefix20220707\Symfony\Component\Config\Definition\ConfigurationInterface;
+use RevealPrefix20220708\Symfony\Component\Config\Definition\ConfigurationInterface;
 /**
  * Generates ConfigBuilders to help create valid config.
  *

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\EasyTesting\Finder;
+namespace RevealPrefix20220708\Symplify\EasyTesting\Finder;
 
-use RevealPrefix20220707\Symfony\Component\Finder\Finder;
-use RevealPrefix20220707\Symplify\SmartFileSystem\Finder\FinderSanitizer;
-use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220708\Symfony\Component\Finder\Finder;
+use RevealPrefix20220708\Symplify\SmartFileSystem\Finder\FinderSanitizer;
+use RevealPrefix20220708\Symplify\SmartFileSystem\SmartFileInfo;
 final class FixtureFinder
 {
     /**

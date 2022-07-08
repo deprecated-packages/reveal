@@ -11,7 +11,7 @@ use Reveal\LattePHPStanCompiler\RelatedFileResolver\ParentLayoutTemplateFileReso
 use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
 use Reveal\TemplatePHPStanCompiler\NodeVisitor\LatteVariableCollectingNodeVisitor;
 use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
 final class LatteVariableNamesResolver implements UsedVariableNamesResolverInterface
 {
     /**

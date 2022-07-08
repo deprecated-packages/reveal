@@ -13,8 +13,8 @@ use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\NodeFinder;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Reflection\ReflectionParser;
 final class UsedLocalComponentNamesResolver
 {
     /**

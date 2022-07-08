@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Extension;
+namespace RevealPrefix20220708\Twig\Extension;
 
-use RevealPrefix20220707\Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
-use RevealPrefix20220707\Twig\Profiler\Profile;
+use RevealPrefix20220708\Twig\Profiler\NodeVisitor\ProfilerNodeVisitor;
+use RevealPrefix20220708\Twig\Profiler\Profile;
 class ProfilerExtension extends AbstractExtension
 {
     private $actives = [];

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\RuleDocGenerator\ValueObject;
+namespace RevealPrefix20220708\Symplify\RuleDocGenerator\ValueObject;
 
-use RevealPrefix20220707\Symplify\RuleDocGenerator\Contract\CodeSampleInterface;
-use RevealPrefix20220707\Symplify\RuleDocGenerator\Exception\ShouldNotHappenException;
+use RevealPrefix20220708\Symplify\RuleDocGenerator\Contract\CodeSampleInterface;
+use RevealPrefix20220708\Symplify\RuleDocGenerator\Exception\ShouldNotHappenException;
 abstract class AbstractCodeSample implements CodeSampleInterface
 {
     /**

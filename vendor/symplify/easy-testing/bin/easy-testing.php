@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707;
+namespace RevealPrefix20220708;
 
-use RevealPrefix20220707\Symplify\EasyTesting\Kernel\EasyTestingKernel;
-use RevealPrefix20220707\Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
+use RevealPrefix20220708\Symplify\EasyTesting\Kernel\EasyTestingKernel;
+use RevealPrefix20220708\Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 $possibleAutoloadPaths = [
     // dependency
     __DIR__ . '/../../../autoload.php',

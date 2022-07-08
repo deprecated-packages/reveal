@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TemplatePHPStanCompiler\ValueObject;
 
-use RevealPrefix20220707\Webmozart\Assert\Assert;
+use RevealPrefix20220708\Webmozart\Assert\Assert;
 final class PhpFileContentsWithLineMap
 {
     /**

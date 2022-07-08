@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\NodeVisitor;
+namespace RevealPrefix20220708\Twig\NodeVisitor;
 
-use RevealPrefix20220707\Twig\Environment;
-use RevealPrefix20220707\Twig\Node\Expression\AssignNameExpression;
-use RevealPrefix20220707\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220707\Twig\Node\Expression\GetAttrExpression;
-use RevealPrefix20220707\Twig\Node\Expression\MethodCallExpression;
-use RevealPrefix20220707\Twig\Node\Expression\NameExpression;
-use RevealPrefix20220707\Twig\Node\ImportNode;
-use RevealPrefix20220707\Twig\Node\ModuleNode;
-use RevealPrefix20220707\Twig\Node\Node;
+use RevealPrefix20220708\Twig\Environment;
+use RevealPrefix20220708\Twig\Node\Expression\AssignNameExpression;
+use RevealPrefix20220708\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220708\Twig\Node\Expression\GetAttrExpression;
+use RevealPrefix20220708\Twig\Node\Expression\MethodCallExpression;
+use RevealPrefix20220708\Twig\Node\Expression\NameExpression;
+use RevealPrefix20220708\Twig\Node\ImportNode;
+use RevealPrefix20220708\Twig\Node\ModuleNode;
+use RevealPrefix20220708\Twig\Node\Node;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *
@@ -36,7 +36,7 @@ final class MacroAutoImportNodeVisitor implements NodeVisitorInterface
         }
         return $node;
     }
-    public function leaveNode(Node $node, Environment $env) : ?\RevealPrefix20220707\Twig\Node\Node
+    public function leaveNode(Node $node, Environment $env) : ?\RevealPrefix20220708\Twig\Node\Node
     {
         if ($node instanceof ModuleNode) {
             $this->inAModule = \false;

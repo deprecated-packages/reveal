@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Config\Definition\Builder;
+namespace RevealPrefix20220708\Symfony\Component\Config\Definition\Builder;
 
-use RevealPrefix20220707\Symfony\Component\Config\Definition\Exception\InvalidDefinitionException;
+use RevealPrefix20220708\Symfony\Component\Config\Definition\Exception\InvalidDefinitionException;
 /**
  * Abstract class that contains common code of integer and float node definitions.
  *

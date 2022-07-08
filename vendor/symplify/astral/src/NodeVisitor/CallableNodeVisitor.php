@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\Astral\NodeVisitor;
+namespace RevealPrefix20220708\Symplify\Astral\NodeVisitor;
 
 use PhpParser\Node;
 use PhpParser\Node\Expr;

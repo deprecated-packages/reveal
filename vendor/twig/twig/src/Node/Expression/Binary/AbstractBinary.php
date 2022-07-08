@@ -9,11 +9,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Node\Expression\Binary;
+namespace RevealPrefix20220708\Twig\Node\Expression\Binary;
 
-use RevealPrefix20220707\Twig\Compiler;
-use RevealPrefix20220707\Twig\Node\Expression\AbstractExpression;
-use RevealPrefix20220707\Twig\Node\Node;
+use RevealPrefix20220708\Twig\Compiler;
+use RevealPrefix20220708\Twig\Node\Expression\AbstractExpression;
+use RevealPrefix20220708\Twig\Node\Node;
 abstract class AbstractBinary extends AbstractExpression
 {
     public function __construct(Node $left, Node $right, int $lineno)

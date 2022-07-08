@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Loader;
+namespace RevealPrefix20220708\Twig\Loader;
 
-use RevealPrefix20220707\Twig\Error\LoaderError;
-use RevealPrefix20220707\Twig\Source;
+use RevealPrefix20220708\Twig\Error\LoaderError;
+use RevealPrefix20220708\Twig\Source;
 /**
  * Loads a template from an array.
  *

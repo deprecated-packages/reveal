@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Console\Completion;
+namespace RevealPrefix20220708\Symfony\Component\Console\Completion;
 
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
 /**
  * Stores all completion suggestions for the current input.
  *

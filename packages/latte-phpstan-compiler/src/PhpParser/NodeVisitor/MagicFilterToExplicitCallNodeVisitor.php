@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 use PhpParser\Node;
 use PhpParser\Node\Arg;
 use PhpParser\Node\Expr;
@@ -20,7 +20,7 @@ use Reveal\LattePHPStanCompiler\Latte\Filters\FilterMatcher;
 use Reveal\LattePHPStanCompiler\ValueObject\DynamicCallReference;
 use Reveal\LattePHPStanCompiler\ValueObject\FunctionCallReference;
 use Reveal\LattePHPStanCompiler\ValueObject\StaticCallReference;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Make \Latte\Runtime\Defaults::getFilters() explicit, from: $this->filters->{magic}(...)
  *

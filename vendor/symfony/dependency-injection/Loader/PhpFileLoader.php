@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader;
 
-use RevealPrefix20220707\Symfony\Component\Config\Builder\ConfigBuilderGenerator;
-use RevealPrefix20220707\Symfony\Component\Config\Builder\ConfigBuilderGeneratorInterface;
-use RevealPrefix20220707\Symfony\Component\Config\Builder\ConfigBuilderInterface;
-use RevealPrefix20220707\Symfony\Component\Config\FileLocatorInterface;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Attribute\When;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Container;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Extension\ConfigurationExtensionInterface;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use RevealPrefix20220708\Symfony\Component\Config\Builder\ConfigBuilderGenerator;
+use RevealPrefix20220708\Symfony\Component\Config\Builder\ConfigBuilderGeneratorInterface;
+use RevealPrefix20220708\Symfony\Component\Config\Builder\ConfigBuilderInterface;
+use RevealPrefix20220708\Symfony\Component\Config\FileLocatorInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Attribute\When;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Container;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Extension\ConfigurationExtensionInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 /**
  * PhpFileLoader loads service definitions from a PHP file.
  *

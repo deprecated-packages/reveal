@@ -8,67 +8,67 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Extension;
+namespace RevealPrefix20220708\Twig\Extension;
 
-use RevealPrefix20220707\Twig\ExpressionParser;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\AddBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\AndBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\BitwiseAndBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\BitwiseOrBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\BitwiseXorBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\ConcatBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\DivBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\EndsWithBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\EqualBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\FloorDivBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\GreaterBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\GreaterEqualBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\InBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\LessBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\LessEqualBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\MatchesBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\ModBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\MulBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\NotEqualBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\NotInBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\OrBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\PowerBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\RangeBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\SpaceshipBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\StartsWithBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Binary\SubBinary;
-use RevealPrefix20220707\Twig\Node\Expression\Filter\DefaultFilter;
-use RevealPrefix20220707\Twig\Node\Expression\NullCoalesceExpression;
-use RevealPrefix20220707\Twig\Node\Expression\Test\ConstantTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\DefinedTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\DivisiblebyTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\EvenTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\NullTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\OddTest;
-use RevealPrefix20220707\Twig\Node\Expression\Test\SameasTest;
-use RevealPrefix20220707\Twig\Node\Expression\Unary\NegUnary;
-use RevealPrefix20220707\Twig\Node\Expression\Unary\NotUnary;
-use RevealPrefix20220707\Twig\Node\Expression\Unary\PosUnary;
-use RevealPrefix20220707\Twig\NodeVisitor\MacroAutoImportNodeVisitor;
-use RevealPrefix20220707\Twig\TokenParser\ApplyTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\BlockTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\DeprecatedTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\DoTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\EmbedTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\ExtendsTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\FlushTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\ForTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\FromTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\IfTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\ImportTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\IncludeTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\MacroTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\SetTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\UseTokenParser;
-use RevealPrefix20220707\Twig\TokenParser\WithTokenParser;
-use RevealPrefix20220707\Twig\TwigFilter;
-use RevealPrefix20220707\Twig\TwigFunction;
-use RevealPrefix20220707\Twig\TwigTest;
+use RevealPrefix20220708\Twig\ExpressionParser;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\AddBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\AndBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\BitwiseAndBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\BitwiseOrBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\BitwiseXorBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\ConcatBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\DivBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\EndsWithBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\EqualBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\FloorDivBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\GreaterBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\GreaterEqualBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\InBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\LessBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\LessEqualBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\MatchesBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\ModBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\MulBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\NotEqualBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\NotInBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\OrBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\PowerBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\RangeBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\SpaceshipBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\StartsWithBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Binary\SubBinary;
+use RevealPrefix20220708\Twig\Node\Expression\Filter\DefaultFilter;
+use RevealPrefix20220708\Twig\Node\Expression\NullCoalesceExpression;
+use RevealPrefix20220708\Twig\Node\Expression\Test\ConstantTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\DefinedTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\DivisiblebyTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\EvenTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\NullTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\OddTest;
+use RevealPrefix20220708\Twig\Node\Expression\Test\SameasTest;
+use RevealPrefix20220708\Twig\Node\Expression\Unary\NegUnary;
+use RevealPrefix20220708\Twig\Node\Expression\Unary\NotUnary;
+use RevealPrefix20220708\Twig\Node\Expression\Unary\PosUnary;
+use RevealPrefix20220708\Twig\NodeVisitor\MacroAutoImportNodeVisitor;
+use RevealPrefix20220708\Twig\TokenParser\ApplyTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\BlockTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\DeprecatedTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\DoTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\EmbedTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\ExtendsTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\FlushTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\ForTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\FromTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\IfTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\ImportTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\IncludeTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\MacroTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\SetTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\UseTokenParser;
+use RevealPrefix20220708\Twig\TokenParser\WithTokenParser;
+use RevealPrefix20220708\Twig\TwigFilter;
+use RevealPrefix20220708\Twig\TwigFunction;
+use RevealPrefix20220708\Twig\TwigTest;
 final class CoreExtension extends AbstractExtension
 {
     private $dateFormats = ['F j, Y H:i', '%d days'];
@@ -205,17 +205,17 @@ final class CoreExtension extends AbstractExtension
         return [['not' => ['precedence' => 50, 'class' => NotUnary::class], '-' => ['precedence' => 500, 'class' => NegUnary::class], '+' => ['precedence' => 500, 'class' => PosUnary::class]], ['or' => ['precedence' => 10, 'class' => OrBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'and' => ['precedence' => 15, 'class' => AndBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'b-or' => ['precedence' => 16, 'class' => BitwiseOrBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'b-xor' => ['precedence' => 17, 'class' => BitwiseXorBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'b-and' => ['precedence' => 18, 'class' => BitwiseAndBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '==' => ['precedence' => 20, 'class' => EqualBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '!=' => ['precedence' => 20, 'class' => NotEqualBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '<=>' => ['precedence' => 20, 'class' => SpaceshipBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '<' => ['precedence' => 20, 'class' => LessBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '>' => ['precedence' => 20, 'class' => GreaterBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '>=' => ['precedence' => 20, 'class' => GreaterEqualBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '<=' => ['precedence' => 20, 'class' => LessEqualBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'not in' => ['precedence' => 20, 'class' => NotInBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'in' => ['precedence' => 20, 'class' => InBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'matches' => ['precedence' => 20, 'class' => MatchesBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'starts with' => ['precedence' => 20, 'class' => StartsWithBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'ends with' => ['precedence' => 20, 'class' => EndsWithBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '..' => ['precedence' => 25, 'class' => RangeBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '+' => ['precedence' => 30, 'class' => AddBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '-' => ['precedence' => 30, 'class' => SubBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '~' => ['precedence' => 40, 'class' => ConcatBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '*' => ['precedence' => 60, 'class' => MulBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '/' => ['precedence' => 60, 'class' => DivBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '//' => ['precedence' => 60, 'class' => FloorDivBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], '%' => ['precedence' => 60, 'class' => ModBinary::class, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'is' => ['precedence' => 100, 'associativity' => ExpressionParser::OPERATOR_LEFT], 'is not' => ['precedence' => 100, 'associativity' => ExpressionParser::OPERATOR_LEFT], '**' => ['precedence' => 200, 'class' => PowerBinary::class, 'associativity' => ExpressionParser::OPERATOR_RIGHT], '??' => ['precedence' => 300, 'class' => NullCoalesceExpression::class, 'associativity' => ExpressionParser::OPERATOR_RIGHT]]];
     }
 }
-namespace RevealPrefix20220707;
+namespace RevealPrefix20220708;
 
-use RevealPrefix20220707\Twig\Environment;
-use RevealPrefix20220707\Twig\Error\LoaderError;
-use RevealPrefix20220707\Twig\Error\RuntimeError;
-use RevealPrefix20220707\Twig\Extension\CoreExtension;
-use RevealPrefix20220707\Twig\Extension\SandboxExtension;
-use RevealPrefix20220707\Twig\Markup;
-use RevealPrefix20220707\Twig\Source;
-use RevealPrefix20220707\Twig\Template;
-use RevealPrefix20220707\Twig\TemplateWrapper;
+use RevealPrefix20220708\Twig\Environment;
+use RevealPrefix20220708\Twig\Error\LoaderError;
+use RevealPrefix20220708\Twig\Error\RuntimeError;
+use RevealPrefix20220708\Twig\Extension\CoreExtension;
+use RevealPrefix20220708\Twig\Extension\SandboxExtension;
+use RevealPrefix20220708\Twig\Markup;
+use RevealPrefix20220708\Twig\Source;
+use RevealPrefix20220708\Twig\Template;
+use RevealPrefix20220708\Twig\TemplateWrapper;
 /**
  * Cycles over a value.
  *
@@ -1402,7 +1402,7 @@ function twig_array_reduce(Environment $env, $array, $arrow, $initial = null)
 }
 function twig_check_arrow_in_sandbox(Environment $env, $arrow, $thing, $type)
 {
-    if (!$arrow instanceof \Closure && $env->hasExtension('RevealPrefix20220707\\Twig\\Extension\\SandboxExtension') && $env->getExtension('RevealPrefix20220707\\Twig\\Extension\\SandboxExtension')->isSandboxed()) {
+    if (!$arrow instanceof \Closure && $env->hasExtension('RevealPrefix20220708\\Twig\\Extension\\SandboxExtension') && $env->getExtension('RevealPrefix20220708\\Twig\\Extension\\SandboxExtension')->isSandboxed()) {
         throw new RuntimeError(\sprintf('The callable passed to the "%s" %s must be a Closure in sandbox mode.', $thing, $type));
     }
 }

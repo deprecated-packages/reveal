@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\Astral\PhpDocParser\Contract;
+namespace RevealPrefix20220708\Symplify\Astral\PhpDocParser\Contract;
 
 use PHPStan\PhpDocParser\Ast\Node;
 /**

@@ -5,7 +5,7 @@ namespace Reveal\LattePHPStanCompiler\Latte\Tokens;
 
 use PhpParser\NodeTraverser;
 use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\LatteLineNumberNodeVisitor;
-use RevealPrefix20220707\Symplify\Astral\PhpParser\SmartPhpParser;
+use RevealPrefix20220708\Symplify\Astral\PhpParser\SmartPhpParser;
 final class PhpToLatteLineNumbersResolver
 {
     /**

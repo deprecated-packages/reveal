@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument;
 
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 /**
  * Represents a service wrapped in a memoizing closure.
  *

@@ -54,7 +54,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220707\\Symfony\\Component\\Console\\": ""
+            "RevealPrefix20220708\\Symfony\\Component\\Console\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

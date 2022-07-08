@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\AutowireArrayParameter\Skipper;
+namespace RevealPrefix20220708\Symplify\AutowireArrayParameter\Skipper;
 
 use ReflectionMethod;
 use ReflectionNamedType;
 use ReflectionParameter;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\TypeResolver\ParameterTypeResolver;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\TypeResolver\ParameterTypeResolver;
 final class ParameterSkipper
 {
     /**
@@ -15,7 +15,7 @@ final class ParameterSkipper
      *
      * @var string[]
      */
-    private const DEFAULT_EXCLUDED_FATAL_CLASSES = ['RevealPrefix20220707\\Symfony\\Component\\Form\\FormExtensionInterface', 'RevealPrefix20220707\\Symfony\\Component\\Asset\\PackageInterface', 'RevealPrefix20220707\\Symfony\\Component\\Config\\Loader\\LoaderInterface', 'RevealPrefix20220707\\Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\ContextProviderInterface', 'RevealPrefix20220707\\EasyCorp\\Bundle\\EasyAdminBundle\\Form\\Type\\Configurator\\TypeConfiguratorInterface', 'RevealPrefix20220707\\Sonata\\CoreBundle\\Model\\Adapter\\AdapterInterface', 'RevealPrefix20220707\\Sonata\\Doctrine\\Adapter\\AdapterChain', 'RevealPrefix20220707\\Sonata\\Twig\\Extension\\TemplateExtension'];
+    private const DEFAULT_EXCLUDED_FATAL_CLASSES = ['RevealPrefix20220708\\Symfony\\Component\\Form\\FormExtensionInterface', 'RevealPrefix20220708\\Symfony\\Component\\Asset\\PackageInterface', 'RevealPrefix20220708\\Symfony\\Component\\Config\\Loader\\LoaderInterface', 'RevealPrefix20220708\\Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\ContextProviderInterface', 'RevealPrefix20220708\\EasyCorp\\Bundle\\EasyAdminBundle\\Form\\Type\\Configurator\\TypeConfiguratorInterface', 'RevealPrefix20220708\\Sonata\\CoreBundle\\Model\\Adapter\\AdapterInterface', 'RevealPrefix20220708\\Sonata\\Doctrine\\Adapter\\AdapterChain', 'RevealPrefix20220708\\Sonata\\Twig\\Extension\\TemplateExtension'];
     /**
      * @var string[]
      */

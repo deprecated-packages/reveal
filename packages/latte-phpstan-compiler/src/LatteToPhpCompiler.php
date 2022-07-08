@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220707\Latte\Parser;
+use RevealPrefix20220708\Latte\Parser;
 use PhpParser\Node\Stmt;
 use PhpParser\NodeTraverser;
 use PhpParser\ParserFactory;
@@ -14,9 +14,9 @@ use Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;
 use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\ControlRenderToExplicitCallNodeVisitor;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
-use RevealPrefix20220707\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220708\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest
  */

@@ -5,7 +5,7 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220707\Latte;
+namespace RevealPrefix20220708\Latte;
 
 /**
  * Latte parser.

@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Latte;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\Latte\LineCommentMatcherTest
  */

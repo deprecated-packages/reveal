@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\PackageBuilder\Strings;
+namespace RevealPrefix20220708\Symplify\PackageBuilder\Strings;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 /**
  * @api
  * @see \Symplify\PackageBuilder\Tests\Strings\StringFormatConverterTest

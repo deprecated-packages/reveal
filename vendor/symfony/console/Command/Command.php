@@ -8,22 +8,22 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Console\Command;
+namespace RevealPrefix20220708\Symfony\Component\Console\Command;
 
-use RevealPrefix20220707\Symfony\Component\Console\Application;
-use RevealPrefix20220707\Symfony\Component\Console\Attribute\AsCommand;
-use RevealPrefix20220707\Symfony\Component\Console\Completion\CompletionInput;
-use RevealPrefix20220707\Symfony\Component\Console\Completion\CompletionSuggestions;
-use RevealPrefix20220707\Symfony\Component\Console\Completion\Suggestion;
-use RevealPrefix20220707\Symfony\Component\Console\Exception\ExceptionInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Exception\InvalidArgumentException;
-use RevealPrefix20220707\Symfony\Component\Console\Exception\LogicException;
-use RevealPrefix20220707\Symfony\Component\Console\Helper\HelperSet;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputArgument;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputDefinition;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputOption;
-use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Application;
+use RevealPrefix20220708\Symfony\Component\Console\Attribute\AsCommand;
+use RevealPrefix20220708\Symfony\Component\Console\Completion\CompletionInput;
+use RevealPrefix20220708\Symfony\Component\Console\Completion\CompletionSuggestions;
+use RevealPrefix20220708\Symfony\Component\Console\Completion\Suggestion;
+use RevealPrefix20220708\Symfony\Component\Console\Exception\ExceptionInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Exception\InvalidArgumentException;
+use RevealPrefix20220708\Symfony\Component\Console\Exception\LogicException;
+use RevealPrefix20220708\Symfony\Component\Console\Helper\HelperSet;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputArgument;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputDefinition;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220708\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Base class for all commands.
  *
@@ -113,7 +113,7 @@ class Command
         if ($class !== $r->class || null === static::$defaultName) {
             return null;
         }
-        \RevealPrefix20220707\trigger_deprecation('symfony/console', '6.1', 'Relying on the static property "$defaultName" for setting a command name is deprecated. Add the "%s" attribute to the "%s" class instead.', AsCommand::class, static::class);
+        \RevealPrefix20220708\trigger_deprecation('symfony/console', '6.1', 'Relying on the static property "$defaultName" for setting a command name is deprecated. Add the "%s" attribute to the "%s" class instead.', AsCommand::class, static::class);
         return static::$defaultName;
     }
     public static function getDefaultDescription() : ?string
@@ -126,7 +126,7 @@ class Command
         if ($class !== $r->class || null === static::$defaultDescription) {
             return null;
         }
-        \RevealPrefix20220707\trigger_deprecation('symfony/console', '6.1', 'Relying on the static property "$defaultDescription" for setting a command description is deprecated. Add the "%s" attribute to the "%s" class instead.', AsCommand::class, static::class);
+        \RevealPrefix20220708\trigger_deprecation('symfony/console', '6.1', 'Relying on the static property "$defaultDescription" for setting a command description is deprecated. Add the "%s" attribute to the "%s" class instead.', AsCommand::class, static::class);
         return static::$defaultDescription;
     }
     /**
@@ -285,7 +285,7 @@ class Command
                         \cli_set_process_title($this->processTitle);
                     }
                 }
-            } elseif (\function_exists('RevealPrefix20220707\\setproctitle')) {
+            } elseif (\function_exists('RevealPrefix20220708\\setproctitle')) {
                 setproctitle($this->processTitle);
             } elseif (OutputInterface::VERBOSITY_VERY_VERBOSE === $output->getVerbosity()) {
                 $output->writeln('<comment>Install the proctitle PECL to be able to change the process title.</comment>');

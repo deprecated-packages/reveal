@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\Astral\PhpDocParser\ValueObject\Ast\PhpDoc;
+namespace RevealPrefix20220708\Symplify\Astral\PhpDocParser\ValueObject\Ast\PhpDoc;
 
 use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;

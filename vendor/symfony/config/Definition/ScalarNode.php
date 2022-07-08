@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220708\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220707\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
+use RevealPrefix20220708\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
 /**
  * This node represents a scalar value in the config tree.
  *

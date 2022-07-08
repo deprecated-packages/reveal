@@ -4,14 +4,14 @@ declare (strict_types=1);
 namespace Reveal\Command;
 
 use Reveal\Enum\Option;
-use RevealPrefix20220707\Symfony\Component\Console\Command\Command;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputArgument;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputOption;
-use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Style\SymfonyStyle;
-use RevealPrefix20220707\Twig\Environment;
-use RevealPrefix20220707\Webmozart\Assert\Assert;
+use RevealPrefix20220708\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputArgument;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220708\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Style\SymfonyStyle;
+use RevealPrefix20220708\Twig\Environment;
+use RevealPrefix20220708\Webmozart\Assert\Assert;
 final class AnalyzeTwigCommand extends Command
 {
     /**

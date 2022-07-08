@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\ParameterBag;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\ParameterBag;
 
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\LogicException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\LogicException;
 /**
  * Holds read-only parameters.
  *

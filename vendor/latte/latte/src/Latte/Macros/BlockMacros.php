@@ -5,17 +5,17 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220707\Latte\Macros;
+namespace RevealPrefix20220708\Latte\Macros;
 
-use RevealPrefix20220707\Latte;
-use RevealPrefix20220707\Latte\CompileException;
-use RevealPrefix20220707\Latte\Helpers;
-use RevealPrefix20220707\Latte\MacroNode;
-use RevealPrefix20220707\Latte\PhpHelpers;
-use RevealPrefix20220707\Latte\PhpWriter;
-use RevealPrefix20220707\Latte\Runtime\Block;
-use RevealPrefix20220707\Latte\Runtime\SnippetDriver;
-use RevealPrefix20220707\Latte\Runtime\Template;
+use RevealPrefix20220708\Latte;
+use RevealPrefix20220708\Latte\CompileException;
+use RevealPrefix20220708\Latte\Helpers;
+use RevealPrefix20220708\Latte\MacroNode;
+use RevealPrefix20220708\Latte\PhpHelpers;
+use RevealPrefix20220708\Latte\PhpWriter;
+use RevealPrefix20220708\Latte\Runtime\Block;
+use RevealPrefix20220708\Latte\Runtime\SnippetDriver;
+use RevealPrefix20220708\Latte\Runtime\Template;
 /**
  * Block macros.
  */

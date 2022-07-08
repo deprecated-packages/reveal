@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Sandbox;
+namespace RevealPrefix20220708\Twig\Sandbox;
 
-use RevealPrefix20220707\Twig\Markup;
-use RevealPrefix20220707\Twig\Template;
+use RevealPrefix20220708\Twig\Markup;
+use RevealPrefix20220708\Twig\Template;
 /**
  * Represents a security policy which need to be enforced when sandbox mode is enabled.
  *

@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220708\Symfony\Component\Config\Definition;
 
 /**
  * This class is the entry point for config normalization/merging/finalization.

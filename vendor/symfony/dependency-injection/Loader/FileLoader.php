@@ -8,20 +8,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader;
 
-use RevealPrefix20220707\Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
-use RevealPrefix20220707\Symfony\Component\Config\Exception\LoaderLoadException;
-use RevealPrefix20220707\Symfony\Component\Config\FileLocatorInterface;
-use RevealPrefix20220707\Symfony\Component\Config\Loader\FileLoader as BaseFileLoader;
-use RevealPrefix20220707\Symfony\Component\Config\Loader\Loader;
-use RevealPrefix20220707\Symfony\Component\Config\Resource\GlobResource;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Attribute\When;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ChildDefinition;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Compiler\RegisterAutoconfigureAttributesPass;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220708\Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
+use RevealPrefix20220708\Symfony\Component\Config\Exception\LoaderLoadException;
+use RevealPrefix20220708\Symfony\Component\Config\FileLocatorInterface;
+use RevealPrefix20220708\Symfony\Component\Config\Loader\FileLoader as BaseFileLoader;
+use RevealPrefix20220708\Symfony\Component\Config\Loader\Loader;
+use RevealPrefix20220708\Symfony\Component\Config\Resource\GlobResource;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Attribute\When;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ChildDefinition;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Compiler\RegisterAutoconfigureAttributesPass;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 /**
  * FileLoader is the abstract class used by all built-in loaders that are file based.
  *

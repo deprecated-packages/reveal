@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\TokenParser;
+namespace RevealPrefix20220708\Twig\TokenParser;
 
-use RevealPrefix20220707\Twig\Error\SyntaxError;
-use RevealPrefix20220707\Twig\Node\AutoEscapeNode;
-use RevealPrefix20220707\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220707\Twig\Node\Node;
-use RevealPrefix20220707\Twig\Token;
+use RevealPrefix20220708\Twig\Error\SyntaxError;
+use RevealPrefix20220708\Twig\Node\AutoEscapeNode;
+use RevealPrefix20220708\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220708\Twig\Node\Node;
+use RevealPrefix20220708\Twig\Token;
 /**
  * Marks a section of a template to be escaped or not.
  *

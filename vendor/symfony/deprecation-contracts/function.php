@@ -1,6 +1,6 @@
 <?php
 
-namespace RevealPrefix20220707;
+namespace RevealPrefix20220708;
 
 /*
  * This file is part of the Symfony package.
@@ -10,7 +10,7 @@ namespace RevealPrefix20220707;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-if (!\function_exists('RevealPrefix20220707\\trigger_deprecation')) {
+if (!\function_exists('RevealPrefix20220708\\trigger_deprecation')) {
     /**
      * Triggers a silenced deprecation notice.
      *

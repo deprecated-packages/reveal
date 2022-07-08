@@ -8,20 +8,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection;
 
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Argument\ServiceLocator as ArgumentServiceLocator;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\EnvNotFoundException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ParameterBag\FrozenParameterBag;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use RevealPrefix20220707\Symfony\Contracts\Service\ResetInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\ServiceLocator as ArgumentServiceLocator;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\EnvNotFoundException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ParameterBag\FrozenParameterBag;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use RevealPrefix20220708\Symfony\Contracts\Service\ResetInterface;
 // Help opcache.preload discover always-needed symbols
 \class_exists(RewindableGenerator::class);
 \class_exists(ArgumentServiceLocator::class);

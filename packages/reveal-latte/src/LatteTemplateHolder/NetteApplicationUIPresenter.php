@@ -16,8 +16,8 @@ use Reveal\RevealLatte\Contract\LatteTemplateHolderInterface;
 use Reveal\RevealLatte\NodeAnalyzer\LatteTemplateWithParametersMatcher;
 use Reveal\RevealLatte\TypeAnalyzer\ComponentMapResolver;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220707\Symplify\Astral\Reflection\ReflectionParser;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Reflection\ReflectionParser;
 final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
 {
     /**
@@ -57,7 +57,7 @@ final class NetteApplicationUIPresenter implements LatteTemplateHolderInterface
             return \false;
         }
         $objectType = new ObjectType($className);
-        return $objectType->isInstanceOf('RevealPrefix20220707\\Nette\\Application\\UI\\Presenter')->yes();
+        return $objectType->isInstanceOf('RevealPrefix20220708\\Nette\\Application\\UI\\Presenter')->yes();
     }
     /**
      * @param InClassNode $node

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\AutowireArrayParameter\DependencyInjection;
+namespace RevealPrefix20220708\Symplify\AutowireArrayParameter\DependencyInjection;
 
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220707\Symplify\AutowireArrayParameter\Exception\DependencyInjection\DefinitionForTypeNotFoundException;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220708\Symplify\AutowireArrayParameter\Exception\DependencyInjection\DefinitionForTypeNotFoundException;
 use Throwable;
 /**
  * @api

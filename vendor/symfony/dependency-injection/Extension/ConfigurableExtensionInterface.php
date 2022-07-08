@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\DependencyInjection\Extension;
+namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Extension;
 
-use RevealPrefix20220707\Symfony\Component\Config\Definition\ConfigurableInterface;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220707\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use RevealPrefix20220708\Symfony\Component\Config\Definition\ConfigurableInterface;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 /**
  * @author Yonel Ceruto <yonelceruto@gmail.com>
  */

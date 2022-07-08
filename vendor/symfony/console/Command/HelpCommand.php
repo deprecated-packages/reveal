@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Console\Command;
+namespace RevealPrefix20220708\Symfony\Component\Console\Command;
 
-use RevealPrefix20220707\Symfony\Component\Console\Descriptor\ApplicationDescription;
-use RevealPrefix20220707\Symfony\Component\Console\Helper\DescriptorHelper;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputArgument;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputOption;
-use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Descriptor\ApplicationDescription;
+use RevealPrefix20220708\Symfony\Component\Console\Helper\DescriptorHelper;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputArgument;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220708\Symfony\Component\Console\Output\OutputInterface;
 /**
  * HelpCommand displays the help for a given command.
  *

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220707\Symplify\SmartFileSystem\Normalizer;
+namespace RevealPrefix20220708\Symplify\SmartFileSystem\Normalizer;
 
-use RevealPrefix20220707\Nette\Utils\Strings;
+use RevealPrefix20220708\Nette\Utils\Strings;
 /**
  * @api
  *

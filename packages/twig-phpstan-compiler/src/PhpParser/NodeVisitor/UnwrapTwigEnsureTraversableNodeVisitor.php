@@ -6,7 +6,7 @@ namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 use PhpParser\Node;
 use PhpParser\Node\Expr\FuncCall;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
 final class UnwrapTwigEnsureTraversableNodeVisitor extends NodeVisitorAbstract
 {
     /**

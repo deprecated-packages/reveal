@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Twig\Extension;
+namespace RevealPrefix20220708\Twig\Extension;
 
-use RevealPrefix20220707\Twig\NodeVisitor\SandboxNodeVisitor;
-use RevealPrefix20220707\Twig\Sandbox\SecurityNotAllowedMethodError;
-use RevealPrefix20220707\Twig\Sandbox\SecurityNotAllowedPropertyError;
-use RevealPrefix20220707\Twig\Sandbox\SecurityPolicyInterface;
-use RevealPrefix20220707\Twig\Source;
-use RevealPrefix20220707\Twig\TokenParser\SandboxTokenParser;
+use RevealPrefix20220708\Twig\NodeVisitor\SandboxNodeVisitor;
+use RevealPrefix20220708\Twig\Sandbox\SecurityNotAllowedMethodError;
+use RevealPrefix20220708\Twig\Sandbox\SecurityNotAllowedPropertyError;
+use RevealPrefix20220708\Twig\Sandbox\SecurityPolicyInterface;
+use RevealPrefix20220708\Twig\Source;
+use RevealPrefix20220708\Twig\TokenParser\SandboxTokenParser;
 final class SandboxExtension extends AbstractExtension
 {
     private $sandboxedGlobally;

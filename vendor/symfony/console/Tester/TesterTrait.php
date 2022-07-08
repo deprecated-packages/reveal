@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220707\Symfony\Component\Console\Tester;
+namespace RevealPrefix20220708\Symfony\Component\Console\Tester;
 
-use RevealPrefix20220707\PHPUnit\Framework\Assert;
-use RevealPrefix20220707\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Output\ConsoleOutput;
-use RevealPrefix20220707\Symfony\Component\Console\Output\OutputInterface;
-use RevealPrefix20220707\Symfony\Component\Console\Output\StreamOutput;
-use RevealPrefix20220707\Symfony\Component\Console\Tester\Constraint\CommandIsSuccessful;
+use RevealPrefix20220708\PHPUnit\Framework\Assert;
+use RevealPrefix20220708\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Output\ConsoleOutput;
+use RevealPrefix20220708\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220708\Symfony\Component\Console\Output\StreamOutput;
+use RevealPrefix20220708\Symfony\Component\Console\Tester\Constraint\CommandIsSuccessful;
 /**
  * @author Amrouche Hamza <hamza.simperfit@gmail.com>
  */

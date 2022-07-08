@@ -8,7 +8,7 @@ use Reveal\TemplatePHPStanCompiler\Contract\UsedVariableNamesResolverInterface;
 use Reveal\TemplatePHPStanCompiler\NodeVisitor\TwigVariableCollectingNodeVisitor;
 use Reveal\TemplatePHPStanCompiler\PhpParser\ParentNodeAwarePhpParser;
 use Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
-use RevealPrefix20220707\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
 final class TwigVariableNamesResolver implements UsedVariableNamesResolverInterface
 {
     /**
