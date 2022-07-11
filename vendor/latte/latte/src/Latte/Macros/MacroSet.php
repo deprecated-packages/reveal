@@ -5,11 +5,11 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220708\Latte\Macros;
+namespace RevealPrefix20220711\Latte\Macros;
 
-use RevealPrefix20220708\Latte;
-use RevealPrefix20220708\Latte\CompileException;
-use RevealPrefix20220708\Latte\MacroNode;
+use RevealPrefix20220711\Latte;
+use RevealPrefix20220711\Latte\CompileException;
+use RevealPrefix20220711\Latte\MacroNode;
 /**
  * Base Macro implementation. Allows add multiple macros.
  */

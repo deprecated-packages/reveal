@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Latte\Filters;
 
-use RevealPrefix20220708\Latte\Runtime\Defaults;
+use RevealPrefix20220711\Latte\Runtime\Defaults;
 use ReflectionClass;
 use ReflectionException;
 use Reveal\LattePHPStanCompiler\Contract\ValueObject\CallReferenceInterface;

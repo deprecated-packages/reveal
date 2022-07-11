@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig;
+namespace RevealPrefix20220711\Twig;
 
 /**
  * Exposes a template to userland.

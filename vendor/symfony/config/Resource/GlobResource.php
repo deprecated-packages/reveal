@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Config\Resource;
+namespace RevealPrefix20220711\Symfony\Component\Config\Resource;
 
-use RevealPrefix20220708\Symfony\Component\Finder\Finder;
-use RevealPrefix20220708\Symfony\Component\Finder\Glob;
+use RevealPrefix20220711\Symfony\Component\Finder\Finder;
+use RevealPrefix20220711\Symfony\Component\Finder\Glob;
 /**
  * GlobResource represents a set of resources stored on the filesystem.
  *

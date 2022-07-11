@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor;
 
-use RevealPrefix20220708\Nette\Utils\Strings;
+use RevealPrefix20220711\Nette\Utils\Strings;
 use PhpParser\Node;
 use PhpParser\Node\Scalar\String_;
 use PhpParser\Node\Stmt\Echo_;

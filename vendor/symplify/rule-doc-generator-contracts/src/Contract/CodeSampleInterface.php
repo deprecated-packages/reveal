@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220708\Symplify\RuleDocGenerator\Contract;
+namespace RevealPrefix20220711\Symplify\RuleDocGenerator\Contract;
 
 interface CodeSampleInterface
 {

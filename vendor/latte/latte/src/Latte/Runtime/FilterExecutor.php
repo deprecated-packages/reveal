@@ -5,11 +5,11 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220708\Latte\Runtime;
+namespace RevealPrefix20220711\Latte\Runtime;
 
-use RevealPrefix20220708\Latte;
-use RevealPrefix20220708\Latte\Engine;
-use RevealPrefix20220708\Latte\Helpers;
+use RevealPrefix20220711\Latte;
+use RevealPrefix20220711\Latte\Engine;
+use RevealPrefix20220711\Latte\Helpers;
 /**
  * Filter executor.
  * @internal

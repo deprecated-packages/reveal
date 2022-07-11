@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\Node\Expression\Binary;
+namespace RevealPrefix20220711\Twig\Node\Expression\Binary;
 
-use RevealPrefix20220708\Twig\Compiler;
+use RevealPrefix20220711\Twig\Compiler;
 class InBinary extends AbstractBinary
 {
     public function compile(Compiler $compiler) : void

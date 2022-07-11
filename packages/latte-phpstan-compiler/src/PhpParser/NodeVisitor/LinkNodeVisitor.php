@@ -16,10 +16,20 @@ use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use Reveal\LattePHPStanCompiler\Contract\LinkProcessorInterface;
 use Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
 use Reveal\LattePHPStanCompiler\LinkProcessor\LinkProcessorFactory;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220708\Symplify\Astral\NodeValue\NodeValueResolver;
+use Reveal\LattePHPStanCompiler\Nette\LinkDestinationProcessor;
+use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\Astral\NodeValue\NodeValueResolver;
 final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCompilerNodeVisitorInterface
 {
+    /**
+     * @var VariableAndType[]
+     */
+    private $variablesAndTypes = [];
+    /**
+     * @var \Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType|null
+     */
+    private $actualclass;
     /**
      * @var \Symplify\Astral\Naming\SimpleNameResolver
      */
@@ -32,11 +42,33 @@ final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCom
      * @var \Reveal\LattePHPStanCompiler\LinkProcessor\LinkProcessorFactory
      */
     private $linkProcessorFactory;
-    public function __construct(SimpleNameResolver $simpleNameResolver, NodeValueResolver $nodeValueResolver, LinkProcessorFactory $linkProcessorFactory)
+    /**
+     * @var \Reveal\LattePHPStanCompiler\Nette\LinkDestinationProcessor
+     */
+    private $linkDestinationProcessor;
+    public function __construct(SimpleNameResolver $simpleNameResolver, NodeValueResolver $nodeValueResolver, LinkProcessorFactory $linkProcessorFactory, LinkDestinationProcessor $linkDestinationProcessor)
     {
         $this->simpleNameResolver = $simpleNameResolver;
         $this->nodeValueResolver = $nodeValueResolver;
         $this->linkProcessorFactory = $linkProcessorFactory;
+        $this->linkDestinationProcessor = $linkDestinationProcessor;
+    }
+    /**
+     * @param VariableAndType[] $variablesAndTypes
+     */
+    public function setVariablesAndTypes(array $variablesAndTypes) : void
+    {
+        $this->variablesAndTypes = $variablesAndTypes;
+    }
+    public function beforeTraverse(array $nodes)
+    {
+        // finding $actualClass
+        foreach ($this->variablesAndTypes as $variableAndType) {
+            if ($variableAndType->getVariable() === 'actualClass') {
+                $this->actualclass = $variableAndType;
+            }
+        }
+        return null;
     }
     /**
      * @return Node[]|null
@@ -75,7 +107,8 @@ final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCom
         if (!\is_string($targetName)) {
             throw new LattePHPStanCompilerException();
         }
-        $targetName = \ltrim($targetName, '/');
+        $actualClassType = $this->actualclass ? $this->actualclass->getTypeAsString() : null;
+        $targetName = $this->linkDestinationProcessor->process($targetName, $actualClassType);
         $linkProcessor = $this->linkProcessorFactory->create($targetName);
         if (!$linkProcessor instanceof LinkProcessorInterface) {
             return null;

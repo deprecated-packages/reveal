@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\DependencyInjection;
+namespace RevealPrefix20220711\Symfony\Component\DependencyInjection;
 
 /**
  * Represents a PHP type-hinted service reference.

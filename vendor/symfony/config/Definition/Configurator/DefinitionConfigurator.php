@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Config\Definition\Configurator;
+namespace RevealPrefix20220711\Symfony\Component\Config\Definition\Configurator;
 
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Builder\NodeDefinition;
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Builder\TreeBuilder;
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Loader\DefinitionFileLoader;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Builder\NodeDefinition;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Loader\DefinitionFileLoader;
 /**
  * @author Yonel Ceruto <yonelceruto@gmail.com>
  */

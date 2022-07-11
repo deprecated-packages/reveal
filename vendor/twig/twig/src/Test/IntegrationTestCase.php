@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\Test;
+namespace RevealPrefix20220711\Twig\Test;
 
-use RevealPrefix20220708\PHPUnit\Framework\TestCase;
-use RevealPrefix20220708\Twig\Environment;
-use RevealPrefix20220708\Twig\Error\Error;
-use RevealPrefix20220708\Twig\Extension\ExtensionInterface;
-use RevealPrefix20220708\Twig\Loader\ArrayLoader;
-use RevealPrefix20220708\Twig\RuntimeLoader\RuntimeLoaderInterface;
-use RevealPrefix20220708\Twig\TwigFilter;
-use RevealPrefix20220708\Twig\TwigFunction;
-use RevealPrefix20220708\Twig\TwigTest;
+use RevealPrefix20220711\PHPUnit\Framework\TestCase;
+use RevealPrefix20220711\Twig\Environment;
+use RevealPrefix20220711\Twig\Error\Error;
+use RevealPrefix20220711\Twig\Extension\ExtensionInterface;
+use RevealPrefix20220711\Twig\Loader\ArrayLoader;
+use RevealPrefix20220711\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use RevealPrefix20220711\Twig\TwigFilter;
+use RevealPrefix20220711\Twig\TwigFunction;
+use RevealPrefix20220711\Twig\TwigTest;
 /**
  * Integration test helper.
  *
@@ -192,7 +192,7 @@ abstract class IntegrationTestCase extends TestCase
             }
             if (\false !== $exception) {
                 list($class) = \explode(':', $exception);
-                $constraintClass = \class_exists('RevealPrefix20220708\\PHPUnit\\Framework\\Constraint\\Exception') ? 'PHPUnit\\Framework\\Constraint\\Exception' : 'PHPUnit_Framework_Constraint_Exception';
+                $constraintClass = \class_exists('RevealPrefix20220711\\PHPUnit\\Framework\\Constraint\\Exception') ? 'PHPUnit\\Framework\\Constraint\\Exception' : 'PHPUnit_Framework_Constraint_Exception';
                 $this->assertThat(null, new $constraintClass($class));
             }
             $expected = \trim($match[3], "\n ");

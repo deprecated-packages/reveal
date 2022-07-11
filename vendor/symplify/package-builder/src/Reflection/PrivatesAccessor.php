@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220708\Symplify\PackageBuilder\Reflection;
+namespace RevealPrefix20220711\Symplify\PackageBuilder\Reflection;
 
 use ReflectionProperty;
-use RevealPrefix20220708\Symplify\PackageBuilder\Exception\InvalidPrivatePropertyTypeException;
-use RevealPrefix20220708\Symplify\PackageBuilder\Exception\MissingPrivatePropertyException;
+use RevealPrefix20220711\Symplify\PackageBuilder\Exception\InvalidPrivatePropertyTypeException;
+use RevealPrefix20220711\Symplify\PackageBuilder\Exception\MissingPrivatePropertyException;
 /**
  * @api
  * @see \Symplify\PackageBuilder\Tests\Reflection\PrivatesAccessorTest

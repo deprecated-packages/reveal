@@ -8,15 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Console\Command;
+namespace RevealPrefix20220711\Symfony\Component\Console\Command;
 
-use RevealPrefix20220708\Symfony\Component\Console\Attribute\AsCommand;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputArgument;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
-use RevealPrefix20220708\Symfony\Component\Console\Output\ConsoleOutputInterface;
-use RevealPrefix20220708\Symfony\Component\Console\Output\OutputInterface;
-use RevealPrefix20220708\Symfony\Component\Process\Process;
+use RevealPrefix20220711\Symfony\Component\Console\Attribute\AsCommand;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputArgument;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220711\Symfony\Component\Console\Output\ConsoleOutputInterface;
+use RevealPrefix20220711\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220711\Symfony\Component\Process\Process;
 /**
  * Dumps the completion script for the current shell.
  *

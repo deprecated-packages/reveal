@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\TokenParser;
+namespace RevealPrefix20220711\Twig\TokenParser;
 
-use RevealPrefix20220708\Twig\Error\SyntaxError;
-use RevealPrefix20220708\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220708\Twig\Node\Node;
-use RevealPrefix20220708\Twig\Token;
+use RevealPrefix20220711\Twig\Error\SyntaxError;
+use RevealPrefix20220711\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220711\Twig\Node\Node;
+use RevealPrefix20220711\Twig\Token;
 /**
  * Imports blocks defined in another template into the current template.
  *

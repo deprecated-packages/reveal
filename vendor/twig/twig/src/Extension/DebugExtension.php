@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\Extension;
+namespace RevealPrefix20220711\Twig\Extension;
 
-use RevealPrefix20220708\Twig\TwigFunction;
+use RevealPrefix20220711\Twig\TwigFunction;
 final class DebugExtension extends AbstractExtension
 {
     public function getFunctions() : array
@@ -20,11 +20,11 @@ final class DebugExtension extends AbstractExtension
         return [new TwigFunction('dump', 'twig_var_dump', ['is_safe' => $isDumpOutputHtmlSafe ? ['html'] : [], 'needs_context' => \true, 'needs_environment' => \true, 'is_variadic' => \true])];
     }
 }
-namespace RevealPrefix20220708;
+namespace RevealPrefix20220711;
 
-use RevealPrefix20220708\Twig\Environment;
-use RevealPrefix20220708\Twig\Template;
-use RevealPrefix20220708\Twig\TemplateWrapper;
+use RevealPrefix20220711\Twig\Environment;
+use RevealPrefix20220711\Twig\Template;
+use RevealPrefix20220711\Twig\TemplateWrapper;
 function twig_var_dump(Environment $env, $context, ...$vars)
 {
     if (!$env->isDebug()) {

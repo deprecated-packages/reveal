@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220711\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
-use RevealPrefix20220708\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
+use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
 /**
  * Represents an Array node in the config tree.
  *
@@ -214,7 +214,7 @@ class ArrayNode extends BaseNode implements PrototypeNodeInterface
             }
             if ($child->isDeprecated()) {
                 $deprecation = $child->getDeprecation($name, $this->getPath());
-                \RevealPrefix20220708\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
+                \RevealPrefix20220711\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
             }
             try {
                 $value[$name] = $child->finalize($value[$name]);

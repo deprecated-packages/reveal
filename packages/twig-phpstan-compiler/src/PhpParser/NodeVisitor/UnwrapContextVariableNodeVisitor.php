@@ -8,7 +8,7 @@ use PhpParser\Node\Expr\ArrayDimFetch;
 use PhpParser\Node\Expr\Variable;
 use PhpParser\Node\Scalar\String_;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Turns: $context['value'] ↓ $value
  */

@@ -8,15 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Console\Descriptor;
+namespace RevealPrefix20220711\Symfony\Component\Console\Descriptor;
 
-use RevealPrefix20220708\Symfony\Component\Console\Application;
-use RevealPrefix20220708\Symfony\Component\Console\Command\Command;
-use RevealPrefix20220708\Symfony\Component\Console\Formatter\OutputFormatter;
-use RevealPrefix20220708\Symfony\Component\Console\Helper\Helper;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputArgument;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputDefinition;
-use RevealPrefix20220708\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220711\Symfony\Component\Console\Application;
+use RevealPrefix20220711\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220711\Symfony\Component\Console\Formatter\OutputFormatter;
+use RevealPrefix20220711\Symfony\Component\Console\Helper\Helper;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputArgument;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputDefinition;
+use RevealPrefix20220711\Symfony\Component\Console\Input\InputOption;
 /**
  * Text descriptor.
  *

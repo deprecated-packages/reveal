@@ -9,7 +9,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\Error;
+namespace RevealPrefix20220711\Twig\Error;
 
 /**
  * Exception thrown when an error occurs at runtime.

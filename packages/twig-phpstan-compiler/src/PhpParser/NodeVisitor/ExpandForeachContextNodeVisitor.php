@@ -13,7 +13,7 @@ use PhpParser\Node\Stmt\Expression;
 use PhpParser\Node\Stmt\Foreach_;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Inlined magic assign, to explicit variable $context['_seq'] = $items ?? \null; ↓ $items
  */

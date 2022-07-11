@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader\Configurator;
+namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */

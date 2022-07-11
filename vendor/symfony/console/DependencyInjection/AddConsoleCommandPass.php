@@ -8,18 +8,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Console\DependencyInjection;
+namespace RevealPrefix20220711\Symfony\Component\Console\DependencyInjection;
 
-use RevealPrefix20220708\Symfony\Component\Console\Command\Command;
-use RevealPrefix20220708\Symfony\Component\Console\Command\LazyCommand;
-use RevealPrefix20220708\Symfony\Component\Console\CommandLoader\ContainerCommandLoader;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Compiler\ServiceLocatorTagPass;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\TypedReference;
+use RevealPrefix20220711\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220711\Symfony\Component\Console\Command\LazyCommand;
+use RevealPrefix20220711\Symfony\Component\Console\CommandLoader\ContainerCommandLoader;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Compiler\ServiceLocatorTagPass;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\TypedReference;
 /**
  * Registers console commands.
  *

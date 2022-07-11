@@ -1,6 +1,6 @@
 <?php
 
-namespace RevealPrefix20220708;
+namespace RevealPrefix20220711;
 
 /*
  * This file is part of the Symfony package.
@@ -10,7 +10,7 @@ namespace RevealPrefix20220708;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-use RevealPrefix20220708\Symfony\Polyfill\Mbstring as p;
+use RevealPrefix20220711\Symfony\Polyfill\Mbstring as p;
 if (\PHP_VERSION_ID >= 80000) {
     return require __DIR__ . '/bootstrap80.php';
 }

@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220708\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor;
+namespace RevealPrefix20220711\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor;
 
 use PHPStan\PhpDocParser\Ast\Node;
-use RevealPrefix20220708\Symplify\Astral\PhpDocParser\ValueObject\PhpDocAttributeKey;
+use RevealPrefix20220711\Symplify\Astral\PhpDocParser\ValueObject\PhpDocAttributeKey;
 /**
  * @api
  *

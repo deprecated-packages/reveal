@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Config;
+namespace RevealPrefix20220711\Symfony\Component\Config;
 
-use RevealPrefix20220708\Symfony\Component\Config\Resource\ResourceInterface;
+use RevealPrefix20220711\Symfony\Component\Config\Resource\ResourceInterface;
 /**
  * Interface for ResourceCheckers.
  *

@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220708\Symplify\Astral\NodeAnalyzer;
+namespace RevealPrefix20220711\Symplify\Astral\NodeAnalyzer;
 
-use RevealPrefix20220708\Nette\Application\UI\Template;
+use RevealPrefix20220711\Nette\Application\UI\Template;
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\PropertyFetch;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220708\Symplify\Astral\TypeAnalyzer\ContainsTypeAnalyser;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\Astral\TypeAnalyzer\ContainsTypeAnalyser;
 /**
  * @api
  */
@@ -17,7 +17,7 @@ final class NetteTypeAnalyzer
     /**
      * @var array<class-string<Template>>
      */
-    private const TEMPLATE_TYPES = ['RevealPrefix20220708\\Nette\\Application\\UI\\Template', 'RevealPrefix20220708\\Nette\\Application\\UI\\ITemplate', 'RevealPrefix20220708\\Nette\\Bridges\\ApplicationLatte\\Template', 'RevealPrefix20220708\\Nette\\Bridges\\ApplicationLatte\\DefaultTemplate'];
+    private const TEMPLATE_TYPES = ['RevealPrefix20220711\\Nette\\Application\\UI\\Template', 'RevealPrefix20220711\\Nette\\Application\\UI\\ITemplate', 'RevealPrefix20220711\\Nette\\Bridges\\ApplicationLatte\\Template', 'RevealPrefix20220711\\Nette\\Bridges\\ApplicationLatte\\DefaultTemplate'];
     /**
      * @var \Symplify\Astral\Naming\SimpleNameResolver
      */
@@ -61,7 +61,7 @@ final class NetteTypeAnalyzer
             return \false;
         }
         // this type has getComponent() method
-        return \is_a($className, 'RevealPrefix20220708\\Nette\\ComponentModel\\Container', \true);
+        return \is_a($className, 'RevealPrefix20220711\\Nette\\ComponentModel\\Container', \true);
     }
     public function isInsideControl(Scope $scope) : bool
     {
@@ -69,6 +69,6 @@ final class NetteTypeAnalyzer
         if ($className === null) {
             return \false;
         }
-        return \is_a($className, 'RevealPrefix20220708\\Nette\\Application\\UI\\Control', \true);
+        return \is_a($className, 'RevealPrefix20220711\\Nette\\Application\\UI\\Control', \true);
     }
 }

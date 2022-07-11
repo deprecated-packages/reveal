@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader\Configurator;
+namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use RevealPrefix20220708\Symfony\Component\Config\Loader\ParamConfigurator;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
-use RevealPrefix20220708\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220711\Symfony\Component\Config\Loader\ParamConfigurator;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
+use RevealPrefix20220711\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */

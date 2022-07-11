@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\NodeVisitor;
+namespace RevealPrefix20220711\Twig\NodeVisitor;
 
-use RevealPrefix20220708\Twig\Environment;
-use RevealPrefix20220708\Twig\Node\Expression\BlockReferenceExpression;
-use RevealPrefix20220708\Twig\Node\Expression\ConditionalExpression;
-use RevealPrefix20220708\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220708\Twig\Node\Expression\FilterExpression;
-use RevealPrefix20220708\Twig\Node\Expression\FunctionExpression;
-use RevealPrefix20220708\Twig\Node\Expression\GetAttrExpression;
-use RevealPrefix20220708\Twig\Node\Expression\MethodCallExpression;
-use RevealPrefix20220708\Twig\Node\Expression\NameExpression;
-use RevealPrefix20220708\Twig\Node\Expression\ParentExpression;
-use RevealPrefix20220708\Twig\Node\Node;
+use RevealPrefix20220711\Twig\Environment;
+use RevealPrefix20220711\Twig\Node\Expression\BlockReferenceExpression;
+use RevealPrefix20220711\Twig\Node\Expression\ConditionalExpression;
+use RevealPrefix20220711\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220711\Twig\Node\Expression\FilterExpression;
+use RevealPrefix20220711\Twig\Node\Expression\FunctionExpression;
+use RevealPrefix20220711\Twig\Node\Expression\GetAttrExpression;
+use RevealPrefix20220711\Twig\Node\Expression\MethodCallExpression;
+use RevealPrefix20220711\Twig\Node\Expression\NameExpression;
+use RevealPrefix20220711\Twig\Node\Expression\ParentExpression;
+use RevealPrefix20220711\Twig\Node\Node;
 /**
  * @internal
  */

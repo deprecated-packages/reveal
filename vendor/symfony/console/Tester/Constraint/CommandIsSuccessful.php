@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Console\Tester\Constraint;
+namespace RevealPrefix20220711\Symfony\Component\Console\Tester\Constraint;
 
-use RevealPrefix20220708\PHPUnit\Framework\Constraint\Constraint;
-use RevealPrefix20220708\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220711\PHPUnit\Framework\Constraint\Constraint;
+use RevealPrefix20220711\Symfony\Component\Console\Command\Command;
 final class CommandIsSuccessful extends Constraint
 {
     /**

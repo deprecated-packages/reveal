@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\Config\Loader;
+namespace RevealPrefix20220711\Symfony\Component\Config\Loader;
 
-use RevealPrefix20220708\Symfony\Component\Config\Exception\LoaderLoadException;
+use RevealPrefix20220711\Symfony\Component\Config\Exception\LoaderLoadException;
 /**
  * Loader is the abstract class used by all built-in loaders.
  *

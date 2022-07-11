@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\NodeVisitor;
+namespace RevealPrefix20220711\Twig\NodeVisitor;
 
-use RevealPrefix20220708\Twig\Environment;
-use RevealPrefix20220708\Twig\Node\Node;
+use RevealPrefix20220711\Twig\Environment;
+use RevealPrefix20220711\Twig\Node\Node;
 /**
  * Used to make node visitors compatible with Twig 1.x and 2.x.
  *

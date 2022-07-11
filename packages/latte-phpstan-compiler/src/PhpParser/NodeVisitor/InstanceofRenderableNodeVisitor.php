@@ -11,7 +11,7 @@ use PhpParser\Node\Stmt\If_;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitorAbstract;
 use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * Fixes render() invalid contract
  *
@@ -42,7 +42,7 @@ final class InstanceofRenderableNodeVisitor extends NodeVisitorAbstract implemen
             return null;
         }
         $instanceof = $node->cond;
-        if (!$this->simpleNameResolver->isNames($instanceof->class, ['RevealPrefix20220708\\Nette\\Application\\UI\\IRenderable', 'RevealPrefix20220708\\Nette\\Application\\UI\\Renderable'])) {
+        if (!$this->simpleNameResolver->isNames($instanceof->class, ['RevealPrefix20220711\\Nette\\Application\\UI\\IRenderable', 'RevealPrefix20220711\\Nette\\Application\\UI\\Renderable'])) {
             return null;
         }
         $redrawMethodCall = $this->matchRedrawControlMethodCall($node);

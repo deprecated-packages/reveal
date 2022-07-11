@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\TokenParser;
+namespace RevealPrefix20220711\Twig\TokenParser;
 
-use RevealPrefix20220708\Twig\Node\Node;
-use RevealPrefix20220708\Twig\Node\WithNode;
-use RevealPrefix20220708\Twig\Token;
+use RevealPrefix20220711\Twig\Node\Node;
+use RevealPrefix20220711\Twig\Node\WithNode;
+use RevealPrefix20220711\Twig\Token;
 /**
  * Creates a nested scope.
  *

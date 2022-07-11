@@ -8,23 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Container;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\InvalidParameterTypeException;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\ExpressionLanguage;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Parameter;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220708\Symfony\Component\DependencyInjection\ServiceLocator;
-use RevealPrefix20220708\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Container;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidParameterTypeException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\ExpressionLanguage;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Parameter;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220711\Symfony\Component\DependencyInjection\ServiceLocator;
+use RevealPrefix20220711\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * Checks whether injected parameters are compatible with type declarations.
  *

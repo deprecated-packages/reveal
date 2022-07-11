@@ -8,23 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220708\Twig\NodeVisitor;
+namespace RevealPrefix20220711\Twig\NodeVisitor;
 
-use RevealPrefix20220708\Twig\Environment;
-use RevealPrefix20220708\Twig\Extension\EscaperExtension;
-use RevealPrefix20220708\Twig\Node\AutoEscapeNode;
-use RevealPrefix20220708\Twig\Node\BlockNode;
-use RevealPrefix20220708\Twig\Node\BlockReferenceNode;
-use RevealPrefix20220708\Twig\Node\DoNode;
-use RevealPrefix20220708\Twig\Node\Expression\ConditionalExpression;
-use RevealPrefix20220708\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220708\Twig\Node\Expression\FilterExpression;
-use RevealPrefix20220708\Twig\Node\Expression\InlinePrint;
-use RevealPrefix20220708\Twig\Node\ImportNode;
-use RevealPrefix20220708\Twig\Node\ModuleNode;
-use RevealPrefix20220708\Twig\Node\Node;
-use RevealPrefix20220708\Twig\Node\PrintNode;
-use RevealPrefix20220708\Twig\NodeTraverser;
+use RevealPrefix20220711\Twig\Environment;
+use RevealPrefix20220711\Twig\Extension\EscaperExtension;
+use RevealPrefix20220711\Twig\Node\AutoEscapeNode;
+use RevealPrefix20220711\Twig\Node\BlockNode;
+use RevealPrefix20220711\Twig\Node\BlockReferenceNode;
+use RevealPrefix20220711\Twig\Node\DoNode;
+use RevealPrefix20220711\Twig\Node\Expression\ConditionalExpression;
+use RevealPrefix20220711\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220711\Twig\Node\Expression\FilterExpression;
+use RevealPrefix20220711\Twig\Node\Expression\InlinePrint;
+use RevealPrefix20220711\Twig\Node\ImportNode;
+use RevealPrefix20220711\Twig\Node\ModuleNode;
+use RevealPrefix20220711\Twig\Node\Node;
+use RevealPrefix20220711\Twig\Node\PrintNode;
+use RevealPrefix20220711\Twig\NodeTraverser;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  *

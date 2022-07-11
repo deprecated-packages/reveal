@@ -8,10 +8,10 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Type\ObjectType;
 use PHPStan\Type\ThisType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220708\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use RevealPrefix20220708\Symfony\Component\HttpFoundation\Response;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220708\Twig\Environment;
+use RevealPrefix20220711\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use RevealPrefix20220711\Symfony\Component\HttpFoundation\Response;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Twig\Environment;
 final class SymfonyRenderWithParametersMatcher
 {
     /**

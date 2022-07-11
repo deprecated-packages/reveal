@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler;
 
-use RevealPrefix20220708\Latte\Parser;
+use RevealPrefix20220711\Latte\Parser;
 use PhpParser\Node\Stmt;
 use PhpParser\NodeTraverser;
 use PhpParser\ParserFactory;
@@ -12,11 +12,12 @@ use Reveal\LattePHPStanCompiler\Contract\LatteToPhpCompilerNodeVisitorInterface;
 use Reveal\LattePHPStanCompiler\Latte\LineCommentCorrector;
 use Reveal\LattePHPStanCompiler\Latte\UnknownMacroAwareLatteCompiler;
 use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\ControlRenderToExplicitCallNodeVisitor;
+use Reveal\LattePHPStanCompiler\PhpParser\NodeVisitor\LinkNodeVisitor;
 use Reveal\LattePHPStanCompiler\ValueObject\ComponentNameAndType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220708\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220708\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
-use RevealPrefix20220708\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220711\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @see \Reveal\LattePHPStanCompiler\Tests\LatteToPhpCompiler\LatteToPhpCompilerTest
  */
@@ -79,7 +80,7 @@ final class LatteToPhpCompiler
         $rawPhpContent = $this->unknownMacroAwareLatteCompiler->compile($latteTokens, 'DummyTemplateClass');
         $rawPhpContent = $this->lineCommentCorrector->correctLineNumberPosition($rawPhpContent);
         $phpStmts = $this->parsePhpContentToPhpStmts($rawPhpContent);
-        $this->decorateStmts($phpStmts, $componentNamesAndtTypes);
+        $this->decorateStmts($phpStmts, $variablesAndTypes, $componentNamesAndtTypes);
         $phpContent = $this->printerStandard->prettyPrintFile($phpStmts);
         return $this->latteVarTypeDocBlockDecorator->decorateLatteContentWithTypes($phpContent, $variablesAndTypes);
     }
@@ -103,14 +104,18 @@ final class LatteToPhpCompiler
     }
     /**
      * @param Stmt[] $phpStmts
+     * @param VariableAndType[] $variablesAndTypes
      * @param ComponentNameAndType[] $componentNamesAndTypes
      */
-    private function decorateStmts(array $phpStmts, array $componentNamesAndTypes) : void
+    private function decorateStmts(array $phpStmts, array $variablesAndTypes, array $componentNamesAndTypes) : void
     {
         $nodeTraverser = new NodeTraverser();
         $controlRenderToExplicitCallNodeVisitor = new ControlRenderToExplicitCallNodeVisitor($this->simpleNameResolver, $componentNamesAndTypes);
         $nodeTraverser->addVisitor($controlRenderToExplicitCallNodeVisitor);
         foreach ($this->nodeVisitors as $nodeVisitor) {
+            if ($nodeVisitor instanceof LinkNodeVisitor) {
+                $nodeVisitor->setVariablesAndTypes($variablesAndTypes);
+            }
             $nodeTraverser->addVisitor($nodeVisitor);
         }
         $nodeTraverser->traverse($phpStmts);

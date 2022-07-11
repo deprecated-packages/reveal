@@ -40,7 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220708\\Symfony\\Component\\String\\": ""
+            "RevealPrefix20220711\\Symfony\\Component\\String\\": ""
         },
         "files": [
             "Resources\/functions.php"
