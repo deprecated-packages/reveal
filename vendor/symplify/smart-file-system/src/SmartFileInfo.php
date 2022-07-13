@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\SmartFileSystem;
+namespace RevealPrefix20220713\Symplify\SmartFileSystem;
 
-use RevealPrefix20220711\Nette\Utils\Strings;
-use RevealPrefix20220711\Symfony\Component\Finder\SplFileInfo;
-use RevealPrefix20220711\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
-use RevealPrefix20220711\Symplify\EasyTesting\StaticFixtureSplitter;
-use RevealPrefix20220711\Symplify\SmartFileSystem\Exception\DirectoryNotFoundException;
-use RevealPrefix20220711\Symplify\SmartFileSystem\Exception\FileNotFoundException;
+use RevealPrefix20220713\Nette\Utils\Strings;
+use RevealPrefix20220713\Symfony\Component\Finder\SplFileInfo;
+use RevealPrefix20220713\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
+use RevealPrefix20220713\Symplify\EasyTesting\StaticFixtureSplitter;
+use RevealPrefix20220713\Symplify\SmartFileSystem\Exception\DirectoryNotFoundException;
+use RevealPrefix20220713\Symplify\SmartFileSystem\Exception\FileNotFoundException;
 /**
  * @api
  * @see \Symplify\SmartFileSystem\Tests\SmartFileInfo\SmartFileInfoTest

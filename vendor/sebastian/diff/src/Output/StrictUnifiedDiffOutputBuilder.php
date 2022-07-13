@@ -9,7 +9,7 @@ declare (strict_types=1);
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\SebastianBergmann\Diff\Output;
+namespace RevealPrefix20220713\SebastianBergmann\Diff\Output;
 
 use function array_merge;
 use function array_splice;
@@ -25,8 +25,8 @@ use function min;
 use function sprintf;
 use function stream_get_contents;
 use function substr;
-use RevealPrefix20220711\SebastianBergmann\Diff\ConfigurationException;
-use RevealPrefix20220711\SebastianBergmann\Diff\Differ;
+use RevealPrefix20220713\SebastianBergmann\Diff\ConfigurationException;
+use RevealPrefix20220713\SebastianBergmann\Diff\Differ;
 /**
  * Strict Unified diff output builder.
  *

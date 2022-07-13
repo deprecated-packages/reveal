@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Attribute;
+namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute;
 
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\LogicException;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220711\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\LogicException;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220713\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * Attribute to tell a parameter how to be autowired.
  *

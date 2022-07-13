@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\Console\Style;
+namespace RevealPrefix20220713\Symfony\Component\Console\Style;
 
-use RevealPrefix20220711\Symfony\Component\Console\Formatter\OutputFormatterInterface;
-use RevealPrefix20220711\Symfony\Component\Console\Helper\ProgressBar;
-use RevealPrefix20220711\Symfony\Component\Console\Output\ConsoleOutputInterface;
-use RevealPrefix20220711\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220713\Symfony\Component\Console\Formatter\OutputFormatterInterface;
+use RevealPrefix20220713\Symfony\Component\Console\Helper\ProgressBar;
+use RevealPrefix20220713\Symfony\Component\Console\Output\ConsoleOutputInterface;
+use RevealPrefix20220713\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Decorates output to add console style guide helpers.
  *

@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220711\\Symplify\\PackageBuilder\\": "src"
+            "RevealPrefix20220713\\Symplify\\PackageBuilder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RevealPrefix20220711\\Symplify\\PackageBuilder\\Tests\\": "tests"
+            "RevealPrefix20220713\\Symplify\\PackageBuilder\\Tests\\": "tests"
         }
     },
     "extra": {

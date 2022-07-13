@@ -5,10 +5,10 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711\Latte\Runtime;
+namespace RevealPrefix20220713\Latte\Runtime;
 
-use RevealPrefix20220711\Latte;
-use RevealPrefix20220711\Nette\PhpGenerator as Php;
+use RevealPrefix20220713\Latte;
+use RevealPrefix20220713\Nette\PhpGenerator as Php;
 /**
  * Generates blueprint of template class.
  * @internal

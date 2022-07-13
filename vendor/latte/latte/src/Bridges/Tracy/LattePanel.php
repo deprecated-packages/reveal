@@ -5,11 +5,11 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711\Latte\Bridges\Tracy;
+namespace RevealPrefix20220713\Latte\Bridges\Tracy;
 
-use RevealPrefix20220711\Latte\Engine;
-use RevealPrefix20220711\Latte\Runtime\Template;
-use RevealPrefix20220711\Tracy;
+use RevealPrefix20220713\Latte\Engine;
+use RevealPrefix20220713\Latte\Runtime\Template;
+use RevealPrefix20220713\Tracy;
 /**
  * Bar panel for Tracy 2.x
  */

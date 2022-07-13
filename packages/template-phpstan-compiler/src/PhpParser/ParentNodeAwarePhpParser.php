@@ -6,7 +6,7 @@ namespace Reveal\TemplatePHPStanCompiler\PhpParser;
 use PhpParser\Node\Stmt;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\ParentConnectingVisitor;
-use RevealPrefix20220711\Symplify\Astral\PhpParser\SmartPhpParser;
+use RevealPrefix20220713\Symplify\Astral\PhpParser\SmartPhpParser;
 /**
  * @api
  */

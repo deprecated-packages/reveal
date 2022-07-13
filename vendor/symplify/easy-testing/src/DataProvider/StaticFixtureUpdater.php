@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\EasyTesting\DataProvider;
+namespace RevealPrefix20220713\Symplify\EasyTesting\DataProvider;
 
-use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @api
  */

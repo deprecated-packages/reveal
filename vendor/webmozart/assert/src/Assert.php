@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Webmozart\Assert;
+namespace RevealPrefix20220713\Webmozart\Assert;
 
 use ArrayAccess;
 use BadMethodCallException;

@@ -21,8 +21,8 @@ use PHPStan\Type\UnionType;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\ObjectTypeMethodAnalyzer;
 use Reveal\TwigPHPStanCompiler\Reflection\PublicPropertyAnalyzer;
-use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220711\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220713\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class TwigGetAttributeExpanderNodeVisitor extends NodeVisitorAbstract
 {
     /**

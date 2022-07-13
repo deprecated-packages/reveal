@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\Console\EventListener;
+namespace RevealPrefix20220713\Symfony\Component\Console\EventListener;
 
-use RevealPrefix20220711\Psr\Log\LoggerInterface;
-use RevealPrefix20220711\Symfony\Component\Console\ConsoleEvents;
-use RevealPrefix20220711\Symfony\Component\Console\Event\ConsoleErrorEvent;
-use RevealPrefix20220711\Symfony\Component\Console\Event\ConsoleEvent;
-use RevealPrefix20220711\Symfony\Component\Console\Event\ConsoleTerminateEvent;
-use RevealPrefix20220711\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use RevealPrefix20220713\Psr\Log\LoggerInterface;
+use RevealPrefix20220713\Symfony\Component\Console\ConsoleEvents;
+use RevealPrefix20220713\Symfony\Component\Console\Event\ConsoleErrorEvent;
+use RevealPrefix20220713\Symfony\Component\Console\Event\ConsoleEvent;
+use RevealPrefix20220713\Symfony\Component\Console\Event\ConsoleTerminateEvent;
+use RevealPrefix20220713\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * @author James Halsall <james.t.halsall@googlemail.com>
  * @author Robin Chalas <robin.chalas@gmail.com>

@@ -20,12 +20,12 @@ final class DefaultTemplateVariables implements LatteVariableCollectorInterface
         $variablesAndTypes = [];
         $variablesAndTypes[] = new VariableAndType('baseUrl', new StringType());
         $variablesAndTypes[] = new VariableAndType('basePath', new StringType());
-        $variablesAndTypes[] = new VariableAndType('ʟ_fi', new ObjectType('RevealPrefix20220711\\Latte\\Runtime\\FilterInfo'));
+        $variablesAndTypes[] = new VariableAndType('ʟ_fi', new ObjectType('RevealPrefix20220713\\Latte\\Runtime\\FilterInfo'));
         // nette\security bridge
-        $variablesAndTypes[] = new VariableAndType('user', new ObjectType('RevealPrefix20220711\\Nette\\Security\\User'));
+        $variablesAndTypes[] = new VariableAndType('user', new ObjectType('RevealPrefix20220713\\Nette\\Security\\User'));
         // nette\application bridge
-        $variablesAndTypes[] = new VariableAndType('presenter', new ObjectType('RevealPrefix20220711\\Nette\\Application\\UI\\Presenter'));
-        $variablesAndTypes[] = new VariableAndType('control', new ObjectType('RevealPrefix20220711\\Nette\\Application\\UI\\Control'));
+        $variablesAndTypes[] = new VariableAndType('presenter', new ObjectType('RevealPrefix20220713\\Nette\\Application\\UI\\Presenter'));
+        $variablesAndTypes[] = new VariableAndType('control', new ObjectType('RevealPrefix20220713\\Nette\\Application\\UI\\Control'));
         $flashesArrayType = new ArrayType(new MixedType(), new ObjectType(stdClass::class));
         $variablesAndTypes[] = new VariableAndType('flashes', $flashesArrayType);
         return $variablesAndTypes;

@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Twig\Error;
+namespace RevealPrefix20220713\Twig\Error;
 
-use RevealPrefix20220711\Twig\Source;
-use RevealPrefix20220711\Twig\Template;
+use RevealPrefix20220713\Twig\Source;
+use RevealPrefix20220713\Twig\Template;
 /**
  * Twig base exception.
  *

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\ComposerJsonManipulator\Sorter;
+namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator\Sorter;
 
-use RevealPrefix20220711\Nette\Utils\Strings;
+use RevealPrefix20220713\Nette\Utils\Strings;
 /**
  * Mostly inspired by https://github.com/composer/composer/blob/master/src/Composer/Json/JsonManipulator.php
  *

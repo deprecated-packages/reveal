@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\RuleDocGenerator\Contract\Category;
+namespace RevealPrefix20220713\Symplify\RuleDocGenerator\Contract\Category;
 
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 interface CategoryInfererInterface
 {
     public function infer(RuleDefinition $ruleDefinition) : ?string;

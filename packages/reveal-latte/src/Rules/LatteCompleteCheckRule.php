@@ -19,9 +19,9 @@ use Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
 use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
-use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
 use Throwable;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\LatteCompleteCheckRule\LatteCompleteCheckRuleTest
@@ -113,8 +113,13 @@ final class LatteCompleteCheckRule implements Rule
         }
         $uniqueErrorsByHash = [];
         foreach ($errors as $error) {
-            /** @var RuleError&FileRuleError&LineRuleError $error */
-            $errorHash = $error->getMessage() . $error->getFile() . $error->getLine();
+            $errorHash = $error->getMessage();
+            if ($error instanceof FileRuleError) {
+                $errorHash .= $error->getFile();
+            }
+            if ($error instanceof LineRuleError) {
+                $errorHash .= $error->getLine();
+            }
             $uniqueErrorsByHash[$errorHash] = $error;
         }
         return $uniqueErrorsByHash;
@@ -166,9 +171,8 @@ CODE_SAMPLE
         $array = $renderTemplateWithParameters->getParametersArray();
         try {
             $phpFileContentsWithLineMap = $this->templateFileVarTypeDocBlocksDecorator->decorate($templateFilePath, $array, $scope, $componentNamesAndTypes);
-        } catch (Throwable $exception) {
-            // missing include/layout template or something else went wrong → we cannot analyse template here
-            $errorMessage = \sprintf('Template file "%s" does not exist', $templateFilePath);
+        } catch (Throwable $throwable) {
+            $errorMessage = $throwable->getMessage();
             $ruleError = RuleErrorBuilder::message($errorMessage)->build();
             return [$ruleError];
         }

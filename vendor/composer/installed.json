@@ -284,17 +284,17 @@
         },
         {
             "name": "phpstan\/phpstan",
-            "version": "1.8.0",
-            "version_normalized": "1.8.0.0",
+            "version": "1.8.1",
+            "version_normalized": "1.8.1.0",
             "source": {
                 "type": "git",
                 "url": "https:\/\/github.com\/phpstan\/phpstan.git",
-                "reference": "b7648d4ee9321665acaf112e49da9fd93df8fbd5"
+                "reference": "8dbba631fa32f4b289404469c2afd6122fd61d67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https:\/\/api.github.com\/repos\/phpstan\/phpstan\/zipball\/b7648d4ee9321665acaf112e49da9fd93df8fbd5",
-                "reference": "b7648d4ee9321665acaf112e49da9fd93df8fbd5",
+                "url": "https:\/\/api.github.com\/repos\/phpstan\/phpstan\/zipball\/8dbba631fa32f4b289404469c2afd6122fd61d67",
+                "reference": "8dbba631fa32f4b289404469c2afd6122fd61d67",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
             "conflict": {
                 "phpstan\/phpstan-shim": "*"
             },
-            "time": "2022-06-29T08:53:31+00:00",
+            "time": "2022-07-12T16:08:06+00:00",
             "bin": [
                 "phpstan",
                 "phpstan.phar"
@@ -322,7 +322,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https:\/\/github.com\/phpstan\/phpstan\/issues",
-                "source": "https:\/\/github.com\/phpstan\/phpstan\/tree\/1.8.0"
+                "source": "https:\/\/github.com\/phpstan\/phpstan\/tree\/1.8.1"
             },
             "funding": [
                 {
@@ -372,7 +372,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Psr\\Container\\": "src\/"
+                    "RevealPrefix20220713\\Psr\\Container\\": "src\/"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -508,7 +508,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\Config\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\Config\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -601,7 +601,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\Console\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\Console\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -697,7 +697,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\DependencyInjection\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\DependencyInjection\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -833,7 +833,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\Filesystem\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\Filesystem\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -900,7 +900,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\Finder\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\Finder\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -979,7 +979,7 @@
                     "bootstrap.php"
                 ],
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                    "RevealPrefix20220713\\Symfony\\Polyfill\\Intl\\Normalizer\\": ""
                 },
                 "classmap": [
                     "Resources\/stubs"
@@ -1069,7 +1069,7 @@
                     "bootstrap.php"
                 ],
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Polyfill\\Mbstring\\": ""
+                    "RevealPrefix20220713\\Symfony\\Polyfill\\Mbstring\\": ""
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1153,7 +1153,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Contracts\\Service\\": ""
+                    "RevealPrefix20220713\\Symfony\\Contracts\\Service\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Test\/"
@@ -1241,7 +1241,7 @@
                     "Resources\/functions.php"
                 ],
                 "psr-4": {
-                    "RevealPrefix20220711\\Symfony\\Component\\String\\": ""
+                    "RevealPrefix20220713\\Symfony\\Component\\String\\": ""
                 },
                 "exclude-from-classmap": [
                     "\/Tests\/"
@@ -1358,7 +1358,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\Astral\\": "src"
+                    "RevealPrefix20220713\\Symplify\\Astral\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1437,7 +1437,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\AutowireArrayParameter\\": "src"
+                    "RevealPrefix20220713\\Symplify\\AutowireArrayParameter\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1519,7 +1519,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\ComposerJsonManipulator\\": "src"
+                    "RevealPrefix20220713\\Symplify\\ComposerJsonManipulator\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1603,7 +1603,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\EasyTesting\\": "src"
+                    "RevealPrefix20220713\\Symplify\\EasyTesting\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1686,7 +1686,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\PackageBuilder\\": "src"
+                    "RevealPrefix20220713\\Symplify\\PackageBuilder\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1761,7 +1761,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\RuleDocGenerator\\": "src"
+                    "RevealPrefix20220713\\Symplify\\RuleDocGenerator\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1842,7 +1842,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\SmartFileSystem\\": "src"
+                    "RevealPrefix20220713\\Symplify\\SmartFileSystem\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1922,7 +1922,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Symplify\\SymplifyKernel\\": "src"
+                    "RevealPrefix20220713\\Symplify\\SymplifyKernel\\": "src"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -1969,7 +1969,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Twig\\": "src\/"
+                    "RevealPrefix20220713\\Twig\\": "src\/"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",
@@ -2050,7 +2050,7 @@
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
-                    "RevealPrefix20220711\\Webmozart\\Assert\\": "src\/"
+                    "RevealPrefix20220713\\Webmozart\\Assert\\": "src\/"
                 }
             },
             "notification-url": "https:\/\/packagist.org\/downloads\/",

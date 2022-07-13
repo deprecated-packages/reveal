@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\ComposerJsonManipulator;
+namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator;
 
-use RevealPrefix20220711\Nette\Utils\Json;
-use RevealPrefix20220711\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use RevealPrefix20220711\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use RevealPrefix20220711\Symplify\ComposerJsonManipulator\ValueObject\ComposerJsonSection;
-use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220713\Nette\Utils\Json;
+use RevealPrefix20220713\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
+use RevealPrefix20220713\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
+use RevealPrefix20220713\Symplify\ComposerJsonManipulator\ValueObject\ComposerJsonSection;
+use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  * @see \Symplify\ComposerJsonManipulator\Tests\ComposerJsonFactory\ComposerJsonFactoryTest

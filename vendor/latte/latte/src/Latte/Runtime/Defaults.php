@@ -5,10 +5,10 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711\Latte\Runtime;
+namespace RevealPrefix20220713\Latte\Runtime;
 
-use RevealPrefix20220711\Latte\RuntimeException;
-use RevealPrefix20220711\Nette\Utils\Strings;
+use RevealPrefix20220713\Latte\RuntimeException;
+use RevealPrefix20220713\Nette\Utils\Strings;
 /**
  * @internal
  */

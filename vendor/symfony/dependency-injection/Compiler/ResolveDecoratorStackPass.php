@@ -8,15 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Alias;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\ChildDefinition;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Alias;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\ChildDefinition;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */

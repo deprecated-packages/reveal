@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220713\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\DuplicateKeyException;
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\Exception;
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\DuplicateKeyException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\Exception;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\UnsetKeyException;
 /**
  * Represents a prototyped Array node in the config tree.
  *

@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Attribute\Target;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\LazyProxy\ProxyHelper;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220711\Symfony\Component\DependencyInjection\TypedReference;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\Target;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\LazyProxy\ProxyHelper;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220713\Symfony\Component\DependencyInjection\TypedReference;
 /**
  * @author Guilhem Niot <guilhem.niot@gmail.com>
  */

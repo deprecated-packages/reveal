@@ -8,27 +8,27 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Twig;
+namespace RevealPrefix20220713\Twig;
 
-use RevealPrefix20220711\Twig\Cache\CacheInterface;
-use RevealPrefix20220711\Twig\Cache\FilesystemCache;
-use RevealPrefix20220711\Twig\Cache\NullCache;
-use RevealPrefix20220711\Twig\Error\Error;
-use RevealPrefix20220711\Twig\Error\LoaderError;
-use RevealPrefix20220711\Twig\Error\RuntimeError;
-use RevealPrefix20220711\Twig\Error\SyntaxError;
-use RevealPrefix20220711\Twig\Extension\CoreExtension;
-use RevealPrefix20220711\Twig\Extension\EscaperExtension;
-use RevealPrefix20220711\Twig\Extension\ExtensionInterface;
-use RevealPrefix20220711\Twig\Extension\OptimizerExtension;
-use RevealPrefix20220711\Twig\Loader\ArrayLoader;
-use RevealPrefix20220711\Twig\Loader\ChainLoader;
-use RevealPrefix20220711\Twig\Loader\LoaderInterface;
-use RevealPrefix20220711\Twig\Node\ModuleNode;
-use RevealPrefix20220711\Twig\Node\Node;
-use RevealPrefix20220711\Twig\NodeVisitor\NodeVisitorInterface;
-use RevealPrefix20220711\Twig\RuntimeLoader\RuntimeLoaderInterface;
-use RevealPrefix20220711\Twig\TokenParser\TokenParserInterface;
+use RevealPrefix20220713\Twig\Cache\CacheInterface;
+use RevealPrefix20220713\Twig\Cache\FilesystemCache;
+use RevealPrefix20220713\Twig\Cache\NullCache;
+use RevealPrefix20220713\Twig\Error\Error;
+use RevealPrefix20220713\Twig\Error\LoaderError;
+use RevealPrefix20220713\Twig\Error\RuntimeError;
+use RevealPrefix20220713\Twig\Error\SyntaxError;
+use RevealPrefix20220713\Twig\Extension\CoreExtension;
+use RevealPrefix20220713\Twig\Extension\EscaperExtension;
+use RevealPrefix20220713\Twig\Extension\ExtensionInterface;
+use RevealPrefix20220713\Twig\Extension\OptimizerExtension;
+use RevealPrefix20220713\Twig\Loader\ArrayLoader;
+use RevealPrefix20220713\Twig\Loader\ChainLoader;
+use RevealPrefix20220713\Twig\Loader\LoaderInterface;
+use RevealPrefix20220713\Twig\Node\ModuleNode;
+use RevealPrefix20220713\Twig\Node\Node;
+use RevealPrefix20220713\Twig\NodeVisitor\NodeVisitorInterface;
+use RevealPrefix20220713\Twig\RuntimeLoader\RuntimeLoaderInterface;
+use RevealPrefix20220713\Twig\TokenParser\TokenParserInterface;
 /**
  * Stores the Twig configuration and renders templates.
  *

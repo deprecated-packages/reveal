@@ -11,8 +11,8 @@ use PHPStan\Rules\Rule;
 use Reveal\LattePHPStanCompiler\NodeAnalyzer\UnusedNetteTemplateRenderVariableResolver;
 use Reveal\RevealLatte\NodeAnalyzer\TemplateRenderAnalyzer;
 use Reveal\TemplatePHPStanCompiler\NodeAnalyzer\TemplateFilePathResolver;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\NoNetteRenderUnusedVariableRule\NoNetteRenderUnusedVariableRuleTest
  */

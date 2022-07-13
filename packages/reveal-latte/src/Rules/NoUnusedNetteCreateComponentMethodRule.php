@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\RevealLatte\Rules;
 
-use RevealPrefix20220711\Nette\Utils\Strings;
+use RevealPrefix20220713\Nette\Utils\Strings;
 use PhpParser\Node;
 use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
@@ -11,7 +11,7 @@ use PHPStan\Reflection\ClassReflection;
 use PHPStan\Rules\Rule;
 use Reveal\RevealLatte\LatteUsedControlResolver;
 use Reveal\RevealLatte\NodeAnalyzer\UsedLocalComponentNamesResolver;
-use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\NoUnusedNetteCreateComponentMethodRule\NoUnusedNetteCreateComponentMethodRuleTest
  * @implements Rule<ClassMethod>
@@ -104,7 +104,7 @@ final class NoUnusedNetteCreateComponentMethodRule implements Rule
         if (!$classReflection instanceof ClassReflection) {
             return \true;
         }
-        if (!$classReflection->isSubclassOf('RevealPrefix20220711\\Nette\\Application\\UI\\Presenter')) {
+        if (!$classReflection->isSubclassOf('RevealPrefix20220713\\Nette\\Application\\UI\\Presenter')) {
             return \true;
         }
         return $classMethod->isPrivate();

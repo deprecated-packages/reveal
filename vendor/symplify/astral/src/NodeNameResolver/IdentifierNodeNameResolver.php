@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\Astral\NodeNameResolver;
+namespace RevealPrefix20220713\Symplify\Astral\NodeNameResolver;
 
 use PhpParser\Node;
 use PhpParser\Node\Identifier;
 use PhpParser\Node\Name;
-use RevealPrefix20220711\Symplify\Astral\Contract\NodeNameResolverInterface;
+use RevealPrefix20220713\Symplify\Astral\Contract\NodeNameResolverInterface;
 final class IdentifierNodeNameResolver implements NodeNameResolverInterface
 {
     public function match(Node $node) : bool

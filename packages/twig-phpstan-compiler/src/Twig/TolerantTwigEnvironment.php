@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Reveal\TwigPHPStanCompiler\Twig;
 
-use RevealPrefix20220711\Twig\Environment;
-use RevealPrefix20220711\Twig\TwigFilter;
-use RevealPrefix20220711\Twig\TwigFunction;
+use RevealPrefix20220713\Twig\Environment;
+use RevealPrefix20220713\Twig\TwigFilter;
+use RevealPrefix20220713\Twig\TwigFunction;
 /**
  * Allows any function and filter
  */

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220711\Symplify\Astral\Contract;
+namespace RevealPrefix20220713\Symplify\Astral\Contract;
 
 use PhpParser\Node;
 interface NodeNameResolverInterface

@@ -5,7 +5,7 @@
  * Copyright (c) 2004 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711\Latte;
+namespace RevealPrefix20220713\Latte;
 
 if (\false) {
     /** @deprecated use Latte\Loader */
@@ -23,7 +23,7 @@ if (\false) {
 } elseif (!\interface_exists(IMacro::class)) {
     \class_alias(Macro::class, IMacro::class);
 }
-namespace RevealPrefix20220711\Latte\Runtime;
+namespace RevealPrefix20220713\Latte\Runtime;
 
 if (\false) {
     /** @deprecated use Latte\Runtime\HtmlStringable */

@@ -17,9 +17,9 @@ use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use Reveal\TemplatePHPStanCompiler\TypeAnalyzer\TemplateVariableTypesResolver;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
 use Reveal\TwigPHPStanCompiler\TwigToPhpCompiler;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220711\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
-use RevealPrefix20220711\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @implements Rule<MethodCall>
  * @see \Reveal\RevealTwig\Tests\Rules\TwigCompleteCheckRule\TwigCompleteCheckRuleTest

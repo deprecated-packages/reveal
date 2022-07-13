@@ -5,9 +5,9 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711\Latte\Sandbox;
+namespace RevealPrefix20220713\Latte\Sandbox;
 
-use RevealPrefix20220711\Latte;
+use RevealPrefix20220713\Latte;
 /**
  * Default-deny policy.
  */

@@ -8,9 +8,9 @@ use PhpParser\Node\Arg;
 use PhpParser\Node\Expr\MethodCall;
 use PhpParser\NodeVisitorAbstract;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220711\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220711\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
-use RevealPrefix20220711\Symplify\Astral\NodeValue\NodeValueResolver;
+use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use RevealPrefix20220713\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
+use RevealPrefix20220713\Symplify\Astral\NodeValue\NodeValueResolver;
 final class TemplatePathFinderVisitor extends NodeVisitorAbstract
 {
     /**

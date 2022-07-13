@@ -5,7 +5,7 @@
  * https://github.com/nette/coding-standard
  */
 declare (strict_types=1);
-namespace RevealPrefix20220711;
+namespace RevealPrefix20220713;
 
 return [
     // use function in src/Latte/Runtime/Filters.php

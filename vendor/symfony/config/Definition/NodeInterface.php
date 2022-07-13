@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220711\Symfony\Component\Config\Definition;
+namespace RevealPrefix20220713\Symfony\Component\Config\Definition;
 
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException;
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use RevealPrefix20220711\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\ForbiddenOverwriteException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use RevealPrefix20220713\Symfony\Component\Config\Definition\Exception\InvalidTypeException;
 /**
  * Common Interface among all nodes.
  *

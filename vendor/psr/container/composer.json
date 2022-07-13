@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RevealPrefix20220711\\Psr\\Container\\": "src\/"
+            "RevealPrefix20220713\\Psr\\Container\\": "src\/"
         }
     },
     "extra": {
