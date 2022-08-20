@@ -7,7 +7,7 @@ use PhpParser\Node;
 use PhpParser\Node\Expr\Variable;
 use PhpParser\Node\Stmt\Foreach_;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
 final class CollectForeachedVariablesNodeVisitor extends NodeVisitorAbstract
 {
     /**

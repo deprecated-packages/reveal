@@ -12,7 +12,7 @@ use PhpParser\Node\Stmt\Expression;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitorAbstract;
 use Reveal\TwigPHPStanCompiler\Contract\NodeVisitor\NormalizingNodeVisitorInterface;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
 final class LoadParentTemplateNormalizeNodeVisitor extends NodeVisitorAbstract implements NormalizingNodeVisitorInterface
 {
     /**

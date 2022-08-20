@@ -5,8 +5,8 @@ namespace Reveal\RevealLatte\NodeAnalyzer;
 
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220713\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
+use Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 final class TemplateRenderAnalyzer
 {
     /**

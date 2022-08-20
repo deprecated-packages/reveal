@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Container;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Container;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */

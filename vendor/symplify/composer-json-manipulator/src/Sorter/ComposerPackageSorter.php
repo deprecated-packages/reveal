@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator\Sorter;
+namespace RevealPrefix20220820\Symplify\ComposerJsonManipulator\Sorter;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
+use RevealPrefix20220820\Nette\Utils\Strings;
 /**
  * Mostly inspired by https://github.com/composer/composer/blob/master/src/Composer/Json/JsonManipulator.php
  *
@@ -39,7 +39,7 @@ final class ComposerPackageSorter
     private function createNameWithPriority(string $requirementName) : string
     {
         if ($this->isPlatformPackage($requirementName)) {
-            return Strings::replace($requirementName, self::REQUIREMENT_TYPE_REGEX, function (array $match) : string {
+            return Strings::replace($requirementName, self::REQUIREMENT_TYPE_REGEX, static function (array $match) : string {
                 $name = $match['name'];
                 if ($name === 'php') {
                     return '0-' . $name;

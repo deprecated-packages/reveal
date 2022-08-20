@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\EasyTesting\DataProvider;
+namespace RevealPrefix20220820\Symplify\EasyTesting\DataProvider;
 
 use Iterator;
-use RevealPrefix20220713\Nette\Utils\Strings;
-use RevealPrefix20220713\Symfony\Component\Finder\Finder;
-use RevealPrefix20220713\Symfony\Component\Finder\SplFileInfo;
-use RevealPrefix20220713\Symplify\SmartFileSystem\Exception\FileNotFoundException;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220713\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use RevealPrefix20220820\Nette\Utils\Strings;
+use RevealPrefix20220820\Symfony\Component\Finder\Finder;
+use RevealPrefix20220820\Symfony\Component\Finder\SplFileInfo;
+use Symplify\SmartFileSystem\Exception\FileNotFoundException;
+use Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220820\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 /**
  * @api
  * @see \Symplify\EasyTesting\Tests\DataProvider\StaticFixtureFinder\StaticFixtureFinderTest
@@ -33,7 +33,7 @@ final class StaticFixtureFinder
         return self::yieldFileInfos($fileInfos);
     }
     /**
-     * @return Iterator<string, array<int, SplFileInfo>>
+     * @return Iterator<string, array<int, SmartFileInfo>>
      */
     public static function yieldDirectoryWithRelativePathname(string $directory, string $suffix = '*.php.inc') : Iterator
     {
@@ -41,7 +41,7 @@ final class StaticFixtureFinder
         return self::yieldFileInfosWithRelativePathname($fileInfos);
     }
     /**
-     * @return Iterator<string, array<int, SplFileInfo>>
+     * @return Iterator<string, array<int, SmartFileInfo>>
      */
     public static function yieldDirectoryExclusivelyWithRelativePathname(string $directory, string $suffix = '*.php.inc') : Iterator
     {
@@ -64,7 +64,7 @@ final class StaticFixtureFinder
     }
     /**
      * @param SplFileInfo[] $fileInfos
-     * @return Iterator<string, array<int, SplFileInfo>>
+     * @return Iterator<string, array<int, SmartFileInfo>>
      */
     private static function yieldFileInfosWithRelativePathname(array $fileInfos) : Iterator
     {

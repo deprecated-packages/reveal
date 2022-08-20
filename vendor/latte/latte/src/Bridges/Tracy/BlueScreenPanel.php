@@ -5,12 +5,12 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220713\Latte\Bridges\Tracy;
+namespace RevealPrefix20220820\Latte\Bridges\Tracy;
 
-use RevealPrefix20220713\Latte;
-use RevealPrefix20220713\Tracy;
-use RevealPrefix20220713\Tracy\BlueScreen;
-use RevealPrefix20220713\Tracy\Helpers;
+use RevealPrefix20220820\Latte;
+use RevealPrefix20220820\Tracy;
+use RevealPrefix20220820\Tracy\BlueScreen;
+use RevealPrefix20220820\Tracy\Helpers;
 /**
  * BlueScreen panels for Tracy 2.x
  */

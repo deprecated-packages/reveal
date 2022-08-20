@@ -8,7 +8,7 @@ parametersSchema:
 
 services:
     # latte
-    - Latte\Parser
+    - RevealPrefix20220820\Latte\Parser
 
     - Reveal\LattePHPStanCompiler\LatteToPhpCompiler
     - Reveal\LattePHPStanCompiler\TemplateFileVarTypeDocBlocksDecorator

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\SmartFileSystem\Finder;
+namespace Symplify\SmartFileSystem\Finder;
 
-use RevealPrefix20220713\Symfony\Component\Finder\Finder;
-use RevealPrefix20220713\Symplify\SmartFileSystem\FileSystemFilter;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220820\Symfony\Component\Finder\Finder;
+use Symplify\SmartFileSystem\FileSystemFilter;
+use Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  * @see \Symplify\SmartFileSystem\Tests\Finder\SmartFinder\SmartFinderTest
@@ -20,7 +20,7 @@ final class SmartFinder
      * @var \Symplify\SmartFileSystem\FileSystemFilter
      */
     private $fileSystemFilter;
-    public function __construct(FinderSanitizer $finderSanitizer, FileSystemFilter $fileSystemFilter)
+    public function __construct(\Symplify\SmartFileSystem\Finder\FinderSanitizer $finderSanitizer, FileSystemFilter $fileSystemFilter)
     {
         $this->finderSanitizer = $finderSanitizer;
         $this->fileSystemFilter = $fileSystemFilter;

@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\Console\Output;
+namespace RevealPrefix20220820\Symfony\Component\Console\Output;
 
-use RevealPrefix20220713\Symfony\Component\Console\Exception\InvalidArgumentException;
-use RevealPrefix20220713\Symfony\Component\Console\Formatter\OutputFormatterInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Exception\InvalidArgumentException;
+use RevealPrefix20220820\Symfony\Component\Console\Formatter\OutputFormatterInterface;
 /**
  * A BufferedOutput that keeps only the last N chars.
  *

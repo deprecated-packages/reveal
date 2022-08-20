@@ -9,21 +9,21 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig;
+namespace RevealPrefix20220820\Twig;
 
-use RevealPrefix20220713\Twig\Error\SyntaxError;
-use RevealPrefix20220713\Twig\Node\BlockNode;
-use RevealPrefix20220713\Twig\Node\BlockReferenceNode;
-use RevealPrefix20220713\Twig\Node\BodyNode;
-use RevealPrefix20220713\Twig\Node\Expression\AbstractExpression;
-use RevealPrefix20220713\Twig\Node\MacroNode;
-use RevealPrefix20220713\Twig\Node\ModuleNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Node\NodeCaptureInterface;
-use RevealPrefix20220713\Twig\Node\NodeOutputInterface;
-use RevealPrefix20220713\Twig\Node\PrintNode;
-use RevealPrefix20220713\Twig\Node\TextNode;
-use RevealPrefix20220713\Twig\TokenParser\TokenParserInterface;
+use RevealPrefix20220820\Twig\Error\SyntaxError;
+use RevealPrefix20220820\Twig\Node\BlockNode;
+use RevealPrefix20220820\Twig\Node\BlockReferenceNode;
+use RevealPrefix20220820\Twig\Node\BodyNode;
+use RevealPrefix20220820\Twig\Node\Expression\AbstractExpression;
+use RevealPrefix20220820\Twig\Node\MacroNode;
+use RevealPrefix20220820\Twig\Node\ModuleNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Node\NodeCaptureInterface;
+use RevealPrefix20220820\Twig\Node\NodeOutputInterface;
+use RevealPrefix20220820\Twig\Node\PrintNode;
+use RevealPrefix20220820\Twig\Node\TextNode;
+use RevealPrefix20220820\Twig\TokenParser\TokenParserInterface;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

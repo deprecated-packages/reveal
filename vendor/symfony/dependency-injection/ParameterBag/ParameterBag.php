@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
 /**
  * Holds parameters.
  *

@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\SymplifyKernel\ValueObject;
+namespace RevealPrefix20220820\Symplify\SymplifyKernel\ValueObject;
 
-use RevealPrefix20220713\Symfony\Component\Console\Application;
-use RevealPrefix20220713\Symfony\Component\Console\Command\Command;
-use RevealPrefix20220713\Symfony\Component\HttpKernel\KernelInterface;
-use RevealPrefix20220713\Symplify\PackageBuilder\Console\Input\StaticInputDetector;
-use RevealPrefix20220713\Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
-use RevealPrefix20220713\Symplify\SymplifyKernel\Contract\LightKernelInterface;
-use RevealPrefix20220713\Symplify\SymplifyKernel\Exception\BootException;
+use RevealPrefix20220820\Symfony\Component\Console\Application;
+use RevealPrefix20220820\Symfony\Component\Console\Command\Command;
+use RevealPrefix20220820\Symfony\Component\HttpKernel\KernelInterface;
+use Symplify\PackageBuilder\Console\Input\StaticInputDetector;
+use Symplify\PackageBuilder\Console\Style\SymfonyStyleFactory;
+use RevealPrefix20220820\Symplify\SymplifyKernel\Contract\LightKernelInterface;
+use RevealPrefix20220820\Symplify\SymplifyKernel\Exception\BootException;
 use Throwable;
 /**
  * @api
@@ -69,6 +69,15 @@ final class KernelBootAndApplicationRun
         }
         /** @var Application $application */
         $application = $container->get(Application::class);
+        // remove --no-interaction (with -n shortcut) option from Application
+        // because we need to create option with -n shortcuts too
+        // for example: --dry-run with shortcut -n
+        $inputDefinition = $application->getDefinition();
+        $options = $inputDefinition->getOptions();
+        $options = \array_filter($options, static function ($option) {
+            return $option->getName() !== 'no-interaction';
+        });
+        $inputDefinition->setOptions($options);
         exit($application->run());
     }
     /**

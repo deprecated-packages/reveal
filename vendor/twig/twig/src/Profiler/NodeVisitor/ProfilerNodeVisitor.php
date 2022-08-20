@@ -8,18 +8,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\Profiler\NodeVisitor;
+namespace RevealPrefix20220820\Twig\Profiler\NodeVisitor;
 
-use RevealPrefix20220713\Twig\Environment;
-use RevealPrefix20220713\Twig\Node\BlockNode;
-use RevealPrefix20220713\Twig\Node\BodyNode;
-use RevealPrefix20220713\Twig\Node\MacroNode;
-use RevealPrefix20220713\Twig\Node\ModuleNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\NodeVisitor\NodeVisitorInterface;
-use RevealPrefix20220713\Twig\Profiler\Node\EnterProfileNode;
-use RevealPrefix20220713\Twig\Profiler\Node\LeaveProfileNode;
-use RevealPrefix20220713\Twig\Profiler\Profile;
+use RevealPrefix20220820\Twig\Environment;
+use RevealPrefix20220820\Twig\Node\BlockNode;
+use RevealPrefix20220820\Twig\Node\BodyNode;
+use RevealPrefix20220820\Twig\Node\MacroNode;
+use RevealPrefix20220820\Twig\Node\ModuleNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\NodeVisitor\NodeVisitorInterface;
+use RevealPrefix20220820\Twig\Profiler\Node\EnterProfileNode;
+use RevealPrefix20220820\Twig\Profiler\Node\LeaveProfileNode;
+use RevealPrefix20220820\Twig\Profiler\Profile;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

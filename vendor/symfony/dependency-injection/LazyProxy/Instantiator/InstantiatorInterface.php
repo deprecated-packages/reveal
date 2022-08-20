@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\LazyProxy\Instantiator;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\LazyProxy\Instantiator;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Definition;
 /**
  * Lazy proxy instantiator, capable of instantiating a proxy given a container, the
  * service definitions and a callback that produces the real service instance.

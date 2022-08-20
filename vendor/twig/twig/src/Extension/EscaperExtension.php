@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\Extension;
+namespace RevealPrefix20220820\Twig\Extension;
 
-use RevealPrefix20220713\Twig\FileExtensionEscapingStrategy;
-use RevealPrefix20220713\Twig\NodeVisitor\EscaperNodeVisitor;
-use RevealPrefix20220713\Twig\TokenParser\AutoEscapeTokenParser;
-use RevealPrefix20220713\Twig\TwigFilter;
+use RevealPrefix20220820\Twig\FileExtensionEscapingStrategy;
+use RevealPrefix20220820\Twig\NodeVisitor\EscaperNodeVisitor;
+use RevealPrefix20220820\Twig\TokenParser\AutoEscapeTokenParser;
+use RevealPrefix20220820\Twig\TwigFilter;
 final class EscaperExtension extends AbstractExtension
 {
     private $defaultStrategy;
@@ -113,14 +113,14 @@ final class EscaperExtension extends AbstractExtension
         }
     }
 }
-namespace RevealPrefix20220713;
+namespace RevealPrefix20220820;
 
-use RevealPrefix20220713\Twig\Environment;
-use RevealPrefix20220713\Twig\Error\RuntimeError;
-use RevealPrefix20220713\Twig\Extension\EscaperExtension;
-use RevealPrefix20220713\Twig\Markup;
-use RevealPrefix20220713\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220713\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Environment;
+use RevealPrefix20220820\Twig\Error\RuntimeError;
+use RevealPrefix20220820\Twig\Extension\EscaperExtension;
+use RevealPrefix20220820\Twig\Markup;
+use RevealPrefix20220820\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220820\Twig\Node\Node;
 /**
  * Marks a variable as being safe.
  *

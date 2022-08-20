@@ -8,16 +8,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\Console\Command;
+namespace RevealPrefix20220820\Symfony\Component\Console\Command;
 
-use RevealPrefix20220713\Symfony\Component\Console\Application;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\CompletionInput;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\CompletionSuggestions;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\Suggestion;
-use RevealPrefix20220713\Symfony\Component\Console\Helper\HelperSet;
-use RevealPrefix20220713\Symfony\Component\Console\Input\InputDefinition;
-use RevealPrefix20220713\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220713\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Application;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\CompletionInput;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\CompletionSuggestions;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\Suggestion;
+use RevealPrefix20220820\Symfony\Component\Console\Helper\HelperSet;
+use RevealPrefix20220820\Symfony\Component\Console\Input\InputDefinition;
+use RevealPrefix20220820\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */

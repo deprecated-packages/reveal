@@ -8,18 +8,18 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220713\Symfony\Component\Config\Definition\BaseNode;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\LogicException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\ConfigurationExtensionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\Extension;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use RevealPrefix20220820\Symfony\Component\Config\Definition\BaseNode;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\LogicException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\ConfigurationExtensionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\Extension;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 /**
  * Merges extension configs into the container builder.
  *

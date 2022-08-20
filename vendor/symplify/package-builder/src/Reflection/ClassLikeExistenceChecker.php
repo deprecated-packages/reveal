@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\PackageBuilder\Reflection;
+namespace Symplify\PackageBuilder\Reflection;
 
 use ReflectionClass;
 /**
@@ -27,6 +27,9 @@ final class ClassLikeExistenceChecker
         }
         return \trait_exists($classLike);
     }
+    /**
+     * @api
+     */
     public function doesClassLikeInsensitiveExists(string $classLikeName) : bool
     {
         if (!$this->doesClassLikeExist($classLikeName)) {

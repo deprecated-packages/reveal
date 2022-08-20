@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor;
+namespace Symplify\Astral\PhpDocParser\PhpDocNodeVisitor;
 
 use PHPStan\PhpDocParser\Ast\Node;
-use RevealPrefix20220713\Symplify\Astral\PhpDocParser\ValueObject\PhpDocAttributeKey;
+use Symplify\Astral\PhpDocParser\ValueObject\PhpDocAttributeKey;
 /**
  * @api
  *
@@ -12,7 +12,7 @@ use RevealPrefix20220713\Symplify\Astral\PhpDocParser\ValueObject\PhpDocAttribut
  *
  * @see \Symplify\Astral\Tests\PhpDocParser\PhpDocNodeVisitor\ParentConnectingPhpDocNodeVisitorTest
  */
-final class ParentConnectingPhpDocNodeVisitor extends AbstractPhpDocNodeVisitor
+final class ParentConnectingPhpDocNodeVisitor extends \Symplify\Astral\PhpDocParser\PhpDocNodeVisitor\AbstractPhpDocNodeVisitor
 {
     /**
      * @var Node[]

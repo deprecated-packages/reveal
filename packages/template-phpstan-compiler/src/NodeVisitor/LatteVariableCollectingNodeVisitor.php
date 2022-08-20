@@ -10,7 +10,7 @@ use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\NodeFinder;
 use PhpParser\NodeVisitorAbstract;
 use Reveal\TemplatePHPStanCompiler\VariableUsage\CreatedVariableNamesResolver;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
 /**
  * @api
  */

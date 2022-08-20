@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\EasyTesting\FixtureSplitter;
+namespace RevealPrefix20220820\Symplify\EasyTesting\FixtureSplitter;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
-use RevealPrefix20220713\Symplify\EasyTesting\ValueObject\FixtureSplit\TrioContent;
-use RevealPrefix20220713\Symplify\EasyTesting\ValueObject\SplitLine;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220713\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use RevealPrefix20220820\Nette\Utils\Strings;
+use RevealPrefix20220820\Symplify\EasyTesting\ValueObject\FixtureSplit\TrioContent;
+use RevealPrefix20220820\Symplify\EasyTesting\ValueObject\SplitLine;
+use Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220820\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 /**
  * @api
  */

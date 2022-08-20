@@ -9,14 +9,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\TokenParser;
+namespace RevealPrefix20220820\Twig\TokenParser;
 
-use RevealPrefix20220713\Twig\Error\SyntaxError;
-use RevealPrefix20220713\Twig\Node\BlockNode;
-use RevealPrefix20220713\Twig\Node\BlockReferenceNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Node\PrintNode;
-use RevealPrefix20220713\Twig\Token;
+use RevealPrefix20220820\Twig\Error\SyntaxError;
+use RevealPrefix20220820\Twig\Node\BlockNode;
+use RevealPrefix20220820\Twig\Node\BlockReferenceNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Node\PrintNode;
+use RevealPrefix20220820\Twig\Token;
 /**
  * Marks a section of a template as being reusable.
  *

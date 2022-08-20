@@ -1,15 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\Astral\NodeValue\NodeValueResolver;
+namespace Symplify\Astral\NodeValue\NodeValueResolver;
 
 use PhpParser\ConstExprEvaluator;
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\FuncCall;
 use PhpParser\Node\Name;
-use RevealPrefix20220713\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
-use RevealPrefix20220713\Symplify\Astral\Exception\ShouldNotHappenException;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
+use Symplify\Astral\Exception\ShouldNotHappenException;
 /**
  * @see \Symplify\Astral\Tests\NodeValue\NodeValueResolverTest
  *
@@ -22,16 +21,11 @@ final class FuncCallValueResolver implements NodeValueResolverInterface
      */
     private const EXCLUDED_FUNC_NAMES = ['pg_*'];
     /**
-     * @var \Symplify\Astral\Naming\SimpleNameResolver
-     */
-    private $simpleNameResolver;
-    /**
      * @var \PhpParser\ConstExprEvaluator
      */
     private $constExprEvaluator;
-    public function __construct(SimpleNameResolver $simpleNameResolver, ConstExprEvaluator $constExprEvaluator)
+    public function __construct(ConstExprEvaluator $constExprEvaluator)
     {
-        $this->simpleNameResolver = $simpleNameResolver;
         $this->constExprEvaluator = $constExprEvaluator;
     }
     public function getType() : string
@@ -44,7 +38,7 @@ final class FuncCallValueResolver implements NodeValueResolverInterface
      */
     public function resolve(Expr $expr, string $currentFilePath)
     {
-        if ($this->simpleNameResolver->isName($expr, 'getcwd')) {
+        if ($expr->name instanceof Name && $expr->name->toString() === 'getcwd') {
             return \dirname($currentFilePath);
         }
         $args = $expr->getArgs();

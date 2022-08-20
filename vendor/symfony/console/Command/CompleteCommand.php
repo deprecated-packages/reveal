@@ -8,19 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\Console\Command;
+namespace RevealPrefix20220820\Symfony\Component\Console\Command;
 
-use RevealPrefix20220713\Symfony\Component\Console\Attribute\AsCommand;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\CompletionInput;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\CompletionSuggestions;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\Output\BashCompletionOutput;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\Output\CompletionOutputInterface;
-use RevealPrefix20220713\Symfony\Component\Console\Completion\Output\FishCompletionOutput;
-use RevealPrefix20220713\Symfony\Component\Console\Exception\CommandNotFoundException;
-use RevealPrefix20220713\Symfony\Component\Console\Exception\ExceptionInterface;
-use RevealPrefix20220713\Symfony\Component\Console\Input\InputInterface;
-use RevealPrefix20220713\Symfony\Component\Console\Input\InputOption;
-use RevealPrefix20220713\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Attribute\AsCommand;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\CompletionInput;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\CompletionSuggestions;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\Output\BashCompletionOutput;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\Output\CompletionOutputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\Output\FishCompletionOutput;
+use RevealPrefix20220820\Symfony\Component\Console\Exception\CommandNotFoundException;
+use RevealPrefix20220820\Symfony\Component\Console\Exception\ExceptionInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Input\InputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Input\InputOption;
+use RevealPrefix20220820\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Responsible for providing the values to the shell completion.
  *
@@ -60,13 +60,13 @@ final class CompleteCommand extends Command
     {
         try {
             // uncomment when a bugfix or BC break has been introduced in the shell completion scripts
-            //$version = $input->getOption('symfony');
-            //if ($version && version_compare($version, 'x.y', '>=')) {
+            // $version = $input->getOption('symfony');
+            // if ($version && version_compare($version, 'x.y', '>=')) {
             //    $message = sprintf('Completion script version is not supported ("%s" given, ">=x.y" required).', $version);
             //    $this->log($message);
             //    $output->writeln($message.' Install the Symfony completion script again by using the "completion" command.');
             //    return 126;
-            //}
+            // }
             $shell = $input->getOption('shell');
             if (!$shell) {
                 throw new \RuntimeException('The "--shell" option must be set.');

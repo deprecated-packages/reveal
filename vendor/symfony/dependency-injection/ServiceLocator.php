@@ -8,16 +8,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection;
 
-use RevealPrefix20220713\Psr\Container\ContainerExceptionInterface;
-use RevealPrefix20220713\Psr\Container\NotFoundExceptionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
-use RevealPrefix20220713\Symfony\Contracts\Service\ServiceLocatorTrait;
-use RevealPrefix20220713\Symfony\Contracts\Service\ServiceProviderInterface;
-use RevealPrefix20220713\Symfony\Contracts\Service\ServiceSubscriberInterface;
+use RevealPrefix20220820\Psr\Container\ContainerExceptionInterface;
+use RevealPrefix20220820\Psr\Container\NotFoundExceptionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use RevealPrefix20220820\Symfony\Contracts\Service\ServiceLocatorTrait;
+use RevealPrefix20220820\Symfony\Contracts\Service\ServiceProviderInterface;
+use RevealPrefix20220820\Symfony\Contracts\Service\ServiceSubscriberInterface;
 /**
  * @author Robin Chalas <robin.chalas@gmail.com>
  * @author Nicolas Grekas <p@tchwork.com>

@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713;
+namespace RevealPrefix20220820;
 
-use RevealPrefix20220713\SebastianBergmann\Diff\Differ;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use RevealPrefix20220713\Symplify\PackageBuilder\Console\Formatter\ColorConsoleDiffFormatter;
-use RevealPrefix20220713\Symplify\PackageBuilder\Console\Output\ConsoleDiffer;
-use RevealPrefix20220713\Symplify\PackageBuilder\Diff\Output\CompleteUnifiedDiffOutputBuilderFactory;
-use RevealPrefix20220713\Symplify\PackageBuilder\Reflection\PrivatesAccessor;
+use RevealPrefix20220820\SebastianBergmann\Diff\Differ;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\PackageBuilder\Console\Formatter\ColorConsoleDiffFormatter;
+use Symplify\PackageBuilder\Console\Output\ConsoleDiffer;
+use Symplify\PackageBuilder\Diff\Output\CompleteUnifiedDiffOutputBuilderFactory;
+use Symplify\PackageBuilder\Reflection\PrivatesAccessor;
 return static function (ContainerConfigurator $containerConfigurator) : void {
     $services = $containerConfigurator->services();
     $services->defaults()->public()->autowire();

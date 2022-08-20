@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Nette;
 
-use RevealPrefix20220713\Nette\Application\PresenterFactory;
+use RevealPrefix20220820\Nette\Application\PresenterFactory;
 /**
  * @todo provide presenter factory from the project itself, so we have the full mapping available.
  * @see --twig-provider in AnalyzeTwigCommand

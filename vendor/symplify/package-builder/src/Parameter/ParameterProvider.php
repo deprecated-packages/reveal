@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\PackageBuilder\Parameter;
+namespace Symplify\PackageBuilder\Parameter;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
-use RevealPrefix20220713\Symfony\Component\HttpFoundation\ParameterBag;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
+use RevealPrefix20220820\Symfony\Component\HttpFoundation\ParameterBag;
 /**
  * @api
  * @see \Symplify\PackageBuilder\Tests\Parameter\ParameterProviderTest

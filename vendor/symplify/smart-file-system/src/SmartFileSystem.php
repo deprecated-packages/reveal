@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\SmartFileSystem;
+namespace Symplify\SmartFileSystem;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
-use RevealPrefix20220713\Symfony\Component\Filesystem\Exception\IOException;
-use RevealPrefix20220713\Symfony\Component\Filesystem\Filesystem;
+use RevealPrefix20220820\Nette\Utils\Strings;
+use RevealPrefix20220820\Symfony\Component\Filesystem\Exception\IOException;
+use RevealPrefix20220820\Symfony\Component\Filesystem\Filesystem;
 /**
  * @see \Symplify\SmartFileSystem\Tests\SmartFileSystem\SmartFileSystemTest
  */
@@ -19,18 +19,18 @@ final class SmartFileSystem extends Filesystem
     /**
      * @see https://github.com/symfony/filesystem/pull/4/files
      */
-    public function readFile(string $filename) : string
+    public function readFile(string $fileName) : string
     {
-        $source = @\file_get_contents($filename);
+        $source = @\file_get_contents($fileName);
         if (!$source) {
-            $message = \sprintf('Failed to read "%s" file: "%s"', $filename, $this->getLastError());
-            throw new IOException($message, 0, null, $filename);
+            $message = \sprintf('Failed to read "%s" file: "%s"', $fileName, $this->getLastError());
+            throw new IOException($message, 0, null, $fileName);
         }
         return $source;
     }
-    public function readFileToSmartFileInfo(string $filename) : SmartFileInfo
+    public function readFileToSmartFileInfo(string $fileName) : \Symplify\SmartFileSystem\SmartFileInfo
     {
-        return new SmartFileInfo($filename);
+        return new \Symplify\SmartFileSystem\SmartFileInfo($fileName);
     }
     /**
      * Converts given HTML code to plain text

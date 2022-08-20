@@ -18,8 +18,8 @@ use Reveal\LattePHPStanCompiler\Exception\LattePHPStanCompilerException;
 use Reveal\LattePHPStanCompiler\LinkProcessor\LinkProcessorFactory;
 use Reveal\LattePHPStanCompiler\Nette\LinkDestinationProcessor;
 use Reveal\TemplatePHPStanCompiler\ValueObject\VariableAndType;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220713\Symplify\Astral\NodeValue\NodeValueResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\NodeValue\NodeValueResolver;
 final class LinkNodeVisitor extends NodeVisitorAbstract implements LatteToPhpCompilerNodeVisitorInterface
 {
     /**

@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\Astral\PhpDocParser;
+namespace Symplify\Astral\PhpDocParser;
 
 use PHPStan\PhpDocParser\Ast\Node;
-use RevealPrefix20220713\Symplify\Astral\PhpDocParser\Contract\PhpDocNodeVisitorInterface;
-use RevealPrefix20220713\Symplify\Astral\PhpDocParser\Exception\InvalidTraverseException;
-use RevealPrefix20220713\Symplify\Astral\PhpDocParser\PhpDocNodeVisitor\CallablePhpDocNodeVisitor;
+use Symplify\Astral\PhpDocParser\Contract\PhpDocNodeVisitorInterface;
+use Symplify\Astral\PhpDocParser\Exception\InvalidTraverseException;
+use Symplify\Astral\PhpDocParser\PhpDocNodeVisitor\CallablePhpDocNodeVisitor;
 /**
  * @api
  *
@@ -83,12 +83,11 @@ final class PhpDocNodeTraverser
     /**
      * @param callable(Node $node): (int|null|Node) $callable
      */
-    public function traverseWithCallable(Node $node, string $docContent, callable $callable) : Node
+    public function traverseWithCallable(Node $node, string $docContent, callable $callable) : void
     {
         $callablePhpDocNodeVisitor = new CallablePhpDocNodeVisitor($callable, $docContent);
         $this->addPhpDocNodeVisitor($callablePhpDocNodeVisitor);
         $this->traverse($node);
-        return $node;
     }
     /**
      * @template TNode of Node

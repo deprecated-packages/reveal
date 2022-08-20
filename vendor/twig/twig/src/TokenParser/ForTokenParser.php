@@ -9,12 +9,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\TokenParser;
+namespace RevealPrefix20220820\Twig\TokenParser;
 
-use RevealPrefix20220713\Twig\Node\Expression\AssignNameExpression;
-use RevealPrefix20220713\Twig\Node\ForNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Token;
+use RevealPrefix20220820\Twig\Node\Expression\AssignNameExpression;
+use RevealPrefix20220820\Twig\Node\ForNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Token;
 /**
  * Loops over each item of a sequence.
  *

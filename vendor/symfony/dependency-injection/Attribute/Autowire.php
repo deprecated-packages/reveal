@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\LogicException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220713\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\LogicException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220820\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * Attribute to tell a parameter how to be autowired.
  *
@@ -33,7 +33,7 @@ class Autowire
      * @param string|null $service    Service ID (ie "some.service")
      * @param string|null $expression Expression (ie 'service("some.service").someMethod()')
      */
-    public function __construct(?string $value = null, ?string $service = null, ?string $expression = null)
+    public function __construct(string $value = null, string $service = null, string $expression = null)
     {
         if (!($service xor $expression xor null !== $value)) {
             throw new LogicException('#[Autowire] attribute must declare exactly one of $service, $expression, or $value.');

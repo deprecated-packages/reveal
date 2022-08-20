@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\SmartFileSystem;
+namespace Symplify\SmartFileSystem;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
-use RevealPrefix20220713\Symfony\Component\Finder\SplFileInfo;
-use RevealPrefix20220713\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
-use RevealPrefix20220713\Symplify\EasyTesting\StaticFixtureSplitter;
-use RevealPrefix20220713\Symplify\SmartFileSystem\Exception\DirectoryNotFoundException;
-use RevealPrefix20220713\Symplify\SmartFileSystem\Exception\FileNotFoundException;
+use RevealPrefix20220820\Nette\Utils\Strings;
+use RevealPrefix20220820\Symfony\Component\Finder\SplFileInfo;
+use RevealPrefix20220820\Symplify\EasyTesting\PHPUnit\StaticPHPUnitEnvironment;
+use RevealPrefix20220820\Symplify\EasyTesting\StaticFixtureSplitter;
+use Symplify\SmartFileSystem\Exception\DirectoryNotFoundException;
+use Symplify\SmartFileSystem\Exception\FileNotFoundException;
 /**
  * @api
  * @see \Symplify\SmartFileSystem\Tests\SmartFileInfo\SmartFileInfoTest
@@ -26,7 +26,7 @@ final class SmartFileInfo extends SplFileInfo
     private $smartFileSystem;
     public function __construct(string $filePath)
     {
-        $this->smartFileSystem = new SmartFileSystem();
+        $this->smartFileSystem = new \Symplify\SmartFileSystem\SmartFileSystem();
         // accepts also dirs
         if (!\file_exists($filePath)) {
             throw new FileNotFoundException(\sprintf('File path "%s" was not found while creating "%s" object.', $filePath, self::class));

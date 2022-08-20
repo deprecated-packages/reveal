@@ -10,8 +10,8 @@ use PhpParser\Node\Expr\ArrayItem;
 use PhpParser\Node\Expr\MethodCall;
 use PhpParser\NodeVisitorAbstract;
 use PHPStan\Analyser\Scope;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220713\Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
+use Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\NodeAnalyzer\NetteTypeAnalyzer;
 final class RenderParametersVisitor extends NodeVisitorAbstract
 {
     /**

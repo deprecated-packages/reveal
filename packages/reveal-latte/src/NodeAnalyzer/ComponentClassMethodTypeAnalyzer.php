@@ -7,7 +7,7 @@ use PhpParser\Node\Stmt\ClassMethod;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Type\Type;
-use RevealPrefix20220713\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
+use RevealPrefix20220820\Symplify\PHPStanRules\Exception\ShouldNotHappenException;
 final class ComponentClassMethodTypeAnalyzer
 {
     public function resolveReturnType(ClassMethod $classMethod, Scope $scope) : Type

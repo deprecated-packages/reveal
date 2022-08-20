@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\Astral\PhpParser;
+namespace Symplify\Astral\PhpParser;
 
 use PhpParser\Lexer\Emulative;
 use PhpParser\NodeVisitor\NameResolver;
@@ -20,11 +20,11 @@ final class SmartPhpParserFactory
     /**
      * @api
      */
-    public function create() : SmartPhpParser
+    public function create() : \Symplify\Astral\PhpParser\SmartPhpParser
     {
         $nativePhpParser = $this->createNativePhpParser();
         $cachedParser = $this->createPHPStanParser($nativePhpParser);
-        return new SmartPhpParser($cachedParser);
+        return new \Symplify\Astral\PhpParser\SmartPhpParser($cachedParser);
     }
     private function createNativePhpParser() : Parser
     {

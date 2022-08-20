@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\Latte\Macros;
 
-use RevealPrefix20220713\Latte\Compiler;
-use RevealPrefix20220713\Latte\MacroNode;
-use RevealPrefix20220713\Latte\Macros\MacroSet;
-use RevealPrefix20220713\Latte\PhpWriter;
-use RevealPrefix20220713\Nette\Utils\Strings;
+use RevealPrefix20220820\Latte\Compiler;
+use RevealPrefix20220820\Latte\MacroNode;
+use RevealPrefix20220820\Latte\Macros\MacroSet;
+use RevealPrefix20220820\Latte\PhpWriter;
+use RevealPrefix20220820\Nette\Utils\Strings;
 final class LatteMacroFaker
 {
     /**

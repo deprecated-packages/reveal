@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\PackageBuilder\Reflection;
+namespace Symplify\PackageBuilder\Reflection;
 
 use ReflectionClass;
 use ReflectionMethod;
@@ -11,6 +11,7 @@ use ReflectionMethod;
 final class PrivatesCaller
 {
     /**
+     * @api
      * @param mixed[] $arguments
      * @param object|string $object
      * @return mixed
@@ -25,6 +26,7 @@ final class PrivatesCaller
         return $methodReflection->invokeArgs($object, $arguments);
     }
     /**
+     * @api
      * @param object|string $object
      * @param mixed $argument
      * @return mixed

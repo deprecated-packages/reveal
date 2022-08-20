@@ -13,7 +13,7 @@ use PhpParser\Node\Stmt\Echo_;
 use PhpParser\Node\Stmt\Expression;
 use PhpParser\Node\Stmt\Nop;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
 final class ExtractDoDisplayStmtsNodeVisitor extends NodeVisitorAbstract
 {
     /**

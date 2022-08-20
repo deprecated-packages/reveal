@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713;
+namespace RevealPrefix20220820;
 
 use PhpParser\PrettyPrinter\Standard;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use RevealPrefix20220713\Symplify\Astral\PhpParser\SmartPhpParser;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\Astral\PhpParser\SmartPhpParser;
 return static function (ContainerConfigurator $containerConfigurator) : void {
     $containerConfigurator->import(__DIR__ . '/../../template-phpstan-compiler/config/services.php');
     $services = $containerConfigurator->services();

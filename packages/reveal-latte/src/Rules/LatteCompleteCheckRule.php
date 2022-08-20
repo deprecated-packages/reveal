@@ -19,9 +19,9 @@ use Reveal\TemplatePHPStanCompiler\PHPStan\FileAnalyserProvider;
 use Reveal\TemplatePHPStanCompiler\Reporting\TemplateErrorsFactory;
 use Reveal\TemplatePHPStanCompiler\Rules\TemplateRulesRegistry;
 use Reveal\TemplatePHPStanCompiler\ValueObject\RenderTemplateWithParameters;
-use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
-use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220820\Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
+use RevealPrefix20220820\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use Symplify\SmartFileSystem\SmartFileSystem;
 use Throwable;
 /**
  * @see \Reveal\RevealLatte\Tests\Rules\LatteCompleteCheckRule\LatteCompleteCheckRuleTest

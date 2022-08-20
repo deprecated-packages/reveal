@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\Node\Expression;
+namespace RevealPrefix20220820\Twig\Node\Expression;
 
-use RevealPrefix20220713\Twig\Compiler;
-use RevealPrefix20220713\Twig\Error\SyntaxError;
-use RevealPrefix20220713\Twig\Extension\ExtensionInterface;
-use RevealPrefix20220713\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Compiler;
+use RevealPrefix20220820\Twig\Error\SyntaxError;
+use RevealPrefix20220820\Twig\Extension\ExtensionInterface;
+use RevealPrefix20220820\Twig\Node\Node;
 abstract class CallExpression extends AbstractExpression
 {
     private $reflector;
@@ -240,7 +240,12 @@ abstract class CallExpression extends AbstractExpression
             return $this->reflector = [$r, $callable, $r->class . '::' . $r->name];
         }
         $checkVisibility = $callable instanceof \Closure;
-        $r = new \ReflectionFunction(\Closure::fromCallable($callable));
+        try {
+            $closure = \Closure::fromCallable($callable);
+        } catch (\TypeError $e) {
+            throw new \LogicException(\sprintf('Callback for %s "%s" is not callable in the current scope.', $this->getAttribute('type'), $this->getAttribute('name')), 0, $e);
+        }
+        $r = new \ReflectionFunction($closure);
         if (\false !== \strpos($r->name, '{closure}')) {
             return $this->reflector = [$r, $callable, 'Closure'];
         }
@@ -248,8 +253,7 @@ abstract class CallExpression extends AbstractExpression
             $callable = [$object, $r->name];
             $callableName = (\function_exists('get_debug_type') ? \get_debug_type($object) : \get_class($object)) . '::' . $r->name;
         } elseif ($class = $r->getClosureScopeClass()) {
-            $callable = [$class, $r->name];
-            $callableName = $class . '::' . $r->name;
+            $callableName = (\is_array($callable) ? $callable[0] : $class->name) . '::' . $r->name;
         } else {
             $callable = $callableName = $r->name;
         }

@@ -26,13 +26,13 @@ use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapContextVariableNodeVi
 use Reveal\TwigPHPStanCompiler\PhpParser\NodeVisitor\UnwrapTwigEnsureTraversableNodeVisitor;
 use Reveal\TwigPHPStanCompiler\Reflection\PublicPropertyAnalyzer;
 use Reveal\TwigPHPStanCompiler\Twig\TolerantTwigEnvironment;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
-use RevealPrefix20220713\Twig\Lexer;
-use RevealPrefix20220713\Twig\Loader\ArrayLoader;
-use RevealPrefix20220713\Twig\Node\ModuleNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Source;
+use Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220820\Twig\Lexer;
+use RevealPrefix20220820\Twig\Loader\ArrayLoader;
+use RevealPrefix20220820\Twig\Node\ModuleNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Source;
 /**
  * @see \Reveal\TwigPHPStanCompiler\Tests\TwigToPhpCompiler\TwigToPhpCompilerTest
  */

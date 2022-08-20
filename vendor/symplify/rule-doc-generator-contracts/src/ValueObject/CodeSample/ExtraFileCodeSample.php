@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\CodeSample;
+namespace RevealPrefix20220820\Symplify\RuleDocGenerator\ValueObject\CodeSample;
 
-use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\AbstractCodeSample;
+use RevealPrefix20220820\Symplify\RuleDocGenerator\ValueObject\AbstractCodeSample;
 final class ExtraFileCodeSample extends AbstractCodeSample
 {
     /**

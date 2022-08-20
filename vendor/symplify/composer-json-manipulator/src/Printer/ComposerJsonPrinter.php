@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator\Printer;
+namespace RevealPrefix20220820\Symplify\ComposerJsonManipulator\Printer;
 
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\FileSystem\JsonFileManager;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
+use Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  */
@@ -26,11 +26,12 @@ final class ComposerJsonPrinter
     /**
      * @param string|\Symplify\SmartFileSystem\SmartFileInfo $targetFile
      */
-    public function print(ComposerJson $composerJson, $targetFile) : string
+    public function print(ComposerJson $composerJson, $targetFile) : void
     {
         if (\is_string($targetFile)) {
-            return $this->jsonFileManager->printComposerJsonToFilePath($composerJson, $targetFile);
+            $this->jsonFileManager->printComposerJsonToFilePath($composerJson, $targetFile);
+            return;
         }
-        return $this->jsonFileManager->printJsonToFileInfo($composerJson->getJsonArray(), $targetFile);
+        $this->jsonFileManager->printJsonToFileInfo($composerJson->getJsonArray(), $targetFile);
     }
 }

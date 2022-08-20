@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\PackageBuilder\Console\Input;
+namespace Symplify\PackageBuilder\Console\Input;
 
-use RevealPrefix20220713\Symfony\Component\Console\Input\ArgvInput;
+use RevealPrefix20220820\Symfony\Component\Console\Input\ArgvInput;
 /**
  * @api
  */

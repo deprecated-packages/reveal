@@ -9,11 +9,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\TokenParser;
+namespace RevealPrefix20220820\Twig\TokenParser;
 
-use RevealPrefix20220713\Twig\Node\IncludeNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Token;
+use RevealPrefix20220820\Twig\Node\IncludeNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Token;
 /**
  * Includes a template.
  *

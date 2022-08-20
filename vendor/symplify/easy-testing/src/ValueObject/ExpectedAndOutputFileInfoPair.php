@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\EasyTesting\ValueObject;
+namespace RevealPrefix20220820\Symplify\EasyTesting\ValueObject;
 
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220713\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
+use Symplify\SmartFileSystem\SmartFileInfo;
+use RevealPrefix20220820\Symplify\SymplifyKernel\Exception\ShouldNotHappenException;
 final class ExpectedAndOutputFileInfoPair
 {
     /**

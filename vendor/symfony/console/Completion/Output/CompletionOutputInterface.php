@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\Console\Completion\Output;
+namespace RevealPrefix20220820\Symfony\Component\Console\Completion\Output;
 
-use RevealPrefix20220713\Symfony\Component\Console\Completion\CompletionSuggestions;
-use RevealPrefix20220713\Symfony\Component\Console\Output\OutputInterface;
+use RevealPrefix20220820\Symfony\Component\Console\Completion\CompletionSuggestions;
+use RevealPrefix20220820\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Transforms the {@see CompletionSuggestions} object into output readable by the shell completion.
  *

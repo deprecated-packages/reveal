@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\EasyTesting\ValueObject;
+namespace RevealPrefix20220820\Symplify\EasyTesting\ValueObject;
 
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\SmartFileInfo;
 /**
  * @api
  */

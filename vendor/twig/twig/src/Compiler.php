@@ -9,9 +9,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig;
+namespace RevealPrefix20220820\Twig;
 
-use RevealPrefix20220713\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Node\Node;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

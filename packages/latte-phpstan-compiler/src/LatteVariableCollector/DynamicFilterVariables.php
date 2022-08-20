@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Reveal\LattePHPStanCompiler\LatteVariableCollector;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
+use RevealPrefix20220820\Nette\Utils\Strings;
 use PHPStan\Type\ObjectType;
 use ReflectionClass;
 use ReflectionException;

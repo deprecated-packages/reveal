@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\TokenParser;
+namespace RevealPrefix20220820\Twig\TokenParser;
 
-use RevealPrefix20220713\Twig\Error\SyntaxError;
-use RevealPrefix20220713\Twig\Node\BodyNode;
-use RevealPrefix20220713\Twig\Node\MacroNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Token;
+use RevealPrefix20220820\Twig\Error\SyntaxError;
+use RevealPrefix20220820\Twig\Node\BodyNode;
+use RevealPrefix20220820\Twig\Node\MacroNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Token;
 /**
  * Defines a macro.
  *

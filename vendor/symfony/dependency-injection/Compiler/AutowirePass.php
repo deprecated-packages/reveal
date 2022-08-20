@@ -8,24 +8,24 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220713\Symfony\Component\Config\Resource\ClassExistenceResource;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\Autowire;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\MapDecorated;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\TaggedLocator;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\Target;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\AutowiringFailedException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\LazyProxy\ProxyHelper;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\TypedReference;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\ClassExistenceResource;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\Autowire;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\MapDecorated;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\TaggedLocator;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\Target;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\AutowiringFailedException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\LazyProxy\ProxyHelper;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\TypedReference;
 /**
  * Inspects existing service definitions and wires the autowired ones using the type hints of their classes.
  *

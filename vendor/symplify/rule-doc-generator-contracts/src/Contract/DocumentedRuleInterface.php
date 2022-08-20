@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\RuleDocGenerator\Contract;
+namespace RevealPrefix20220820\Symplify\RuleDocGenerator\Contract;
 
-use RevealPrefix20220713\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
+use RevealPrefix20220820\Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
 /**
  * @api
  */

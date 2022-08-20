@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator\FileSystem;
+namespace RevealPrefix20220820\Symplify\ComposerJsonManipulator\FileSystem;
 
-use RevealPrefix20220713\Nette\Utils\Json;
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\Json\JsonCleaner;
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\Json\JsonInliner;
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
-use RevealPrefix20220713\Symplify\PackageBuilder\Configuration\StaticEolConfiguration;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileInfo;
-use RevealPrefix20220713\Symplify\SmartFileSystem\SmartFileSystem;
+use RevealPrefix20220820\Nette\Utils\Json;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\Json\JsonCleaner;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\Json\JsonInliner;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\ValueObject\ComposerJson;
+use Symplify\PackageBuilder\Configuration\StaticEolConfiguration;
+use Symplify\SmartFileSystem\SmartFileInfo;
+use Symplify\SmartFileSystem\SmartFileSystem;
 /**
  * @see \Symplify\MonorepoBuilder\Tests\FileSystem\JsonFileManager\JsonFileManagerTest
  */
@@ -59,19 +59,24 @@ final class JsonFileManager
     /**
      * @param mixed[] $json
      */
-    public function printJsonToFileInfo(array $json, SmartFileInfo $smartFileInfo) : string
+    public function printJsonToFileInfoAndReturn(array $json, SmartFileInfo $smartFileInfo) : string
     {
         $jsonString = $this->encodeJsonToFileContent($json);
-        $this->smartFileSystem->dumpFile($smartFileInfo->getPathname(), $jsonString);
-        $realPath = $smartFileInfo->getRealPath();
-        unset($this->cachedJSONFiles[$realPath]);
+        $this->printJsonStringToSmartFileInfo($smartFileInfo, $jsonString);
         return $jsonString;
     }
-    public function printComposerJsonToFilePath(ComposerJson $composerJson, string $filePath) : string
+    /**
+     * @param mixed[] $json
+     */
+    public function printJsonToFileInfo(array $json, SmartFileInfo $smartFileInfo) : void
+    {
+        $jsonString = $this->encodeJsonToFileContent($json);
+        $this->printJsonStringToSmartFileInfo($smartFileInfo, $jsonString);
+    }
+    public function printComposerJsonToFilePath(ComposerJson $composerJson, string $filePath) : void
     {
         $jsonString = $this->encodeJsonToFileContent($composerJson->getJsonArray());
         $this->smartFileSystem->dumpFile($filePath, $jsonString);
-        return $jsonString;
     }
     /**
      * @param mixed[] $json
@@ -82,5 +87,11 @@ final class JsonFileManager
         $json = $this->jsonCleaner->removeEmptyKeysFromJsonArray($json);
         $jsonContent = Json::encode($json, Json::PRETTY) . StaticEolConfiguration::getEolChar();
         return $this->jsonInliner->inlineSections($jsonContent);
+    }
+    private function printJsonStringToSmartFileInfo(SmartFileInfo $smartFileInfo, string $jsonString) : void
+    {
+        $this->smartFileSystem->dumpFile($smartFileInfo->getPathname(), $jsonString);
+        $realPath = $smartFileInfo->getRealPath();
+        unset($this->cachedJSONFiles[$realPath]);
     }
 }

@@ -8,42 +8,42 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection;
 
-use RevealPrefix20220713\Composer\InstalledVersions;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\ClassExistenceResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\ComposerResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\DirectoryResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\FileExistenceResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\FileResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\GlobResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\ReflectionClassResource;
-use RevealPrefix20220713\Symfony\Component\Config\Resource\ResourceInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceLocator;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\Target;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler\Compiler;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler\PassConfig;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler\ResolveEnvPlaceholdersPass;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\BadMethodCallException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\LogicException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\LazyProxy\Instantiator\InstantiatorInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\LazyProxy\Instantiator\RealServiceInstantiator;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
-use RevealPrefix20220713\Symfony\Component\ExpressionLanguage\Expression;
-use RevealPrefix20220713\Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
+use RevealPrefix20220820\Composer\InstalledVersions;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\ClassExistenceResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\ComposerResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\DirectoryResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\FileExistenceResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\FileResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\GlobResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\ReflectionClassResource;
+use RevealPrefix20220820\Symfony\Component\Config\Resource\ResourceInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceLocator;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\Target;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler\Compiler;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler\PassConfig;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler\ResolveEnvPlaceholdersPass;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\BadMethodCallException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\LogicException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\LazyProxy\Instantiator\InstantiatorInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\LazyProxy\Instantiator\RealServiceInstantiator;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use RevealPrefix20220820\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220820\Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
 /**
  * ContainerBuilder is a DI container that provides an API to easily describe services.
  *
@@ -468,7 +468,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
             $alias = $this->aliasDefinitions[$id];
             if ($alias->isDeprecated()) {
                 $deprecation = $alias->getDeprecation($id);
-                \RevealPrefix20220713\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
+                \RevealPrefix20220820\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
             }
             return $this->doGet((string) $alias, $invalidBehavior, $inlineServices, $isConstructorArgument);
         }
@@ -851,7 +851,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
         }
         if ($definition->isDeprecated()) {
             $deprecation = $definition->getDeprecation($id);
-            \RevealPrefix20220713\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
+            \RevealPrefix20220820\trigger_deprecation($deprecation['package'], $deprecation['version'], $deprecation['message']);
         }
         if ($tryProxy && $definition->isLazy() && !($tryProxy = !($proxy = $this->proxyInstantiator) || $proxy instanceof RealServiceInstantiator)) {
             $proxy = $proxy->instantiateProxy($this, $definition, $id, function () use($definition, &$inlineServices, $id) {
@@ -886,14 +886,14 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
             if (!$definition->isDeprecated() && \is_array($factory) && \is_string($factory[0])) {
                 $r = new \ReflectionClass($factory[0]);
                 if (0 < \strpos($r->getDocComment(), "\n * @deprecated ")) {
-                    \RevealPrefix20220713\trigger_deprecation('', '', 'The "%s" service relies on the deprecated "%s" factory class. It should either be deprecated or its factory upgraded.', $id, $r->name);
+                    \RevealPrefix20220820\trigger_deprecation('', '', 'The "%s" service relies on the deprecated "%s" factory class. It should either be deprecated or its factory upgraded.', $id, $r->name);
                 }
             }
         } else {
             $r = new \ReflectionClass($parameterBag->resolveValue($definition->getClass()));
             $service = null === $r->getConstructor() ? $r->newInstance() : $r->newInstanceArgs(\array_values($arguments));
             if (!$definition->isDeprecated() && 0 < \strpos($r->getDocComment(), "\n * @deprecated ")) {
-                \RevealPrefix20220713\trigger_deprecation('', '', 'The "%s" service relies on the deprecated "%s" class. It should either be deprecated or its implementation upgraded.', $id, $r->name);
+                \RevealPrefix20220820\trigger_deprecation('', '', 'The "%s" service relies on the deprecated "%s" class. It should either be deprecated or its implementation upgraded.', $id, $r->name);
             }
         }
         $lastWitherIndex = null;

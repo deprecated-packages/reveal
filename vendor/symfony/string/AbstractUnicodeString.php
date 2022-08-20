@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\String;
+namespace RevealPrefix20220820\Symfony\Component\String;
 
-use RevealPrefix20220713\Symfony\Component\String\Exception\ExceptionInterface;
-use RevealPrefix20220713\Symfony\Component\String\Exception\InvalidArgumentException;
-use RevealPrefix20220713\Symfony\Component\String\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\String\Exception\ExceptionInterface;
+use RevealPrefix20220820\Symfony\Component\String\Exception\InvalidArgumentException;
+use RevealPrefix20220820\Symfony\Component\String\Exception\RuntimeException;
 /**
  * Represents a string of abstract Unicode characters.
  *
@@ -444,8 +444,10 @@ abstract class AbstractUnicodeString extends AbstractString
                     | [\\x41-\\x7E]
                 )|[\\p{Cc}\\x7F]++)/xu', '', $s);
             }
-            // Non printable characters have been dropped, so wcswidth cannot logically return -1.
-            $width += $this->wcswidth($s);
+            $lineWidth = $this->wcswidth($s);
+            if ($lineWidth > $width) {
+                $width = $lineWidth;
+            }
         }
         return $width;
     }

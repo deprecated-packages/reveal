@@ -9,7 +9,7 @@ use PhpParser\Node\Expr\BinaryOp\Coalesce;
 use PhpParser\Node\Expr\ConstFetch;
 use PhpParser\Node\Expr\Variable;
 use PhpParser\NodeVisitorAbstract;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use Symplify\Astral\Naming\SimpleNameResolver;
 final class UnwrapCoalesceContextNodeVisitor extends NodeVisitorAbstract
 {
     /**

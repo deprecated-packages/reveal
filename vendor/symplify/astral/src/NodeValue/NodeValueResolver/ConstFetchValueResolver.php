@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\Astral\NodeValue\NodeValueResolver;
+namespace Symplify\Astral\NodeValue\NodeValueResolver;
 
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\ConstFetch;
-use RevealPrefix20220713\Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
-use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
+use PhpParser\Node\Name;
+use Symplify\Astral\Contract\NodeValueResolver\NodeValueResolverInterface;
 /**
  * @see \Symplify\Astral\Tests\NodeValue\NodeValueResolverTest
  *
@@ -14,14 +14,6 @@ use RevealPrefix20220713\Symplify\Astral\Naming\SimpleNameResolver;
  */
 final class ConstFetchValueResolver implements NodeValueResolverInterface
 {
-    /**
-     * @var \Symplify\Astral\Naming\SimpleNameResolver
-     */
-    private $simpleNameResolver;
-    public function __construct(SimpleNameResolver $simpleNameResolver)
-    {
-        $this->simpleNameResolver = $simpleNameResolver;
-    }
     public function getType() : string
     {
         return ConstFetch::class;
@@ -32,10 +24,10 @@ final class ConstFetchValueResolver implements NodeValueResolverInterface
      */
     public function resolve(Expr $expr, string $currentFilePath)
     {
-        $constFetchName = $this->simpleNameResolver->getName($expr);
-        if ($constFetchName === null) {
+        if (!$expr->name instanceof Name) {
             return null;
         }
+        $constFetchName = $expr->name->toString();
         return \constant($constFetchName);
     }
 }

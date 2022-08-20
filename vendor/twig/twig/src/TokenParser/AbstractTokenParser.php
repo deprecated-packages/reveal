@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\TokenParser;
+namespace RevealPrefix20220820\Twig\TokenParser;
 
-use RevealPrefix20220713\Twig\Parser;
+use RevealPrefix20220820\Twig\Parser;
 /**
  * Base class for all token parsers.
  *

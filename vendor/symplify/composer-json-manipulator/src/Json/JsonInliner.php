@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace RevealPrefix20220713\Symplify\ComposerJsonManipulator\Json;
+namespace RevealPrefix20220820\Symplify\ComposerJsonManipulator\Json;
 
-use RevealPrefix20220713\Nette\Utils\Strings;
-use RevealPrefix20220713\Symplify\ComposerJsonManipulator\ValueObject\Option;
-use RevealPrefix20220713\Symplify\PackageBuilder\Parameter\ParameterProvider;
+use RevealPrefix20220820\Nette\Utils\Strings;
+use RevealPrefix20220820\Symplify\ComposerJsonManipulator\ValueObject\Option;
+use Symplify\PackageBuilder\Parameter\ParameterProvider;
 final class JsonInliner
 {
     /**
@@ -29,7 +29,7 @@ final class JsonInliner
         $inlineSections = $this->parameterProvider->provideArrayParameter(Option::INLINE_SECTIONS);
         foreach ($inlineSections as $inlineSection) {
             $pattern = '#("' . \preg_quote($inlineSection, '#') . '": )\\[(.*?)\\](,)#ms';
-            $jsonContent = Strings::replace($jsonContent, $pattern, function (array $match) : string {
+            $jsonContent = Strings::replace($jsonContent, $pattern, static function (array $match) : string {
                 $inlined = Strings::replace($match[2], self::SPACE_REGEX, ' ');
                 $inlined = \trim($inlined);
                 $inlined = '[' . $inlined . ']';

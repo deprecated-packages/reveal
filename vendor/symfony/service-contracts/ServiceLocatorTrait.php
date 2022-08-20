@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Contracts\Service;
+namespace RevealPrefix20220820\Symfony\Contracts\Service;
 
-use RevealPrefix20220713\Psr\Container\ContainerExceptionInterface;
-use RevealPrefix20220713\Psr\Container\NotFoundExceptionInterface;
+use RevealPrefix20220820\Psr\Container\ContainerExceptionInterface;
+use RevealPrefix20220820\Psr\Container\NotFoundExceptionInterface;
 // Help opcache.preload discover always-needed symbols
 \class_exists(ContainerExceptionInterface::class);
 \class_exists(NotFoundExceptionInterface::class);

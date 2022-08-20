@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 /**
  * Reads #[Autoconfigure] attributes on definitions that are autoconfigured
  * and don't have the "container.ignore_attributes" tag.

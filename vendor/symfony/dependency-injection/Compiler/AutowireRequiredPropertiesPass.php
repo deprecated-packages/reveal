@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Compiler;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Compiler;
 
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\TypedReference;
-use RevealPrefix20220713\Symfony\Contracts\Service\Attribute\Required;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\TypedReference;
+use RevealPrefix20220820\Symfony\Contracts\Service\Attribute\Required;
 /**
  * Looks for definitions with autowiring enabled and registers their corresponding "@required" properties.
  *

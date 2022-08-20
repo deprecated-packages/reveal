@@ -9,10 +9,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\Node\Expression;
+namespace RevealPrefix20220820\Twig\Node\Expression;
 
-use RevealPrefix20220713\Twig\Compiler;
-use RevealPrefix20220713\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Compiler;
+use RevealPrefix20220820\Twig\Node\Node;
 class FilterExpression extends CallExpression
 {
     public function __construct(Node $node, ConstantExpression $filterName, Node $arguments, int $lineno, string $tag = null)

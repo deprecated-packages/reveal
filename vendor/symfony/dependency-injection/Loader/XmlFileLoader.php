@@ -8,25 +8,25 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Symfony\Component\DependencyInjection\Loader;
+namespace RevealPrefix20220820\Symfony\Component\DependencyInjection\Loader;
 
-use RevealPrefix20220713\Symfony\Component\Config\Util\XmlUtils;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Alias;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ChildDefinition;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerBuilder;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\ContainerInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Definition;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use RevealPrefix20220713\Symfony\Component\DependencyInjection\Reference;
-use RevealPrefix20220713\Symfony\Component\ExpressionLanguage\Expression;
+use RevealPrefix20220820\Symfony\Component\Config\Util\XmlUtils;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Alias;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ChildDefinition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerBuilder;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\ContainerInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Definition;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
+use RevealPrefix20220820\Symfony\Component\DependencyInjection\Reference;
+use RevealPrefix20220820\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * XmlFileLoader loads XML files service definitions.
  *
@@ -580,7 +580,7 @@ EOF;
             });
             $schema = '<?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <xsd:include schemaLocation="file:///' . \str_replace('\\', '/', $tmpfile) . '" />
+  <xsd:include schemaLocation="file:///' . \rawurlencode(\str_replace('\\', '/', $tmpfile)) . '" />
 </xsd:schema>';
             \file_put_contents($tmpfile, '<?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">

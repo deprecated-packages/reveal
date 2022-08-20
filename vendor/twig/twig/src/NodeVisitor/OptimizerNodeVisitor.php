@@ -8,21 +8,21 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace RevealPrefix20220713\Twig\NodeVisitor;
+namespace RevealPrefix20220820\Twig\NodeVisitor;
 
-use RevealPrefix20220713\Twig\Environment;
-use RevealPrefix20220713\Twig\Node\BlockReferenceNode;
-use RevealPrefix20220713\Twig\Node\Expression\BlockReferenceExpression;
-use RevealPrefix20220713\Twig\Node\Expression\ConstantExpression;
-use RevealPrefix20220713\Twig\Node\Expression\FilterExpression;
-use RevealPrefix20220713\Twig\Node\Expression\FunctionExpression;
-use RevealPrefix20220713\Twig\Node\Expression\GetAttrExpression;
-use RevealPrefix20220713\Twig\Node\Expression\NameExpression;
-use RevealPrefix20220713\Twig\Node\Expression\ParentExpression;
-use RevealPrefix20220713\Twig\Node\ForNode;
-use RevealPrefix20220713\Twig\Node\IncludeNode;
-use RevealPrefix20220713\Twig\Node\Node;
-use RevealPrefix20220713\Twig\Node\PrintNode;
+use RevealPrefix20220820\Twig\Environment;
+use RevealPrefix20220820\Twig\Node\BlockReferenceNode;
+use RevealPrefix20220820\Twig\Node\Expression\BlockReferenceExpression;
+use RevealPrefix20220820\Twig\Node\Expression\ConstantExpression;
+use RevealPrefix20220820\Twig\Node\Expression\FilterExpression;
+use RevealPrefix20220820\Twig\Node\Expression\FunctionExpression;
+use RevealPrefix20220820\Twig\Node\Expression\GetAttrExpression;
+use RevealPrefix20220820\Twig\Node\Expression\NameExpression;
+use RevealPrefix20220820\Twig\Node\Expression\ParentExpression;
+use RevealPrefix20220820\Twig\Node\ForNode;
+use RevealPrefix20220820\Twig\Node\IncludeNode;
+use RevealPrefix20220820\Twig\Node\Node;
+use RevealPrefix20220820\Twig\Node\PrintNode;
 /**
  * Tries to optimize the AST.
  *

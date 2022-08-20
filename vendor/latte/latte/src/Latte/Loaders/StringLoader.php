@@ -5,9 +5,9 @@
  * Copyright (c) 2008 David Grudl (https://davidgrudl.com)
  */
 declare (strict_types=1);
-namespace RevealPrefix20220713\Latte\Loaders;
+namespace RevealPrefix20220820\Latte\Loaders;
 
-use RevealPrefix20220713\Latte;
+use RevealPrefix20220820\Latte;
 /**
  * Template loader.
  */
